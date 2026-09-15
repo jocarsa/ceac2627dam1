@@ -1,0 +1,7 @@
+Datetime: 2026-09-15T10:04:08.064Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/001-Almacenamiento de la información/003-Sistemas gestores de base de datos Funciones, componentes y tipos
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/001-
+Almacenamiento de la información/003-Sistemas gestores de base de datos Funciones, componentes y tipos$ 

@@ -1,0 +1,12 @@
+Datetime: 2026-09-15T10:04:24.690Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/001-Almacenamiento de la información/003-Sistemas gestores de base de datos Funciones, componentes y tipos
+Command: sudo apt install mysql-server
+
+Result:
+Leyendo lista de paquetes... 0%Leyendo lista de paquetes... 100%Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias... 0%Creando árbol de dependencias... 0%Creando árbol de dependencias... 50%Creando árbol de dependencias... 50%Creando árbol de dependencias... Hecho
+Leyendo la información de estado... 0%Leyendo la información de estado... 0%Leyendo la información de estado... Hecho
+mysql-server ya está en su versión más reciente (8.0.46-0ubuntu0.24.04.4).
+0 actualizados, 0 nuevos se instalarán, 0 para eliminar y 173 no actualizados.
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/001-
+Almacenamiento de la información/003-Sistemas gestores de base de datos Funciones, componentes y tipos$ 
