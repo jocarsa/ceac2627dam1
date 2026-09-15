@@ -1,0 +1,9 @@
+Datetime: 2026-09-15T07:43:34.657Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/003-Tipos de datos
+Command: python3 004-error\ en\ tipos\ de\ datos.py
+
+Result:
+96
+4848
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/0
+01-Identificación de los elementos de un programa informático/003-Tipos de datos$ 

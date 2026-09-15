@@ -1,0 +1,1 @@
+pwd = dime el directorio actual

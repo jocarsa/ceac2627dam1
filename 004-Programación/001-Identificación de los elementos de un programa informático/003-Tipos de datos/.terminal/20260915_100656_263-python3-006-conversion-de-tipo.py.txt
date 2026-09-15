@@ -1,0 +1,8 @@
+Datetime: 2026-09-15T08:06:56.263Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/003-Tipos de datos
+Command: python3 006-conversion\ de\ tipo.py
+
+Result:
+96
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/0
+01-Identificación de los elementos de un programa informático/003-Tipos de datos$ 

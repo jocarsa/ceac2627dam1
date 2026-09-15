@@ -1,0 +1,13 @@
+Datetime: 2026-09-15T07:28:58.798Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/003-Tipos de datos
+Command: python3 003-cadena.py
+
+Result:
+48
+<class 'int'>
+1.78
+<class 'float'>
+Jose Vicente
+<class 'str'>
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programa
+ción/001-Identificación de los elementos de un programa informático/003-Tipos de datos$ 

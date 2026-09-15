@@ -1,0 +1,1 @@
+edad = 48 # Solo meto el valor 48 en la memoria

@@ -1,0 +1,8 @@
+Datetime: 2026-09-15T06:39:10.890Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/001-Estructura y bloques fundamentales
+Command: python3 003-print.py
+
+Result:
+Empezamos con Python
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/001-Iden
+tificación de los elementos de un programa informático/001-Estructura y bloques fundamentales$ 

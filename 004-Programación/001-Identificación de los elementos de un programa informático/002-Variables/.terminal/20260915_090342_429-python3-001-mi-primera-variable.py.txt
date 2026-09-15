@@ -1,0 +1,7 @@
+Datetime: 2026-09-15T07:03:42.429Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/002-Variables
+Command: python3 001-mi\ primera\ variable.py
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programa
+ción/001-Identificación de los elementos de un programa informático/002-Variables$ 

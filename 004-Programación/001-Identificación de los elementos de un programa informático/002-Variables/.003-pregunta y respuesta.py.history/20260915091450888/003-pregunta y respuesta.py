@@ -1,0 +1,1 @@
+edad = input("¿Cuántos años tienes?: ")

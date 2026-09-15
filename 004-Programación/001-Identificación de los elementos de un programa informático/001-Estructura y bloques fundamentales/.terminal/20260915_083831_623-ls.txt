@@ -1,0 +1,8 @@
+Datetime: 2026-09-15T06:38:31.623Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/001-Estructura y bloques fundamentales
+Command: ls
+
+Result:
+000-Introducción.md  001-comentarios.py  002-docstrings.py  003-print.py
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/001-Iden
+tificación de los elementos de un programa informático/001-Estructura y bloques fundamentales$ 

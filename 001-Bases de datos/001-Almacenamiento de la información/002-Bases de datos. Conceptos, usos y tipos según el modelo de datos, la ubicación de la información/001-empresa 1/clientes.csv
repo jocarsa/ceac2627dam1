@@ -1,0 +1,6 @@
+id,nombre,apellidos,email,telefono,ciudad
+1,Ana,García López,ana.garcia@example.com,612345678,Valencia
+2,Carlos,Martínez Ruiz,carlos.martinez@example.com,623456789,Madrid
+3,Laura,Sánchez Pérez,laura.sanchez@example.com,634567890,Alicante
+4,David,Fernández Gómez,david.fernandez@example.com,645678901,Castellón
+5,Marta,Navarro Torres,marta.navarro@example.com,656789012,Valencia

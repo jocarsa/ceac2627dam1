@@ -1,0 +1,9 @@
+Datetime: 2026-09-15T07:25:04.690Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/003-Tipos de datos
+Command: python3 001-edad\ entera.py
+
+Result:
+48
+<class 'int'>
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programa
+ción/001-Identificación de los elementos de un programa informático/003-Tipos de datos$ 

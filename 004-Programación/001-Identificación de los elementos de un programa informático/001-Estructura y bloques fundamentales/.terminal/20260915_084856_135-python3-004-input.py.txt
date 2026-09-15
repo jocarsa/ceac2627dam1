@@ -1,0 +1,7 @@
+Datetime: 2026-09-15T06:48:56.135Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/001-Estructura y bloques fundamentales
+Command: python3 004-input.py
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Pr
+ogramación/001-Identificación de los elementos de un programa informático/001-Estructura y bloques fundamentales$ 

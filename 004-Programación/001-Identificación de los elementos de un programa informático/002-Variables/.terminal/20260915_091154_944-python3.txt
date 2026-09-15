@@ -1,0 +1,7 @@
+Datetime: 2026-09-15T07:11:54.944Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/002-Variables
+Command: python3
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programa
+ción/001-Identificación de los elementos de un programa informático/002-Variables$ 

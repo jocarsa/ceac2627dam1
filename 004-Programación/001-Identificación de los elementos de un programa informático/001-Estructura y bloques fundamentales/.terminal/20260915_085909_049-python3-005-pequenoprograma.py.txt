@@ -1,0 +1,11 @@
+Datetime: 2026-09-15T06:59:09.049Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/001-Estructura y bloques fundamentales
+Command: python3 005-pequenoprograma.py
+
+Result:
+Importamos librerias
+Definimos condiciones iniciales
+Definimos funciones y clases
+Y ahora ejecutamos el bloque principal
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Pr
+ogramación/001-Identificación de los elementos de un programa informático/001-Estructura y bloques fundamentales$ 

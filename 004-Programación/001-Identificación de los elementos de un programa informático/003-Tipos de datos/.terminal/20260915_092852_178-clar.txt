@@ -1,0 +1,11 @@
+Datetime: 2026-09-15T07:28:52.178Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/003-Tipos de datos
+Command: clar
+
+Result:
+Orden «clar» no encontrada. Quizá quiso decir:
+  la orden «car» del paquete deb «ucommon-utils (7.0.1-0.1)»
+  la orden «clear» del paquete deb «ncurses-bin (6.4+20240113-1ubuntu2.1)»
+Pruebe con: sudo apt install <nombre del paquete deb>
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programa
+ción/001-Identificación de los elementos de un programa informático/003-Tipos de datos$ 

@@ -1,0 +1,8 @@
+Datetime: 2026-09-15T07:05:17.239Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/002-Variables
+Command: python3 002-saco\ variable\ por\ pantalla.py
+
+Result:
+48
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programa
+ción/001-Identificación de los elementos de un programa informático/002-Variables$ 
