@@ -1,0 +1,16 @@
+Datetime: 2026-09-16T07:07:13.524Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/007-Ejercicio final de unidad
+Command: python3 006-modificaciones.py
+
+Result:
+##############################
+Bienvenidos al programa calculadora
+##############################
+Introduce la base imponible: ^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/007-Ejercicio final de unidad/006-modificaciones.py", line 11, in <module>
+    base = input("Introduce la base imponible: ")	# Entrada y variable
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/001-Identi
+ficación de los elementos de un programa informático/007-Ejercicio final de unidad$ 

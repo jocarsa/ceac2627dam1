@@ -1,0 +1,25 @@
+# Primero presento el programa
+# CRUD = Create, Read, Update, Delete
+"""
+	Programa CRUD
+  Versión 0.1
+  por Jose Vicente Carratala
+"""
+# Mensaje de bienvenida
+print("Programa CRUD v 0.1")
+print("En este programa practicamos en clase")
+# Entrar en un bucle infinito
+while True:
+  # Le enseño al usuario lo que puede hacer
+
+  # Le pregunto qué quiere hacer
+
+  # Anoto su decisión y tomo una acción - la acción puede ser
+
+  # 1.-Crear un nuevo registro
+
+  # 2.-Listar los registros existentes
+
+  # 3.-Actualizar un registro
+
+  # 4.-Eliminar un registros

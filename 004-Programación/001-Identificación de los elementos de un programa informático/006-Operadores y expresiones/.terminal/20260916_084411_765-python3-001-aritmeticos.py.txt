@@ -1,0 +1,9 @@
+Datetime: 2026-09-16T06:44:11.765Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/006-Operadores y expresiones
+Command: python3 001-aritmeticos.py
+
+Result:
+7
+1
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programaci
+ón/001-Identificación de los elementos de un programa informático/006-Operadores y expresiones$ 

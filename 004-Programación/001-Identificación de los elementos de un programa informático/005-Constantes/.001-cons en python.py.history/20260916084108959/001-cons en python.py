@@ -1,0 +1,1 @@
+# Pero en python no hay constantes

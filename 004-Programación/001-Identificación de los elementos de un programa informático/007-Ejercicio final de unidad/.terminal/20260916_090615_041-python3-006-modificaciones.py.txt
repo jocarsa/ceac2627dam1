@@ -1,0 +1,13 @@
+Datetime: 2026-09-16T07:06:15.041Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/007-Ejercicio final de unidad
+Command: python3 006-modificaciones.py
+
+Result:
+------------------------------
+Totales de la factura:
+Base imponible:  1000
+IVA:  210.0
+Total:  1210.0
+------------------------------
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/001-Identi
+ficación de los elementos de un programa informático/007-Ejercicio final de unidad$ 

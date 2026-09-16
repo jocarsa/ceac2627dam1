@@ -1,0 +1,7 @@
+Datetime: 2026-09-16T07:03:48.992Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/007-Ejercicio final de unidad
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/001-Ident
+ificación de los elementos de un programa informático/007-Ejercicio final de unidad$ 

@@ -1,0 +1,13 @@
+Datetime: 2026-09-16T06:47:03.047Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/006-Operadores y expresiones
+Command: python3 002-comparacion.py
+
+Result:
+False
+True
+False
+True
+False
+True
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programaci
+ón/001-Identificación de los elementos de un programa informático/006-Operadores y expresiones$ 

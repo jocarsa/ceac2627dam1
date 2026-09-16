@@ -1,0 +1,8 @@
+Datetime: 2026-09-16T07:21:39.901Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/001-Estructuras de selección
+Command: python3 002-else.py
+
+Result:
+Ya no eres un niño
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Prog
+ramación/003-Uso de estructuras de control/001-Estructuras de selección$ 
