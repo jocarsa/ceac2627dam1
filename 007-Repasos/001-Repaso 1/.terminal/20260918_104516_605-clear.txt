@@ -1,0 +1,6 @@
+Datetime: 2026-09-18T08:45:16.605Z
+Working directory: /var/www/html/ceac2627dam1/007-Repasos/001-Repaso 1
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/007-Repasos/001-Repaso 1$ 

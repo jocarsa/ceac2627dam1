@@ -1,0 +1,1 @@
+python - para entrar en la terminal de python

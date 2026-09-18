@@ -1,0 +1,8 @@
+Datetime: 2026-09-18T08:50:03.788Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/002-Utilización de objetos/001-Características de los objetos
+Command: python3 002-libreria\ matematica.py
+
+Result:
+2.0
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/
+004-Programación/002-Utilización de objetos/001-Características de los objetos$ 

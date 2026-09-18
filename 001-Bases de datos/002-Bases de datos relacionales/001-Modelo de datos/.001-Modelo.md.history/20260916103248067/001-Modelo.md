@@ -1,0 +1,1 @@
+Pensar qué es lo que queremos que tenga nuestra base de datos

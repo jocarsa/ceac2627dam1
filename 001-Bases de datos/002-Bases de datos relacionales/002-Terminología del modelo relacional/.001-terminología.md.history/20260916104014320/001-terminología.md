@@ -1,0 +1,40 @@
+Sistema de gestión de bases de datos
+	-Bases de datos 1
+  	-Tabla 1
+    	-Columna 1
+      -Columna 2
+      -Columna 3
+      ...
+      -Fila (tupla) 1
+      -Fila (tupla) 1
+      -Fila (tupla) 1
+      -Fila (tupla) 1
+      -Fila (tupla) 1
+      ...
+      Celda (Datos)
+      Celda (Datos)
+      Celda (Datos)
+      Celda (Datos)
+    -Tabla 2
+    -Tabla 3
+    -Tabla 4
+    -Tabla 5
+  -Bases de datos 2
+  	-Tabla 1
+    -Tabla 2
+    -Tabla 3
+    -Tabla 4
+    -Tabla 5
+  -Bases de datos 3
+  	-Tabla 1
+    -Tabla 2
+    -Tabla 3
+    -Tabla 4
+    -Tabla 5
+  -Bases de datos 4
+  	-Tabla 1
+    -Tabla 2
+    -Tabla 3
+    -Tabla 4
+    -Tabla 5
+  -Bases de datos 5

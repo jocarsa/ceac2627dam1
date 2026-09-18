@@ -1,0 +1,8 @@
+Datetime: 2026-09-18T08:48:46.628Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/002-Utilización de objetos/001-Características de los objetos
+Command: python3 001-numeros\ aleatorios.md
+
+Result:
+38
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/
+004-Programación/002-Utilización de objetos/001-Características de los objetos$ 

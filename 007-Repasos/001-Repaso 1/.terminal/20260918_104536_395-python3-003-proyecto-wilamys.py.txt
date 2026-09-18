@@ -1,0 +1,8 @@
+Datetime: 2026-09-18T08:45:36.395Z
+Working directory: /var/www/html/ceac2627dam1/007-Repasos/001-Repaso 1
+Command: python3 003-proyecto\ wilamys.py
+
+Result:
+El resultado es: 10
+Sorpresa!!!
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/007-Repasos/001-Repaso 1$ 
