@@ -1,0 +1,9 @@
+Datetime: 2026-09-21T06:48:16.192Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/005-Aserciones
+Command: python3 001-asercion\ positiva.py
+
+Result:
+Principio del programa
+Final del programa
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programació
+n/003-Uso de estructuras de control/005-Aserciones$ 

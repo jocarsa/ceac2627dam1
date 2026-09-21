@@ -1,0 +1,8 @@
+Datetime: 2026-09-21T07:53:51.045Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/007-Ejercicio final de unidad
+Command: python3 008
+
+Result:
+python3: can't open file '/var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/007-Ejercicio final de unidad/008': [Errno 2] No such file or directory
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/
+001-Identificación de los elementos de un programa informático/007-Ejercicio final de unidad$ 

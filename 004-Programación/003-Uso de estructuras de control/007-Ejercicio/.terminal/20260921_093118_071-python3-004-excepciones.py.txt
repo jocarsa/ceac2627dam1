@@ -1,0 +1,16 @@
+Datetime: 2026-09-21T07:31:18.071Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/007-Ejercicio
+Command: python3 004-excepciones.py
+
+Result:
+Voy a insertar
+1.-Insertar registro
+2.-Leer registro
+Introduce tu opcion: ^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/007-Ejercicio/004-excepciones.py", line 5, in <module>
+    opcion = input("Introduce tu opcion: ")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/003-
+Uso de estructuras de control/007-Ejercicio$ 

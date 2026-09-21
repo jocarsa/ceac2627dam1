@@ -1,0 +1,10 @@
+Datetime: 2026-09-21T06:50:45.501Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/005-Aserciones
+Command: python3 003-combinacion.py
+
+Result:
+Principio del programa
+No puedo continuar porque: 
+Final del programa
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programació
+n/003-Uso de estructuras de control/005-Aserciones$ 

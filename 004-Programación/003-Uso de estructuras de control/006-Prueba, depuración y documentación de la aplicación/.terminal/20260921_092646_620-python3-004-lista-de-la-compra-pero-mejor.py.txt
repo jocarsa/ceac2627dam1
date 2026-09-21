@@ -1,0 +1,17 @@
+Datetime: 2026-09-21T07:26:46.620Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/006-Prueba, depuración y documentación de la aplicación
+Command: python3 004-lista\ de\ la\ compra\ pero\ mejor.py
+
+Result:
+['Manzanas', 'Platanos', 'Cerezas']
+Escoge una opcion
+1.- Insertar un nuevo elemento
+2.- Listar elementos
+Escoge una opción: ^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/006-Prueba, depuración y documentación de la aplicación/004-lista de la compra pero mejor.py", line 13, in <module>
+    opcion = input("Escoge una opción: ")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/003-
+Uso de estructuras de control/006-Prueba, depuración y documentación de la aplicación$ 

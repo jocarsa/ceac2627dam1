@@ -1,0 +1,14 @@
+Datetime: 2026-09-21T07:03:30.537Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/006-Prueba, depuración y documentación de la aplicación
+Command: python3 003-while.py
+
+Result:
+['Manzanas y peras', 'Platanos, kiwis']
+Introduce un nuevo elemento: ^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/006-Prueba, depuración y documentación de la aplicación/003-while.py", line 4, in <module>
+    nuevo_elemento = input("Introduce un nuevo elemento: ")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programació
+n/003-Uso de estructuras de control/006-Prueba, depuración y documentación de la aplicación$ 

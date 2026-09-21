@@ -1,0 +1,8 @@
+Datetime: 2026-09-21T06:58:16.126Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/006-Prueba, depuración y documentación de la aplicación
+Command: python3 002-lista\ de\ la\ compra.py
+
+Result:
+['Manzanas']
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programació
+n/003-Uso de estructuras de control/006-Prueba, depuración y documentación de la aplicación$ 

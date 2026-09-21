@@ -1,0 +1,15 @@
+Datetime: 2026-09-21T07:35:32.760Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/007-Ejercicio
+Command: python3 006-aserciones.py
+
+Result:
+1.-Insertar registro
+2.-Leer registro
+Introduce tu opcion: ^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/007-Ejercicio/006-aserciones.py", line 7, in <module>
+    opcion = input("Introduce tu opcion: ")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/003-
+Uso de estructuras de control/007-Ejercicio$ 

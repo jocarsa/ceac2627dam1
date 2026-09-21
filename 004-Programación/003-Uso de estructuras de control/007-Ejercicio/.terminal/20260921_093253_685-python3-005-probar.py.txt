@@ -1,0 +1,24 @@
+Datetime: 2026-09-21T07:32:53.685Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/007-Ejercicio
+Command: python3 005-probar.py
+
+Result:
+  File "/var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/007-Ejercicio/005-probar.py", line 6
+    alumnos = []
+TabError: inconsistent use of tabs and spaces in indentation
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_004-Programación_003-Uso de estructuras de control_007-Ejercicio_005-probar.py.1000.crash'
+
+Original exception was:
+  File "/var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/007-Ejercicio/005-probar.py", line 6
+    alumnos = []
+TabError: inconsistent use of tabs and spaces in indentation
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/003-
+Uso de estructuras de control/007-Ejercicio$ 

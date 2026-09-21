@@ -1,0 +1,7 @@
+Datetime: 2026-09-21T07:32:50.218Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/003-Uso de estructuras de control/007-Ejercicio
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/003-
+Uso de estructuras de control/007-Ejercicio$ 

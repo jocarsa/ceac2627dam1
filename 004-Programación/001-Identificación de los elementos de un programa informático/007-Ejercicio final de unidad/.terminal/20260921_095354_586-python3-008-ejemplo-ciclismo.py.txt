@@ -1,0 +1,26 @@
+Datetime: 2026-09-21T07:53:54.586Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/007-Ejercicio final de unidad
+Command: python3 008-ejemplo\ ciclismo.py
+
+Result:
+  File "/var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/007-Ejercicio final de unidad/008-ejemplo ciclismo.py", line 8
+    print("Pues has avanzado",avance,"metros)
+                                     ^
+SyntaxError: unterminated string literal (detected at line 8)
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_004-Programación_001-Identificación de los elementos de un programa informático_007-Ejercicio final de unidad_008-ejemplo ciclismo.py.1000.crash'
+
+Original exception was:
+  File "/var/www/html/ceac2627dam1/004-Programación/001-Identificación de los elementos de un programa informático/007-Ejercicio final de unidad/008-ejemplo ciclismo.py", line 8
+    print("Pues has avanzado",avance,"metros)
+                                     ^
+SyntaxError: unterminated string literal (detected at line 8)
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/
+001-Identificación de los elementos de un programa informático/007-Ejercicio final de unidad$ 
