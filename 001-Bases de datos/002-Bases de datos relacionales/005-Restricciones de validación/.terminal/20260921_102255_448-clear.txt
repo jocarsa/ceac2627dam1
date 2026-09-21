@@ -1,0 +1,7 @@
+Datetime: 2026-09-21T08:22:55.448Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/002-Bases de datos relacionales/005-Restricciones de validación
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de da
+tos/002-Bases de datos relacionales/005-Restricciones de validación$ 

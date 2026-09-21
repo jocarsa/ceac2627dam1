@@ -1,0 +1,4 @@
+ALTER TABLE Pedidos
+ADD Identificador INT AUTO_INCREMENT PRIMARY KEY;
+
+DESCRIBE Pedidos;

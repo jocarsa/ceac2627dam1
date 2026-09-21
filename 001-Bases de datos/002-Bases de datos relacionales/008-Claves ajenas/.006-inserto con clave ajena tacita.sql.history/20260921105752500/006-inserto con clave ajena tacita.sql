@@ -1,0 +1,7 @@
+INSERT INTO Pedidos VALUES(
+	'2026-09-21',
+  2026092100,
+  1,
+  1,
+  NULL
+)
