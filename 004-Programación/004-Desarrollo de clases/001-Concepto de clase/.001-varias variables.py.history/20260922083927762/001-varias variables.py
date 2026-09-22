@@ -1,0 +1,11 @@
+nombre = "Jose Vicente"
+edad = 48
+apellidos = "Carratala Sanchis"
+altura = 1.78
+...
+
+nombre = "Juan"
+apellidos = "Garcia Martinez"
+edad = 49
+altura = 1.80
+

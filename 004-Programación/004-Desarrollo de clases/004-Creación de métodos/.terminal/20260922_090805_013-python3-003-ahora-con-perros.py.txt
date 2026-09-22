@@ -1,0 +1,10 @@
+Datetime: 2026-09-22T07:08:05.013Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/004-Desarrollo de clases/004-Creación de métodos
+Command: python3 003-ahora\ con\ perros.py
+
+Result:
+Heverton Ferreira Maciel
+Adam Founounou
+Toby
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/004-Desarro
+llo de clases/004-Creación de métodos$ 

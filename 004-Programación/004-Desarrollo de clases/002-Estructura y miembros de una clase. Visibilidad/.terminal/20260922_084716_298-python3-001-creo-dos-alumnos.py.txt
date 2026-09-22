@@ -1,0 +1,9 @@
+Datetime: 2026-09-22T06:47:16.298Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/004-Desarrollo de clases/002-Estructura y miembros de una clase. Visibilidad
+Command: python3 001-creo\ dos\ alumnos.py
+
+Result:
+<__main__.Alumno object at 0x724af1316e40>
+<__main__.Alumno object at 0x724af1316e70>
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Progr
+amación/004-Desarrollo de clases/002-Estructura y miembros de una clase. Visibilidad$ 

@@ -1,0 +1,7 @@
+Datetime: 2026-09-22T06:47:13.166Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/004-Desarrollo de clases/002-Estructura y miembros de una clase. Visibilidad
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Progr
+amación/004-Desarrollo de clases/002-Estructura y miembros de una clase. Visibilidad$ 

@@ -1,0 +1,14 @@
+Datetime: 2026-09-22T07:09:35.059Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/004-Desarrollo de clases/004-Creación de métodos
+Command: python3 003-ahora\ con\ perros.py
+
+Result:
+Heverton Ferreira Maciel
+Adam Founounou
+El alumno 2 es de tipo:
+<__main__.Alumno object at 0x77d6629a1310>
+Toby
+Toby es un:
+<__main__.Perro object at 0x77d6629a1490>
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/004-Desarro
+llo de clases/004-Creación de métodos$ 

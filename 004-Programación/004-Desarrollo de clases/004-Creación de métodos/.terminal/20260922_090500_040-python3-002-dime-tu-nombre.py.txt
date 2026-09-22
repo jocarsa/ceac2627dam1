@@ -1,0 +1,9 @@
+Datetime: 2026-09-22T07:05:00.040Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/004-Desarrollo de clases/004-Creación de métodos
+Command: python3 002-dime\ tu\ nombre.py
+
+Result:
+Heverton Ferreira Maciel
+Adam Founounou
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/004-Desarro
+llo de clases/004-Creación de métodos$ 

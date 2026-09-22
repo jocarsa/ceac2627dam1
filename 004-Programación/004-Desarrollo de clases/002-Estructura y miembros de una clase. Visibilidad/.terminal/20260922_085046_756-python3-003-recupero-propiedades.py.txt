@@ -1,0 +1,9 @@
+Datetime: 2026-09-22T06:50:46.756Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/004-Desarrollo de clases/002-Estructura y miembros de una clase. Visibilidad
+Command: python3 003-recupero\ propiedades.py
+
+Result:
+Heverton
+Lucas
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Progr
+amación/004-Desarrollo de clases/002-Estructura y miembros de una clase. Visibilidad$ 
