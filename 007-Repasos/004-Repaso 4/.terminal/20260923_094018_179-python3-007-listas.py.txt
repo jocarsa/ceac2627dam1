@@ -1,0 +1,14 @@
+Datetime: 2026-09-23T07:40:18.179Z
+Working directory: /var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4
+Command: python3 007-listas.py
+
+Result:
+Listado de alumnos v0.1
+En este programa guardas alumnos
+Escoge una opción: ^[^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4/007-listas.py", line 5, in <module>
+    print("1.-Insertar un alumno")
+             ^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4$ 

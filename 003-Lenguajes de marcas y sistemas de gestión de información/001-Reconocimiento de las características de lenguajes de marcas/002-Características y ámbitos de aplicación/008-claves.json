@@ -1,0 +1,25 @@
+{
+	"datos_personales":{
+  	"nombre":"Jose Vicente",
+    "apellidos":"Carratalá Sanchis",
+    "email":{
+    	"personal":"info@josevicentecarratala.com",
+      "profesional":"info@jocarsa.com"
+    }
+  },
+  "formacion":"",
+  "experiencia_laboral":[
+    {
+    	"empresa":"CEAC",
+      "posicion":"Profesor",
+      "inicio":"2025-08",
+      "final":"actualmente"
+    },
+    "experiencia2",
+    "experiencia3",
+    "experiencia4"
+  ],
+  "idiomas":"",
+  "conduccion":"",
+  "hobbies":""
+}

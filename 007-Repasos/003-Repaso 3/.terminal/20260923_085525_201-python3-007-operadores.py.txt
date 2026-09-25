@@ -1,0 +1,9 @@
+Datetime: 2026-09-23T06:55:25.201Z
+Working directory: /var/www/html/ceac2627dam1/007-Repasos/003-Repaso 3
+Command: python3 007-operadores.py
+
+Result:
+Has estado en carretera 2.0 h
+Has circulado a 120 Km/h
+Por lo tanto has recorrido 240.0 Km
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/007-Repasos/003-Repaso 3$ 

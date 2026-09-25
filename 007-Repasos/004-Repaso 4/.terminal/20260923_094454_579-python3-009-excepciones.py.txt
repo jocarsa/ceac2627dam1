@@ -1,0 +1,25 @@
+Datetime: 2026-09-23T07:44:54.579Z
+Working directory: /var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4
+Command: python3 009-excepciones.py
+
+Result:
+  File "/var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4/009-excepciones.py", line 10
+    except Exception e:
+                     ^
+SyntaxError: invalid syntax
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_007-Repasos_004-Repaso 4_009-excepciones.py.1000.crash'
+
+Original exception was:
+  File "/var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4/009-excepciones.py", line 10
+    except Exception e:
+                     ^
+SyntaxError: invalid syntax
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4$ 

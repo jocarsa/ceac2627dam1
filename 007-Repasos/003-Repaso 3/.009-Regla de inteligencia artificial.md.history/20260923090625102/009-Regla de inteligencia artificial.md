@@ -1,0 +1,1 @@
+1.-La primera parte de cualquier programa la tienes que hacer tu como humano

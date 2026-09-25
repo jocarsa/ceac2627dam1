@@ -1,0 +1,13 @@
+Datetime: 2026-09-23T06:55:08.144Z
+Working directory: /var/www/html/ceac2627dam1/007-Repasos/003-Repaso 3
+Command: python3 005-literales.py
+
+Result:
+Calculadora de distancia recorrida v0.1
+Introduce el tiempo que llevas conduciendo: ^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/007-Repasos/003-Repaso 3/005-literales.py", line 9, in <module>
+    tiempo_en_carretera = input("Introduce el tiempo que llevas conduciendo: ")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/007-Repasos/003-Repaso 3$ 

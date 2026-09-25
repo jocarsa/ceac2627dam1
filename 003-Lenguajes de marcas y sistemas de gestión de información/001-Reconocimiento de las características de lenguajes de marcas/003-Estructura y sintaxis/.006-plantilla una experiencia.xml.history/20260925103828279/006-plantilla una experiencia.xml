@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculum>
+  <datos_personales>
+    <nombre>Jose Vicente</nombre>
+    <apellidos>Carratalá Sanchis</apellidos>
+    <email>info@jocarsa.com</email>
+  </datos_personales> 
+  <experiencia_laboral>
+    <experiencia>
+      <empresa>CEAC</empresa>
+      <cargo>Profesor de Formación Profesional</cargo>
+      <inicio>2025-08</inicio>
+      <final>actualmente</final>
+    </experiencia>
+    <experiencia>
+    </experiencia>
+    <experiencia>
+    </experiencia>
+  </experiencia_laboral>
+  <formacion>
+  </formacion>
+</curriculum>

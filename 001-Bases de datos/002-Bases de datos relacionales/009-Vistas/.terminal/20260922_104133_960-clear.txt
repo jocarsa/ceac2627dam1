@@ -1,0 +1,6 @@
+Datetime: 2026-09-22T08:41:33.960Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/002-Bases de datos relacionales/009-Vistas
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/002-Bases de datos relacionales/009-Vistas$ 

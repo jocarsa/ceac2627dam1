@@ -1,0 +1,7 @@
+Datetime: 2026-09-23T07:45:02.017Z
+Working directory: /var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4
+Command: python3 009-excepciones.py
+
+Result:
+La opción que has cogido no es valida y me salgo
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4$ 

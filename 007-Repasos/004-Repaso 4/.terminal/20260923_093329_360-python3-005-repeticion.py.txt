@@ -1,0 +1,13 @@
+Datetime: 2026-09-23T07:33:29.360Z
+Working directory: /var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4
+Command: python3 005-repeticion.py
+
+Result:
+Opcion desconocida
+Escoge una opción: ^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4/005-repeticion.py", line 2, in <module>
+    opcion = input("Escoge una opción: ")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4$ 

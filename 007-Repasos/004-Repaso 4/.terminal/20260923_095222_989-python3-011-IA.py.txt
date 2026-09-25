@@ -1,0 +1,16 @@
+Datetime: 2026-09-23T07:52:22.989Z
+Working directory: /var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4
+Command: python3 011-IA.py
+
+Result:
+La nota media de los alumnos es: 8.5
+1.-Insertar un alumno
+2.-Listado de alumnos
+3.-Nota media de los alumnos
+Escoge una opción: ^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4/011-IA.py", line 21, in <module>
+    opcion = input("Escoge una opción: ")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4$ 

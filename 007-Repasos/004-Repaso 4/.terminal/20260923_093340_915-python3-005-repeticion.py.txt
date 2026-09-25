@@ -1,0 +1,7 @@
+Datetime: 2026-09-23T07:33:40.915Z
+Working directory: /var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4
+Command: python3 005-repeticion.py
+
+Result:
+Has cogido la opcion 3
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/007-Repasos/004-Repaso 4$ 

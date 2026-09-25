@@ -1,0 +1,53 @@
+{
+	"datos_personales":{
+  	"nombre":"Jose Vicente",
+    "apellidos":"Carratalá Sanchis",
+    "email":{
+    	"personal":"info@josevicentecarratala.com",
+      "profesional":"info@jocarsa.com"
+    }
+  },
+  "formacion":[
+  	{
+    	"centro":"IES El Cid",
+      "estudios":"BUP y COU",
+      "inicio":"1992-09",
+      "final":"1997-06"
+    },
+    {
+    	"centro":"CEIP Luis de Santangel",
+      "estudios":"EGB",
+      "inicio":"1988-09",
+      "final":"1992-06"
+    },
+  ],
+  "experiencia_laboral":[
+    {
+    	"empresa":"CEAC",
+      "posicion":"Profesor",
+      "inicio":"2025-08",
+      "final":"actualmente"
+    },
+    {
+    	"empresa":"CEAC",
+      "posicion":"Profesor",
+      "inicio":"2025-08",
+      "final":"actualmente"
+    },
+    {
+    	"empresa":"CEAC",
+      "posicion":"Profesor",
+      "inicio":"2025-08",
+      "final":"actualmente"
+    },
+    {
+    	"empresa":"CEAC",
+      "posicion":"Profesor",
+      "inicio":"2025-08",
+      "final":"actualmente"
+    }
+  ],
+  "idiomas":"",
+  "conduccion":"",
+  "hobbies":""
+}

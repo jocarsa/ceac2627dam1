@@ -1,0 +1,7 @@
+Datetime: 2026-09-23T06:43:32.418Z
+Working directory: /var/www/html/ceac2627dam1/007-Repasos/003-Repaso 3
+Command: python3 004-tipos\ de\ datos.py
+
+Result:
+62.0
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/007-Repasos/003-Repaso 3$ 

@@ -1,0 +1,14 @@
+{
+	"datos_personales":{
+  	"nombre":"Jose Vicente",
+    "apellidos":"Carratalá Sanchis",
+    "email":{
+    	
+    }
+  },
+  "formacion":"",
+  "experiencia_laboral":"",
+  "idiomas":"",
+  "conduccion":"",
+  "hobbies":""
+}

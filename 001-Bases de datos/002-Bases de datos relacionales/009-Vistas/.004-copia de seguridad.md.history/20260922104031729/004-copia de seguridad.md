@@ -1,0 +1,1 @@
+mysqldump -u root -p nombre_base_datos > backup.sql

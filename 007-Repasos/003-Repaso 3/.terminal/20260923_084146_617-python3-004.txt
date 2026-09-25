@@ -1,0 +1,7 @@
+Datetime: 2026-09-23T06:41:46.617Z
+Working directory: /var/www/html/ceac2627dam1/007-Repasos/003-Repaso 3
+Command: python3 004
+
+Result:
+python3: can't open file '/var/www/html/ceac2627dam1/007-Repasos/003-Repaso 3/004': [Errno 2] No such file or directory
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/007-Repasos/003-Repaso 3$ 
