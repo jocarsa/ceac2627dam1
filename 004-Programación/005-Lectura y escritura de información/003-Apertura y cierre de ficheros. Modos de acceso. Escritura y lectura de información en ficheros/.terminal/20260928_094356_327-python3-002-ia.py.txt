@@ -1,0 +1,32 @@
+Datetime: 2026-09-28T07:43:56.327Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/003-Apertura y cierre de ficheros. Modos de acceso. Escritura y lectura de información en ficheros
+Command: python3 002-ia.py
+
+Result:
+
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║                    ◉  JOCARSA AGENDA  ◉                     ║
+║                                                              ║
+║                  Sistema de contactos v0.1                   ║
+║                por Jose Vicente Carratala                    ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+  MENÚ PRINCIPAL
+  ──────────────────────────────────────────────────────────
+
+  [ 1 ]  ✚  Insertar un registro
+  [ 2 ]  ☰  Listado de registros
+  [ 0 ]  ✕  Salir
+
+  ──────────────────────────────────────────────────────────
+
+  ❯ Selecciona una opción: ^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/003-Apertura y cierre de ficheros. Modos de acceso. Escritura y lectura de información en ficheros/002-ia.py", line 67, in <module>
+    opcion = input(
+             ^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/005-Lectura y escri
+tura de información/003-Apertura y cierre de ficheros. Modos de acceso. Escritura y lectura de información en ficheros$ 

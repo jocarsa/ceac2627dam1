@@ -1,0 +1,13 @@
+Datetime: 2026-09-28T07:32:28.775Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/002-Ficheros de datos. Registros
+Command: python3 001-miniagenda.py
+
+Result:
+Dime un nombre: ^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/002-Ficheros de datos. Registros/001-miniagenda.py", line 2, in <module>
+    nombre = input("Dime un nombre: ")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/005-Lectura 
+y escritura de información/002-Ficheros de datos. Registros$ 

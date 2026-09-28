@@ -1,0 +1,7 @@
+Datetime: 2026-09-28T07:40:12.926Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/003-Apertura y cierre de ficheros. Modos de acceso. Escritura y lectura de información en ficheros
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/
+005-Lectura y escritura de información/003-Apertura y cierre de ficheros. Modos de acceso. Escritura y lectura de información en ficheros$ 

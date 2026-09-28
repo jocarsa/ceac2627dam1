@@ -1,0 +1,8 @@
+Datetime: 2026-09-28T08:53:39.498Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/003-Realización de consultas/004-Agrupamiento de registros
+Command: sudo mysql -u root -p
+
+Result:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/003-Realizac
+ión de consultas/004-Agrupamiento de registros$ 

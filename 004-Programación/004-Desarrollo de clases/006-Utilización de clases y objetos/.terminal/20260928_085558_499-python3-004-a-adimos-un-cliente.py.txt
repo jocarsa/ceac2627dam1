@@ -1,0 +1,8 @@
+Datetime: 2026-09-28T06:55:58.499Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/004-Desarrollo de clases/006-Utilización de clases y objetos
+Command: python3 004-añadimos\ un\ cliente.py
+
+Result:
+[<__main__.Paciente object at 0x7bde45b4eab0>, <__main__.Paciente object at 0x7bde45b9c470>]
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/004-Desarro
+llo de clases/006-Utilización de clases y objetos$ 

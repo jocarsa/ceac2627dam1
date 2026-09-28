@@ -1,0 +1,7 @@
+Datetime: 2026-09-28T06:41:39.215Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/004-Desarrollo de clases/007-Utilización de clases heredadas
+Command: python3 003-clase\ madre.py
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programa
+ción/004-Desarrollo de clases/007-Utilización de clases heredadas$ 
