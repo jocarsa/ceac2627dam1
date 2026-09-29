@@ -1,0 +1,11 @@
+SELECT
+
+productos.nombre AS 'nombre',
+productos.precio AS 'precio',
+ventas.cantidad AS 'unidades',
+ventas.cantidad * productos.precio AS 'total'
+ventas.fecha AS 'fecha'
+
+FROM ventas
+
+LEFT JOIN productos ON ventas.producto_id = productos.id;

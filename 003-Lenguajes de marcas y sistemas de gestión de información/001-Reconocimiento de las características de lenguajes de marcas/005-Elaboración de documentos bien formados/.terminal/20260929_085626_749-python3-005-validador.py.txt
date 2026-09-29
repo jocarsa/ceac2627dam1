@@ -1,0 +1,44 @@
+Datetime: 2026-09-29T06:56:26.749Z
+Working directory: /var/www/html/ceac2627dam1/003-Lenguajes de marcas y sistemas de gestión de información/001-Reconocimiento de las características de lenguajes de marcas/005-Elaboración de documentos bien formados
+Command: python3 005-validador.py
+
+Result:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/003-Lenguajes de marcas y sistemas de gestión de información/001-Reconocimiento de las características de lenguajes de marcas/005-Elaboración de documentos bien formados/005-validador.py", line 4, in <module>
+    xsd = etree.parse("003-ticket incorrecto.xsd")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3716, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 2044, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 2070, in lxml.etree._parseDocumentFromURL
+  File "src/lxml/parser.pxi", line 1961, in lxml.etree._parseDocFromFile
+  File "src/lxml/parser.pxi", line 1230, in lxml.etree._BaseParser._parseDocFromFile
+  File "src/lxml/parser.pxi", line 647, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 765, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 687, in lxml.etree._raiseParseError
+OSError: Error reading file '003-ticket incorrecto.xsd': failed to load "003-ticket incorrecto.xsd": No such file or directory
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_003-Lenguajes de marcas y sistemas de gestión de información_001-Reconocimiento de las características de lenguajes de marcas_005-Elaboración de documentos bien formados_005-validador.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/003-Lenguajes de marcas y sistemas de gestión de información/001-Reconocimiento de las características de lenguajes de marcas/005-Elaboración de documentos bien formados/005-validador.py", line 4, in <module>
+    xsd = etree.parse("003-ticket incorrecto.xsd")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3716, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 2044, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 2070, in lxml.etree._parseDocumentFromURL
+  File "src/lxml/parser.pxi", line 1961, in lxml.etree._parseDocFromFile
+  File "src/lxml/parser.pxi", line 1230, in lxml.etree._BaseParser._parseDocFromFile
+  File "src/lxml/parser.pxi", line 647, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 765, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 687, in lxml.etree._raiseParseError
+OSError: Error reading file '003-ticket incorrecto.xsd': failed to load "003-ticket incorrecto.xsd": No such file or directory
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/003-Lengu
+ajes de marcas y sistemas de gestión de información/001-Reconocimiento de las características de lenguajes de marcas/005-Elaboración de documentos bien formados$ 

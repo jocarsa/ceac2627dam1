@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jocarsa:ticket xmlns:jocarsa="https://jocarsa.com/ticket">
+  <jocarsa:fecha>2026-09-29</jocarsa:fecha>
+  <jocarsa:sala>1</jocarsa:sala>
+  <jocarsa:sesion>8:30</jocarsa:sesion>
+  <jocarsa:pelicula>Una pelicula de marcas</jocarsa:pelicula>
+</jocarsa:ticket>

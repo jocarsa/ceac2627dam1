@@ -1,0 +1,8 @@
+Datetime: 2026-09-29T06:51:53.821Z
+Working directory: /var/www/html/ceac2627dam1/003-Lenguajes de marcas y sistemas de gestión de información/001-Reconocimiento de las características de lenguajes de marcas/005-Elaboración de documentos bien formados
+Command: python3 005-validador.py
+
+Result:
+XML válido
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/003-Lengu
+ajes de marcas y sistemas de gestión de información/001-Reconocimiento de las características de lenguajes de marcas/005-Elaboración de documentos bien formados$ 
