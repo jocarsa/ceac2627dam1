@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Se transmite al navegador -->
+    <title>La web de Jose Vicente</title>
+    <meta charset="utf-8">
+    <style>
+      body{
+      	background:lightgray;
+        font-family:"Ubuntu Mono";
+      }
+      header,main,footer{
+      	background:white;
+        width:800px;
+        margin:auto;
+        padding:50px;
+      }
+      header{display:flex;justify-content:space-between;align-items:flex-start;
+      padding-bottom:10px;}
+      h1{
+      	font-size:32px;
+      }
+      h2{font-size:14px;}
+      h1{
+      	margin:0px;padding:0px;
+        font-weight:normal;
+      }
+      p{
+      	text-align:justify;
+      }
+      a{
+      	color:white;
+        text-decoration:none;
+        background:indigo;
+        padding:10px;
+        display:block;
+      }
+      img{
+        width:100%;
+      }
+      form{
+      	display:flex;
+        flex-direction:column;
+        gap:10px;
+      }
+      #blog{
+      	display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:20px;
+      }
+      nav{
+      	text-align:right;
+        display:flex;gap:2px;
+        font-size:10px;
+        text-transform:uppercase;
+      }
+      main{padding-top:10px;padding-bottom:10px;}
+    </style>
+  </head>
+  <body>
+    <!-- Se enseña al usuario humano -->
+    <header>
+      
+      <div id="corporativo">
+        <h1>Jose Vicente Carratala</h1>
+        <h2>Programador, profesor y diseñador</h2>
+      </div>
+      <nav>
+        <a href="#destacado">Destacado</a>
+        <a href="#sobremi">Sobre mi</a>
+        <a href="#blog">Blog</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      
+    </header>
+    <main>
+      <section id="destacado">
+        <h3>Destacado</h3>
+        <img src="josevicente.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+      <section id="sobremi">
+        <h3>Sobre mi</h3>
+        <p>Me dedico a:</p>
+        <ul>
+          <li>Programación</li>
+          <li>Formación</li>
+          <li>Diseño</li>
+        </ul>
+        <table border=1>
+          <thead>
+          	<tr>
+              <th>Lunes</th>
+              <th>Martes</th>
+              <th>Miércoles</th>
+              <th>Jueves</th>
+              <th>Viernes</th>
+            </tr>
+          </thead>
+          <tbody>
+          	<tr>
+              <td>Programación</td>
+              <td>Programación</td>
+              <td>Programación</td>
+              <td>Programación</td>
+              <td>Sistemas informáticos</td>
+          	</tr>
+            <tr>
+              <td>Programación</td>
+              <td>Programación</td>
+              <td>Programación</td>
+              <td>Programación</td>
+              <td>Inglés</td>
+          	</tr>
+            <tr>
+              <td>Bases de datos</td>
+              <td>Bases de datos</td>
+              <td>Bases de datos</td>
+              <td>IPE</td>
+              <td>Lenguajes de marcas</td>
+          	</tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="blog">
+        <h3>Blog</h3>
+        <article>
+          <h4>Título de la noticia</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article>
+          <h4>Título de la noticia</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article>
+          <h4>Título de la noticia</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article>
+          <h4>Título de la noticia</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article>
+          <h4>Título de la noticia</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+      </section>
+      <section id="contacto">
+        <h3>Contacto</h3>
+        <form>
+          <label>Introduce tu nombre</label>
+          <input type="text" name="nombre">
+          <label>Introduce tu correo</label>
+          <input type="email" name="correo">
+          <label>Introduce tu mensaje</label>
+          <textarea name="mensaje"></textarea>
+          <input type="submit">
+        </form>
+      </section>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>

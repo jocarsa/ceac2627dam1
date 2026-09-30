@@ -1,0 +1,7 @@
+Datetime: 2026-09-30T07:27:43.652Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/007-Interfaces gráficas
+Command: python3 003-label.py
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/005-Lectura y e
+scritura de información/007-Interfaces gráficas$ 

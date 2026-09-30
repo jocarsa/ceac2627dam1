@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala | Programador, profesor y diseñador</title>
+    <meta charset="utf-8">
+
+    <style>
+
+      *{
+        box-sizing:border-box;
+      }
+
+      body{
+        margin:0;
+        padding:40px 0;
+        background:lightgray;
+        font-family:"Ubuntu Mono", monospace;
+        color:#222;
+      }
+
+      header,
+      main,
+      footer{
+        background:white;
+        width:900px;
+        margin:auto;
+        padding:30px 40px;
+      }
+
+      /* ------------------------- */
+      /* CABECERA                  */
+      /* ------------------------- */
+
+      header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        border-bottom:1px solid #ddd;
+      }
+
+      #corporativo{
+        flex:1;
+      }
+
+      h1{
+        margin:0;
+        padding:0;
+        font-size:30px;
+        line-height:1;
+        font-weight:normal;
+      }
+
+      h2{
+        margin:8px 0 0 0;
+        font-size:13px;
+        font-weight:normal;
+        color:#777;
+      }
+
+      nav{
+        display:flex;
+        gap:5px;
+      }
+
+      nav a{
+        color:white;
+        text-decoration:none;
+        background:indigo;
+        padding:10px 12px;
+        display:block;
+        font-size:10px;
+        text-transform:uppercase;
+        font-weight:bold;
+      }
+
+      nav a:hover{
+        background:#2f0057;
+      }
+
+      /* ------------------------- */
+      /* CONTENIDO                 */
+      /* ------------------------- */
+
+      main{
+        padding-top:0;
+        padding-bottom:0;
+      }
+
+      section{
+        padding:35px 0;
+        border-bottom:1px solid #ddd;
+      }
+
+      section:last-child{
+        border-bottom:none;
+      }
+
+      h3{
+        margin:0 0 20px 0;
+        font-size:20px;
+        font-weight:normal;
+        color:indigo;
+      }
+
+      h4{
+        margin:0 0 10px 0;
+        font-size:14px;
+        line-height:1.3;
+      }
+
+      p{
+        margin:0 0 15px 0;
+        text-align:justify;
+        font-size:12px;
+        line-height:1.6;
+      }
+
+      ul{
+        margin:15px 0 25px 0;
+        padding-left:25px;
+        font-size:12px;
+        line-height:1.8;
+      }
+
+      /* ------------------------- */
+      /* DESTACADO                 */
+      /* ------------------------- */
+
+      #destacado img{
+        width:100%;
+        height:300px;
+        object-fit:cover;
+        display:block;
+        margin-bottom:20px;
+      }
+
+      /* ------------------------- */
+      /* TABLA                     */
+      /* ------------------------- */
+
+      table{
+        width:100%;
+        border-collapse:collapse;
+        border:none;
+        margin-top:20px;
+        font-size:11px;
+      }
+
+      th,
+      td{
+        border:1px solid #ddd;
+        padding:10px;
+        text-align:left;
+        vertical-align:top;
+      }
+
+      th{
+        background:indigo;
+        color:white;
+        font-weight:bold;
+      }
+
+      tbody tr:nth-child(even){
+        background:#f5f5f5;
+      }
+
+      /* ------------------------- */
+      /* BLOG                      */
+      /* ------------------------- */
+
+      #blog{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:20px;
+      }
+
+      #blog > h3{
+        grid-column:1 / -1;
+        margin-bottom:0;
+      }
+
+      article{
+        border-top:4px solid indigo;
+        background:#f5f5f5;
+        padding:18px;
+        min-height:190px;
+      }
+
+      article p{
+        margin:0;
+        font-size:11px;
+        line-height:1.5;
+      }
+
+      /* ------------------------- */
+      /* CONTACTO                  */
+      /* ------------------------- */
+
+      form{
+        display:grid;
+        grid-template-columns:180px 1fr;
+        gap:12px 20px;
+        align-items:center;
+      }
+
+      label{
+        font-size:11px;
+        font-weight:bold;
+      }
+
+      input,
+      textarea{
+        width:100%;
+        padding:10px;
+        border:1px solid #ccc;
+        font-family:"Ubuntu Mono", monospace;
+        font-size:12px;
+        background:white;
+      }
+
+      textarea{
+        min-height:100px;
+        resize:vertical;
+      }
+
+      input:focus,
+      textarea:focus{
+        outline:2px solid indigo;
+        border-color:indigo;
+      }
+
+      input[type="submit"]{
+        grid-column:2;
+        width:auto;
+        justify-self:start;
+        border:none;
+        background:indigo;
+        color:white;
+        padding:10px 25px;
+        text-transform:uppercase;
+        font-weight:bold;
+        cursor:pointer;
+      }
+
+      input[type="submit"]:hover{
+        background:#2f0057;
+      }
+
+      /* ------------------------- */
+      /* PIE                       */
+      /* ------------------------- */
+
+      footer{
+        border-top:1px solid #ddd;
+        padding-top:20px;
+        padding-bottom:20px;
+      }
+
+      footer p{
+        margin:0;
+        color:#777;
+        font-size:10px;
+        text-align:center;
+      }
+
+      /* ------------------------- */
+      /* RESPONSIVE                */
+      /* ------------------------- */
+
+      @media(max-width:950px){
+
+        body{
+          padding:0;
+        }
+
+        header,
+        main,
+        footer{
+          width:100%;
+        }
+
+        header{
+          flex-direction:column;
+          align-items:flex-start;
+          gap:20px;
+        }
+
+        nav{
+          width:100%;
+          flex-wrap:wrap;
+        }
+
+        #blog{
+          grid-template-columns:repeat(2,1fr);
+        }
+
+      }
+
+      @media(max-width:600px){
+
+        header,
+        main,
+        footer{
+          padding-left:20px;
+          padding-right:20px;
+        }
+
+        #blog{
+          grid-template-columns:1fr;
+        }
+
+        form{
+          grid-template-columns:1fr;
+        }
+
+        input[type="submit"]{
+          grid-column:1;
+        }
+
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+
+      <div id="corporativo">
+        <h1>Jose Vicente Carratala</h1>
+        <h2>Programador, profesor y diseñador</h2>
+      </div>
+
+      <nav>
+        <a href="#destacado">Destacado</a>
+        <a href="#sobremi">Sobre mi</a>
+        <a href="#blog">Blog</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section id="destacado">
+
+        <h3>Destacado</h3>
+
+        <img src="josevicente.png">
+
+        <p>
+          Soy desarrollador de software, profesor de informática y diseñador,
+          especializado en programación, desarrollo web, bases de datos e
+          inteligencia artificial. Combino la docencia con el desarrollo
+          continuo de herramientas, plataformas educativas y experimentos
+          tecnológicos.
+        </p>
+
+        <p>
+          Durante los últimos años he centrado buena parte de mi trabajo en
+          inteligencia artificial generativa, modelos de lenguaje locales,
+          sistemas RAG, automatización de contenidos educativos y desarrollo
+          de aplicaciones orientadas a la formación.
+        </p>
+
+      </section>
+
+      <section id="sobremi">
+
+        <h3>Sobre mi</h3>
+
+        <p>Trabajo principalmente en tres áreas:</p>
+
+        <ul>
+          <li>Programación y desarrollo de software</li>
+          <li>Formación y docencia en informática</li>
+          <li>Diseño, inteligencia artificial y experimentación tecnológica</li>
+        </ul>
+
+        <p>
+          Como profesor imparto asignaturas relacionadas con el desarrollo de
+          aplicaciones, programación, bases de datos, sistemas informáticos,
+          lenguajes de marcas, entornos de desarrollo, acceso a datos,
+          desarrollo de interfaces y programación multimedia.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Área</th>
+              <th>Tecnologías</th>
+              <th>Aplicación</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Programación</td>
+              <td>Python, PHP, JavaScript, C</td>
+              <td>Aplicaciones y automatización</td>
+            </tr>
+
+            <tr>
+              <td>Web</td>
+              <td>HTML, CSS, JavaScript, PHP</td>
+              <td>Aplicaciones web</td>
+            </tr>
+
+            <tr>
+              <td>Bases de datos</td>
+              <td>SQLite, MySQL, MariaDB</td>
+              <td>ERP y aplicaciones educativas</td>
+            </tr>
+
+            <tr>
+              <td>Inteligencia Artificial</td>
+              <td>LLM, Ollama, RAG, Whisper</td>
+              <td>Asistentes y generación de contenidos</td>
+            </tr>
+
+            <tr>
+              <td>Sistemas</td>
+              <td>Ubuntu, Apache, FFmpeg</td>
+              <td>Servidores e infraestructura</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </section>
+
+      <section id="blog">
+
+        <h3>Blog</h3>
+
+        <article>
+          <h4>Inteligencia artificial local</h4>
+          <p>
+            Experimentos con modelos de lenguaje ejecutados localmente mediante
+            Ollama. Pruebas con modelos Qwen, Granite, Gemma y DeepSeek,
+            buscando asistentes de IA privados y controlados desde
+            infraestructura propia.
+          </p>
+        </article>
+
+        <article>
+          <h4>RAG aplicado a formación</h4>
+          <p>
+            Desarrollo de sistemas de recuperación aumentada por generación
+            para consultar documentación, legislación y materiales docentes
+            utilizando recuperación semántica de contexto.
+          </p>
+        </article>
+
+        <article>
+          <h4>Jocarsa Formación</h4>
+          <p>
+            Desarrollo de una plataforma educativa propia con materiales,
+            quizzes, entregas, calificaciones, calendarios, comunicaciones y
+            herramientas para alumnos y profesores.
+          </p>
+        </article>
+
+        <article>
+          <h4>Desarrollo de ERP</h4>
+          <p>
+            Creación de un ERP modular basado en PHP y SQLite capaz de generar
+            entidades, relaciones, módulos, usuarios y permisos reutilizando
+            una arquitectura común.
+          </p>
+        </article>
+
+        <article>
+          <h4>Videoconferencia WebRTC</h4>
+          <p>
+            Desarrollo y experimentación con plataformas propias de
+            videoconferencia utilizando WebRTC y arquitecturas SFU,
+            incluyendo gestión y grabación de sesiones.
+          </p>
+        </article>
+
+        <article>
+          <h4>Avatares e interfaces</h4>
+          <p>
+            Experimentación con avatares 2D y 3D, seguimiento facial,
+            reconocimiento de gestos, síntesis de voz y sincronización
+            labial.
+          </p>
+        </article>
+
+      </section>
+
+      <section id="contacto">
+
+        <h3>Contacto</h3>
+
+        <p>
+          Si quieres contactar conmigo para formación, desarrollo de software,
+          inteligencia artificial o proyectos tecnológicos, puedes enviarme
+          un mensaje mediante este formulario.
+        </p>
+
+        <form>
+
+          <label>Introduce tu nombre</label>
+          <input type="text" name="nombre">
+
+          <label>Introduce tu correo</label>
+          <input type="email" name="correo">
+
+          <label>Introduce tu mensaje</label>
+          <textarea name="mensaje"></textarea>
+
+          <input type="submit" value="Enviar mensaje">
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <p>
+        Jose Vicente Carratala · JOCARSA ·
+        Programación · Formación · Diseño · Inteligencia Artificial
+      </p>
+    </footer>
+
+  </body>
+</html>

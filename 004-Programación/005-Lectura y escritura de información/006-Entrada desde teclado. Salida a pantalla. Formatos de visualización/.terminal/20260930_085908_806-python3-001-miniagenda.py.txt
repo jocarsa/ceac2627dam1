@@ -1,0 +1,7 @@
+Datetime: 2026-09-30T06:59:08.806Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/006-Entrada desde teclado. Salida a pantalla. Formatos de visualización
+Command: python3 001-miniagenda.py
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programa
+ción/005-Lectura y escritura de información/006-Entrada desde teclado. Salida a pantalla. Formatos de visualización$ 

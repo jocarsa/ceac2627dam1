@@ -1,0 +1,13 @@
+Datetime: 2026-09-30T07:00:22.523Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/006-Entrada desde teclado. Salida a pantalla. Formatos de visualización
+Command: python3 002-bucle\ infinito.py
+
+Result:
+Dime un nombre: ^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/006-Entrada desde teclado. Salida a pantalla. Formatos de visualización/002-bucle infinito.py", line 9, in <module>
+    nombre = input("Dime un nombre: ")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programa
+ción/005-Lectura y escritura de información/006-Entrada desde teclado. Salida a pantalla. Formatos de visualización$ 

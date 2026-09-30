@@ -1,0 +1,28 @@
+Datetime: 2026-09-30T07:08:39.104Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/006-Entrada desde teclado. Salida a pantalla. Formatos de visualización
+Command: python3 005-guardar\ agenda\ en\ carpeta.py
+
+Result:
+agenda v0.1
+por Jose Vicente Carratala
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/006-Entrada desde teclado. Salida a pantalla. Formatos de visualización/005-guardar agenda en carpeta.py", line 7, in <module>
+    os.mkdir("mibasededatos")
+FileExistsError: [Errno 17] File exists: 'mibasededatos'
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_004-Programación_005-Lectura y escritura de información_006-Entrada desde teclado. Salida a pantalla. Formatos de visualización_005-guardar agenda en carpeta.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/006-Entrada desde teclado. Salida a pantalla. Formatos de visualización/005-guardar agenda en carpeta.py", line 7, in <module>
+    os.mkdir("mibasededatos")
+FileExistsError: [Errno 17] File exists: 'mibasededatos'
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/005-Lectura y e
+scritura de información/006-Entrada desde teclado. Salida a pantalla. Formatos de visualización$ 

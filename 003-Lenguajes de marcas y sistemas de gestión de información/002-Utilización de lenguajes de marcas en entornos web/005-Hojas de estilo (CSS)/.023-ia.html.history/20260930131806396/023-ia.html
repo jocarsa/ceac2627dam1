@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Se transmite al navegador -->
+    <title>Jose Vicente Carratala | Programador, profesor y diseñador</title>
+    <meta charset="utf-8">
+    <style>
+      body{
+        background:lightgray;
+        font-family:"Ubuntu Mono";
+      }
+      header,main,footer{
+        background:white;
+        width:800px;
+        margin:auto;
+        padding:50px;
+      }
+      header{
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        padding-bottom:10px;
+      }
+      h1{
+        font-size:32px;
+        margin:0px;
+        padding:0px;
+        font-weight:normal;
+      }
+      h2{
+        font-size:14px;
+      }
+      p{
+        text-align:justify;
+        font-size:10px;
+      }
+      a{
+        color:white;
+        text-decoration:none;
+        background:indigo;
+        padding:10px;
+        display:block;
+        font-size:10px;
+        text-transform:uppercase;
+        font-weight:bold;
+      }
+      img{
+        width:100%;
+      }
+      form{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+        columns:2;
+        gap:20px;
+      }
+      #blog{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:20px;
+      }
+      nav{
+        text-align:right;
+        display:flex;
+        gap:5px;
+      }
+      main{
+        padding-top:10px;
+        padding-bottom:10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Se enseña al usuario humano -->
+
+    <header>
+
+      <div id="corporativo">
+        <h1>Jose Vicente Carratala</h1>
+        <h2>Programador, profesor y diseñador</h2>
+      </div>
+
+      <nav>
+        <a href="#destacado">Destacado</a>
+        <a href="#sobremi">Sobre mi</a>
+        <a href="#blog">Blog</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section id="destacado">
+
+        <h3>Destacado</h3>
+
+        <img src="josevicente.png">
+
+        <p>
+          Soy desarrollador de software, profesor de informática y diseñador,
+          especializado en programación, desarrollo web, bases de datos e
+          inteligencia artificial. Combino la docencia con el desarrollo
+          continuo de herramientas, plataformas educativas y experimentos
+          tecnológicos.
+        </p>
+
+        <p>
+          Durante los últimos años he centrado buena parte de mi trabajo en
+          inteligencia artificial generativa, modelos de lenguaje locales,
+          sistemas RAG, automatización de contenidos educativos y desarrollo
+          de aplicaciones orientadas a la formación.
+        </p>
+
+      </section>
+
+      <section id="sobremi">
+
+        <h3>Sobre mi</h3>
+
+        <p>
+          Trabajo principalmente en tres áreas:
+        </p>
+
+        <ul>
+          <li>Programación y desarrollo de software</li>
+          <li>Formación y docencia en informática</li>
+          <li>Diseño, inteligencia artificial y experimentación tecnológica</li>
+        </ul>
+
+        <p>
+          Como profesor imparto asignaturas relacionadas con el desarrollo de
+          aplicaciones, programación, bases de datos, sistemas informáticos,
+          lenguajes de marcas, entornos de desarrollo, acceso a datos,
+          desarrollo de interfaces y programación multimedia.
+        </p>
+
+        <table border="1">
+
+          <thead>
+            <tr>
+              <th>Área</th>
+              <th>Tecnologías</th>
+              <th>Aplicación</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Programación</td>
+              <td>Python, PHP, JavaScript, C</td>
+              <td>Aplicaciones y automatización</td>
+            </tr>
+
+            <tr>
+              <td>Web</td>
+              <td>HTML, CSS, JavaScript, PHP</td>
+              <td>Aplicaciones web</td>
+            </tr>
+
+            <tr>
+              <td>Bases de datos</td>
+              <td>SQLite, MySQL, MariaDB</td>
+              <td>ERP y aplicaciones educativas</td>
+            </tr>
+
+            <tr>
+              <td>Inteligencia Artificial</td>
+              <td>LLM, Ollama, RAG, Whisper</td>
+              <td>Asistentes y generación de contenidos</td>
+            </tr>
+
+            <tr>
+              <td>Sistemas</td>
+              <td>Ubuntu, Apache, FFmpeg</td>
+              <td>Servidores e infraestructura</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </section>
+
+      <section id="blog">
+
+        <h3>Blog</h3>
+
+        <article>
+
+          <h4>Inteligencia artificial local</h4>
+
+          <p>
+            Experimentos con modelos de lenguaje ejecutados localmente mediante
+            Ollama. Pruebas con modelos Qwen, Granite, Gemma, DeepSeek y otros,
+            buscando soluciones que permitan disponer de asistentes de IA
+            privados y controlados completamente desde infraestructura propia.
+          </p>
+
+        </article>
+
+        <article>
+
+          <h4>RAG aplicado a formación</h4>
+
+          <p>
+            Desarrollo de sistemas de recuperación aumentada por generación
+            para consultar documentación, legislación y materiales docentes.
+            Los documentos se fragmentan, vectorizan y almacenan para recuperar
+            automáticamente el contexto necesario antes de consultar al modelo.
+          </p>
+
+        </article>
+
+        <article>
+
+          <h4>Jocarsa Formación</h4>
+
+          <p>
+            Desarrollo de una plataforma educativa propia con materiales,
+            quizzes, entregas, calificaciones, calendarios, comunicaciones y
+            herramientas para alumnos y profesores, integrando automatizaciones
+            basadas en inteligencia artificial.
+          </p>
+
+        </article>
+
+        <article>
+
+          <h4>Desarrollo de ERP</h4>
+
+          <p>
+            Creación de un sistema ERP modular basado en PHP y SQLite capaz de
+            generar entidades, relaciones, módulos, usuarios y permisos. El
+            objetivo es poder construir rápidamente aplicaciones de gestión
+            reutilizando una arquitectura común.
+          </p>
+
+        </article>
+
+        <article>
+
+          <h4>Videoconferencia WebRTC</h4>
+
+          <p>
+            Desarrollo y experimentación con plataformas propias de
+            videoconferencia utilizando WebRTC y arquitecturas SFU, incluyendo
+            gestión de salas, presentadores, asistentes y sistemas de grabación
+            de las sesiones.
+          </p>
+
+        </article>
+
+        <article>
+
+          <h4>Avatares e interfaces experimentales</h4>
+
+          <p>
+            Experimentación con avatares 2D y 3D, seguimiento facial,
+            reconocimiento de gestos, síntesis de voz y sincronización labial,
+            combinando JavaScript, gráficos, visión artificial e inteligencia
+            artificial.
+          </p>
+
+        </article>
+
+      </section>
+
+      <section id="contacto">
+
+        <h3>Contacto</h3>
+
+        <p>
+          Si quieres contactar conmigo para formación, desarrollo de software,
+          inteligencia artificial o proyectos tecnológicos, puedes enviarme
+          un mensaje mediante este formulario.
+        </p>
+
+        <form>
+
+          <label>Introduce tu nombre</label>
+          <input type="text" name="nombre">
+
+          <label>Introduce tu correo</label>
+          <input type="email" name="correo">
+
+          <label>Introduce tu mensaje</label>
+          <textarea name="mensaje"></textarea>
+
+          <input type="submit" value="Enviar mensaje">
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <footer>
+
+      <p>
+        Jose Vicente Carratala · JOCARSA ·
+        Programación · Formación · Diseño · Inteligencia Artificial
+      </p>
+
+    </footer>
+
+  </body>
+</html>

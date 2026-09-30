@@ -1,0 +1,8 @@
+Datetime: 2026-09-30T07:10:13.274Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/006-Entrada desde teclado. Salida a pantalla. Formatos de visualización
+Command: python3 006
+
+Result:
+python3: can't open file '/var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/006-Entrada desde teclado. Salida a pantalla. Formatos de visualización/006': [Errno 2] No such file or directory
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/005-Lectura y es
+critura de información/006-Entrada desde teclado. Salida a pantalla. Formatos de visualización$ 
