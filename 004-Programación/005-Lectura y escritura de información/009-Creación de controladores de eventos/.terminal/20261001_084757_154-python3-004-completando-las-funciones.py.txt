@@ -1,0 +1,12 @@
+Datetime: 2026-10-01T06:47:57.154Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/009-Creación de controladores de eventos
+Command: python3 004-completando\ las\ funciones.py
+
+Result:
+Te voy a mostrar el marco
+Te voy a ocultar el marco
+Te voy a mostrar el marco
+Te voy a ocultar el marco
+Te voy a mostrar el marco
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/005-Lectura y e
+scritura de información/009-Creación de controladores de eventos$ 

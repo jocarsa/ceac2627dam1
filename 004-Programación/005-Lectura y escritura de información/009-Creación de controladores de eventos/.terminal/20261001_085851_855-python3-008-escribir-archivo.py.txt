@@ -1,0 +1,7 @@
+Datetime: 2026-10-01T06:58:51.855Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/009-Creación de controladores de eventos
+Command: python3 008-escribir\ archivo.py
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/005-Lectura y e
+scritura de información/009-Creación de controladores de eventos$ 

@@ -1,0 +1,8 @@
+Datetime: 2026-10-01T07:02:18.603Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/009-Creación de controladores de eventos
+Command: python3 009
+
+Result:
+python3: can't open file '/var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/009-Creación de controladores de eventos/009': [Errno 2] No such file or directory
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/005-Lectura y e
+scritura de información/009-Creación de controladores de eventos$ 

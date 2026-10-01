@@ -1,0 +1,18 @@
+Datetime: 2026-10-01T07:00:00.479Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/005-Lectura y escritura de información/009-Creación de controladores de eventos
+Command: python3 008-escribir\ archivo.py
+
+Result:
+Voy a insertar un cliente
+Voy a insertar un cliente
+Voy a insertar un cliente
+Voy a insertar un cliente
+Voy a insertar un cliente
+Voy a insertar un cliente
+Voy a insertar un cliente
+Voy a insertar un cliente
+Voy a insertar un cliente
+Voy a insertar un cliente
+Voy a insertar un cliente
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/005-Lectura y e
+scritura de información/009-Creación de controladores de eventos$ 
