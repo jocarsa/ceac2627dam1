@@ -3,6 +3,7 @@
 """
 	Si ttkbootstrap da error:
   sudo apt install --reinstall python3-pil python3-pil.imagetk
+
 """
 
 import tkinter as tk

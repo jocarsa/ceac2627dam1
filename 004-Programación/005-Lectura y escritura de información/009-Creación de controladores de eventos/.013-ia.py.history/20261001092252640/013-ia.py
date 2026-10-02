@@ -1,9 +1,5 @@
 # pip install ttkbootstrap
 # pip3 install ttkbootstrap --break-system-packages
-"""
-	Si ttkbootstrap da error:
-  sudo apt install --reinstall python3-pil python3-pil.imagetk
-"""
 
 import tkinter as tk
 import ttkbootstrap as ttk
