@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <p>Introduce el operando 1</p>
+    <input type="text" id="numero1"><br>
+    <p>Introduce el operando 2</p>
+    <input type="text" id="numero2"><br>
+    <button>Calcula</button>
+    <p>Resultado: <span id="resultado"></span></p>
+    <script>
+      // Primero cojo el botón
+      let boton = document.querySelector("button")
+      // Escucho un evento para ejecutar una funcion
+      boton.onclick = function(){
+        // Creo una variable y almaceno el contenido del input 1
+      	let numero1 = document.querySelector("#numero1").value * 1
+        // creo otra variable y almaceno el contenido del input 2
+        let numero2 = document.querySelector("#numero2").value * 1
+        let resultado = numero1 + numero2
+        let contenedor_resultado = document.querySelector("#resultado")
+        contenedor_resultado.textContent = resultado
+      }
+    </script>
+  </body>
+</html>

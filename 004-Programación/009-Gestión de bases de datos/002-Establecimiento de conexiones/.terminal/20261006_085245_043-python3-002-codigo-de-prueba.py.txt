@@ -1,0 +1,60 @@
+Datetime: 2026-10-06T06:52:45.043Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/009-Gestión de bases de datos/002-Establecimiento de conexiones
+Command: python3 002-codigo\ de\ prueba.py
+
+Result:
+Traceback (most recent call last):
+  File "/home/josevicente/.local/lib/python3.12/site-packages/mysql/connector/connection_cext.py", line 354, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Unknown database 'tiendacalzado'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/009-Gestión de bases de datos/002-Establecimiento de conexiones/002-codigo de prueba.py", line 5, in <module>
+    connection = mysql.connector.connect(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josevicente/.local/lib/python3.12/site-packages/mysql/connector/pooling.py", line 322, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josevicente/.local/lib/python3.12/site-packages/mysql/connector/connection_cext.py", line 142, in __init__
+    self.connect(**kwargs)
+  File "/home/josevicente/.local/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1604, in connect
+    self._open_connection()
+  File "/home/josevicente/.local/lib/python3.12/site-packages/mysql/connector/connection_cext.py", line 360, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1049 (42000): Unknown database 'tiendacalzado'
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_004-Programación_009-Gestión de bases de datos_002-Establecimiento de conexiones_002-codigo de prueba.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/home/josevicente/.local/lib/python3.12/site-packages/mysql/connector/connection_cext.py", line 354, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Unknown database 'tiendacalzado'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/009-Gestión de bases de datos/002-Establecimiento de conexiones/002-codigo de prueba.py", line 5, in <module>
+    connection = mysql.connector.connect(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josevicente/.local/lib/python3.12/site-packages/mysql/connector/pooling.py", line 322, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josevicente/.local/lib/python3.12/site-packages/mysql/connector/connection_cext.py", line 142, in __init__
+    self.connect(**kwargs)
+  File "/home/josevicente/.local/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1604, in connect
+    self._open_connection()
+  File "/home/josevicente/.local/lib/python3.12/site-packages/mysql/connector/connection_cext.py", line 360, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1049 (42000): Unknown database 'tiendacalzado'
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/009-Gestión de bases de dato
+s/002-Establecimiento de conexiones$ 

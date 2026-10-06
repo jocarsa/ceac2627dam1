@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <h1>Calculadora de IVA</h1>
+    <h2>v0.1 por Jose Vicente Carratala</h2>
+    <p>Introduce la base imponible</p>
+    <input type="text" id="base">
+    <p>Introduce la cantidad de IVA</p>
+    <input type="text" id="iva">
+    <button>Vamos a calcular</button>
+    <p>Base imponible: <span id="resultado_base"></span></p>
+    <p>IVA: <span id="iva"></span></p>
+    <p>Total: <span id="total"></span></p>
+    <script>
+      // Primero selecciono el boton
+      let boton = document.querySelector("button")
+      // Ahora escucho lo que le ocurre al boton + funcion
+      boton.onclick = function(){
+      	console.log("ok reconozco que has hecho click en el boton")
+        // Ahora tomo datos
+        // Creo una variable y le asigno el valor del input
+        let base = document.querySelector("#base").value * 1
+        // Creo otra variable y le asigno el valor del otro input
+        let iva = document.querySelector("#iva").value * 1
+        // Ahora hago cálculos
+        let total_iva = base*(iva/100);
+        let total = base + total_iva
+        // Ahora pinto resultados
+        document.
+      }
+    </script>
+  </body>
+</html>
+
+
+
+

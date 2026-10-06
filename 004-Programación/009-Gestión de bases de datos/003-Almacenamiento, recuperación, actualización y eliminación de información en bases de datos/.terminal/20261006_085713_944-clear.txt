@@ -1,0 +1,5 @@
+Datetime: 2026-10-06T06:57:13.944Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/009-Gestión de bases de datos/003-Almacenamiento, recuperación, actualización y eliminación de información en bases de datos
+Command: clear
+
+Result:

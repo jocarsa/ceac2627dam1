@@ -1,0 +1,8 @@
+Datetime: 2026-10-06T06:53:49.585Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/009-Gestión de bases de datos/002-Establecimiento de conexiones
+Command: python3 002-codigo\ de\ prueba.py
+
+Result:
+Todo ha ido bien
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/009-Gestión de bases de dato
+s/002-Establecimiento de conexiones$ 
