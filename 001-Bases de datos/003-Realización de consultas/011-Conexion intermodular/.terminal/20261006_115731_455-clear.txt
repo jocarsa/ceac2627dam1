@@ -1,0 +1,7 @@
+Datetime: 2026-10-06T09:57:31.455Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/003-Realización de consultas/011-Conexion intermodular
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/003-Realización de consultas
+/011-Conexion intermodular$ 

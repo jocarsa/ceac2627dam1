@@ -1,0 +1,8 @@
+Datetime: 2026-10-06T08:38:51.351Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/003-Realización de consultas/011-Conexion intermodular
+Command: sudo mysql -u root -p
+
+Result:
+Bye
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/
+003-Realización de consultas/011-Conexion intermodular$ 

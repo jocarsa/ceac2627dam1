@@ -1,0 +1,31 @@
+Datetime: 2026-10-06T07:39:21.408Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer contacto
+Command: python3 008-calendario\ en\ la\ web.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+[2026-10-06 09:38:44,689] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer contacto/008-calendario en la web.py", line 13, in inicio
+    cadena += "Hoy es el dia "+dia+" del mes<br>"
+              ~~~~~~~~~~~~~~~~^~~~
+TypeError: can only concatenate str (not "int") to str
+127.0.0.1 - - [06/Oct/2026 09:38:44] "GET / HTTP/1.1" 500 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer con
+tacto$ 

@@ -1,0 +1,7 @@
+Datetime: 2026-10-06T07:38:29.904Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer contacto
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer con
+tacto$ 

@@ -1,0 +1,8 @@
+Datetime: 2026-10-06T07:36:59.343Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer contacto
+Command: 008-calendario en la web.py
+
+Result:
+008-calendario: no se encontró la orden
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer cont
+acto$ 

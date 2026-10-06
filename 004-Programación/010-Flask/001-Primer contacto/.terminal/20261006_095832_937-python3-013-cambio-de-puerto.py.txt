@@ -1,0 +1,23 @@
+Datetime: 2026-10-06T07:58:32.937Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer contacto
+Command: python3 013-cambio\ de\ puerto.py
+
+Result:
+ * Serving Flask app '013-cambio de puerto'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5001
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 154-183-378
+ * Detected change in '/var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer contacto/013-cambio de puerto.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 154-183-378
+ * Detected change in '/var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer contacto/014-recordatorio de muchos bucles for.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 154-183-378
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer con
+tacto$ 

@@ -1,0 +1,18 @@
+Datetime: 2026-10-06T07:56:41.401Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer contacto
+Command: python3 012-ahora\ con\ IA.py
+
+Result:
+ * Serving Flask app '012-ahora con IA'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 154-183-378
+127.0.0.1 - - [06/Oct/2026 09:51:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Oct/2026 09:51:58] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [06/Oct/2026 09:51:58] "GET /favicon.ico HTTP/1.1" 404 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer con
+tacto$ 

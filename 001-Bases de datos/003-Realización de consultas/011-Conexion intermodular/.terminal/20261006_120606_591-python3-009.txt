@@ -1,0 +1,8 @@
+Datetime: 2026-10-06T10:06:06.591Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/003-Realización de consultas/011-Conexion intermodular
+Command: python3 009
+
+Result:
+python3: can't open file '/var/www/html/ceac2627dam1/001-Bases de datos/003-Realización de consultas/011-Conexion intermodular/009': [Errno 2] No such file or directory
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/003-Realización de consultas
+/011-Conexion intermodular$ 

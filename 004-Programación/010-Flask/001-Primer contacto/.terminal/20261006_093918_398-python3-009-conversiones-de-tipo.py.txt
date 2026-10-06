@@ -1,0 +1,11 @@
+Datetime: 2026-10-06T07:39:18.398Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer contacto
+Command: python3 009-conversiones\ de\ tipo.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/001-Primer cont
+acto$ 
