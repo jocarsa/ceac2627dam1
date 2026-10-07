@@ -1,0 +1,9 @@
+Datetime: 2026-10-07T07:16:49.220Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/001-Estructuras estáticas y dinámicas
+Command: python3 002-tupla.py
+
+Result:
+('manzanas', 'peras', 'platanos')
+<class 'tuple'>
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-
+Aplicación de las estructuras de almacenamiento/001-Estructuras estáticas y dinámicas$ 

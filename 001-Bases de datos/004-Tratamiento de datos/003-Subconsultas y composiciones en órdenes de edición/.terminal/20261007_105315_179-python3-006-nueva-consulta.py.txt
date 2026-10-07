@@ -1,0 +1,14 @@
+Datetime: 2026-10-07T08:53:15.179Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/004-Tratamiento de datos/003-Subconsultas y composiciones en órdenes de edición
+Command: python3 006-nueva\ consulta.py
+
+Result:
+(3, 'Laura', 'Sánchez Ruiz')
+el id del cliente es:  3
+(100, datetime.date(2026, 1, 12), 3, Decimal('89.90'))
+(106, datetime.date(2026, 2, 21), 3, Decimal('42.50'))
+(117, datetime.date(2026, 4, 30), 3, Decimal('95.00'))
+(129, datetime.date(2026, 7, 7), 3, Decimal('125.00'))
+(142, datetime.date(2026, 9, 29), 3, Decimal('64.30'))
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/004-Tr
+atamiento de datos/003-Subconsultas y composiciones en órdenes de edición$ 

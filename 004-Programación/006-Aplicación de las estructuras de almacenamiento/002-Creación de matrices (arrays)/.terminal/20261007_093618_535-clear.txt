@@ -1,0 +1,7 @@
+Datetime: 2026-10-07T07:36:18.535Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/002-Creación de matrices (arrays)
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programa
+ción/006-Aplicación de las estructuras de almacenamiento/002-Creación de matrices (arrays)$ 

@@ -1,0 +1,10 @@
+Datetime: 2026-10-07T10:46:36.261Z
+Working directory: /var/www/html/ceac2627dam1/003-Lenguajes de marcas y sistemas de gestión de información/003-Manipulación de documentos Web/006-recuperar datos
+Command: sudo mysql -u root- p
+
+Result:
+^C^Csudo: 1 intento de contraseña incorrecto
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/003-Le
+nguajes de marcas y sistemas de gestión de información/003-Manipulación de documentos Web/006-recuperar datos$ ^C
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/003-Le
+nguajes de marcas y sistemas de gestión de información/003-Manipulación de documentos Web/006-recuperar datos$ 

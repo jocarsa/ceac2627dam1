@@ -1,0 +1,10 @@
+Datetime: 2026-10-07T08:07:29.516Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/003-Matrices (arrays) multidimensionales
+Command: python3 005-acceso\ bidimensional.py
+
+Result:
+[['Jose Vicente', 'Carratala', 'info@jocarsa.com', '5432534543'], ['Juan', 'Garcia', 'juan@garcia.com', '5432534543'], ['Juan', 'Garcia', 'juan@garcia.com', '5432534543']]
+juan@garcia.com
+Juan
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación
+/006-Aplicación de las estructuras de almacenamiento/003-Matrices (arrays) multidimensionales$ 

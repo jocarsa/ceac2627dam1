@@ -1,0 +1,28 @@
+Datetime: 2026-10-07T07:23:34.671Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/001-Estructuras estáticas y dinámicas
+Command: python3 005-tupla.py
+
+Result:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/001-Estructuras estáticas y dinámicas/005-tupla.py", line 3, in <module>
+    compra.append("platanos")
+    ^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'append'
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_004-Programación_006-Aplicación de las estructuras de almacenamiento_001-Estructuras estáticas y dinámicas_005-tupla.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/001-Estructuras estáticas y dinámicas/005-tupla.py", line 3, in <module>
+    compra.append("platanos")
+    ^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'append'
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-A
+plicación de las estructuras de almacenamiento/001-Estructuras estáticas y dinámicas$ 

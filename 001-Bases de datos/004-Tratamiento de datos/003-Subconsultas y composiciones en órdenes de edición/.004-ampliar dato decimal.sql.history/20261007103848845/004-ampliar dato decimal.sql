@@ -1,0 +1,2 @@
+ALTER TABLE pedidos
+MODIFY cantidad DECIMAL(8,2);

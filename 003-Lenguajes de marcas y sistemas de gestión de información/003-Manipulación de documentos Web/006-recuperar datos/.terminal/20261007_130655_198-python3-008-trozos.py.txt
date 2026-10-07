@@ -1,0 +1,32 @@
+Datetime: 2026-10-07T11:06:55.198Z
+Working directory: /var/www/html/ceac2627dam1/003-Lenguajes de marcas y sistemas de gestión de información/003-Manipulación de documentos Web/006-recuperar datos
+Command: python3 008-trozos.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+[2026-10-07 13:06:34,006] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/ceac2627dam1/003-Lenguajes de marcas y sistemas de gestión de información/003-Manipulación de documentos Web/006-recuperar datos/008-trozos.py", line 52, in inicio
+    <td>"""+fila['nombre']+"""</td>
+            ~~~~^^^^^^^^^^
+TypeError: tuple indices must be integers or slices, not str
+127.0.0.1 - - [07/Oct/2026 13:06:34] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [07/Oct/2026 13:06:34] "GET /favicon.ico HTTP/1.1" 404 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/003-Lenguajes de marcas y sistemas de gesti
+ón de información/003-Manipulación de documentos Web/006-recuperar datos$ 

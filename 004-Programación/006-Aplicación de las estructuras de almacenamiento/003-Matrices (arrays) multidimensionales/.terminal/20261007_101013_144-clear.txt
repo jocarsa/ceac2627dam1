@@ -1,0 +1,7 @@
+Datetime: 2026-10-07T08:10:13.144Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/003-Matrices (arrays) multidimensionales
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación
+/006-Aplicación de las estructuras de almacenamiento/003-Matrices (arrays) multidimensionales$ 

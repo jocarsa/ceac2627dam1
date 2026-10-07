@@ -1,0 +1,28 @@
+Datetime: 2026-10-07T07:38:46.981Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/002-Creación de matrices (arrays)
+Command: python3 003-no\ hay\ nativo.py
+
+Result:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/002-Creación de matrices (arrays)/003-no hay nativo.py", line 3, in <module>
+    array1 = np.array([1, 2, 3, 4, 5])
+             ^^
+NameError: name 'np' is not defined
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_004-Programación_006-Aplicación de las estructuras de almacenamiento_002-Creación de matrices (arrays)_003-no hay nativo.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/002-Creación de matrices (arrays)/003-no hay nativo.py", line 3, in <module>
+    array1 = np.array([1, 2, 3, 4, 5])
+             ^^
+NameError: name 'np' is not defined
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programa
+ción/006-Aplicación de las estructuras de almacenamiento/002-Creación de matrices (arrays)$ 

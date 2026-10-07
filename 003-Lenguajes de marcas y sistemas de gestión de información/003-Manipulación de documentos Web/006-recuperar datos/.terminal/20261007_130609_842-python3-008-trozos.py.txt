@@ -1,0 +1,7 @@
+Datetime: 2026-10-07T11:06:09.842Z
+Working directory: /var/www/html/ceac2627dam1/003-Lenguajes de marcas y sistemas de gestión de información/003-Manipulación de documentos Web/006-recuperar datos
+Command: python3 008-trozos.py
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/003-Lenguajes de marcas y sistemas de gesti
+ón de información/003-Manipulación de documentos Web/006-recuperar datos$ 

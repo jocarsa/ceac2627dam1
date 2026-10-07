@@ -1,0 +1,8 @@
+Datetime: 2026-10-07T08:53:06.779Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/004-Tratamiento de datos/003-Subconsultas y composiciones en órdenes de edición
+Command: python3 006-nueva\ consulta.py
+
+Result:
+el id del cliente es:  0
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/004-Tr
+atamiento de datos/003-Subconsultas y composiciones en órdenes de edición$ 

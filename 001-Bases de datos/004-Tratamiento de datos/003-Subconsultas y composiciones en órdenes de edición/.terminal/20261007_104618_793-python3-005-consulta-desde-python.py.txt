@@ -1,0 +1,8 @@
+Datetime: 2026-10-07T08:46:18.793Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/004-Tratamiento de datos/003-Subconsultas y composiciones en órdenes de edición
+Command: python3 005-consulta\ desde\ python.py
+
+Result:
+(3, 'Laura', 'Sánchez Ruiz')
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de dat
+os/004-Tratamiento de datos/003-Subconsultas y composiciones en órdenes de edición$ 

@@ -1,0 +1,7 @@
+Datetime: 2026-10-07T08:44:12.993Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/004-Tratamiento de datos/003-Subconsultas y composiciones en órdenes de edición
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de dat
+os/004-Tratamiento de datos/003-Subconsultas y composiciones en órdenes de edición$ 

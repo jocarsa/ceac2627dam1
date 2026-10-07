@@ -1,0 +1,8 @@
+Datetime: 2026-10-07T07:49:42.211Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/003-Matrices (arrays) multidimensionales
+Command: python3 003-tridimensional.py
+
+Result:
+[[[0, 0, 0], [1, 0, 0], [0, 1, 0], [1, 1, 0]], [[0, 0, 1], [1, 0, 1], [0, 1, 1], [1, 1, 1]]]
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación
+/006-Aplicación de las estructuras de almacenamiento/003-Matrices (arrays) multidimensionales$ 

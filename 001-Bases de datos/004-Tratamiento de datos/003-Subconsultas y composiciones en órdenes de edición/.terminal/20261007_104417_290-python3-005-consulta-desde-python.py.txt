@@ -1,0 +1,22 @@
+Datetime: 2026-10-07T08:44:17.290Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/004-Tratamiento de datos/003-Subconsultas y composiciones en órdenes de edición
+Command: python3 005-consulta\ desde\ python.py
+
+Result:
+(1, 'Ana', 'García López')
+(2, 'Carlos', 'Martínez Pérez')
+(3, 'Laura', 'Sánchez Ruiz')
+(4, 'David', 'Fernández Gómez')
+(5, 'Marta', 'Navarro Torres')
+(6, 'Javier', 'Romero Díaz')
+(7, 'Elena', 'Moreno Vidal')
+(8, 'Pablo', 'Jiménez Castro')
+(9, 'Sara', 'Ortega Molina')
+(10, 'Miguel', 'Ruiz Serrano')
+(11, 'Lucía', 'Gómez Ferrer')
+(12, 'Daniel', 'Torres Ramos')
+(13, 'Cristina', 'Vega Pastor')
+(14, 'Alejandro', 'Molina Gil')
+(15, 'Paula', 'Serrano León')
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de dat
+os/004-Tratamiento de datos/003-Subconsultas y composiciones en órdenes de edición$ 

@@ -1,0 +1,10 @@
+Datetime: 2026-10-07T07:21:23.869Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/001-Estructuras estáticas y dinámicas
+Command: python3 004-pop\ con\ parametro.py
+
+Result:
+[1, 2, 3, 4, 5, 6]
+[1, 2, 3, 4, 5]
+[1, 2, 4, 5]
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-
+Aplicación de las estructuras de almacenamiento/001-Estructuras estáticas y dinámicas$ 

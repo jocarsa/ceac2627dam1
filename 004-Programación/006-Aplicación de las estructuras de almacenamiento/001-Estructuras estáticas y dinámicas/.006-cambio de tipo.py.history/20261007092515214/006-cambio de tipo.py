@@ -1,0 +1,2 @@
+lista = ("manzanas","platanos")
+

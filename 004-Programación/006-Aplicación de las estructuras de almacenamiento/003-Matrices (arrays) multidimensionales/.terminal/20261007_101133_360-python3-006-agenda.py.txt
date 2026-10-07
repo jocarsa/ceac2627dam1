@@ -1,0 +1,14 @@
+Datetime: 2026-10-07T08:11:33.360Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/003-Matrices (arrays) multidimensionales
+Command: python3 006-agenda.py
+
+Result:
+[[], ['Jose Vicente', 'Carratala', 'info@jocarsa.com'], ['Juan', 'Lopez', 'juan@lopez.com'], ['Julia', 'Gomez', 'julia@gomez.com']]
+Introduce un nuevo nombre: ^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/003-Matrices (arrays) multidimensionales/006-agenda.py", line 4, in <module>
+    nombre = input("Introduce un nuevo nombre: ")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación
+/006-Aplicación de las estructuras de almacenamiento/003-Matrices (arrays) multidimensionales$ 

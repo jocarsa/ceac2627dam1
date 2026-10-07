@@ -1,2 +1,0 @@
-# Simulacro examen
-

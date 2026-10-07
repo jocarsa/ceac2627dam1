@@ -1,0 +1,228 @@
+- Bases de datos
+    - Almacenamiento de la información
+        - Ficheros (planos, indexados, acceso directo, entre otros)
+        - Bases de datos. Conceptos, usos y tipos según el modelo de datos, la ubicación de la información
+        - Sistemas gestores de base de datos Funciones, componentes y tipos
+        - Bases de datos centralizadas y bases de datos distribuidas. Técnicas de fragmentación
+        - Legislación sobre protección de datos
+        - Big Data introducción, análisis de datos, inteligencia de negocios
+    - Bases de datos relacionales
+        - Modelo de datos
+        - Terminología del modelo relacional
+        - Tipos de datos
+        - Claves primarias
+        - Restricciones de validación
+        - Índices. Características
+        - El valor NULL
+        - Claves ajenas
+        - Vistas
+        - Usuarios. Privilegios
+        - Lenguaje de descripción de datos (DDL)
+        - Lenguaje de control de datos (DCL)
+    - Realización de consultas
+        - Proyección, selección y ordenación de registros
+        - Operadores. Operadores de comparación. Operadores lógicos
+        - Consultas de resumen
+        - Agrupamiento de registros
+        - Composiciones internas
+        - Composiciones externas
+        - Subconsultas
+        - Combinación de múltiples selecciones
+        - Optimización de consultas
+    - Tratamiento de datos
+        - Inserción, borrado y modificación de registros
+        - Integridad referencial
+        - Subconsultas y composiciones en órdenes de edición
+        - Transacciones
+        - Políticas de bloqueo. Concurrencia
+        - Simulacro examen
+        - Simulacro de examen 2
+    - Programación de bases de datos
+        - Introducción. Lenguaje de programación
+        - Variables del sistema y variables de usuario
+        - Funciones
+        - Estructuras de control de flujo
+        - Procedimientos almacenados. Funciones de usuario
+        - Eventos y disparadores
+        - Excepciones
+        - Cursores
+    - Interpretación de Diagramas EntidadRelación
+        - El modelo ER. Entidades y relaciones. Cardinalidades. Debilidad
+        - El modelo ER ampliado. Generalización y especialización. Agregación
+        - Paso del diagrama ER al modelo relacional
+        - Restricciones semánticas del modelo relacional
+        - Normalización de modelos relacionales
+    - Uso de bases de datos no relacionales
+        - Características de las bases de datos no relacionales
+        - Tipos de bases de datos no relacionales
+        - Elementos de las bases de datos no relacionales
+        - Sistemas gestores de bases de datos no relacionales
+        - Herramientas de los sistemas gestores de bases de datos no relacionales para la gestión de la información almacenada
+- Lenguajes de marcas y sistemas de gestión de información
+    - Reconocimiento de las características de lenguajes de marcas
+        - Clasificación
+        - Características y ámbitos de aplicación
+        - Estructura y sintaxis
+        - Herramientas de edición
+        - Elaboración de documentos bien formados
+        - Utilización de espacios de nombres
+        - Ejercicio práctico
+        - Curriculum
+    - Utilización de lenguajes de marcas en entornos web
+        - Estándares web. Versiones. Clasificación
+        - Estructura de un documento HTML
+        - Identificación de etiquetas y atributos de HTML
+        - Herramientas de diseño web
+        - Hojas de estilo (CSS)
+        - Validación de documentos HTML y CSS
+        - Lenguajes de marcas para la sindicación de contenidos
+    - Manipulación de documentos Web
+        - Lenguajes de script de cliente. Características y sintaxis básica. Estándares
+        - Selección y acceso a elementos
+        - Creación y modificación de elementos
+        - Eliminación de elementos
+        - Manipulación de estilos
+    - Definición de esquemas y vocabularios en lenguajes de marcas
+        - Tecnologías para la definición de documentos. Estructura y sintaxis
+        - Creación de descripciones de documentos
+        - Asociación de descripciones con documentos. Validación
+        - Herramientas de creación y validación
+    - Conversión y adaptación de documentos para el intercambio de información
+        - Tecnologías de transformación de documentos
+        - Descripción de la estructura y de la sintaxis
+        - Creación y utilización de plantillas. Herramientas y depuración
+        - Conversión entre diferentes formatos de documentos
+    - Almacenamiento de información
+        - Sistemas de almacenamiento de información. Características. Tecnologías
+        - Lenguajes de consulta y manipulación en documentos
+        - Consulta y manipulación de información
+        - Importación y exportación de bases de datos relacionales en diferentes formatos
+        - Herramientas de tratamiento y almacenamiento de información en sistemas nativos
+        - Almacenamiento y manipulación de información en sistemas nativos
+    - Sistemas de gestión empresarial
+        - Aplicaciones de gestión empresarial. Tipos. Características
+        - Instalación
+        - Administración y configuración
+        - Integración de módulos
+        - Mecanismos de acceso seguro a la información. Roles y privilegios
+        - Elaboración de informes
+        - Exportación de información
+        - Elaboración de documentación
+- Programación
+    - Identificación de los elementos de un programa informático
+        - Estructura y bloques fundamentales
+        - Variables
+        - Tipos de datos
+        - Literales
+        - Constantes
+        - Operadores y expresiones
+    - Utilización de objetos
+        - Características de los objetos
+        - Instanciación de objetos
+        - Utilización de métodos. Parámetros
+        - Utilización de propiedades
+        - Utilización de métodos estáticos
+        - Constructores
+        - Destrucción de objetos y liberación de memoria
+    - Uso de estructuras de control
+        - Estructuras de selección
+        - Estructuras de repetición
+        - Estructuras de salto
+        - Control de excepciones
+        - Aserciones
+        - Prueba, depuración y documentación de la aplicación
+        - Ejercicio
+    - Desarrollo de clases
+        - Concepto de clase
+        - Estructura y miembros de una clase. Visibilidad
+        - Creación de propiedades
+        - Creación de métodos
+        - Creación de constructores
+        - Utilización de clases y objetos
+        - Utilización de clases heredadas
+    - Lectura y escritura de información
+        - Flujos. Tipos bytes y caracteres. Clases relacionadas
+        - Ficheros de datos. Registros
+        - Apertura y cierre de ficheros. Modos de acceso. Escritura y lectura de información en ficheros
+        - Utilización de los sistemas de ficheros
+        - Creación y eliminación de ficheros y directorios
+        - Entrada desde teclado. Salida a pantalla. Formatos de visualización
+        - Interfaces gráficas
+        - Concepto de evento
+        - Creación de controladores de eventos
+    - Aplicación de las estructuras de almacenamiento
+        - Estructuras estáticas y dinámicas
+        - Creación de matrices (arrays)
+        - Matrices (arrays) multidimensionales
+        - Genericidad
+        - Cadenas de caracteres. Expresiones regulares
+        - Colecciones Listas, Conjuntos y Diccionarios
+        - Operaciones agregadas filtrado, reducción y recolección
+    - Utilización avanzada de clases
+        - Composición de clases
+        - Herencia y polimorfismo
+        - Jerarquía de clases Superclases y subclases
+        - Clases y métodos abstractos y finales
+        - Interfaces
+        - Sobreescritura de métodos
+        - Constructores y herencia
+    - Mantenimiento de la persistencia de los objetos
+        - Bases de datos orientadas a objetos
+        - Características de las bases de datos orientadas a objetos
+        - Instalación del gestor de bases de datos
+        - Creación de bases de datos
+        - Mecanismos de consulta
+        - El lenguaje de consultas sintaxis, expresiones, operadores
+        - Recuperación, modificación y borrado de información
+        - Tipos de datos objeto; atributos y métodos
+        - Tipos de datos colección
+    - Gestión de bases de datos
+        - Acceso a bases de datos. Estándares. Características
+        - Establecimiento de conexiones
+        - Almacenamiento, recuperación, actualización y eliminación de información en bases de datos
+- Proyecto intermodular
+    - Búsqueda de información
+        - Identificar empresas representativas
+        - Estructura de las empresas
+        - Caracteristicas de los departamentos
+        - Funciones de cada departamento
+        - Evaluacion del volumen de negocio
+        - Estrategia para dar respuesta a las demandas
+        - Valoracion de recursos humanos y materiales
+        - Realización de seguimiento
+        - Desarrollo sostenible
+        - Conexion intermodular
+    - Selección de un servicio o producto
+        - Identificar las necesidades
+        - Plantear posibles soluciones
+        - Información relativa a las soluciones
+        - Aspectos innovadores
+        - Estudio de viabilidad técnica
+        - Partes del proyecto
+        - Recursos materiales y humanos necesarios
+        - Realización de presupuestos económicos
+        - Documentación para el diseño
+        - Aspectos sobre la calidad del proyecto
+        - Presentación en público de las ideas más relevantes
+    - Propuesta de empresa spin off
+        - Temporalización de las secuencias de las actividades
+        - Determinacion de recursos y logistica de cada actividad
+        - Permisos y autorizaciones necesarios
+        - Actividades que implican riesgos
+        - PRL
+        - Recursos materiales y humanos de cada actividad
+        - Posibles imprevistos
+        - Documentación necesaria
+    - Relacion de unidad de empresa
+        - Procedimiento de seguimiento de las actividades
+        - Verificación de la calidad de los resultados de las actividades
+        - Identificación de posibles desviaciones en planificación
+        - Información de posibles desviaciones
+        - Solución y documentación de las desviaciones
+        - Definición y elaboración de documentación
+    - Transmision de informacion
+        - Actitud ordenada y metódica
+        - Transmisión de información horizontal y vertical
+        - Uso de medios informáticos para transmitijr información
+        - Términos técnicos en otras lenguajes estándares del sector
+

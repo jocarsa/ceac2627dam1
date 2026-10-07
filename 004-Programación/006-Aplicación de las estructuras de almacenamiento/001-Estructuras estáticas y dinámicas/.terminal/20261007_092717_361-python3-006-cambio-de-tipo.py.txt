@@ -1,0 +1,10 @@
+Datetime: 2026-10-07T07:27:17.361Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/001-Estructuras estáticas y dinámicas
+Command: python3 006-cambio\ de\ tipo.py
+
+Result:
+('manzanas', 'platanos')
+['manzanas', 'platanos']
+['manzanas', 'platanos', 'fresas']
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-A
+plicación de las estructuras de almacenamiento/001-Estructuras estáticas y dinámicas$ 

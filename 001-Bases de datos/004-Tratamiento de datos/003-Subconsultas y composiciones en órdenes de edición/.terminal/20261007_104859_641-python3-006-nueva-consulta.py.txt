@@ -1,0 +1,30 @@
+Datetime: 2026-10-07T08:48:59.641Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/004-Tratamiento de datos/003-Subconsultas y composiciones en órdenes de edición
+Command: python3 006-nueva\ consulta.py
+
+Result:
+(3, 'Laura', 'Sánchez Ruiz')
+el id del cliente es:  3
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/001-Bases de datos/004-Tratamiento de datos/003-Subconsultas y composiciones en órdenes de edición/006-nueva consulta.py", line 28, in <module>
+    cursor.execute("""
+                   ^^^
+TypeError: can only concatenate str (not "int") to str
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_001-Bases de datos_004-Tratamiento de datos_003-Subconsultas y composiciones en órdenes de edición_006-nueva consulta.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/001-Bases de datos/004-Tratamiento de datos/003-Subconsultas y composiciones en órdenes de edición/006-nueva consulta.py", line 28, in <module>
+    cursor.execute("""
+                   ^^^
+TypeError: can only concatenate str (not "int") to str
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/004-Tr
+atamiento de datos/003-Subconsultas y composiciones en órdenes de edición$ 

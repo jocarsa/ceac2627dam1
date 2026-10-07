@@ -1,0 +1,8 @@
+Datetime: 2026-10-07T08:43:29.435Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/004-Tratamiento de datos/003-Subconsultas y composiciones en órdenes de edición
+Command: sudo mysql -u root -p
+
+Result:
+Bye
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de dat
+os/004-Tratamiento de datos/003-Subconsultas y composiciones en órdenes de edición$ 

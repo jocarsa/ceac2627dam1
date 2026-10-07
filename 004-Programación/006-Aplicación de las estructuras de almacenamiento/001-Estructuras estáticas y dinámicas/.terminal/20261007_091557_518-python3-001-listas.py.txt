@@ -1,0 +1,9 @@
+Datetime: 2026-10-07T07:15:57.518Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/001-Estructuras estáticas y dinámicas
+Command: python3 001-listas.py
+
+Result:
+['manzanas', 'peras', 'platanos']
+<class 'list'>
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-
+Aplicación de las estructuras de almacenamiento/001-Estructuras estáticas y dinámicas$ 
