@@ -1,0 +1,53 @@
+Datetime: 2026-10-08T07:55:59.226Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares
+Command: python3 019-demo\ tesseract.py
+
+Result:
+ee
+ps
+
+MINISTERIO DE ASUNTOS EXTERIORES
+
+NOTA VCRBAL
+
+El Ministerio de Asuntos Exteriores Saluda atentanente a ta
+Embajada de la Repdblica Oriental del Uruguay en Madrid y tiene 1s
+honra de comunicarle que como apoyo a los objelivos fijados en o
+Acuerdo Econémico y Financiero suscritc entre 105 dos peises en el dia
+de hoy, y respetando en todo caso los compromicos adquirides en el
+marco de la OCLE, el Gobierno espafiol manifesta su voluntad de poner ¢
+disposicién del Gobierno de Uruguay eréditos por valor de 100 mllones
+de délares, de cuyo importe no se computara el crédito FAD de 13,3
+millones de délares ya aprobado for el Consejo de Ministres de Espaha
+el pasado mes de febrero, con cargo cl Fonde de Ayuda al Desarrolla,
+Dare ser utilizados en candiciores de crédito mixto pars ta
+f inanciaciér de exportaciones de bienes de equipo y servicios
+espanoles destinadus a la ejecucién de proyectcs ce desarralio de
+especial interés para el Uruguay. £1 conjunto de creditos que financie
+ada proyecto cuntard en todo caso con la carantia de 1a Republica
+
+los proyectos conocidos 2 inicialmente aprotados por la
+Administracién espaiola a lo largo de 1992 y 1993 seran
+definitivamente aprobados a lo largo de dichos afins (por un importe en
+ada uno de ellos ao superior al 15% y 35% respectivamente, de lac
+facilidades financieras concesionales totales arevistas en el pdrrato
+precedente) y de 1994,
+
+el _importe de cada operacién se podrd cestinar hast
+maximo del 15% del valor de los bienes y servicios esp
+exportados 2 1a finarciacién de gastos locales. {ste porcentase podria
+ver empliada con caracter excepcional, y de comin acuerdo, cn
+proyectos de especial inter’s para ambos paises,
+
+£1 Ministerio de Asuntos Exteriores aprovecha la oprtunidad
+fora reiterer a la Embajada de ta Repgbiica Oriental ‘de! Uruguay ¢
+testimonio de su alta corsideracién.~
+
+/ wads, 23 de Julio de 192
+
+Se egy
+ALA CMBAIABATOELA REPUBLICA ORIENTAL DEL URUGUAY .- MADR 1D
+
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Aplicac
+ión de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares$ 

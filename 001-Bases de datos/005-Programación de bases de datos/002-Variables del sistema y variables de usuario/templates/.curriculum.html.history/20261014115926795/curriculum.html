@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Curriculum</title>
+    <meta charset="utf-8">
+    <style>
+      body{background:grey;}
+      main{
+        width:210mm;
+        height:297mm;
+        background:white;
+        margin:auto;
+        display:flex;
+      }
+      #izquierda{
+      	flex:1;
+        background:indigo;
+        color:white;
+        padding:20px;
+      }
+      #izquierda img{
+      	width:100%;
+      }
+      #derecha{
+      	flex:3;
+        padding:20px;
+      }
+      p{
+      	text-align:justify;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="izquierda">
+        <img src="static/josevicente.png">
+        <h3>Redes sociales</h3>
+        <ul>
+          <li>{{facebook}}</li>
+          <li>{{linkedin}}</li>
+          <li>{{instagram}}</li>
+          <li>{{github}}</li>
+        </ul>
+      </div>
+      <div id="derecha">
+        <h1>{{nombre}} {{apellidos}}</h1>
+        <h2>{{titulo}}</h2>
+        <p>{{introduccion}}</p>
+      	<section id="experiencia">
+          <h3>Experiencia profesional</h3>
+          {% for empresa in empresas %}
+            <article>
+              <h4>{{empresa.nombre}}</h4>
+              <p>Desde {{empresa.inicio}} hasta {{empresa.final}}</p>
+              <p>{{empresa.descripcion}}</p>
+              <p>{{empresa.cargo}}</p>
+            </article>
+          {% endfor %}
+        </section>
+        <section id="formacion">
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

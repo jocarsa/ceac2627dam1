@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="static/estilo.css">
+  </head>
+  <body>
+    <header>
+      <h1>{{titulo}}</h1>
+      <h2>{{subtitulo}}</h2>
+    </header>
+    <main>
+      {% for articulo in articulos %}
+      	<article>
+          <h4>{{articulo.titulo}}</h4>
+          <time>{{articulo.fecha}}</time>
+          <p>{{articulo.contenido}}</p>
+      </article>
+      {% endfor %}
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>

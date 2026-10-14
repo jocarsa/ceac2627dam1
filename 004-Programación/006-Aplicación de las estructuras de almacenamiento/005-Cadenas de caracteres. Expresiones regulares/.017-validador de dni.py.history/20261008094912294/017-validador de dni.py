@@ -1,0 +1,18 @@
+# 8 numeros una letra 
+# La letra es el resto entero de la división entre 23 
+
+numero = 12345678
+divisor = 23
+
+division = numero/divisor
+
+print(division)
+
+resto = numero%divisor # Resto entero de la division
+
+print(resto)
+
+# Cual es la letra 17?
+letras = "TRWAGMYFPDXBNJZSQVHLCKE"
+
+print(letras[resto])

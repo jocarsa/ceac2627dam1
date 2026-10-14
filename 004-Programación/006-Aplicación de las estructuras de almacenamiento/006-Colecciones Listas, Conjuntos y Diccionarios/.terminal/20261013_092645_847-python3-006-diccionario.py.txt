@@ -1,0 +1,8 @@
+Datetime: 2026-10-13T07:26:45.847Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/006-Colecciones Listas, Conjuntos y Diccionarios
+Command: python3 006-diccionario.py
+
+Result:
+{'nombre': 'Elton', 'apellidos': 'John', 'email': 'info@eltonjohn.com'}
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Apli
+cación de las estructuras de almacenamiento/006-Colecciones Listas, Conjuntos y Diccionarios$ 

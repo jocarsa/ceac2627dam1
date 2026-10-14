@@ -1,0 +1,19 @@
+Datetime: 2026-10-08T06:56:14.473Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares
+Command: python3 008-deletreo\ y\ subo\ 5.py
+
+Result:
+J : 74  - le sumo 5:  79
+o : 111  - le sumo 5:  116
+s : 115  - le sumo 5:  120
+e : 101  - le sumo 5:  106
+  : 32  - le sumo 5:  37
+V : 86  - le sumo 5:  91
+i : 105  - le sumo 5:  110
+c : 99  - le sumo 5:  104
+e : 101  - le sumo 5:  106
+n : 110  - le sumo 5:  115
+t : 116  - le sumo 5:  121
+e : 101  - le sumo 5:  106
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de la
+s estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares$ 

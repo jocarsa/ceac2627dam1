@@ -1,0 +1,19 @@
+Datetime: 2026-10-08T06:57:41.446Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares
+Command: python3 009-vuelta.py
+
+Result:
+J : 74  - le sumo 5:  79 letra O
+o : 111  - le sumo 5:  116 letra t
+s : 115  - le sumo 5:  120 letra x
+e : 101  - le sumo 5:  106 letra j
+  : 32  - le sumo 5:  37 letra %
+V : 86  - le sumo 5:  91 letra [
+i : 105  - le sumo 5:  110 letra n
+c : 99  - le sumo 5:  104 letra h
+e : 101  - le sumo 5:  106 letra j
+n : 110  - le sumo 5:  115 letra s
+t : 116  - le sumo 5:  121 letra y
+e : 101  - le sumo 5:  106 letra j
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de la
+s estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares$ 

@@ -1,0 +1,9 @@
+Datetime: 2026-10-08T07:25:57.167Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares
+Command: python3 014-mejoramos.py
+
+Result:
+es un correo
+es un correo
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de la
+s estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares$ 

@@ -1,0 +1,7 @@
+Datetime: 2026-10-14T06:56:18.728Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/002-Plantillas
+Command: python3 blog
+
+Result:
+python3: can't open file '/var/www/html/ceac2627dam1/004-Programación/010-Flask/002-Plantillas/blog': [Errno 2] No such file or directory
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/002-Plantillas$ 

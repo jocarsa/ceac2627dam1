@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body{background:grey;}
+      header,main,footer{background:white;width:800px;margin:auto;padding:20px;}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>{{titulo}}</h1>
+      <h2>{{subtitulo}}</h2>
+    </header>
+    <main>
+      {% for articulo in articulos %}
+      	<article>
+          <h4>{{articulo.titulo}}</h4>
+          <time>{{articulo.fecha}}</time>
+          <p>{{articulo.contenido}}</p>
+      </article>
+      {% endfor %}
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>

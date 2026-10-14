@@ -1,0 +1,10 @@
+Datetime: 2026-10-13T07:19:30.901Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/006-Colecciones Listas, Conjuntos y Diccionarios
+Command: python3 003-conjuntos\ sets.py
+
+Result:
+{1, 2, 3, 4, 5}
+{1, 2, 3, 4, 5}
+{3, 4, 5, 7}
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Apli
+cación de las estructuras de almacenamiento/006-Colecciones Listas, Conjuntos y Diccionarios$ 

@@ -1,0 +1,10 @@
+Datetime: 2026-10-13T07:45:32.715Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/007-Operaciones agregadas filtrado, reducción y recolección
+Command: python3 006-ia.py
+
+Result:
+
+Gracias por utilizar Agenda JSON.
+¡Hasta pronto!
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Apli
+cación de las estructuras de almacenamiento/007-Operaciones agregadas filtrado, reducción y recolección$ 

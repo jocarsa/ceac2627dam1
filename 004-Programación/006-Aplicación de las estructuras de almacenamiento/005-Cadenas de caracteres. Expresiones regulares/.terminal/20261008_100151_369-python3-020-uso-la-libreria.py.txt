@@ -1,0 +1,10 @@
+Datetime: 2026-10-08T08:01:51.369Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares
+Command: python3 020-uso\ la\ libreria.py
+
+Result:
+Jose Vicente
+Otxj%[nhjsyj
+Jose Vicente
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Aplicac
+ión de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares$ 

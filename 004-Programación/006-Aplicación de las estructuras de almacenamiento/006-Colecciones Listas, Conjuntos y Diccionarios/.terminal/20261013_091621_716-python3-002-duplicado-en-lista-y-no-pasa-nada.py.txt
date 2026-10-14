@@ -1,0 +1,8 @@
+Datetime: 2026-10-13T07:16:21.716Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/006-Colecciones Listas, Conjuntos y Diccionarios
+Command: python3 002-duplicado\ en\ lista\ y\ no\ pasa\ nada.py
+
+Result:
+['manzanas', 'manzanas', 'peras', 'peras']
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Apli
+cación de las estructuras de almacenamiento/006-Colecciones Listas, Conjuntos y Diccionarios$ 

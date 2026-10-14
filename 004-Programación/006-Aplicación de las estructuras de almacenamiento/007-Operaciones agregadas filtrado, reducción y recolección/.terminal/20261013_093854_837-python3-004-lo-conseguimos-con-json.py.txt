@@ -1,0 +1,7 @@
+Datetime: 2026-10-13T07:38:54.837Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/007-Operaciones agregadas filtrado, reducción y recolección
+Command: python3 004-lo\ conseguimos\ \ con\ json.py
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Apli
+cación de las estructuras de almacenamiento/007-Operaciones agregadas filtrado, reducción y recolección$ 

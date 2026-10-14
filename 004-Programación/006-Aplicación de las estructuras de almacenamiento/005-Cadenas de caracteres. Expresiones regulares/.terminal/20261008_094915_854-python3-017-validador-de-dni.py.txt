@@ -1,0 +1,10 @@
+Datetime: 2026-10-08T07:49:15.854Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares
+Command: python3 017-validador\ de\ dni.py
+
+Result:
+536768.6086956522
+14
+Z
+josevicente@josevicenteportatil:/var
+/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares$ 

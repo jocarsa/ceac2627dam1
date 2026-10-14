@@ -1,0 +1,17 @@
+sudo mysql -u root -p
+
+CREATE USER 'curriculum'@'localhost' IDENTIFIED BY 'CEAC123$';
+
+GRANT USAGE ON *.* TO 'curriculum'@'localhost';
+
+ALTER USER 'curriculum'@'localhost' 
+REQUIRE NONE 
+WITH MAX_QUERIES_PER_HOUR 0 
+MAX_CONNECTIONS_PER_HOUR 0 
+MAX_UPDATES_PER_HOUR 0 
+MAX_USER_CONNECTIONS 0;
+
+GRANT ALL PRIVILEGES ON curriculum.* 
+TO 'curriculum'@'localhost';
+
+FLUSH PRIVILEGES;

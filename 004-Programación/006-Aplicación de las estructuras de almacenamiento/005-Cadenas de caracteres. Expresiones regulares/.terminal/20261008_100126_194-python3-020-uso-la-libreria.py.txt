@@ -1,0 +1,26 @@
+Datetime: 2026-10-08T08:01:26.194Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares
+Command: python3 020-uso\ la\ libreria.py
+
+Result:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares/020-uso la libreria.py", line 1, in <module>
+    from milibreriadeenciptacion import encriptar,desencriptar
+ModuleNotFoundError: No module named 'milibreriadeenciptacion'
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_004-Programación_006-Aplicación de las estructuras de almacenamiento_005-Cadenas de caracteres. Expresiones regulares_020-uso la libreria.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares/020-uso la libreria.py", line 1, in <module>
+    from milibreriadeenciptacion import encriptar,desencriptar
+ModuleNotFoundError: No module named 'milibreriadeenciptacion'
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Aplicac
+ión de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares$ 

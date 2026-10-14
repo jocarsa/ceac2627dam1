@@ -1,0 +1,6 @@
+[x,y,z,...] = Listas
+Mutables, indices numéricos, muy flexibles, lentas
+
+{x,y,z,...} = Conjuntos (Sets)
+(x,y,z,...) = Tuplas
+{c:v,c:v,c:v...} = Diccionarios

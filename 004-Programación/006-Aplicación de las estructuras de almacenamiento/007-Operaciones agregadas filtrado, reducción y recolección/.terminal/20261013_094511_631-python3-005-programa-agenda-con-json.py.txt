@@ -1,0 +1,17 @@
+Datetime: 2026-10-13T07:45:11.631Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/007-Operaciones agregadas filtrado, reducción y recolección
+Command: python3 005-programa\ agenda\ con\ json.py
+
+Result:
+[{'nombre': 'Jose Vicente', 'apellidos': 'Carata', 'email': 'info@jocarsa.com'}]
+Escoge una opcion:
+1.-Insertar un registro
+2.-Listar registros
+Tu opción: c^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/007-Operaciones agregadas filtrado, reducción y recolección/005-programa agenda con json.py", line 7, in <module>
+    opcion = input("Tu opción: ")
+             ^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Apli
+cación de las estructuras de almacenamiento/007-Operaciones agregadas filtrado, reducción y recolección$ 

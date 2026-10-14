@@ -1,0 +1,29 @@
+# Primero importo la librería de conexión y la libreria web
+import mysql.connector
+from flask import Flask, render_template
+
+# Me conecto a la base de datos, pero usando los datos que acabamos de crear
+connection = mysql.connector.connect(
+  host='localhost',
+  user='blogceac2627',
+  password='CEAC123$',
+  database='blogceac2627'
+)
+
+# creo una aplicación web
+aplicacion = Flask("__name__") 
+
+# Creo un cursor
+cursor = connection.cursor()
+
+# Ejecuto una petición a la base de datos
+cursor.execute("SELECT * FROM articulos")	
+
+# Recupero el resultado de la petición
+filas = cursor.fetchall()	
+
+# Recorro el resultado y lo pinto en pantalla
+for fila in filas:
+  print(fila)
+
+connection.close()

@@ -1,0 +1,8 @@
+Datetime: 2026-10-08T07:00:55.314Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares
+Command: python3 010-funcion\ encriptadora.py
+
+Result:
+Otxj%[nhjsyj
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de la
+s estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares$ 

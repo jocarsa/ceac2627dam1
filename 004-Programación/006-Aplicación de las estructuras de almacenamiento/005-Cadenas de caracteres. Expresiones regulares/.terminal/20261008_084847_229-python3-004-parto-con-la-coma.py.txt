@@ -1,0 +1,9 @@
+Datetime: 2026-10-08T06:48:47.229Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares
+Command: python3 004-parto\ con\ la\ coma.py
+
+Result:
+manzanas,peras,platanos,fresas,limones
+['manzanas', 'peras', 'platanos', 'fresas', 'limones']
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de la
+s estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares$ 

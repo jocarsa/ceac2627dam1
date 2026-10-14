@@ -1,0 +1,19 @@
+Datetime: 2026-10-08T06:54:46.626Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares
+Command: python3 007-deletrear\ ascii.py
+
+Result:
+J : 74
+o : 111
+s : 115
+e : 101
+  : 32
+V : 86
+i : 105
+c : 99
+e : 101
+n : 110
+t : 116
+e : 101
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de la
+s estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares$ 

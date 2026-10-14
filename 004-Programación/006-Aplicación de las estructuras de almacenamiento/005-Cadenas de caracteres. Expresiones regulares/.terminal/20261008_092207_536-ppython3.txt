@@ -1,0 +1,13 @@
+Datetime: 2026-10-08T07:22:07.536Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares
+Command: ppython3
+
+Result:
+Orden «ppython3» no encontrada. Quizá quiso decir:
+  la orden «bpython3» del paquete deb «bpython (0.24-1)»
+  la orden «ptpython3» del paquete deb «ptpython (3.0.25-1)»
+  la orden «ipython3» del paquete deb «ipython3 (8.14.0-2)»
+  la orden «python3» del paquete deb «python3 (3.12.3-0ubuntu2.1)»
+Pruebe con: sudo apt install <nombre del paquete deb>
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Aplicación de la
+s estructuras de almacenamiento/005-Cadenas de caracteres. Expresiones regulares$ 

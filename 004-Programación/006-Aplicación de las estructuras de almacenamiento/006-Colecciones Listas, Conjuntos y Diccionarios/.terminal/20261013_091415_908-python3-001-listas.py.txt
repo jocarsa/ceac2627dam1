@@ -1,0 +1,9 @@
+Datetime: 2026-10-13T07:14:15.908Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/006-Aplicación de las estructuras de almacenamiento/006-Colecciones Listas, Conjuntos y Diccionarios
+Command: python3 001-listas.py
+
+Result:
+['manzanas', 'peras', 'platanos', 'fresas']
+['manzanas', 'peras', 'platanos']
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/006-Apli
+cación de las estructuras de almacenamiento/006-Colecciones Listas, Conjuntos y Diccionarios$ 

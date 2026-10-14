@@ -1,0 +1,8 @@
+Datetime: 2026-10-14T07:22:51.400Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/002-Plantillas
+Command: sudo mysql -u root -p
+
+Result:
+Bye
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/002-Pla
+ntillas$ 
