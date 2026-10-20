@@ -1,0 +1,7 @@
+Datetime: 2026-10-20T09:57:55.235Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/008-Ejercicios/001-Web personal
+Command: sudo mysql -u root -p
+
+Result:
+Bye
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/008-Ejercicios/001-Web personal$ 

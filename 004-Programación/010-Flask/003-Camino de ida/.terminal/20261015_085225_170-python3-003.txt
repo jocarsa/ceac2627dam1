@@ -1,0 +1,8 @@
+Datetime: 2026-10-15T06:52:25.170Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/003-Camino de ida
+Command: python3 003
+
+Result:
+python3: can't open file '/var/www/html/ceac2627dam1/004-Programación/010-Flask/003-Camino de ida/003': [Errno 2] No such file or directory
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/
+003-Camino de ida$ 

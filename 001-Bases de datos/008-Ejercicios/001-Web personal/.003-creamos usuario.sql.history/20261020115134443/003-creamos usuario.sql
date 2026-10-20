@@ -1,0 +1,17 @@
+sudo mysql -u root -p
+
+CREATE USER 'miweb'@'localhost' IDENTIFIED BY 'CEAC123$';
+
+GRANT USAGE ON *.* TO 'miweb'@'localhost';
+
+ALTER USER 'miweb'@'localhost' 
+REQUIRE NONE 
+WITH MAX_QUERIES_PER_HOUR 0 
+MAX_CONNECTIONS_PER_HOUR 0 
+MAX_UPDATES_PER_HOUR 0 
+MAX_USER_CONNECTIONS 0;
+
+GRANT ALL PRIVILEGES ON miweb.* 
+TO 'miweb'@'localhost';
+
+FLUSH PRIVILEGES;

@@ -1,0 +1,25 @@
+from flask import Flask,render_template
+
+aplicacion = Flask("__name__") 
+
+@aplicacion.route("/")
+def inicio():
+  return render_template("inicio.html")
+
+@aplicacion.route("/sobremi")
+def sobremi():
+  return render_template("sobremi.html")
+
+@aplicacion.route("/proyectos")
+def proyectos():
+  return render_template("proyectos.html")
+
+@aplicacion.route("/contacto")
+def contacto():
+  return render_template("contacto.html")
+
+#...
+
+
+if __name__ == "__main__":
+  aplicacion.run()

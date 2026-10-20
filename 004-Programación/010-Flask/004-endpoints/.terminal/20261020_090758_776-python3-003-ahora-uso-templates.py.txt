@@ -1,0 +1,46 @@
+Datetime: 2026-10-20T07:07:58.776Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/004-endpoints
+Command: python3 003-ahora\ uso\ templates.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [20/Oct/2026 09:01:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:01:16] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:01:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:01:18] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:01:19] "GET /sobremi HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:01:19] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:01:21] "GET /proyectos HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:01:21] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:01:24] "GET /contacto HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:01:24] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:01:29] "GET /sobremi HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:01:29] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:01:46] "GET /proyectos HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:01:46] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:04:27] "GET /proyectos HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:04:27] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:04:35] "GET /proyectos HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:04:35] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:04:35] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 09:04:41] "GET /proyectos HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:04:41] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:04:42] "GET /proyectos HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:04:42] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:04:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 09:04:46] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:04:46] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:04:48] "GET /sobremi HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:04:48] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:04:51] "GET /proyectos HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:04:51] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:04:53] "GET /contacto HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:04:53] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:06:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:06:33] "GET /static/estilo.css HTTP/1.1" 304 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Program
+ación/010-Flask/004-endpoints$ 

@@ -1,0 +1,7 @@
+Datetime: 2026-10-20T06:40:47.139Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/004-endpoints
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-P
+rogramación/010-Flask/004-endpoints$ 

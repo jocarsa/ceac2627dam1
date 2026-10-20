@@ -1,0 +1,16 @@
+Datetime: 2026-10-20T09:57:26.324Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/008-Ejercicios/001-Web personal
+Command: python3 005-flask\ y\ mysql.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+Hola
+[]
+127.0.0.1 - - [20/Oct/2026 11:57:21] "GET /proyectos HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 11:57:21] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 11:57:21] "GET /static/estilo.css HTTP/1.1" 304 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/008-Ejercicios/001-Web personal$ 

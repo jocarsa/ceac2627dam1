@@ -1,0 +1,24 @@
+Datetime: 2026-10-20T07:26:14.933Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/004-endpoints
+Command: python3 003-ahora\ uso\ templates.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [20/Oct/2026 09:25:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:25:23] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:25:23] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 09:25:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:25:44] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:25:44] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 09:25:51] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:25:51] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:25:51] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 09:26:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:26:10] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:26:10] "GET /favicon.ico HTTP/1.1" 404 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/01
+0-Flask/004-endpoints$ 

@@ -1,0 +1,46 @@
+Datetime: 2026-10-20T07:25:21.021Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/004-endpoints
+Command: python3 003-ahora\ uso\ templates.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [20/Oct/2026 09:19:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:19:26] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:19:26] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 09:19:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:19:39] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:19:39] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 09:19:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:19:52] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:19:52] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 09:20:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:20:14] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:20:14] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 09:22:22] "GET /sobremi HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:22:22] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:22:24] "GET /proyectos HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:22:24] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:22:28] "GET /contacto HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:22:28] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:22:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:22:29] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:23:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:23:32] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:23:32] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 09:23:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:23:53] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:23:53] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 09:24:06] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Oct/2026 09:24:06] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 09:24:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:24:53] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:24:53] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Oct/2026 09:25:19] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:25:19] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 09:25:19] "GET /favicon.ico HTTP/1.1" 404 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/01
+0-Flask/004-endpoints$ 

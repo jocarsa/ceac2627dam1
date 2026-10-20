@@ -1,0 +1,63 @@
+
+[
+  {
+    "titulo": "José Vicente Carratalá desarrolla su propia inteligencia artificial personal",
+    "texto": "El docente y desarrollador valenciano José Vicente Carratalá continúa trabajando en JOCARSA Persona, un proyecto de inteligencia artificial que combina modelos de lenguaje, entrenamiento personalizado y recuperación de información para construir una identidad digital basada en sus conocimientos y experiencias.",
+    "fecha": "2026-10-16"
+  },
+  {
+    "titulo": "JOCARSA Crimson evoluciona como sistema de gestión empresarial",
+    "texto": "José Vicente Carratalá amplía su plataforma Crimson, un sistema ERP desarrollado con PHP que incorpora gestión de bases de datos, importación y exportación de información, visualización de registros y monitorización de recursos del servidor.",
+    "fecha": "2026-10-15"
+  },
+  {
+    "titulo": "Un simulador de sociedades artificiales incorpora evolución genética",
+    "texto": "José Vicente Carratalá desarrolla una simulación de individuos virtuales que incorpora reproducción sexual, herencia genética, mutaciones, envejecimiento, búsqueda de alimentos y comportamiento colectivo. El sistema incluye estadísticas y gráficas para estudiar la evolución de la población.",
+    "fecha": "2026-10-15"
+  },
+  {
+    "titulo": "JOCARSA Red incorpora funcionalidades de red social profesional",
+    "texto": "La plataforma JOCARSA Red continúa su desarrollo con funcionalidades de autenticación, conexiones entre usuarios, publicaciones, comentarios y reacciones. El proyecto utiliza PHP y SQLite y está orientado a experimentar con arquitecturas de redes sociales.",
+    "fecha": "2026-10-14"
+  },
+  {
+    "titulo": "José Vicente Carratalá desarrolla herramientas para gestionar prácticas de estudiantes",
+    "texto": "La aplicación JOCARSA Prácticas permite gestionar alumnos, empresas, asignaciones y comunicaciones. Incorpora herramientas visuales para relacionar estudiantes con empresas y funciones de análisis geográfico para facilitar la organización de las prácticas formativas.",
+    "fecha": "2026-10-14"
+  },
+  {
+    "titulo": "JOCARSA Cuaderno propone un sistema digital de evaluación académica",
+    "texto": "José Vicente Carratalá trabaja en una aplicación de cuaderno docente que permite administrar asignaturas, estudiantes, matrículas, evaluaciones y calificaciones mediante criterios ponderados. La herramienta está desarrollada con tecnologías web y una base de datos SQLite.",
+    "fecha": "2026-10-07"
+  },
+  {
+    "titulo": "JOCARSA experimenta con modelos de inteligencia artificial ejecutados localmente",
+    "texto": "El desarrollador valenciano investiga el uso de modelos de lenguaje locales mediante Ollama, incluyendo arquitecturas de generación de texto, embeddings, recuperación aumentada de información y adaptación de modelos mediante técnicas de entrenamiento eficiente.",
+    "fecha": "2026-10-05"
+  },
+  {
+    "titulo": "Una plataforma automatiza la transcripción y elaboración de apuntes educativos",
+    "texto": "José Vicente Carratalá desarrolla un sistema que utiliza Whisper y modelos de lenguaje para convertir grabaciones de clases en transcripciones, subtítulos y apuntes estructurados. El procesamiento combina aceleración mediante GPU y herramientas de automatización.",
+    "fecha": "2026-10-05"
+  },
+  {
+    "titulo": "JOCARSA desarrolla un reproductor multimedia con procesamiento visual",
+    "texto": "El proyecto JVVideo incorpora reproducción de vídeo, subtítulos, control de velocidad y filtros de imagen mediante Canvas y JavaScript. El sistema permite modificar brillo, contraste, saturación y otros parámetros visuales.",
+    "fecha": "2026-10-05"
+  },
+  {
+    "titulo": "José Vicente Carratalá investiga sistemas propios de videoconferencia educativa",
+    "texto": "El docente desarrolla soluciones de videoconferencia basadas en tecnologías WebRTC y arquitecturas SFU. Sus experimentos incluyen gestión de sesiones, grabación automática, recuperación de vídeos y optimización del rendimiento para clases online.",
+    "fecha": "2026-10-03"
+  },
+  {
+    "titulo": "JOCARSA amplía su ecosistema de aplicaciones educativas",
+    "texto": "El conjunto de herramientas JOCARSA incluye aplicaciones para horarios, asistencias, prácticas, evaluaciones, comunicación y gestión de recursos formativos. Los desarrollos comparten el objetivo de automatizar procesos habituales en centros educativos.",
+    "fecha": "2026-09-28"
+  },
+  {
+    "titulo": "José Vicente Carratalá investiga la creación de modelos de lenguaje personalizados",
+    "texto": "El proyecto de investigación personal del desarrollador incluye la preparación de corpus documentales extensos, experimentos de entrenamiento de redes neuronales y técnicas de ajuste fino para construir asistentes especializados en sus propios contenidos.",
+    "fecha": "2026-08-26"
+  }
+]

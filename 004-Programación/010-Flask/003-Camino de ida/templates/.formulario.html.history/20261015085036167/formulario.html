@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      html,body{padding:0px;margin:0px;width:100%;height:100%;display:flex;
+      align-items:center;justify-content:center;background:grey;}
+      form{background:white;width:200px;padding:20px;display:flex;
+      flex-direction:column;gap:10px;}
+    </style>
+  </head>
+  <body>
+    <form method="POST" action="/procesa">
+      <label>Introduce tu nombre</label>
+      <input type="text" name="nombre">
+      <label>Introduce tus apellidos</label>
+      <input type="text" name="apellidos">
+      <label>Introduce tu email</label>
+      <input type="text" name="email">
+      <input type="submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,457 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El blog de José Vicente</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --fondo: #0c0d16;
+      --tarjeta: #171825;
+      --borde: #292a3c;
+      --texto: #f5f5fa;
+      --secundario: #999aaa;
+      --acento: #a78bfa;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--fondo);
+      color: var(--texto);
+      font-family: 'DM Sans', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: -250px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(
+        circle,
+        rgba(139, 92, 246, 0.13),
+        transparent 70%
+      );
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    header {
+      max-width: 1200px;
+      margin: auto;
+      padding: 25px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--borde);
+    }
+
+    .logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: var(--acento);
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: var(--secundario);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color .3s;
+    }
+
+    nav a:hover {
+      color: var(--acento);
+    }
+
+    .hero {
+      max-width: 850px;
+      margin: 100px auto 85px;
+      padding: 0 25px;
+      text-align: center;
+    }
+
+    .etiqueta {
+      display: inline-block;
+      color: var(--acento);
+      border: 1px solid #453366;
+      background: #21182f;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+
+    .hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(40px, 6vw, 76px);
+      line-height: 1.12;
+      letter-spacing: -3px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(
+        120deg, #a78bfa, #67e8f9
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      color: var(--secundario);
+      font-size: 17px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contenedor {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 30px 100px;
+    }
+
+    .seccion-titulo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      gap: 20px;
+    }
+
+    .seccion-titulo h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 28px;
+      letter-spacing: -1px;
+    }
+
+    .contador {
+      color: var(--secundario);
+      font-size: 13px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 25px;
+    }
+
+    article {
+      position: relative;
+      background: var(--tarjeta);
+      border: 1px solid var(--borde);
+      border-radius: 18px;
+      padding: 28px;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+      animation: aparecer .6s ease both;
+    }
+
+    article::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(
+        90deg, #8b5cf6, #22d3ee
+      );
+      opacity: 0;
+      transition: opacity .3s;
+    }
+
+    article:hover {
+      transform: translateY(-8px);
+      border-color: #6d4da6;
+      box-shadow: 0 20px 50px rgba(0,0,0,.3);
+    }
+
+    article:hover::before {
+      opacity: 1;
+    }
+
+    .categoria {
+      display: inline-block;
+      align-self: flex-start;
+      color: var(--acento);
+      background: rgba(167,139,250,.1);
+      border-radius: 6px;
+      padding: 5px 10px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    article h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 23px;
+      line-height: 1.3;
+      letter-spacing: -.6px;
+      margin-bottom: 15px;
+    }
+
+    article p {
+      color: var(--secundario);
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      overflow-wrap: anywhere;
+    }
+
+    .articulo-pie {
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 1px solid var(--borde);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    time {
+      color: var(--secundario);
+      font-size: 12px;
+    }
+
+    .flecha {
+      display: grid;
+      place-items: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: #29223c;
+      color: var(--acento);
+      font-size: 20px;
+      transition: .3s;
+    }
+
+    article:hover .flecha {
+      background: var(--acento);
+      color: #0c0d16;
+      transform: rotate(45deg);
+    }
+
+    footer {
+      border-top: 1px solid var(--borde);
+      padding: 35px 30px;
+      text-align: center;
+      color: var(--secundario);
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: var(--texto);
+    }
+
+    .mensaje {
+      grid-column: 1 / -1;
+      color: var(--secundario);
+      text-align: center;
+      padding: 50px;
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 900px) {
+      main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 20px;
+      }
+
+      nav {
+        gap: 15px;
+      }
+
+      .hero {
+        margin: 70px auto 60px;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .contenedor {
+        padding: 0 20px 70px;
+      }
+
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      article {
+        min-height: 240px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">jocarsa<span> | blog</span></div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#articulos">Artículos</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="etiqueta">DESARROLLO · TECNOLOGÍA · IDEAS</div>
+    <h1>Ideas que se convierten en <span>código.</span></h1>
+    <p>
+      Reflexiones, proyectos y descubrimientos sobre
+      programación, inteligencia artificial y el futuro digital.
+    </p>
+  </section>
+
+  <div class="contenedor" id="articulos">
+    <div class="seccion-titulo">
+      <h2>Últimos artículos</h2>
+      <span class="contador" id="contador"></span>
+    </div>
+
+    <main>
+      <p class="mensaje">Cargando artículos...</p>
+    </main>
+  </div>
+
+  <footer>
+    © 2026 <strong>José Vicente Carratalá</strong>.
+    Hecho con HTML, CSS y JavaScript.
+  </footer>
+
+  <script>
+    fetch("blog.json")
+      .then(function(resultado) {
+        if (!resultado.ok) {
+          throw new Error("No se pudo cargar blog.json");
+        }
+        return resultado.json();
+      })
+      .then(function(datos) {
+
+        let principal = document.querySelector("main");
+        let contador = document.querySelector("#contador");
+
+        principal.innerHTML = "";
+
+        datos.sort(function(a, b) {
+          return b.fecha.localeCompare(a.fecha);
+        });
+
+        contador.textContent = datos.length + " artículos";
+
+        if (datos.length === 0) {
+          principal.innerHTML =
+            '<p class="mensaje">Todavía no hay artículos.</p>';
+          return;
+        }
+
+        datos.forEach(function(articulo, indice) {
+
+          let tarjeta = document.createElement("article");
+          tarjeta.style.animationDelay = (indice * 0.08) + "s";
+
+          let categoria = document.createElement("span");
+          categoria.className = "categoria";
+          categoria.textContent = articulo.categoria || "BLOG";
+
+          let titulo = document.createElement("h3");
+          titulo.textContent = articulo.titulo;
+
+          let texto = document.createElement("p");
+          texto.textContent = articulo.texto;
+
+          let pie = document.createElement("div");
+          pie.className = "articulo-pie";
+
+          let fecha = document.createElement("time");
+          fecha.dateTime = articulo.fecha;
+          fecha.textContent = new Date(
+            articulo.fecha + "T12:00:00"
+          ).toLocaleDateString("es-ES", {
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+          });
+
+          let flecha = document.createElement("span");
+          flecha.className = "flecha";
+          flecha.textContent = "↗";
+          flecha.setAttribute("aria-hidden", "true");
+
+          pie.append(fecha, flecha);
+          tarjeta.append(categoria, titulo, texto, pie);
+          principal.appendChild(tarjeta);
+
+        });
+      })
+      .catch(function(error) {
+        console.error(error);
+        document.querySelector("main").innerHTML =
+          '<p class="mensaje">Error al cargar los artículos.</p>';
+      });
+  </script>
+
+</body>
+</html>

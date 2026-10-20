@@ -1,0 +1,15 @@
+CREATE USER 'caminodeida'@'localhost' IDENTIFIED BY 'CEAC123$';
+
+GRANT USAGE ON *.* TO 'caminodeida'@'localhost';
+
+ALTER USER 'caminodeida'@'localhost' 
+REQUIRE NONE 
+WITH MAX_QUERIES_PER_HOUR 0 
+MAX_CONNECTIONS_PER_HOUR 0 
+MAX_UPDATES_PER_HOUR 0 
+MAX_USER_CONNECTIONS 0;
+
+GRANT ALL PRIVILEGES ON caminodeida.* 
+TO 'caminodeida'@'localhost';
+
+FLUSH PRIVILEGES;
