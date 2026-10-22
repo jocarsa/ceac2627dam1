@@ -1,0 +1,172 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Mapa de calor del ratón</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    #contenedor {
+      padding: 40px;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1000;
+      opacity: 0.65;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="contenedor">
+    <h1>Mapa de calor</h1>
+    <p>Mueve el ratón por la pantalla.</p>
+    <p>Las zonas más visitadas se pondrán rojas.</p>
+    <button onclick="reiniciar()">Reiniciar mapa</button>
+  </div>
+
+  <canvas id="mapa"></canvas>
+
+  <script>
+    // Selecciono los elementos
+    let movimientos = [];
+    let escenario = document.querySelector("#mapa");
+    let contexto = escenario.getContext("2d");
+
+    // Canvas auxiliar para acumular intensidad
+    let acumulador = document.createElement("canvas");
+    let ctxAcumulador = acumulador.getContext("2d");
+
+    // Ajusto el tamaño
+    function ajustar() {
+      escenario.width = window.innerWidth;
+      escenario.height = window.innerHeight;
+
+      acumulador.width = escenario.width;
+      acumulador.height = escenario.height;
+
+      movimientos.forEach(function(punto) {
+        pintarPunto(punto.x, punto.y);
+      });
+
+      colorear();
+    }
+
+    // Dibujo una mancha con degradado
+    function pintarPunto(x, y) {
+      let radio = 45;
+
+      let gradiente = ctxAcumulador.createRadialGradient(
+        x, y, 0,
+        x, y, radio
+      );
+
+      gradiente.addColorStop(0, "rgba(255,255,255,0.10)");
+      gradiente.addColorStop(1, "rgba(255,255,255,0)");
+
+      ctxAcumulador.fillStyle = gradiente;
+      ctxAcumulador.beginPath();
+      ctxAcumulador.arc(x, y, radio, 0, Math.PI * 2);
+      ctxAcumulador.fill();
+    }
+
+    // Convierto intensidad en colores
+    function colorear() {
+      let ancho = escenario.width;
+      let alto = escenario.height;
+
+      let imagen = ctxAcumulador.getImageData(
+        0, 0, ancho, alto
+      );
+
+      let pixeles = imagen.data;
+
+      for (let i = 0; i < pixeles.length; i += 4) {
+        let intensidad = pixeles[i + 3] / 255;
+
+        if (intensidad === 0) continue;
+
+        let rojo, verde, azul;
+
+        if (intensidad < 0.25) {
+          // Azul a cian
+          rojo = 0;
+          verde = intensidad * 4 * 255;
+          azul = 255;
+        } else if (intensidad < 0.5) {
+          // Cian a verde
+          rojo = 0;
+          verde = 255;
+          azul = 255 * (1 - (intensidad - 0.25) * 4);
+        } else if (intensidad < 0.75) {
+          // Verde a amarillo
+          rojo = 255 * (intensidad - 0.5) * 4;
+          verde = 255;
+          azul = 0;
+        } else {
+          // Amarillo a rojo
+          rojo = 255;
+          verde = 255 * (1 - (intensidad - 0.75) * 4);
+          azul = 0;
+        }
+
+        pixeles[i] = rojo;
+        pixeles[i + 1] = verde;
+        pixeles[i + 2] = azul;
+        pixeles[i + 3] = Math.min(255, intensidad * 500);
+      }
+
+      contexto.putImageData(imagen, 0, 0);
+    }
+
+    // Registro los movimientos
+    document.onmousemove = function(e) {
+      let x = e.clientX;
+      let y = e.clientY;
+
+      movimientos.push({x: x, y: y});
+
+      pintarPunto(x, y);
+      colorear();
+    };
+
+    // Reinicio
+    function reiniciar() {
+      movimientos = [];
+
+      ctxAcumulador.clearRect(
+        0, 0,
+        acumulador.width,
+        acumulador.height
+      );
+
+      contexto.clearRect(
+        0, 0,
+        escenario.width,
+        escenario.height
+      );
+    }
+
+    window.onresize = ajustar;
+
+    ajustar();
+  </script>
+
+</body>
+</html>

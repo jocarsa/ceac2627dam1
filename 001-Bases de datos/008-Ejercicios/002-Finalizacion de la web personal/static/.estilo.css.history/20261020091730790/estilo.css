@@ -1,0 +1,6 @@
+body{background:grey;font-family:sans-serif;}
+header,main,footer{background:white;padding:20px;margin:auto;width:400px;}
+nav a{color:white;background:black;padding:5px;text-decoration:none;width:80px;display:inline-block;text-align:center;}
+nav a:first-child{border-radius:20px 0px 0px 20px;}
+nav a:last-child{border-radius:0px 20px 20px 0px;}
+main img{max-width:100%;}

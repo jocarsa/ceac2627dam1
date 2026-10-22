@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div id="contenedor">
+    </div>
+    
+    <script>
+      // Selecciono los elementos
+      let movimientos = []
+      let escenario = document.querySelector("div")
+      document.onmousemove = function(e){
+      	movimientos.push({"x":e.offsetX,"y":e.offsetY})
+        console.log(movimientos)
+      }
+    </script>
+  </body>
+</html>

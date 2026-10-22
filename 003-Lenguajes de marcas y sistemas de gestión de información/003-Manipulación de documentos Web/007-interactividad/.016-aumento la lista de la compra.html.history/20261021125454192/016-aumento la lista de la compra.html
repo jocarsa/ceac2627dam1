@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div id="contenedor">
+    </div>
+    <input>
+    <script>
+      // Selecciono los elementos
+      let escenario = document.querySelector("div")
+      let entrada = document.querySelector("input")
+      let listadelacompra = []
+      // Que ocurre cuando pongo un nuevo elemento
+      entrada.onchange = function(){
+      	listadelacompra.push(entrada.value)
+        escenario.textContent = listadelacompra
+      }
+    </script>
+  </body>
+</html>

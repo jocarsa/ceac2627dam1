@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <button>Pulsame si te atreves</button>
+    <div></div>
+    <script>
+      // Ahora Javascript sabe que existe el boton:
+      let boton = document.querySelector("button")
+      // Ahora Jaavscript sabe que existe el marcador
+      let marcador = document.querySelector("div")
+      // Creo una variable puntuacion
+      let puntuacion = 0
+      // Escuchamos un evento - click al raton
+      boton.onclick = function(){
+        // Le sumo un punto a la puntuacion
+      	puntuacion++;
+        // Y pinto la puntuacion en el contenedor
+        marcador.textContent = puntuacion
+      }  
+    </script>
+  </body>
+</html>

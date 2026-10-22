@@ -1,0 +1,10 @@
+Datetime: 2026-10-21T07:48:11.648Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/008-Ejercicios/001-Web personal
+Command: python3 005-flask\ y\ mysql.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/008-Ejercicios/001-Web personal$ 

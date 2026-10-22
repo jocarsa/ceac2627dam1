@@ -1,0 +1,498 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Óptica | Tienda de gafas</title>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+    color: #20242a;
+  }
+
+  header {
+    background: white;
+    padding: 25px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+
+  .logo span {
+    color: steelblue;
+  }
+
+  .carrito-icono {
+    font-size: 14px;
+    color: #666;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+
+  .hero {
+    background: #26394c;
+    color: white;
+    padding: 55px 40px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    margin: 0 0 12px;
+  }
+
+  .hero p {
+    color: #cbd5e1;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 23px;
+    margin-bottom: 25px;
+  }
+
+  .tienda {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 30px;
+    align-items: start;
+  }
+
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .producto {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    transition: 0.2s;
+  }
+
+  .producto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px #00000010;
+  }
+
+  .imagen {
+    height: 170px;
+    background: #f1f3f5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .imagen img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+
+  .categoria {
+    font-size: 11px;
+    color: steelblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .producto h3 {
+    margin: 8px 0;
+    font-size: 18px;
+  }
+
+  .descripcion {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+
+  .precio {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .anadir {
+    width: 100%;
+    background: steelblue;
+    color: white;
+    padding: 13px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+
+  .anadir:hover {
+    background: #315d80;
+  }
+
+  .carrito {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 25px;
+    position: sticky;
+    top: 20px;
+  }
+
+  .carrito h2 {
+    margin-top: 0;
+    font-size: 21px;
+  }
+
+  .subtitulo {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  #detalle {
+    min-height: 100px;
+  }
+
+  .vacio {
+    color: #999;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+  }
+
+  .linea {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 13px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+  }
+
+  .linea strong {
+    white-space: nowrap;
+  }
+
+  .resumen {
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+    margin-top: 25px;
+  }
+
+  .fila-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #total {
+    font-size: 28px;
+    font-weight: bold;
+    color: steelblue;
+  }
+
+  .vaciar {
+    width: 100%;
+    background: #f1f3f5;
+    color: #555;
+    padding: 13px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  .vaciar:hover {
+    background: #e3e7eb;
+  }
+
+  footer {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    padding: 40px;
+  }
+
+  @media(max-width: 800px) {
+    .tienda {
+      grid-template-columns: 1fr;
+    }
+
+    .carrito {
+      position: static;
+    }
+  }
+
+  @media(max-width: 500px) {
+    .productos {
+      grid-template-columns: 1fr;
+    }
+
+    .hero {
+      padding: 35px 25px;
+    }
+
+    .hero h1 {
+      font-size: 29px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ÓPTICA<span>.</span></div>
+  <div class="carrito-icono">
+    MI CARRITO · <span id="cantidad">0</span>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>Encuentra tu estilo.</h1>
+    <p>
+      Diseños únicos para una mirada diferente.
+      Descubre nuestra colección.
+    </p>
+  </section>
+
+  <div class="tienda">
+
+    <section>
+      <h2>Nuestra colección</h2>
+
+      <div class="productos">
+
+        <article class="producto">
+          <div class="imagen">
+            <img src="https://placehold.co/400x250/f1f3f5/333?text=Gafas+1" alt="Gafas modelo 1">
+          </div>
+          <div class="categoria">Colección clásica</div>
+          <h3>Gafas modelo 1</h3>
+          <p class="descripcion">Elegancia para cada día.</p>
+          <div class="precio">15,00 €</div>
+          <button class="anadir" value="15"
+                  nombre="Gafas modelo 1">
+            + Añadir al carrito
+          </button>
+        </article>
+
+        <article class="producto">
+          <div class="imagen">
+            <img src="https://placehold.co/400x250/f1f3f5/333?text=Gafas+2" alt="Gafas modelo 2">
+          </div>
+          <div class="categoria">Colección urbana</div>
+          <h3>Gafas modelo 2</h3>
+          <p class="descripcion">Diseño moderno y versátil.</p>
+          <div class="precio">25,00 €</div>
+          <button class="anadir" value="25"
+                  nombre="Gafas modelo 2">
+            + Añadir al carrito
+          </button>
+        </article>
+
+        <article class="producto">
+          <div class="imagen">
+            <img src="https://placehold.co/400x250/f1f3f5/333?text=Gafas+3" alt="Gafas modelo 3">
+          </div>
+          <div class="categoria">Colección premium</div>
+          <h3>Gafas modelo 3</h3>
+          <p class="descripcion">Personalidad en cada detalle.</p>
+          <div class="precio">30,00 €</div>
+          <button class="anadir" value="30"
+                  nombre="Gafas modelo 3">
+            + Añadir al carrito
+          </button>
+        </article>
+
+        <article class="producto">
+          <div class="imagen">
+            <img src="https://placehold.co/400x250/f1f3f5/333?text=Gafas+4" alt="Gafas modelo 4">
+          </div>
+          <div class="categoria">Colección exclusiva</div>
+          <h3>Gafas modelo 4</h3>
+          <p class="descripcion">Un estilo que destaca.</p>
+          <div class="precio">40,00 €</div>
+          <button class="anadir" value="40"
+                  nombre="Gafas modelo 4">
+            + Añadir al carrito
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <aside class="carrito">
+      <h2>Tu carrito</h2>
+      <p class="subtitulo">
+        Resumen de tu selección
+      </p>
+
+      <div id="detalle">
+        <div class="vacio">
+          Todavía no has añadido productos.
+        </div>
+      </div>
+
+      <div class="resumen">
+        <div class="fila-total">
+          <strong>Total</strong>
+          <div id="total">0,00 €</div>
+        </div>
+
+        <button class="vaciar" id="vaciar">
+          Vaciar carrito
+        </button>
+      </div>
+    </aside>
+
+  </div>
+
+</main>
+
+<footer>
+  © 2026 ÓPTICA. · Diseñado para ver el mundo diferente.
+</footer>
+
+<script>
+
+  // Selecciono los escenarios
+  let escenario_total =
+    document.querySelector("#total");
+
+  let escenario_detalle =
+    document.querySelector("#detalle");
+
+  let escenario_cantidad =
+    document.querySelector("#cantidad");
+
+  // Selecciono los botones de compra
+  let botones =
+    document.querySelectorAll(".anadir");
+
+  // Total inicial
+  let total = 0;
+
+  // Lista de productos
+  let lista = [];
+
+  // Recorro los botones
+  botones.forEach(function(boton){
+
+    boton.onclick = function(){
+
+      // Obtengo nombre y precio
+      let nombre = boton.getAttribute("nombre");
+      let precio = boton.getAttribute("value") * 1;
+
+      // Añado el producto a la lista
+      lista.push({
+        nombre: nombre,
+        precio: precio
+      });
+
+      // Sumo su precio
+      total += precio;
+
+      // Actualizo la pantalla
+      pintarCarrito();
+
+      // Pequeño efecto visual
+      boton.textContent = "✓ Añadido";
+
+      setTimeout(function(){
+        boton.textContent = "+ Añadir al carrito";
+      }, 800);
+
+    }
+
+  });
+
+  function pintarCarrito(){
+
+    // Muestro el total
+    escenario_total.textContent =
+      total.toFixed(2).replace(".", ",") + " €";
+
+    // Muestro cantidad de productos
+    escenario_cantidad.textContent = lista.length;
+
+    // Limpio el detalle
+    escenario_detalle.innerHTML = "";
+
+    // Si no hay productos
+    if(lista.length == 0){
+      escenario_detalle.innerHTML =
+        '<div class="vacio">Todavía no has añadido productos.</div>';
+      return;
+    }
+
+    // Recorro la lista
+    lista.forEach(function(producto){
+
+      let linea = document.createElement("div");
+      linea.className = "linea";
+
+      let nombre = document.createElement("span");
+      nombre.textContent = producto.nombre;
+
+      let precio = document.createElement("strong");
+      precio.textContent =
+        producto.precio.toFixed(2).replace(".", ",") + " €";
+
+      linea.appendChild(nombre);
+      linea.appendChild(precio);
+
+      escenario_detalle.appendChild(linea);
+
+    });
+
+  }
+
+  // Botón para vaciar el carrito
+  document.querySelector("#vaciar").onclick =
+    function(){
+
+      lista = [];
+      total = 0;
+
+      pintarCarrito();
+
+    };
+
+</script>
+
+</body>
+</html>

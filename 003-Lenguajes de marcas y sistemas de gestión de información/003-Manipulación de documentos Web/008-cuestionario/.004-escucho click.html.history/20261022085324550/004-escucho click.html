@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <button valor="correcto">Respuesta 1</button>
+    <button valor="incorrecto">Respuesta 2</button>
+    <button valor="incorrecto">Respuesta 3</button>
+    <button valor="incorrecto">Respuesta 4</button>
+    <script>
+      // Selecciono todos los botones
+      let botones = document.querySelectorAll("button");
+      // Recorro cada uno de los botones
+      botones.forEach(function(boton){
+        // Escucho qué ocurre cuando el usuario hace click
+      	boton.onclick = function(){
+          // Capturo el estado del boton
+        	let estado = boton.getAttribute("valor")
+          if(estado == "correcto"){
+          	alert("correcto")
+          }else if(estado == "incorrecto"){
+          	alert("incorrecto")
+          }
+        }
+      })
+    </script>
+  </body>
+</html>

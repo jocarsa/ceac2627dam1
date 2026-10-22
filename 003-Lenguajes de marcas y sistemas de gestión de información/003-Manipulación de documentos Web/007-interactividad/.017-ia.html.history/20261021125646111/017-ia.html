@@ -1,0 +1,389 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mi lista de la compra</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #edf3ef;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    main {
+      width: 100%;
+      max-width: 460px;
+      background: white;
+      padding: 35px;
+      border-radius: 22px;
+      box-shadow: 0 15px 45px #203b2920;
+    }
+
+    h1 {
+      margin: 0;
+      color: #244b35;
+      font-size: 28px;
+    }
+
+    .subtitulo {
+      color: #829087;
+      margin-bottom: 30px;
+    }
+
+    .formulario {
+      display: flex;
+      gap: 10px;
+    }
+
+    input {
+      flex: 1;
+      min-width: 0;
+      padding: 15px;
+      border: 2px solid #e3eae5;
+      border-radius: 12px;
+      font-size: 15px;
+      outline: none;
+      transition: 0.2s;
+    }
+
+    input:focus {
+      border-color: #4a9d6a;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    #anadir {
+      background: #318657;
+      color: white;
+      border-radius: 12px;
+      padding: 0 20px;
+      font-size: 24px;
+    }
+
+    #anadir:hover {
+      background: #246a43;
+    }
+
+    .resumen {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      color: #78877c;
+    }
+
+    .barra {
+      height: 7px;
+      background: #e9f0eb;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 25px;
+    }
+
+    #progreso {
+      height: 100%;
+      width: 0%;
+      background: #43a66c;
+      border-radius: 10px;
+      transition: width 0.3s;
+    }
+
+    #contenedor {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .producto {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 15px;
+      background: #f6f9f7;
+      border: 1px solid #edf1ee;
+      border-radius: 12px;
+      animation: aparecer 0.2s ease;
+    }
+
+    .producto span {
+      flex: 1;
+      overflow-wrap: anywhere;
+      color: #34473b;
+    }
+
+    .producto.comprado {
+      background: #edf7f0;
+    }
+
+    .producto.comprado span {
+      text-decoration: line-through;
+      color: #9aaa9f;
+    }
+
+    .marcar {
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      border: 2px solid #a7b9ac;
+      background: white;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .comprado .marcar {
+      background: #43a66c;
+      border-color: #43a66c;
+    }
+
+    .eliminar {
+      background: transparent;
+      color: #b4bdb6;
+      font-size: 20px;
+      padding: 5px;
+    }
+
+    .eliminar:hover {
+      color: #d45454;
+    }
+
+    .vacio {
+      text-align: center;
+      color: #9aaa9f;
+      padding: 30px 10px;
+    }
+
+    #limpiar {
+      display: block;
+      margin: 25px auto 0;
+      background: transparent;
+      color: #8b9b90;
+      font-size: 13px;
+    }
+
+    #limpiar:hover {
+      color: #d45454;
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <h1>🛒 Mi lista de la compra</h1>
+    <p class="subtitulo">
+      Organiza tus compras fácilmente
+    </p>
+
+    <form class="formulario" id="formulario">
+      <input
+        placeholder="¿Qué necesitas comprar?"
+        autocomplete="off"
+        aria-label="Nombre del producto"
+      >
+      <button id="anadir" type="submit">+</button>
+    </form>
+
+    <div class="resumen">
+      <span id="total">0 productos</span>
+      <span id="pendientes">0 pendientes</span>
+    </div>
+
+    <div class="barra">
+      <div id="progreso"></div>
+    </div>
+
+    <div id="contenedor"></div>
+
+    <button id="limpiar">
+      Eliminar productos comprados
+    </button>
+
+  </main>
+
+  <script>
+
+    // Selecciono los elementos
+    let escenario = document.querySelector("#contenedor");
+    let entrada = document.querySelector("input");
+    let formulario = document.querySelector("#formulario");
+    let total = document.querySelector("#total");
+    let pendientes = document.querySelector("#pendientes");
+    let progreso = document.querySelector("#progreso");
+    let limpiar = document.querySelector("#limpiar");
+
+    // Creo la lista de la compra
+    let listadelacompra = JSON.parse(
+      localStorage.getItem("listadelacompra") || "[]"
+    );
+
+    // Función para guardar
+    function guardar() {
+      localStorage.setItem(
+        "listadelacompra",
+        JSON.stringify(listadelacompra)
+      );
+    }
+
+    // Función para mostrar la lista
+    function mostrar() {
+
+      // Limpio el escenario
+      escenario.textContent = "";
+
+      // Recorro todos los productos
+      listadelacompra.forEach(function(producto, indice) {
+
+        // Creo una fila
+        let fila = document.createElement("div");
+        fila.className = "producto";
+
+        if (producto.comprado) {
+          fila.classList.add("comprado");
+        }
+
+        // Creo botón para marcar
+        let marcar = document.createElement("button");
+        marcar.className = "marcar";
+        marcar.textContent = producto.comprado ? "✓" : "";
+        marcar.setAttribute("aria-label", "Marcar producto");
+
+        marcar.onclick = function() {
+          producto.comprado = !producto.comprado;
+          guardar();
+          mostrar();
+        };
+
+        // Creo el nombre
+        let nombre = document.createElement("span");
+        nombre.textContent = producto.nombre;
+
+        // Creo botón para eliminar
+        let eliminar = document.createElement("button");
+        eliminar.className = "eliminar";
+        eliminar.textContent = "×";
+        eliminar.setAttribute("aria-label", "Eliminar producto");
+
+        eliminar.onclick = function() {
+          listadelacompra.splice(indice, 1);
+          guardar();
+          mostrar();
+        };
+
+        // Añado los elementos a la fila
+        fila.appendChild(marcar);
+        fila.appendChild(nombre);
+        fila.appendChild(eliminar);
+
+        // Añado la fila al escenario
+        escenario.appendChild(fila);
+
+      });
+
+      // Calculo estadísticas
+      let comprados = listadelacompra.filter(
+        function(producto) {
+          return producto.comprado;
+        }
+      ).length;
+
+      let cantidad = listadelacompra.length;
+      let faltan = cantidad - comprados;
+
+      total.textContent = cantidad + " productos";
+      pendientes.textContent = faltan + " pendientes";
+
+      // Actualizo barra de progreso
+      let porcentaje = cantidad === 0
+        ? 0
+        : comprados / cantidad * 100;
+
+      progreso.style.width = porcentaje + "%";
+
+      // Mensaje si no hay productos
+      if (cantidad === 0) {
+        let mensaje = document.createElement("p");
+        mensaje.className = "vacio";
+        mensaje.textContent = "Tu lista está vacía 🛍️";
+        escenario.appendChild(mensaje);
+      }
+
+    }
+
+    // Qué ocurre cuando añado un producto
+    formulario.onsubmit = function(evento) {
+
+      evento.preventDefault();
+
+      let nombre = entrada.value.trim();
+
+      if (nombre === "") {
+        return;
+      }
+
+      // Añado el producto al array
+      listadelacompra.push({
+        nombre: nombre,
+        comprado: false
+      });
+
+      // Guardo y actualizo
+      guardar();
+      mostrar();
+
+      // Limpio el campo
+      entrada.value = "";
+      entrada.focus();
+
+    };
+
+    // Eliminar productos comprados
+    limpiar.onclick = function() {
+
+      listadelacompra = listadelacompra.filter(
+        function(producto) {
+          return !producto.comprado;
+        }
+      );
+
+      guardar();
+      mostrar();
+
+    };
+
+    // Muestro los productos al abrir
+    mostrar();
+
+  </script>
+
+</body>
+</html>

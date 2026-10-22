@@ -1,0 +1,35 @@
+Datetime: 2026-10-21T07:48:16.952Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/005-Repasamos camino de ida
+Command: python3 010-enviamos\ a\ mysql.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [21/Oct/2026 09:26:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Oct/2026 09:26:50] "POST /recogedatos HTTP/1.1" 200 -
+^CTraceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/010-Flask/005-Repasamos camino de ida/010-enviamos a mysql.py", line 35, in <module>
+    cursor.close()
+    ^^^^^^
+NameError: name 'cursor' is not defined
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_004-Programación_010-Flask_005-Repasamos camino de ida_010-enviamos a mysql.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/010-Flask/005-Repasamos camino de ida/010-enviamos a mysql.py", line 35, in <module>
+    cursor.close()
+    ^^^^^^
+NameError: name 'cursor' is not defined
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programa
+ción/010-Flask/005-Repasamos camino de ida$ 

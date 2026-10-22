@@ -1,0 +1,14 @@
+Datetime: 2026-10-21T08:12:49.071Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/008-Ejercicios/002-Finalizacion de la web personal
+Command: python3 005-ahora\ guardo\ en\ bases\ de\ datos.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [21/Oct/2026 10:12:28] "GET /contacto HTTP/1.1" 200 -
+127.0.0.1 - - [21/Oct/2026 10:12:28] "GET /static/estilo.css HTTP/1.1" 304 -
+127.0.0.1 - - [21/Oct/2026 10:12:38] "POST /recibedatos HTTP/1.1" 200 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/008-Ejercicios/002-Finalizacion de la web personal$ 
