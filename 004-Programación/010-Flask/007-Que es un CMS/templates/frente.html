@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/estilo.css">
+  </head>
+  <body>
+    <header>
+      <h1>Jose Vicente Carratala</h1>
+      <h2>Blog personal</h2>
+    </header>
+    <main>
+      {% for articulo in articulos %}
+      <article>
+        <h3>{{articulo.titulo}} - soy dinamico</h3>
+        <time>{{articulo.fecha}}</time>
+        <p>{{articulo.contenido}}</p>
+      </article>
+			{% endfor %}
+      
+
+    </main>
+    <footer>
+      (c) 2026 Jose Vicente Carratala
+    </footer>
+  </body>
+</html>

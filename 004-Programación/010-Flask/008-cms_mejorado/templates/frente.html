@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Blog personal{% endblock %}
+{% block layout %}
+<header class="front-header">
+  <div class="container topnav"><a class="brand" href="{{ url_for('inicio') }}"><span class="brand-mark">J</span><span>JOCARSA <small>/ BLOG</small></span></a><nav><a href="#articulos">Artículos</a><a class="btn btn-outline" href="{{ url_for('tabla') }}">Administración ↗</a></nav></div>
+  <div class="container hero"><span class="eyebrow">TECNOLOGÍA · DESARROLLO · FORMACIÓN</span><h1>Ideas, proyectos<br>y <em>tecnología.</em></h1><p>Un espacio para compartir experiencias sobre desarrollo de software, inteligencia artificial y formación.</p><a class="btn btn-primary" href="#articulos">Explorar artículos ↓</a></div>
+</header>
+<main class="container front-main" id="articulos"><div class="section-heading"><div><span class="eyebrow">PUBLICACIONES</span><h2>Últimos artículos</h2></div><span class="count">{{ articulos|length }} publicaciones</span></div>
+<div class="articles-grid">{% for articulo in articulos %}<article class="article-card"><div class="article-meta"><span class="tag">ARTÍCULO {{ '%02d'|format(loop.index) }}</span><time datetime="{{ articulo.fecha }}">{{ articulo.fecha.strftime('%d/%m/%Y') if articulo.fecha else '' }}</time></div><h3>{{ articulo.titulo }}</h3><p>{{ articulo.contenido }}</p><div class="article-footer"><span>JOCARSA</span><span aria-hidden="true">↗</span></div></article>{% else %}<div class="empty">Todavía no hay artículos publicados.</div>{% endfor %}</div></main>
+<footer class="front-footer"><div class="container footer-inner"><span>© 2026 JOCARSA · Blog personal</span><a href="{{ url_for('tabla') }}">Panel de administración ↗</a></div></footer>
+{% endblock %}

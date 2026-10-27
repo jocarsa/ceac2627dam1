@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block bodyclass %}admin{% endblock %}
+{% block layout %}
+<div class="admin-shell"><aside class="sidebar"><a class="brand" href="{{ url_for('tabla') }}"><span class="brand-mark">J</span><span>JOCARSA <small>/ CMS</small></span></a><div class="sidebar-label">CONTENIDO</div><nav class="side-nav"><a class="{% if request.endpoint == 'tabla' %}active{% endif %}" href="{{ url_for('tabla') }}">▦ &nbsp; Artículos</a><a class="{% if request.endpoint == 'formulario' %}active{% endif %}" href="{{ url_for('formulario') }}">＋ &nbsp; Nuevo artículo</a></nav><div class="sidebar-bottom"><a href="{{ url_for('inicio') }}">↗ &nbsp; Ver blog público</a><div class="sidebar-footnote">Gestor de contenidos<br>JOCARSA CMS · 2026</div></div></aside>
+<div class="admin-main"><div class="admin-top"><div class="breadcrumb">JOCARSA <span>/</span> Administración <span>/</span> {% block crumb %}Artículos{% endblock %}</div><a class="btn btn-outline" href="{{ url_for('inicio') }}">↗ Ver sitio web</a></div><main class="admin-content">{% with mensajes = get_flashed_messages(with_categories=true) %}{% for categoria, mensaje in mensajes %}<div class="alert {{ categoria }}">{{ mensaje }}</div>{% endfor %}{% endwith %}{% block content %}{% endblock %}</main></div></div>
+{% endblock %}

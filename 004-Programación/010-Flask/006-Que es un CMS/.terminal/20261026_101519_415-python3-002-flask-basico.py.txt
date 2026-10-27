@@ -1,0 +1,30 @@
+Datetime: 2026-10-26T09:15:19.415Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/006-Que es un CMS
+Command: python3 002-flask\ basico.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [26/Oct/2026 10:06:41] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 10:06:41] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 10:06:41] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Oct/2026 10:06:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 10:06:42] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 10:06:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Oct/2026 10:06:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 10:06:42] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 10:06:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Oct/2026 10:06:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 10:06:42] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 10:06:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Oct/2026 10:07:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 10:07:03] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 10:07:03] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Oct/2026 10:07:09] "GET /admin HTTP/1.1" 404 -
+127.0.0.1 - - [26/Oct/2026 10:07:10] "GET /tabla HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 10:07:10] "GET /static/estilo.css HTTP/1.1" 304 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/006
+-Que es un CMS$ 

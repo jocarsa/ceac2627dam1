@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/estilo.css">
+  </head>
+  <body>
+    <header>
+      <h1>Jose Vicente Carratala</h1>
+      <h2>Blog personal</h2>
+    </header>
+    <main>
+      {% for articulo in articulos %}
+      <article>
+        <h3>Desarrollo de aplicaciones empresariales a medida</h3>
+        <time>2026-10-26</time>
+        <p>En JOCARSA desarrollamos soluciones de software personalizadas para empresas, utilizando tecnologías como PHP, Python, JavaScript y bases de datos SQL.</p>
+      </article>
+			{% endfor %}
+      
+
+    </main>
+    <footer>
+      (c) 2026 Jose Vicente Carratala
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Admin panel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/estilo.css">
+  </head>
+  <body id="admin">
+    <div id="izquierda">
+      <a href="/formulario">Nuevo articulo</a>
+      <a href="/tabla">Listado de articulos</a>
+    </div>
+    <div id="derecha">
+      
+    <table>
+      <thead>
+        <tr>
+          <th>Titulo</th>
+          <th>Fecha</th>
+          <th>Contenido</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        {% for articulo in articulos %}
+        <tr>
+          <td>Desarrollo de aplicaciones empresariales a medida</td>
+          <td>2026-10-26</td>
+          <td>En JOCARSA desarrollamos soluciones de software personalizadas para empresas, utilizando tecnologías como PHP, Python, JavaScript y bases de datos SQL.</td>
+        </tr>
+        {% endfor %}
+        
+      </tbody>
+    </table>
+
+    </div>
+  </body>
+</html>

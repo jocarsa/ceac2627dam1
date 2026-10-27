@@ -1,0 +1,42 @@
+Datetime: 2026-10-26T08:05:10.307Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/006-Que es un CMS
+Command: python3 002-flask\ basico.py
+
+Result:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/010-Flask/006-Que es un CMS/002-flask basico.py", line 13, in <module>
+    @aplicacion.route("/formulario")
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/sansio/scaffold.py", line 366, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/usr/lib/python3/dist-packages/flask/sansio/scaffold.py", line 46, in wrapper_func
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/sansio/app.py", line 661, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: tabla
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_004-Programación_010-Flask_006-Que es un CMS_002-flask basico.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/010-Flask/006-Que es un CMS/002-flask basico.py", line 13, in <module>
+    @aplicacion.route("/formulario")
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/sansio/scaffold.py", line 366, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/usr/lib/python3/dist-packages/flask/sansio/scaffold.py", line 46, in wrapper_func
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/sansio/app.py", line 661, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: tabla
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programació
+n/010-Flask/006-Que es un CMS$ 

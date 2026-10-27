@@ -1,0 +1,16 @@
+Datetime: 2026-10-26T08:46:27.202Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/006-Que es un CMS
+Command: python3 002-flask\ basico.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [26/Oct/2026 09:45:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 09:45:33] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 09:45:36] "GET /tabla HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 09:45:36] "GET /static/estilo.css HTTP/1.1" 304 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/006
+-Que es un CMS$ 

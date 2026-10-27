@@ -1,0 +1,116 @@
+body{
+	background:lightgray;
+}
+header,main,footer{
+	width:800px;
+  background:white;
+  padding:50px;
+  margin:auto;
+}
+#admin #derecha table{
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+  font-size:14px;
+  line-height:1.6;
+}
+#admin #derecha thead{
+  background:#f8faff;
+}
+#admin #derecha th{
+  padding:19px 22px;
+  text-align:left;
+  color:#64748b;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  border-bottom:1px solid var(--admin-border);
+}
+#admin #derecha td{
+  padding:19px 22px;
+  border-bottom:1px solid #edf0f6;
+  vertical-align:top;
+  color:#59677d;
+}
+#admin #derecha td:first-child{
+  color:#202d47;
+  font-weight:700;
+  min-width:230px;
+}
+#admin #derecha td:nth-child(2){
+  white-space:nowrap;
+  color:#77859a;
+  font-variant-numeric:tabular-nums;
+}
+#admin #derecha tbody tr:hover{background:#f7f9ff;}
+#admin #derecha tbody tr:last-child td{border-bottom:0;}
+#admin #derecha input,
+#admin #derecha select,
+#admin #derecha textarea{
+  max-width:100%;
+  padding:12px 14px;
+  border:1px solid #dbe2ef;
+  border-radius:9px;
+  background:#fff;
+  color:#24314a;
+  font:inherit;
+  outline:none;
+}
+#admin #derecha input:focus,
+#admin #derecha select:focus,
+#admin #derecha textarea:focus{
+  border-color:#5368e8;
+  box-shadow:0 0 0 3px rgba(83,104,232,.12);
+}
+#admin #derecha button,
+#admin #derecha input[type="submit"]{
+  padding:12px 19px;
+  border:0;
+  border-radius:9px;
+  background:#5368e8;
+  color:white;
+  font:inherit;
+  font-weight:700;
+  cursor:pointer;
+}
+#admin #derecha button:hover,
+#admin #derecha input[type="submit"]:hover{background:#4054d1;}
+@media(max-width:760px){
+  body#admin{flex-direction:column;}
+  #admin #izquierda{
+    position:static;
+    flex:auto;
+    width:100%;
+    height:auto;
+    padding:15px;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  #admin #izquierda::before{
+    width:100%;
+    margin:0;
+    padding:8px 5px 12px;
+  }
+  #admin #izquierda a{padding:10px 12px;}
+  #admin #derecha{padding:25px 15px;}
+  #admin #derecha th,#admin #derecha td{padding:14px;}
+}
+
+/* Refuerzo del layout administrativo; no afecta al frontend */
+html:has(body#admin){height:100%;}
+body#admin{display:flex!important;flex-direction:row;align-items:stretch;min-height:100vh;height:auto;margin:0;padding:0;background:#f1f4fa;font-family:Arial,sans-serif;}
+body#admin > #izquierda{display:flex!important;flex-direction:column;flex:0 0 260px;width:260px;min-height:100vh;box-sizing:border-box;background:#17243b;color:#fff;padding:30px 16px;}
+body#admin > #derecha{display:block!important;flex:1 1 0;min-width:0;max-width:none;width:auto;min-height:100vh;background:#f1f4fa;padding:38px;overflow-x:auto;}
+body#admin > #izquierda > a{display:block;color:#dce6f7;text-decoration:none;padding:14px 18px;margin:4px 0;border-radius:10px;font-size:14px;font-weight:600;}
+body#admin > #izquierda > a:hover{background:#304564;color:white;}
+body#admin > #derecha > table{width:100%;border-collapse:collapse;background:white;border-radius:14px;overflow:hidden;box-shadow:0 10px 35px rgba(22,39,69,.07);}
+@media(max-width:760px){body#admin{flex-direction:column;}body#admin > #izquierda{width:100%;min-height:auto;flex:auto;flex-direction:row;flex-wrap:wrap;padding:16px;}body#admin > #derecha{padding:16px;min-height:0;}}
+
+
+form{
+	display:flex;
+  flex-direction:column;
+  gap:20px;
+}

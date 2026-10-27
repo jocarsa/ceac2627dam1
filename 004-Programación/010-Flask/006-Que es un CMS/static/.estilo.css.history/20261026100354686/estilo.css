@@ -1,0 +1,123 @@
+  align-items:center;
+  flex-wrap:wrap;
+  gap:20px;
+  margin:0 0 28px;
+}
+#admin #derecha h1{
+  color:#17233c;
+  font-size:clamp(26px,3vw,35px);
+  font-weight:800;
+  letter-spacing:-1.2px;
+}
+#admin #derecha .admin-heading p{
+  margin:8px 0 0;
+  color:var(--admin-muted);
+  font-size:14px;
+}
+#admin #derecha .admin-count{
+  padding:10px 17px;
+  border:1px solid #dfe5f4;
+  border-radius:999px;
+  background:#fff;
+  color:#5368e8;
+  font-size:13px;
+  font-weight:700;
+}
+#admin #derecha .admin-table-wrap{
+  width:100%;
+  overflow-x:auto;
+  border:1px solid var(--admin-border);
+  border-radius:16px;
+  background:#fff;
+  box-shadow:0 12px 35px rgba(25,42,76,.05);
+}
+#admin #derecha table{
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+  font-size:14px;
+  line-height:1.6;
+}
+#admin #derecha thead{
+  background:#f8faff;
+}
+#admin #derecha th{
+  padding:19px 22px;
+  text-align:left;
+  color:#64748b;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  border-bottom:1px solid var(--admin-border);
+}
+#admin #derecha td{
+  padding:19px 22px;
+  border-bottom:1px solid #edf0f6;
+  vertical-align:top;
+  color:#59677d;
+}
+#admin #derecha td:first-child{
+  color:#202d47;
+  font-weight:700;
+  min-width:230px;
+}
+#admin #derecha td:nth-child(2){
+  white-space:nowrap;
+  color:#77859a;
+  font-variant-numeric:tabular-nums;
+}
+#admin #derecha tbody tr:hover{background:#f7f9ff;}
+#admin #derecha tbody tr:last-child td{border-bottom:0;}
+#admin #derecha input,
+#admin #derecha select,
+#admin #derecha textarea{
+  max-width:100%;
+  padding:12px 14px;
+  border:1px solid #dbe2ef;
+  border-radius:9px;
+  background:#fff;
+  color:#24314a;
+  font:inherit;
+  outline:none;
+}
+#admin #derecha input:focus,
+#admin #derecha select:focus,
+#admin #derecha textarea:focus{
+  border-color:#5368e8;
+  box-shadow:0 0 0 3px rgba(83,104,232,.12);
+}
+#admin #derecha button,
+#admin #derecha input[type="submit"]{
+  padding:12px 19px;
+  border:0;
+  border-radius:9px;
+  background:#5368e8;
+  color:white;
+  font:inherit;
+  font-weight:700;
+  cursor:pointer;
+}
+#admin #derecha button:hover,
+#admin #derecha input[type="submit"]:hover{background:#4054d1;}
+@media(max-width:760px){
+  body#admin{flex-direction:column;}
+  #admin #izquierda{
+    position:static;
+    flex:auto;
+    width:100%;
+    height:auto;
+    padding:15px;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  #admin #izquierda::before{
+    width:100%;
+    margin:0;
+    padding:8px 5px 12px;
+  }
+  #admin #izquierda a{padding:10px 12px;}
+  #admin #derecha{padding:25px 15px;}
+  #admin #derecha th,#admin #derecha td{padding:14px;}
+}

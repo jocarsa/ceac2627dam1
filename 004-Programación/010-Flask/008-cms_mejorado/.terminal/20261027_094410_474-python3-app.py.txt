@@ -1,0 +1,11 @@
+Datetime: 2026-10-27T08:44:10.474Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/008-cms_mejorado
+Command: python3 app.py
+
+Result:
+ * Serving Flask app 'app'
+ * Debug mode: on
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/008
+-cms_mejorado$ 

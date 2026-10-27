@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Admin panel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/estilo.css">
+  </head>
+  <body id="admin">
+    <div id="izquierda">
+      <a href="/formulario">Nuevo articulo</a>
+      <a href="/tabla">Listado de articulos</a>
+    </div>
+    <div id="derecha">
+      
+    	<form action="/inserta" method="POST">
+        <label for="titulo">Titulo del articulo</label>
+        <input type="text" name="titulo" id="titulo">
+        
+        <label for="fecha">Fecha del articulo</label>
+        <input type="date" name="fecha" id="fecha">
+        
+        <label for="contenido">Contenido del articulo</label>
+        <textarea id="contenido"></textarea>
+        <input type="submit">
+      </form>
+
+    </div>
+  </body>
+</html>

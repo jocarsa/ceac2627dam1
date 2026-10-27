@@ -1,0 +1,8 @@
+Datetime: 2026-10-27T08:44:07.946Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/008-cms_mejorado
+Command: pythonap
+
+Result:
+pythonap: no se encontró la orden
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/008
+-cms_mejorado$ 
