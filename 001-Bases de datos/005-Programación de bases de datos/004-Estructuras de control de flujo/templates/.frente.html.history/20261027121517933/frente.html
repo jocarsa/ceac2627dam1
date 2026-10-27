@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>El blog de Jose Vicente</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <header>
+      <h1>Jose Vicente Carratala</h1>
+      <h2>Blog personal</h2>
+    </header>
+    <main>
+      {% for articulo in datos %}
+      	<article>
+          <h3>{{articulo.titulo}}</h3>
+          <time>{{articulo.fecha}}</time>
+          <p>{{articulo.contenido}}</p>
+      </article>
+      {% endfor %}
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>

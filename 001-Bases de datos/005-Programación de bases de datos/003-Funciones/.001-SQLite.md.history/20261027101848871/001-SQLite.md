@@ -1,0 +1,1 @@
+SQLITE = SQL + lite (light)

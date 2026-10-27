@@ -1,0 +1,8 @@
+Datetime: 2026-10-27T09:38:52.781Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/005-Programación de bases de datos/003-Funciones
+Command: python3 003-me\ conecto\ desde\ python.py
+
+Result:
+[(1, 'Jose Vicente', 'Carratala Sanchis', 'info@jocarsa.com')]
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Base
+s de datos/005-Programación de bases de datos/003-Funciones$ 

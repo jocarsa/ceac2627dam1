@@ -1,0 +1,28 @@
+Datetime: 2026-10-27T09:39:46.573Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/005-Programación de bases de datos/003-Funciones
+Command: python3 004-lo\ quiero\ como\ diccionario.py
+
+Result:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/001-Bases de datos/005-Programación de bases de datos/003-Funciones/004-lo quiero como diccionario.py", line 5, in <module>
+    cursor = conexion.cursor(dict=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' is an invalid keyword argument for cursor()
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_001-Bases de datos_005-Programación de bases de datos_003-Funciones_004-lo quiero como diccionario.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/001-Bases de datos/005-Programación de bases de datos/003-Funciones/004-lo quiero como diccionario.py", line 5, in <module>
+    cursor = conexion.cursor(dict=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' is an invalid keyword argument for cursor()
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Base
+s de datos/005-Programación de bases de datos/003-Funciones$ 

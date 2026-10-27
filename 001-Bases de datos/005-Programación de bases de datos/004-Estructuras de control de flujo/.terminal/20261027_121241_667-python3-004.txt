@@ -1,0 +1,8 @@
+Datetime: 2026-10-27T11:12:41.667Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/005-Programación de bases de datos/004-Estructuras de control de flujo
+Command: python3 004
+
+Result:
+python3: can't open file '/var/www/html/ceac2627dam1/001-Bases de datos/005-Programación de bases de datos/004-Estructuras de control de flujo/004': [Errno 2] No such file or directory
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de 
+datos/005-Programación de bases de datos/004-Estructuras de control de flujo$ 

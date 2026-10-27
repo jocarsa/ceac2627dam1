@@ -1,0 +1,24 @@
+Datetime: 2026-10-27T11:12:44.122Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/005-Programación de bases de datos/004-Estructuras de control de flujo
+Command: python3 004-ahora\ le\ pongo\ flask.py
+
+Result:
+  File "/var/www/html/ceac2627dam1/001-Bases de datos/005-Programación de bases de datos/004-Estructuras de control de flujo/004-ahora le pongo flask.py", line 17
+    cursor = conexion.cursor()
+TabError: inconsistent use of tabs and spaces in indentation
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_001-Bases de datos_005-Programación de bases de datos_004-Estructuras de control de flujo_004-ahora le pongo flask.py.1000.crash'
+
+Original exception was:
+  File "/var/www/html/ceac2627dam1/001-Bases de datos/005-Programación de bases de datos/004-Estructuras de control de flujo/004-ahora le pongo flask.py", line 17
+    cursor = conexion.cursor()
+TabError: inconsistent use of tabs and spaces in indentation
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de 
+datos/005-Programación de bases de datos/004-Estructuras de control de flujo$ 

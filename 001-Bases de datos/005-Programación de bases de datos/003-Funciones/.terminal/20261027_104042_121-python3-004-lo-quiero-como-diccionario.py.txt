@@ -1,0 +1,8 @@
+Datetime: 2026-10-27T09:40:42.121Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/005-Programación de bases de datos/003-Funciones
+Command: python3 004-lo\ quiero\ como\ diccionario.py
+
+Result:
+{'id': 1, 'nombre': 'Jose Vicente', 'apellidos': 'Carratala Sanchis', 'email': 'info@jocarsa.com'}
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Base
+s de datos/005-Programación de bases de datos/003-Funciones$ 
