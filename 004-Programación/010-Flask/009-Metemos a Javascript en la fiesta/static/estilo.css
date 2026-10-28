@@ -1,0 +1,26 @@
+*{box-sizing:border-box}
+:root{font-family:Arial,Helvetica,sans-serif;color:#1e293b;background:#f1f4f8}
+body{margin:0;min-height:100vh}
+header{background:#172d49;color:white;padding:44px max(24px,calc((100vw - 1180px)/2));}
+header h1{margin:0 0 10px;font-size:clamp(30px,4vw,46px);letter-spacing:-1px}
+header h2{margin:0;font-size:16px;font-weight:400;color:#cbd8e8}
+main{max-width:1180px;margin:36px auto;padding:0 24px 40px;min-height:55vh}
+main h3{font-size:23px;margin:0 0 8px}
+.introduccion{color:#64748b;margin:0 0 25px}
+section{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+article{display:flex;flex-direction:column;background:white;border:1px solid #e2e8f0;border-radius:14px;padding:22px;min-height:200px;box-shadow:0 5px 18px #172d4909;transition:transform .2s,box-shadow .2s}
+article:hover{transform:translateY(-4px);box-shadow:0 14px 30px #172d491c}
+article h4{font-size:19px;margin:0 0 10px}
+article p{font-size:14px;color:#64748b;line-height:1.6;flex:1;margin:0 0 20px}
+button{border:0;border-radius:9px;padding:12px 16px;background:#e88b2f;color:#fff;font-weight:700;cursor:pointer;transition:background .2s,transform .2s}
+button:hover{background:#ce6f15}button:active{transform:scale(.98)}button:disabled{opacity:.6;cursor:wait}
+article button{width:100%}
+aside{position:fixed;right:22px;bottom:22px;width:315px;max-height:min(70vh,600px);overflow:auto;background:white;border:1px solid #dbe3ed;border-radius:16px;padding:22px;box-shadow:0 16px 45px #172d4930;z-index:5}
+aside h3{margin:0 0 6px;font-size:21px}aside .ayuda{font-size:13px;color:#64748b;margin:0 0 16px}
+.linea-ticket{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #edf1f5;padding:10px 0;font-size:14px}
+.linea-ticket span:last-child{white-space:nowrap;font-weight:700}
+.total-ticket{display:flex;justify-content:space-between;align-items:center;font-size:20px;font-weight:800;margin:18px 0}
+#comprar{width:100%}.mensaje{font-size:13px;line-height:1.5;color:#3b587b}
+footer{background:#e5ebf2;text-align:center;color:#64748b;padding:24px;font-size:13px}
+@media(min-width:1050px){main{padding-right:340px;max-width:1500px}}
+@media(max-width:600px){header{padding:30px 20px}main{margin:25px auto;padding:0 16px 280px}section{grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:12px}article{padding:16px;min-height:190px}aside{left:12px;right:12px;bottom:12px;width:auto;max-height:245px;padding:16px}aside h3{font-size:17px}.linea-ticket{padding:6px 0}.total-ticket{margin:10px 0}}

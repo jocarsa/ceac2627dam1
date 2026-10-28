@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <title>La tienda de Jose Vicente</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/estilo.css">
+  </head>
+  <body>
+    <header>
+      <h1>Tienda deportiva</h1>
+      <h2>Aquí tienes tus artículos deportivos</h2>
+    </header>
+    <main>
+      <section>
+      </section>
+    </main>
+    <footer>
+      (c) 2026 Jose Vicente Carratala
+    </footer>
+    <aside>
+      Yo soy el ticket
+    </aside>
+    <script>
+      // Creamos un pedido vacío
+      let pedido = []
+      let ticket = document.querySelector("aside")
+      fetch("/datos")	// Ves a la ruta "/datos" y mira a ver que me traes
+      .then(function(resultado){return resultado.json()}) // Que sepas que lo que viene, viene como json
+      .then(function(datos){	// Cuando vengan los datos
+      	console.log(datos)		// Ponmelos en la consola - SIEMPRE PRIMERO
+        // Selecciono la seción que es donde voy a meter los productos
+        let seccion = document.querySelector("section")
+        // Para cada producto que me ha llegado
+        datos.forEach(function(producto){
+        	// Lo voy a pintar en la sección
+          // A lo que tenia antes la sección, le sumo:
+          seccion.innerHTML += `
+          	<article>
+            	<h4>`+producto.nombre+`</h4>
+              <p>`+producto.descripcion+`</p>
+              <button precio="`+producto.precio+`" nombre="`+producto.nombre+`">`+producto.precio+`</button>
+            </article>
+          `
+        })
+        // Quiero coger todos los botones
+        let botones = document.querySelectorAll("button")
+        console.log(botones)
+        // PAra cada uno de los botones
+        botones.forEach(function(boton){
+          // Cuando pulse un boton
+        	boton.onclick = function(){
+            // Capturamos y guardamos tanto el nombre del producto como su precio
+          	pedido.push({"nombre":boton.getAttribute("nombre"),"precio":boton.getAttribute("precio")})
+            // De momento lo vomito a consola para que sepamos que todo va bien
+            console.log(pedido)
+            ticket.innerHTML = ""
+						let suma = 0;
+            pedido.forEach(function(producto){
+              ticket.innerHTML += "<p>" + producto.nombre + " - " + producto.precio + " €</p>"
+              suma += producto.precio*1
+            })
+            ticket.innerHTML += suma+" €"
+            // Pongo un boton para enviar la compra al servidor
+            ticket.innerHTML += "<button id='comprar'>Comprar!!!!!</button>"
+            // Selecciono el boton
+            let botoncompra = document.querySelector("#comprar")
+            // Ahora escucho si alguien pulsa ese boton
+            botoncompra.onclick = function(){
+              // Imprimo un mensaje
+            	console.log("Vamos a guardar la compra")
+              // Me conecto a inserta pedido
+              fetch("/insertapedido", {
+                method: "POST",	// Envio la información por POST
+                headers: {
+                  "Content-Type": "application/json"
+                }, // Aviso de que envío JSON
+                body: JSON.stringify(pedido)	// Y envío el pedido
+              })
+            }
+          }
+        })
+      })
+      
+      
+    </script>
+  </body>
+</html>

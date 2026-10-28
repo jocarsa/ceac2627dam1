@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <header>
+      <h1>Tienda deportiva</h1>
+      <h2>Aquí tienes tus artículos deportivos</h2>
+    </header>
+    <main>
+      <section>
+      </section>
+    </main>
+    <footer>
+      (c) 2026 Jose Vicente Carratala
+    </footer>
+    <script>
+      fetch("/datos")	// Ves a la ruta "/datos" y mira a ver que me traes
+      .then(function(resultado){return resultado.json()}) // Que sepas que lo que viene, viene como json
+      .then(function(datos){	// Cuando vengan los datos
+      	console.log(datos)		// Ponmelos en la consola - SIEMPRE PRIMERO
+        // Selecciono la seción que es donde voy a meter los productos
+        let seccion = document.querySelector("section")
+        // Para cada producto que me ha llegado
+        datos.forEach(function(producto){
+        	// Lo voy a pintar en la sección
+        })
+      })
+    </script>
+  </body>
+</html>

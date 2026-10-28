@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La tienda de Jose Vicente</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+  </head>
+  <body>
+    <header>
+      <h1>Tienda deportiva</h1>
+      <h2>Aquí tienes tus artículos deportivos</h2>
+    </header>
+    <main>
+      <h3>Nuestros productos</h3>
+      <p class="introduccion">Todo lo que necesitas para entrenar y disfrutar del deporte.</p>
+      <section aria-label="Catálogo de productos">
+        <p>Cargando productos...</p>
+      </section>
+    </main>
+    <aside aria-label="Resumen del pedido" aria-live="polite">
+      <h3>Tu pedido</h3>
+      <p class="ayuda">Selecciona productos para añadirlos a tu compra.</p>
+    </aside>
+    <footer>
+      &copy; 2026 Jose Vicente Carratala
+    </footer>
+    <script>
+      // Creamos un pedido vacío
+      let pedido = []
+      let ticket = document.querySelector("aside")
+
+      // Pedimos los productos a Flask
+      fetch("/datos")
+      .then(function(resultado){
+        if(!resultado.ok){throw new Error("No se han podido cargar los productos")}
+        return resultado.json()
+      })
+      .then(function(datos){
+        console.log(datos) // Primero mostramos los datos en consola
+        let seccion = document.querySelector("section")
+        seccion.innerHTML = ""
+
+        // Pintamos los productos
+        datos.forEach(function(producto){
+          let articulo = document.createElement("article")
+          let nombre = document.createElement("h4")
+          nombre.textContent = producto.nombre
+          let descripcion = document.createElement("p")
+          descripcion.textContent = producto.descripcion
+          let boton = document.createElement("button")
+          boton.textContent = Number(producto.precio).toFixed(2) + " € · Añadir"
+          boton.setAttribute("type", "button")
+          articulo.appendChild(nombre)
+          articulo.appendChild(descripcion)
+          articulo.appendChild(boton)
+          seccion.appendChild(articulo)
+
+          // Al pulsar, añadimos el producto al pedido
+          boton.onclick = function(){
+            pedido.push({"nombre":producto.nombre,"precio":producto.precio})
+            console.log(pedido)
+            pintarTicket()
+          }
+        })
+      })
+      .catch(function(error){
+        console.error(error)
+        document.querySelector("section").textContent = "No se han podido cargar los productos. Recarga la página."
+      })
+
+      // Actualizamos el ticket cada vez que se añade un producto
+      function pintarTicket(){
+        ticket.innerHTML = "<h3>Tu pedido</h3><p class='ayuda'>Resumen de tu compra</p>"
+        let suma = 0
+        pedido.forEach(function(producto){
+          let linea = document.createElement("div")
+          linea.className = "linea-ticket"
+          let nombre = document.createElement("span")
+          nombre.textContent = producto.nombre
+          let precio = document.createElement("span")
+          precio.textContent = Number(producto.precio).toFixed(2) + " €"
+          linea.appendChild(nombre)
+          linea.appendChild(precio)
+          ticket.appendChild(linea)
+          suma += Number(producto.precio)
+        })
+        let total = document.createElement("div")
+        total.className = "total-ticket"
+        total.innerHTML = "<span>Total</span><span>" + suma.toFixed(2) + " €</span>"
+        ticket.appendChild(total)
+
+        let botoncompra = document.createElement("button")
+        botoncompra.id = "comprar"
+        botoncompra.textContent = "Finalizar compra"
+        ticket.appendChild(botoncompra)
+
+        // Enviamos el pedido en JSON por POST
+        botoncompra.onclick = function(){
+          console.log("Vamos a guardar la compra")
+          botoncompra.disabled = true
+          botoncompra.textContent = "Enviando..."
+          fetch("/insertapedido", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(pedido)
+          })
+          .then(function(resultado){
+            if(!resultado.ok){throw new Error("Error al enviar el pedido")}
+            return resultado.text()
+          })
+          .then(function(respuesta){
+            console.log(respuesta)
+            pedido = []
+            ticket.innerHTML = "<h3>¡Pedido enviado!</h3><p class='mensaje'>" + "Tu pedido se ha enviado al servidor correctamente." + "</p>"
+          })
+          .catch(function(error){
+            console.error(error)
+            botoncompra.disabled = false
+            botoncompra.textContent = "Reintentar compra"
+            let aviso = document.createElement("p")
+            aviso.className = "mensaje"
+            aviso.textContent = "No se ha podido enviar el pedido. Inténtalo de nuevo."
+            ticket.appendChild(aviso)
+          })
+        }
+      }
+    </script>
+  </body>
+</html>

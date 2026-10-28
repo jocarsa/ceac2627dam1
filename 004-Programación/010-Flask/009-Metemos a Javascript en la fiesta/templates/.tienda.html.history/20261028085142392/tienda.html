@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    Hola
+    <script>
+      fetch("/datos")	// Ves a la ruta "/datos" y mira a ver que me traes
+      .then(function(resultado){return resultado.json()}) // Que sepas que lo que viene, viene como json
+      .then(function(datos){	// Cuando vengan los datos
+      	console.log(datos)		// Ponmelos en la consola
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+Datetime: 2026-10-28T11:00:31.078Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/010-Flask/009-Metemos a Javascript en la fiesta
+Command: python3 009-guardar\ los\ pedidos.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [28/Oct/2026 11:59:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 11:59:58] "GET /static/estilo.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 11:59:58] "GET /datos HTTP/1.1" 200 -
+127.0.0.1 - - [28/Oct/2026 11:59:58] "GET /favicon.ico HTTP/1.1" 404 -
+[{'nombre': 'Zapatillas running', 'precio': '59'}, {'nombre': 'Zapatillas fútbol', 'precio': '75'}, {'nombre': 'Camiseta deportiva', 'precio': '19'}, {'nombre': 'Chándal completo', 'precio': '69'}, {'nombre': 'Sudadera deportiva', 'precio': '45'}, {'nombre': 'Pantalón corto', 'precio': '24'}]
+[2026-10-28 12:00:02,472] ERROR in app: Exception on /insertapedido [POST]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/ceac2627dam1/004-Programación/010-Flask/009-Metemos a Javascript en la fiesta/009-guardar los pedidos.py", line 32, in insertapedido
+    cursor.execute("""
+                   ^^^
+TypeError: can only concatenate str (not "list") to str
+127.0.0.1 - - [28/Oct/2026 12:00:02] "POST /insertapedido HTTP/1.1" 500 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/010-Flask/009-Met
+emos a Javascript en la fiesta$ 

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>La tienda de Jose Vicente</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/estilo.css">
+  </head>
+  <body>
+    <header>
+      <h1>Tienda deportiva</h1>
+      <h2>Aquí tienes tus artículos deportivos</h2>
+    </header>
+    <main>
+      <section>
+      </section>
+    </main>
+    <footer>
+      (c) 2026 Jose Vicente Carratala
+    </footer>
+    <script>
+      fetch("/datos")	// Ves a la ruta "/datos" y mira a ver que me traes
+      .then(function(resultado){return resultado.json()}) // Que sepas que lo que viene, viene como json
+      .then(function(datos){	// Cuando vengan los datos
+      	console.log(datos)		// Ponmelos en la consola - SIEMPRE PRIMERO
+        // Selecciono la seción que es donde voy a meter los productos
+        let seccion = document.querySelector("section")
+        // Para cada producto que me ha llegado
+        datos.forEach(function(producto){
+        	// Lo voy a pintar en la sección
+          // A lo que tenia antes la sección, le sumo:
+          seccion.innerHTML += `
+          	<article>
+            	<h4>`+producto.nombre+`</h4>
+              <p>`+producto.descripcion+`</p>
+              <button>`+producto.precio+`</button>
+            </article>
+          `
+        })
+        // Quiero coger todos los botones
+        let botones = document.querySelectorAll("button")
+        console.log(botones)
+      })
+      
+      
+    </script>
+  </body>
+</html>
