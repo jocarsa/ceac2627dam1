@@ -1,0 +1,52 @@
+{
+  "curriculum": {
+    "datos_personales": {"nombre":"Jose Vicente","apellidos":"Carratalá Sanchis","email":"info@jocarsa.com","residencia":"Valencia, España","web_empresa":"https://jocarsa.com","github":"https://github.com/jocarsa","linkedin":"jvcarratala"},
+    "perfil_profesional": {"titular":"Profesor de informática · Desarrollador de software · Diseñador 3D","descripcion":"Profesional especializado en programación, formación tecnológica, inteligencia artificial, diseño industrial y visualización tridimensional. Trayectoria profesional iniciada en el año 2000, combinando docencia, desarrollo de software empresarial, contenidos formativos y proyectos tecnológicos propios."},
+    "experiencia_laboral": [
+      {"empresa":"JOCARSA","cargo":"Fundador y desarrollador principal","inicio":"2000","final":"actualmente","funciones":["Dirección de proyectos tecnológicos","Desarrollo de software a medida, ERP, CRM y plataformas educativas","Automatización e integración de inteligencia artificial"]},
+      {"empresa":"CEAC FP","cargo":"Profesor de Formación Profesional","inicio":"2025-08","final":"actualmente","areas":["Programación","Bases de datos","Desarrollo web","Sistemas informáticos"]},
+      {"empresa":"TAME Formación","cargo":"Profesor de Formación Profesional","inicio":null,"final":"actualmente","especialidades":["DAM","Acceso a datos","Sistemas de gestión empresarial","Inteligencia artificial"]},
+      {"empresa":"Capitol Formación","cargo":"Profesor de Formación Profesional y colaboración académica","inicio":null,"final":null,"especialidades":["Programación","Bases de datos","Desarrollo de aplicaciones"]},
+      {"empresa":"IMF","cargo":"Profesor de Formación Profesional","inicio":null,"final":null,"areas":["Informática","Programación"]},
+      {"empresa":"Mastermedia","cargo":"Docente de tecnologías digitales","inicio":null,"final":null,"areas":["Programación","Diseño digital"]},
+      {"empresa":"Universitat Politècnica de València","cargo":"Formador especializado","inicio":null,"final":null,"areas":["Diseño 3D","Visualización","Tecnologías digitales"]},
+      {"empresa":"LinkedIn Learning / Lynda.com","cargo":"Autor y formador de cursos online","inicio":null,"final":null,"areas":["Programación","Desarrollo web","Diseño digital"]},
+      {"empresa":"video2brain","cargo":"Autor y formador tecnológico","inicio":null,"final":null},
+      {"empresa":"Universidad de Alicante","cargo":"Formador especializado","inicio":null,"final":null},
+      {"empresa":"Universal Arts","cargo":"Formador en tecnologías digitales","inicio":null,"final":null},
+      {"empresa":"Ensenyem","cargo":"Formador","inicio":null,"final":null},
+      {"empresa":"MGV Color","cargo":"Colaborador profesional","inicio":null,"final":null},
+      {"empresa":"Aula Temática","cargo":"Formador especializado","inicio":null,"final":null}
+    ],
+    "formacion_academica": [
+      {"titulo":"Ingeniería Técnica en Diseño Industrial","institucion":"Universitat Politècnica de València","inicio":"1997","final":"2000","estado":"Finalizado"},
+      {"titulo":"Máster en Formación del Profesorado","institucion":"UDIMA","inicio":null,"final":null,"estado":"Pendiente de confirmar"},
+      {"titulo":"Formación especializada en IA, Big Data y Machine Learning","institucion":"Formación continua","inicio":null,"final":null,"estado":"Formación continua"}
+    ],
+    "experiencia_docente": {"ciclos_formativos":[{"siglas":"DAM","nombre":"Desarrollo de Aplicaciones Multiplataforma"},{"siglas":"DAW","nombre":"Desarrollo de Aplicaciones Web"},{"siglas":"ASIR","nombre":"Administración de Sistemas Informáticos en Red"},{"siglas":"SMR","nombre":"Sistemas Microinformáticos y Redes"}],"modulos_y_materias":["Programación","Bases de datos","Acceso a datos","Entornos de desarrollo","Sistemas informáticos","Sistemas de gestión empresarial","Desarrollo de interfaces","Desarrollo web","Inteligencia artificial","Proyecto intermodular"],"otras_responsabilidades":["Tutorización académica","Seguimiento de prácticas en empresas","Evaluación de proyectos","Elaboración de materiales didácticos"]},
+    "competencias_tecnicas": {"lenguajes_programacion":["Python","PHP","JavaScript","Java","C","C++","SQL","HTML","CSS","Bash"],"desarrollo_backend":["Flask","Node.js","PHP","APIs REST","WebSockets"],"desarrollo_frontend":["HTML5","CSS3","JavaScript","SVG","Canvas","WebGL"],"bases_datos":["MySQL","MariaDB","SQLite","MongoDB","ChromaDB"],"administracion_sistemas":["Linux","Ubuntu Server","Apache","SSH","Systemd","Cron","Fail2ban"],"inteligencia_artificial":["LLM locales","Ollama","Transformers","QLoRA","RAG","Embeddings","Whisper"],"multimedia_y_comunicaciones":["WebRTC","Mediasoup","FFmpeg","Streaming"],"desarrollo_3d":["Modelado 3D","Animación","Renderizado","Visualización industrial","Realidad virtual"]},
+    "proyectos_destacados": [
+      {"nombre":"JOCARSA ERP","categoria":"Software empresarial","descripcion":"Sistema ERP modular con entidades y formularios personalizables."},
+      {"nombre":"JOCARSA Formación","categoria":"Tecnología educativa","descripcion":"Gestión académica de alumnado, evaluaciones y asistencias."},
+      {"nombre":"JOCARSA Videoconferencias","categoria":"Comunicaciones","descripcion":"Plataforma multiusuario con WebRTC, SFU, grabación y pantalla compartida."},
+      {"nombre":"JOCARSA Prácticas","categoria":"Gestión educativa","descripcion":"Asignación y seguimiento de prácticas en empresas."},
+      {"nombre":"JOCARSA Cuaderno","categoria":"Docencia","descripcion":"Cuaderno digital del profesorado."},
+      {"nombre":"JOCARSA Asistencias","categoria":"Docencia","descripcion":"Registro y seguimiento de asistencia."},
+      {"nombre":"JOCARSA Cuestionarios","categoria":"Evaluación","descripcion":"Creación y gestión de cuestionarios."},
+      {"nombre":"JOCARSA Kanban","categoria":"Productividad","descripcion":"Tableros visuales de tareas y calendarios."},
+      {"nombre":"JOCARSA Ventas","categoria":"CRM","descripcion":"Gestión comercial y de clientes."},
+      {"nombre":"JOCARSA Ayuda y Avatar","categoria":"Inteligencia artificial","descripcion":"Asistentes conversacionales con avatares audiovisuales."},
+      {"nombre":"JOCARSA Inspector","categoria":"Sistemas","descripcion":"Monitorización de servidores y recursos."},
+      {"nombre":"JOCARSA Mecanografía","categoria":"Educación","descripcion":"Aprendizaje y entrenamiento de mecanografía."},
+      {"nombre":"JOCARSA Presentación","categoria":"Docencia","descripcion":"Herramientas de presentación de contenidos."},
+      {"nombre":"JOCARSA Planos Multiusuario","categoria":"Diseño técnico","descripcion":"Edición colaborativa de planos."},
+      {"nombre":"Persona IA","categoria":"Investigación","descripcion":"Identidad conversacional, entrenamiento QLoRA y memoria semántica."},
+      {"nombre":"Clasificador documental inteligente","categoria":"Automatización","descripcion":"Extracción y clasificación de documentos PDF con modelos locales."},
+      {"nombre":"JOCARSA Biblioteca","categoria":"Gestión documental","descripcion":"Organización y consulta de documentación digital."}
+    ],
+    "publicaciones_y_contenidos": {"actividad":["Autor de libros técnicos","Autor de cursos audiovisuales","Creador de materiales didácticos"],"plataformas":["LinkedIn Learning","Lynda.com","video2brain"],"tematicas":["Python","SQL","HTML","CSS","JavaScript","Desarrollo web","Inteligencia artificial"]},
+    "investigacion_y_desarrollo": [{"area":"Modelos de lenguaje locales","actividades":["Fine-tuning","Memoria conversacional","Evaluación de modelos"]},{"area":"Automatización documental","actividades":["Extracción de texto","Clasificación automática","Indexación semántica"]},{"area":"Tecnología educativa","actividades":["Integración de plataformas académicas","Automatización docente"]},{"area":"Comunicaciones","actividades":["WebRTC","Arquitecturas SFU","Grabación multimedia"]}],
+    "competencias_profesionales": ["Dirección de proyectos","Emprendimiento tecnológico","Análisis de requisitos","Diseño de soluciones","Formación técnica","Integración de sistemas"],
+    "idiomas": [{"idioma":"Español","nivel":"Nativo"},{"idioma":"Inglés","nivel":null}]
+  }
+}

@@ -1,0 +1,2 @@
+en este diagrama de clases 1.-mejora el estilo 2.-crea un boton para, con javascript, añadir mas entidades 3.-permite drag and drop por la pantalla
+

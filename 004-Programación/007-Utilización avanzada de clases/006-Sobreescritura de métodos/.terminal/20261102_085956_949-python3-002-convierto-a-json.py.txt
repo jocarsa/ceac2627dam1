@@ -1,0 +1,24 @@
+Datetime: 2026-11-02T07:59:56.949Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/006-Sobreescritura de métodos
+Command: python3 002-convierto\ a\ json.py
+
+Result:
+{
+  "fecha": "2026-11-02",
+  "cliente": {
+    "nombre": "Jose Vicente",
+    "apellidos": "Carratala"
+  },
+  "productos": [
+    {
+      "nombre": "Producto1",
+      "precio": 34
+    },
+    {
+      "nombre": "Producto2",
+      "precio": 45
+    }
+  ]
+}
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam
+1/004-Programación/007-Utilización avanzada de clases/006-Sobreescritura de métodos$ 

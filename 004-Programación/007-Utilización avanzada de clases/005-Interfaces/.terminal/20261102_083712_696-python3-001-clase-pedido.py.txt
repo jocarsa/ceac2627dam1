@@ -1,0 +1,28 @@
+Datetime: 2026-11-02T07:37:12.696Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/005-Interfaces
+Command: python3 001-clase\ pedido.py
+
+Result:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/005-Interfaces/001-clase pedido.py", line 5, in <module>
+    pedido1 = Pedido()
+              ^^^^^^^^
+TypeError: Pedido.__init__() missing 1 required positional argument: 'mifecha'
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_004-Programación_007-Utilización avanzada de clases_005-Interfaces_001-clase pedido.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/005-Interfaces/001-clase pedido.py", line 5, in <module>
+    pedido1 = Pedido()
+              ^^^^^^^^
+TypeError: Pedido.__init__() missing 1 required positional argument: 'mifecha'
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Program
+ación/007-Utilización avanzada de clases/005-Interfaces$ 

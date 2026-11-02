@@ -1,0 +1,669 @@
+
+{
+  "curriculum": {
+    "datos_personales": {
+      "nombre": "Jose Vicente",
+      "apellidos": "Carratalá Sanchis",
+      "nombre_completo": "Jose Vicente Carratalá Sanchis",
+      "fecha_nacimiento": "1978-04-14",
+      "ciudad_nacimiento": "Valencia",
+      "residencia": "Valencia, España",
+      "nacionalidad": "Española",
+      "email": "info@jocarsa.com",
+      "web_personal": "https://josevicentecarratala.com",
+      "web_empresa": "https://jocarsa.com",
+      "github": "https://github.com/jocarsa",
+      "linkedin": "jvcarratala"
+    },
+    "perfil_profesional": {
+      "titular": "Profesor de informática, desarrollador de software, diseñador 3D y emprendedor tecnológico",
+      "descripcion": "Profesional especializado en programación, desarrollo de aplicaciones, formación tecnológica, inteligencia artificial, diseño industrial y visualización tridimensional. Cuenta con una trayectoria profesional iniciada en el año 2000, combinando docencia presencial y online, desarrollo de software empresarial, creación de contenidos formativos y dirección de proyectos tecnológicos propios.",
+      "inicio_actividad_profesional": 2000,
+      "anos_experiencia_aproximados": 26,
+      "especialidades": [
+        "Docencia de Formación Profesional",
+        "Desarrollo de software",
+        "Desarrollo web full stack",
+        "Arquitectura de aplicaciones",
+        "Bases de datos",
+        "Inteligencia artificial",
+        "Automatización de procesos",
+        "Desarrollo de plataformas educativas",
+        "Sistemas ERP y CRM",
+        "Diseño industrial",
+        "Modelado y animación 3D",
+        "Visualización arquitectónica e industrial",
+        "Realidad virtual",
+        "Producción de contenidos formativos"
+      ]
+    },
+    "experiencia_laboral": [
+      {
+        "empresa": "JOCARSA",
+        "cargo": "Fundador, director y desarrollador principal",
+        "inicio": "2000",
+        "final": "actualmente",
+        "ubicacion": "Valencia, España",
+        "funciones": [
+          "Dirección de proyectos tecnológicos",
+          "Desarrollo de software a medida",
+          "Diseño de arquitecturas de aplicaciones",
+          "Desarrollo de plataformas SaaS",
+          "Creación de aplicaciones ERP y CRM",
+          "Desarrollo de herramientas educativas",
+          "Automatización empresarial",
+          "Administración de servidores Linux",
+          "Integración de inteligencia artificial",
+          "Diseño de interfaces de usuario",
+          "Gestión de bases de datos",
+          "Investigación y desarrollo de productos"
+        ]
+      },
+      {
+        "empresa": "CEAC FP",
+        "cargo": "Profesor de Formación Profesional",
+        "inicio": "2025-08",
+        "final": "actualmente",
+        "areas": [
+          "Desarrollo de aplicaciones",
+          "Programación",
+          "Bases de datos",
+          "Desarrollo web",
+          "Sistemas informáticos",
+          "Tecnologías de la información"
+        ]
+      },
+      {
+        "empresa": "TAME Formación",
+        "cargo": "Profesor de Formación Profesional",
+        "inicio": "2020",
+        "final": "actualmente",
+        "especialidades": [
+          "Desarrollo de Aplicaciones Multiplataforma",
+          "Programación",
+          "Acceso a datos",
+          "Sistemas de gestión empresarial",
+          "Bases de datos",
+          "Desarrollo de interfaces",
+          "Inteligencia artificial"
+        ]
+      },
+      {
+        "empresa": "Capitol Formación",
+        "cargo": "Profesor de Formación Profesional",
+        "inicio": "2017",
+        "final": "2024",
+        "actividad_posterior": "Colaboración y gestión académica en proyectos de formación",
+        "especialidades": [
+          "Programación",
+          "Desarrollo de aplicaciones",
+          "Bases de datos",
+          "Sistemas informáticos",
+          "Desarrollo web",
+          "Formación tecnológica"
+        ]
+      },
+      {
+        "empresa": "IMF",
+        "cargo": "Profesor de Formación Profesional",
+        "inicio": "2023",
+        "final": "2024",
+        "areas": [
+          "Informática",
+          "Programación",
+          "Desarrollo de software"
+        ]
+      },
+      {
+        "empresa": "Mastermedia",
+        "cargo": "Docente de tecnologías digitales",
+        "inicio": "2022",
+        "final": "2025",
+        "areas": [
+          "Programación",
+          "Diseño digital",
+          "Desarrollo tecnológico",
+          "Contenidos multimedia"
+        ]
+      },
+      {
+        "empresa": "Universitat Politècnica de València",
+        "cargo": "Docente y formador especializado",
+        "inicio": null,
+        "final": null,
+        "areas": [
+          "Diseño 3D",
+          "Visualización",
+          "Tecnologías digitales",
+          "Software especializado"
+        ],
+        "observaciones": "Experiencia en numerosas acciones formativas especializadas."
+      },
+      {
+        "empresa": "LinkedIn Learning / Lynda.com",
+        "cargo": "Autor y formador de cursos online",
+        "inicio": null,
+        "final": null,
+        "areas": [
+          "Programación",
+          "Desarrollo web",
+          "Bases de datos",
+          "Diseño digital",
+          "Software",
+          "Tecnología"
+        ]
+      },
+      {
+        "empresa": "video2brain",
+        "cargo": "Autor y formador tecnológico",
+        "inicio": null,
+        "final": null,
+        "areas": [
+          "Formación audiovisual",
+          "Programación",
+          "Diseño digital"
+        ]
+      },
+      {
+        "empresa": "Universidad de Alicante",
+        "cargo": "Formador especializado",
+        "inicio": null,
+        "final": null
+      },
+      {
+        "empresa": "Universal Arts",
+        "cargo": "Formador en tecnologías digitales",
+        "inicio": null,
+        "final": null
+      },
+      {
+        "empresa": "Ensenyem",
+        "cargo": "Formador",
+        "inicio": null,
+        "final": null
+      },
+      {
+        "empresa": "MGV Color",
+        "cargo": "Colaborador profesional",
+        "inicio": null,
+        "final": null
+      },
+      {
+        "empresa": "Aula Temática",
+        "cargo": "Formador especializado",
+        "inicio": null,
+        "final": null
+      }
+    ],
+    "formacion_academica": [
+      {
+        "titulo": "Ingeniería Técnica en Diseño Industrial",
+        "institucion": "Universitat Politècnica de València",
+        "inicio": "1997",
+        "final": "2000",
+        "estado": "Finalizado"
+      },
+      {
+        "titulo": "Máster en Formación del Profesorado",
+        "institucion": "UDIMA",
+        "inicio": null,
+        "final": null,
+        "estado": "En curso según información anterior; pendiente de actualización"
+      },
+      {
+        "titulo": "Formación especializada en Inteligencia Artificial, Big Data y Machine Learning",
+        "institucion": "Diversas plataformas de formación",
+        "inicio": null,
+        "final": null,
+        "estado": "Formación continua",
+        "observaciones": "No se confirma como título oficial de máster"
+      }
+    ],
+    "experiencia_docente": {
+      "inicio": 2000,
+      "modalidades": [
+        "Presencial",
+        "Online",
+        "Semipresencial",
+        "Formación Profesional",
+        "Formación universitaria",
+        "Formación para empresas",
+        "Cursos audiovisuales"
+      ],
+      "etapas": [
+        {
+          "periodo": "2000-2010",
+          "actividad": "Docencia presencial y formación especializada"
+        },
+        {
+          "periodo": "2010-2020",
+          "actividad": "Desarrollo y docencia de formación online"
+        },
+        {
+          "periodo": "2017-actualmente",
+          "actividad": "Docencia en ciclos de Formación Profesional"
+        }
+      ],
+      "ciclos_formativos": [
+        {
+          "siglas": "DAM",
+          "nombre": "Desarrollo de Aplicaciones Multiplataforma"
+        },
+        {
+          "siglas": "DAW",
+          "nombre": "Desarrollo de Aplicaciones Web"
+        },
+        {
+          "siglas": "ASIR",
+          "nombre": "Administración de Sistemas Informáticos en Red"
+        },
+        {
+          "siglas": "SMR",
+          "nombre": "Sistemas Microinformáticos y Redes"
+        }
+      ],
+      "modulos_y_materias": [
+        "Programación",
+        "Bases de datos",
+        "Acceso a datos",
+        "Entornos de desarrollo",
+        "Sistemas informáticos",
+        "Sistemas de gestión empresarial",
+        "Desarrollo de interfaces",
+        "Desarrollo web en entorno cliente",
+        "Desarrollo web en entorno servidor",
+        "Despliegue de aplicaciones web",
+        "Programación multimedia y dispositivos móviles",
+        "Programación de servicios y procesos",
+        "Lenguajes de marcas",
+        "Inteligencia artificial",
+        "Inteligencia artificial y Big Data",
+        "Proyecto intermodular",
+        "Inglés profesional",
+        "Diseño 3D",
+        "Realidad virtual",
+        "Desarrollo de videojuegos"
+      ],
+      "otras_responsabilidades": [
+        "Tutorización académica",
+        "Seguimiento de prácticas en empresas",
+        "Coordinación de formación en centros de trabajo",
+        "Evaluación de proyectos intermodulares",
+        "Elaboración de materiales didácticos",
+        "Diseño de actividades y ejercicios",
+        "Evaluación de competencias",
+        "Desarrollo de herramientas de gestión educativa"
+      ]
+    },
+    "competencias_tecnicas": {
+      "lenguajes_programacion": [
+        "Python",
+        "PHP",
+        "JavaScript",
+        "Java",
+        "C",
+        "C++",
+        "SQL",
+        "HTML",
+        "CSS",
+        "Bash"
+      ],
+      "desarrollo_backend": [
+        "Flask",
+        "Node.js",
+        "PHP",
+        "APIs REST",
+        "WebSockets",
+        "Arquitectura cliente-servidor",
+        "Servicios web",
+        "Procesamiento asíncrono"
+      ],
+      "desarrollo_frontend": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "DOM",
+        "Fetch API",
+        "Diseño responsive",
+        "CSS Grid",
+        "Flexbox",
+        "SVG",
+        "Canvas",
+        "WebGL"
+      ],
+      "bases_datos": [
+        "MySQL",
+        "MariaDB",
+        "SQLite",
+        "MongoDB",
+        "ChromaDB",
+        "Bases de datos relacionales",
+        "Bases de datos documentales",
+        "Bases de datos vectoriales",
+        "Diseño de esquemas",
+        "Optimización de consultas"
+      ],
+      "administracion_sistemas": [
+        "Linux",
+        "Ubuntu Server",
+        "Apache",
+        "SSH",
+        "SSL/TLS",
+        "Systemd",
+        "Cron",
+        "Fail2ban",
+        "Monitorización",
+        "Administración de servidores",
+        "Despliegue de aplicaciones",
+        "Optimización de recursos"
+      ],
+      "inteligencia_artificial": [
+        "Inteligencia artificial generativa",
+        "Modelos de lenguaje",
+        "LLM locales",
+        "Ollama",
+        "Transformers",
+        "Fine-tuning",
+        "QLoRA",
+        "RAG",
+        "Embeddings",
+        "Búsqueda semántica",
+        "Procesamiento de lenguaje natural",
+        "Transcripción automática",
+        "Clasificación documental",
+        "Agentes de inteligencia artificial",
+        "Automatización mediante IA"
+      ],
+      "modelos_ia_utilizados": [
+        "Qwen",
+        "Gemma",
+        "Granite",
+        "Mistral",
+        "DeepSeek",
+        "Whisper"
+      ],
+      "multimedia_y_comunicaciones": [
+        "WebRTC",
+        "Mediasoup",
+        "FFmpeg",
+        "Streaming",
+        "Grabación audiovisual",
+        "Sincronización de audio y vídeo",
+        "Procesamiento multimedia"
+      ],
+      "formatos_datos": [
+        "JSON",
+        "XML",
+        "YAML",
+        "CSV",
+        "HTML",
+        "Markdown",
+        "PDF"
+      ],
+      "desarrollo_3d": [
+        "Modelado tridimensional",
+        "Animación 3D",
+        "Renderizado",
+        "Visualización industrial",
+        "Visualización arquitectónica",
+        "Diseño industrial",
+        "Realidad virtual",
+        "Gráficos interactivos",
+        "Reconstrucción tridimensional"
+      ],
+      "herramientas_educativas": [
+        "Moodle",
+        "Sistemas de información académica",
+        "Plataformas LMS",
+        "Gestión de evaluaciones",
+        "Gestión de asistencia",
+        "Integración LMS-SIS"
+      ]
+    },
+    "proyectos_destacados": [
+      {
+        "nombre": "JOCARSA ERP",
+        "categoria": "Software empresarial",
+        "descripcion": "Sistema de planificación de recursos empresariales con gestión modular, bases de datos, personalización de entidades y formularios.",
+        "tecnologias": [
+          "PHP",
+          "JavaScript",
+          "Bases de datos",
+          "HTML",
+          "CSS"
+        ]
+      },
+      {
+        "nombre": "JOCARSA Formación",
+        "categoria": "Tecnología educativa",
+        "descripcion": "Sistema de información académica para gestión de alumnado, matrículas, evaluaciones, asistencias y procesos formativos.",
+        "tecnologias": [
+          "PHP",
+          "JavaScript",
+          "SQL",
+          "Moodle"
+        ]
+      },
+      {
+        "nombre": "JOCARSA Videoconferencias",
+        "categoria": "Comunicaciones",
+        "descripcion": "Plataforma multiusuario y multiorganización de videoconferencia con salas, presentaciones, grabación, pantalla compartida y arquitectura SFU.",
+        "tecnologias": [
+          "JavaScript",
+          "Node.js",
+          "WebRTC",
+          "Mediasoup",
+          "FFmpeg",
+          "SQLite",
+          "Linux"
+        ]
+      },
+      {
+        "nombre": "JOCARSA Prácticas",
+        "categoria": "Gestión educativa",
+        "descripcion": "Plataforma para gestionar alumnado, empresas, currículums, ofertas y asignaciones de prácticas.",
+        "tecnologias": [
+          "Desarrollo web",
+          "Bases de datos",
+          "CSV"
+        ]
+      },
+      {
+        "nombre": "JOCARSA Cuaderno",
+        "categoria": "Gestión docente",
+        "descripcion": "Cuaderno digital del profesorado para organizar la actividad académica."
+      },
+      {
+        "nombre": "JOCARSA Asistencias",
+        "categoria": "Gestión educativa",
+        "descripcion": "Herramienta de registro y seguimiento de asistencia del alumnado."
+      },
+      {
+        "nombre": "JOCARSA Cuestionarios",
+        "categoria": "Evaluación educativa",
+        "descripcion": "Aplicación para creación y gestión de cuestionarios."
+      },
+      {
+        "nombre": "JOCARSA Kanban",
+        "categoria": "Productividad",
+        "descripcion": "Sistema de gestión visual de tareas con tableros, columnas, categorías y calendarios."
+      },
+      {
+        "nombre": "JOCARSA Ventas",
+        "categoria": "CRM",
+        "descripcion": "Software de gestión comercial y relaciones con clientes."
+      },
+      {
+        "nombre": "JOCARSA Ayuda",
+        "categoria": "Inteligencia artificial",
+        "descripcion": "Sistema de asistencia conversacional con integración de avatares y generación de respuestas."
+      },
+      {
+        "nombre": "JOCARSA Avatar",
+        "categoria": "Inteligencia artificial y multimedia",
+        "descripcion": "Sistema de representación audiovisual de asistentes virtuales con streaming y sincronización."
+      },
+      {
+        "nombre": "JOCARSA Inspector",
+        "categoria": "Administración de sistemas",
+        "descripcion": "Plataforma de monitorización de servidores, recursos y actividad mediante indicadores y gráficas."
+      },
+      {
+        "nombre": "JOCARSA Mecanografía",
+        "categoria": "Tecnología educativa",
+        "descripcion": "Aplicación para el aprendizaje y entrenamiento de mecanografía."
+      },
+      {
+        "nombre": "JOCARSA Presentación",
+        "categoria": "Productividad y docencia",
+        "descripcion": "Herramienta para presentaciones y contenidos didácticos."
+      },
+      {
+        "nombre": "JOCARSA Planos Multiusuario",
+        "categoria": "Diseño técnico",
+        "descripcion": "Aplicación colaborativa para elaboración y edición de planos técnicos."
+      },
+      {
+        "nombre": "Persona IA",
+        "categoria": "Investigación en inteligencia artificial",
+        "descripcion": "Sistema experimental de identidad conversacional con ingesta de corpus, entrenamiento QLoRA, memoria semántica y evaluación de modelos.",
+        "tecnologias": [
+          "Python",
+          "Qwen",
+          "QLoRA",
+          "Ollama",
+          "Flask",
+          "Procesamiento de lenguaje natural"
+        ]
+      },
+      {
+        "nombre": "Clasificador documental inteligente",
+        "categoria": "Automatización con IA",
+        "descripcion": "Herramienta para extraer texto de documentos PDF, clasificarlos automáticamente y organizarlos mediante modelos locales.",
+        "tecnologias": [
+          "Python",
+          "PDF",
+          "Ollama",
+          "Flask"
+        ]
+      },
+      {
+        "nombre": "JOCARSA Biblioteca",
+        "categoria": "Gestión documental",
+        "descripcion": "Soluciones de organización, consulta y gestión de documentación digital."
+      }
+    ],
+    "publicaciones_y_contenidos": {
+      "actividad": [
+        "Autor de libros técnicos",
+        "Autor de cursos audiovisuales",
+        "Desarrollador de materiales didácticos",
+        "Creador de documentación técnica",
+        "Productor de contenidos educativos digitales"
+      ],
+      "publicaciones_conocidas": [
+        {
+          "titulo": "Aprende programación con Python",
+          "tipo": "Libro técnico",
+          "fecha": null
+        }
+      ],
+      "tematicas": [
+        "Python",
+        "SQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Desarrollo web",
+        "Bases de datos",
+        "Diseño digital",
+        "Inteligencia artificial",
+        "Sistemas informáticos"
+      ],
+      "plataformas": [
+        "LinkedIn Learning",
+        "Lynda.com",
+        "video2brain",
+        "Formación propia"
+      ]
+    },
+    "investigacion_y_desarrollo": [
+      {
+        "area": "Modelos de lenguaje locales",
+        "actividades": [
+          "Despliegue de modelos",
+          "Evaluación de rendimiento",
+          "Fine-tuning",
+          "Personalización de modelos",
+          "Memoria conversacional"
+        ]
+      },
+      {
+        "area": "Automatización documental",
+        "actividades": [
+          "Extracción de texto",
+          "Clasificación automática",
+          "Indexación semántica",
+          "Organización inteligente"
+        ]
+      },
+      {
+        "area": "Tecnología educativa",
+        "actividades": [
+          "Integración de plataformas académicas",
+          "Automatización de procesos docentes",
+          "Generación de materiales",
+          "Evaluación digital"
+        ]
+      },
+      {
+        "area": "Infraestructura de comunicaciones",
+        "actividades": [
+          "Videoconferencia WebRTC",
+          "Arquitecturas SFU",
+          "Optimización de recursos",
+          "Grabación multimedia",
+          "Monitorización de servidores"
+        ]
+      }
+    ],
+    "competencias_profesionales": [
+      "Dirección de proyectos",
+      "Emprendimiento tecnológico",
+      "Análisis de requisitos",
+      "Diseño de soluciones",
+      "Desarrollo integral de productos",
+      "Resolución de problemas",
+      "Formación y comunicación técnica",
+      "Creación de contenidos educativos",
+      "Diseño de experiencias de usuario",
+      "Integración de sistemas",
+      "Administración de infraestructuras",
+      "Investigación tecnológica",
+      "Aprendizaje continuo",
+      "Automatización de procesos"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Español",
+        "nivel": "Nativo"
+      },
+      {
+        "idioma": "Inglés",
+        "nivel": null,
+        "observaciones": "Uso profesional y docente; nivel certificado no confirmado"
+      }
+    ],
+    "informacion_pendiente_de_confirmacion": [
+      "Fechas exactas de algunas experiencias profesionales",
+      "Estado actual del Máster en Formación del Profesorado",
+      "Existencia y titulación exacta del Máster en Inteligencia Artificial y Big Data",
+      "Listado completo de cursos impartidos en la UPV",
+      "Listado completo de cursos publicados en LinkedIn Learning y Lynda.com",
+      "Bibliografía completa con editoriales, ISBN y fechas",
+      "Nivel certificado de idiomas",
+      "Fechas y responsabilidades de algunas colaboraciones profesionales"
+    ],
+    "ultima_actualizacion": "2026-10-30"
+  }
+}

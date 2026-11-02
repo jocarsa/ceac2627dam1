@@ -1,0 +1,6 @@
+Datetime: 2026-11-02T09:44:26.324Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/007-Uso de bases de datos no relacionales/002-Tipos de bases de datos no relacionales
+Command: python3 001-creador\ de\ json.py
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/007-Uso de bases de datos no relacionales/002-Tipos de bases de datos no relacionales$ 

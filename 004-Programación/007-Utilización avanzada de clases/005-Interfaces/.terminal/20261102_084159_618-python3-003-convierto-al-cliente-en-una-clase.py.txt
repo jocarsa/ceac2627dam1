@@ -1,0 +1,7 @@
+Datetime: 2026-11-02T07:41:59.618Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/005-Interfaces
+Command: python3 003-convierto\ al\ cliente\ en\ una\ clase.py
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Program
+ación/007-Utilización avanzada de clases/005-Interfaces$ 

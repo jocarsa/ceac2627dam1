@@ -1,0 +1,24 @@
+Datetime: 2026-10-29T08:03:33.933Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/003-Jerarquía de clases Superclases y subclases
+Command: python3 002-supersuperclase.py
+
+Result:
+  File "/var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/003-Jerarquía de clases Superclases y subclases/002-supersuperclase.py", line 3
+    self.color = micolor
+TabError: inconsistent use of tabs and spaces in indentation
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_004-Programación_007-Utilización avanzada de clases_003-Jerarquía de clases Superclases y subclases_002-supersuperclase.py.1000.crash'
+
+Original exception was:
+  File "/var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/003-Jerarquía de clases Superclases y subclases/002-supersuperclase.py", line 3
+    self.color = micolor
+TabError: inconsistent use of tabs and spaces in indentation
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/007-Ut
+ilización avanzada de clases/003-Jerarquía de clases Superclases y subclases$ 

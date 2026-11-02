@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <p id="nombre"></p>
+    <p id="apellidos"></p>
+    <p id="email"></p>
+    <script>
+      // Cojo los elementos HTML
+      let nombre = document.querySelector("#nombre")
+      // Vete y traeme el archivo json
+      fetch("minicurriculum.json")
+      .then(function(resultado){return resultado.json()}) // Lo que viene, viene como json
+      .then(function(datos){
+        // Antes que nada, pintame los datos en la consola
+      	console.log(datos)
+      })
+    </script>
+  </body>
+</html>

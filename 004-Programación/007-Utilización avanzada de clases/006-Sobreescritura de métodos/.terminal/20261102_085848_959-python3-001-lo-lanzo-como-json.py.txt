@@ -1,0 +1,8 @@
+Datetime: 2026-11-02T07:58:48.959Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/006-Sobreescritura de métodos
+Command: python3 001-lo\ lanzo\ como\ json.py
+
+Result:
+<__main__.Pedido object at 0x772aab39cf80>
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam
+1/004-Programación/007-Utilización avanzada de clases/006-Sobreescritura de métodos$ 

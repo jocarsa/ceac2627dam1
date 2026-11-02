@@ -1,0 +1,15 @@
+Datetime: 2026-11-02T08:18:31.168Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/008-Mantenimiento de la persistencia de los objetos/002-Características de las bases de datos orientadas a objetos
+Command: sudo apt install -y gnupg curl
+
+Result:
+sudo apt install -y gnupg curl
+
+Leyendo lista de paquetes... 0%Leyendo lista de paquetes... 100%Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias... 0%Creando árbol de dependencias... 0%Creando árbol de dependencias... 50%Creando árbol de dependencias... 50%Creando árbol de dependencias... Hecho
+Leyendo la información de estado... 0%Leyendo la información de estado... 0%Leyendo la información de estado... Hecho
+gnupg ya está en su versión más reciente (2.4.4-2ubuntu17.6).
+curl ya está en su versión más reciente (8.5.0-2ubuntu10.16).
+0 actualizados, 0 nuevos se instalarán, 0 para eliminar y 216 no actualizados.
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/00
+8-Mantenimiento de la persistencia de los objetos/002-Características de las bases de datos orientadas a objetos$ 

@@ -1,0 +1,24 @@
+Datetime: 2026-11-02T08:03:03.217Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/007-Constructores y herencia
+Command: python3 001-me\ guardo\ el\ json.py
+
+Result:
+{
+  "fecha": "2026-11-02",
+  "cliente": {
+    "nombre": "Jose Vicente",
+    "apellidos": "Carratala"
+  },
+  "productos": [
+    {
+      "nombre": "Producto1",
+      "precio": 34
+    },
+    {
+      "nombre": "Producto2",
+      "precio": 45
+    }
+  ]
+}
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programació
+n/007-Utilización avanzada de clases/007-Constructores y herencia$ 

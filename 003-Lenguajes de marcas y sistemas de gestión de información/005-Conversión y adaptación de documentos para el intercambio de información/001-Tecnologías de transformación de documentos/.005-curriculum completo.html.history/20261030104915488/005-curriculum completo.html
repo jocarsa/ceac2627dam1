@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Currículum | Jose Vicente Carratalá Sanchis</title>
+  <style>
+    :root{--accent:#35216f;--ink:#252536;--muted:#697082;--line:#e5e4ed}
+    *{box-sizing:border-box}
+    body{margin:0;background:#d5d5db;color:var(--ink);font:13px/1.48 Arial,Helvetica,sans-serif}
+    .toolbar{position:sticky;top:0;z-index:10;display:flex;gap:12px;align-items:center;justify-content:center;background:#25203c;padding:12px;color:white}
+    button{border:0;border-radius:6px;padding:10px 18px;background:#f5f1ff;color:var(--accent);font-weight:bold;cursor:pointer}
+    #paginas{padding:24px 0}
+    .pagina{width:210mm;min-height:297mm;margin:0 auto 24px;background:white;display:grid;grid-template-columns:64mm 1fr;box-shadow:0 8px 28px #20203530;overflow:hidden}
+    .izquierda{background:var(--accent);color:white;padding:15mm 8mm 12mm}
+    .derecha{padding:15mm 13mm 12mm}
+    .foto{width:100%;aspect-ratio:1;object-fit:cover;border-radius:9px;margin-bottom:16px;background:#4b3982}
+    h1{font-size:28px;line-height:1.13;margin:0 0 8px;letter-spacing:-.7px}
+    h2{font-size:13px;color:var(--accent);font-weight:600;line-height:1.4;margin:0 0 20px}
+    h3{font-size:13px;text-transform:uppercase;letter-spacing:1.1px;margin:22px 0 11px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+    .izquierda h3{border-color:#ffffff65;color:white}
+    p{margin:5px 0 10px;text-align:left}
+    a{color:inherit;text-decoration:none;overflow-wrap:anywhere}
+    .izquierda a{color:#fff}
+    .contacto{font-size:11px;line-height:1.7;overflow-wrap:anywhere}
+    .contacto div{margin:5px 0}
+    .item{padding:0 0 11px;margin:0 0 11px;border-bottom:1px solid var(--line);break-inside:avoid;page-break-inside:avoid}
+    .item:last-child{border-bottom:0}
+    .item h4{font-size:13px;margin:0 0 3px;color:#25213b}
+    .item .rol{font-weight:600;font-size:12px}
+    .fecha{font-size:11px;color:var(--muted);margin:2px 0 5px}
+    .detalle{font-size:11.5px;color:#55586a}
+    .etiquetas{display:flex;flex-wrap:wrap;gap:5px}
+    .etiqueta{font-size:10px;background:#ffffff1c;border:1px solid #ffffff30;border-radius:4px;padding:3px 6px}
+    .proyecto{margin-bottom:12px;break-inside:avoid}
+    .proyecto strong{font-size:12px}
+    .proyecto p{font-size:11px;color:#55586a;margin:3px 0}
+    .categoria{font-size:10px;color:var(--accent);font-weight:600}
+    .continuacion{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+    .mensaje{color:#8c1b35;text-align:center}
+    @media(max-width:850px){#paginas{padding:10px}.pagina{width:100%;min-height:0;grid-template-columns:minmax(150px,30%) 1fr}.izquierda,.derecha{padding:20px}}
+    @page{size:A4;margin:0}
+    @media print{body{background:white}.toolbar{display:none}#paginas{padding:0}.pagina{margin:0;box-shadow:none;width:210mm;height:297mm;min-height:297mm;break-after:page;page-break-after:always}.pagina:last-child{break-after:auto;page-break-after:auto}a{text-decoration:none}}
+  </style>
+</head>
+<body>
+  <div class="toolbar"><span>Currículum profesional</span><button onclick="window.print()">Imprimir / Guardar PDF</button></div>
+  <div id="paginas"></div>
+  <script>
+    // Cargamos el JSON y construimos el documento.
+    fetch('curriculum.json')
+      .then(respuesta => {if(!respuesta.ok)throw new Error('No se pudo cargar curriculum.json');return respuesta.json()})
+      .then(datos => dibujar(datos.curriculum))
+      .catch(error => document.querySelector('#paginas').innerHTML = '<p class="mensaje">'+escapar(error.message)+'. Abre el proyecto desde un servidor local.</p>');
+
+    function escapar(valor){return String(valor ?? '').replace(/[&<>"']/g, caracter => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[caracter]));}
+    function fecha(inicio,final){return [inicio,final].filter(Boolean).map(escapar).join(' — ');}
+    function listaTexto(valores){return (valores||[]).filter(Boolean).map(escapar).join(' · ');}
+    function seccion(titulo,contenido){return '<section><h3>'+escapar(titulo)+'</h3>'+contenido+'</section>';}
+    function itemExperiencia(e){let detalles=e.funciones||e.areas||e.especialidades||[];return '<article class="item"><h4>'+escapar(e.empresa)+'</h4><div class="rol">'+escapar(e.cargo)+'</div>'+(fecha(e.inicio,e.final)?'<div class="fecha">'+fecha(e.inicio,e.final)+'</div>':'')+(detalles.length?'<div class="detalle">'+listaTexto(detalles)+'</div>':'')+'</article>';}
+    function itemFormacion(e){return '<article class="item"><h4>'+escapar(e.titulo)+'</h4><div class="rol">'+escapar(e.institucion)+'</div>'+(fecha(e.inicio,e.final)?'<div class="fecha">'+fecha(e.inicio,e.final)+'</div>':'')+(e.estado?'<div class="detalle">'+escapar(e.estado)+'</div>':'')+'</article>';}
+    function itemProyecto(p){return '<article class="proyecto"><strong>'+escapar(p.nombre)+'</strong><div class="categoria">'+escapar(p.categoria)+'</div><p>'+escapar(p.descripcion)+'</p></article>';}
+    function pagina(){let nodo=document.createElement('main');nodo.className='pagina';nodo.innerHTML='<aside class="izquierda"></aside><div class="derecha"></div>';document.querySelector('#paginas').appendChild(nodo);return nodo;}
+    function cabeceraLateral(d){let c=d.datos_personales;return '<img class="foto" src="static/josevicente.png" alt="Fotografía profesional" onerror="this.style.display=\'none\'">'+seccion('Contacto','<div class="contacto">'+[c.email,c.residencia,c.web_empresa,c.github,c.linkedin].filter(Boolean).map(x=>'<div>'+escapar(x)+'</div>').join('')+'</div>');}
+    function dibujar(d){
+      const contenedor=document.querySelector('#paginas');contenedor.innerHTML='';
+      const primera=pagina(),lateral=primera.querySelector('.izquierda'),principal=primera.querySelector('.derecha');
+      lateral.innerHTML=cabeceraLateral(d);
+      const c=d.datos_personales;
+      principal.innerHTML='<h1>'+escapar(c.nombre)+' '+escapar(c.apellidos)+'</h1><h2>'+escapar(d.perfil_profesional.titular)+'</h2><p>'+escapar(d.perfil_profesional.descripcion)+'</p>';
+      // Elementos individuales para distribuirlos sin cortar experiencias.
+      const bloques=[];
+      const agregar=(titulo,htmls)=>{bloques.push({titulo,htmls});};
+      agregar('Experiencia profesional',d.experiencia_laboral.map(itemExperiencia));
+      agregar('Formación académica',d.formacion_academica.map(itemFormacion));
+      agregar('Proyectos destacados',d.proyectos_destacados.map(itemProyecto));
+      agregar('Experiencia docente',[...d.experiencia_docente.ciclos_formativos.map(x=>'<article class="item"><h4>'+escapar(x.siglas)+'</h4><div class="detalle">'+escapar(x.nombre)+'</div></article>'),'<article class="item"><h4>Módulos impartidos</h4><div class="detalle">'+listaTexto(d.experiencia_docente.modulos_y_materias)+'</div></article>']);
+      agregar('Investigación y desarrollo',d.investigacion_y_desarrollo.map(x=>'<article class="item"><h4>'+escapar(x.area)+'</h4><div class="detalle">'+listaTexto(x.actividades)+'</div></article>'));
+      agregar('Publicaciones y contenidos',[...d.publicaciones_y_contenidos.actividad.map(x=>'<article class="item">'+escapar(x)+'</article>')]);
+      agregar('Competencias técnicas',Object.entries(d.competencias_tecnicas).map(([clave,valores])=>'<article class="item"><h4>'+escapar(clave.replaceAll('_',' '))+'</h4><div class="detalle">'+listaTexto(valores)+'</div></article>'));
+      agregar('Idiomas',d.idiomas.map(x=>'<article class="item"><h4>'+escapar(x.idioma)+'</h4>'+(x.nivel?'<div class="detalle">'+escapar(x.nivel)+'</div>':'')+'</article>'));
+      let actual=primera;
+      for(const bloque of bloques){
+        let titulo=null;
+        for(const html of bloque.htmls){
+          if(!titulo){titulo=document.createElement('h3');titulo.textContent=bloque.titulo;actual.appendChild(titulo);}
+          const envoltorio=document.createElement('div');envoltorio.innerHTML=html;const elemento=envoltorio.firstElementChild;actual.appendChild(elemento);
+          // A4: 297 mm. Se comprueba el desbordamiento real.
+          if(actual.scrollHeight>actual.clientHeight+2 || actual.closest('.pagina').scrollHeight>actual.closest('.pagina').clientHeight+2){
+            actual.removeChild(elemento);
+            if(!titulo.previousElementSibling || titulo===actual.firstElementChild){titulo.remove();}
+            const nueva=pagina();nueva.querySelector('.izquierda').innerHTML='<div class="continuacion" style="color:white">'+escapar(c.nombre)+'<br>'+escapar(c.apellidos)+'</div>';
+            actual=nueva.querySelector('.derecha');titulo=document.createElement('h3');titulo.textContent=bloque.titulo+' (continuación)';actual.appendChild(titulo);actual.appendChild(elemento);
+          }
+        }
+      }
+      // La barra lateral solo incluye información compacta y relevante.
+      lateral.innerHTML+=seccion('Especialidades','<div class="etiquetas">'+['Docencia FP','Desarrollo web','Inteligencia artificial','Bases de datos','Diseño 3D','Linux'].map(x=>'<span class="etiqueta">'+x+'</span>').join('')+'</div>');
+    }
+  </script>
+</body>
+</html>

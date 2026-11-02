@@ -1,0 +1,10 @@
+Datetime: 2026-11-02T08:18:46.849Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/008-Mantenimiento de la persistencia de los objetos/002-Características de las bases de datos orientadas a objetos
+Command: echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/8.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+
+Result:
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/8.0 multiverse" | \
+sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/8.0 multiverse
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/00
+8-Mantenimiento de la persistencia de los objetos/002-Características de las bases de datos orientadas a objetos$ 

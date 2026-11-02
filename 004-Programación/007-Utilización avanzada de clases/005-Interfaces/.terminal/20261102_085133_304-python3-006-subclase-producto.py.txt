@@ -1,0 +1,28 @@
+Datetime: 2026-11-02T07:51:33.304Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/005-Interfaces
+Command: python3 006-subclase\ producto.py
+
+Result:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/005-Interfaces/006-subclase producto.py", line 18, in <module>
+    pedido1 = Pedido("2026-11-02","Jose Vicente","Carratala")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Pedido.__init__() missing 2 required positional arguments: 'miemail' and 'mitelefono'
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_004-Programación_007-Utilización avanzada de clases_005-Interfaces_006-subclase producto.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/005-Interfaces/006-subclase producto.py", line 18, in <module>
+    pedido1 = Pedido("2026-11-02","Jose Vicente","Carratala")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Pedido.__init__() missing 2 required positional arguments: 'miemail' and 'mitelefono'
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/007-Ut
+ilización avanzada de clases/005-Interfaces$ 

@@ -1,0 +1,10 @@
+Datetime: 2026-10-29T07:56:23.663Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/002-Herencia y polimorfismo
+Command: python3 005-herencia.py
+
+Result:
+naranja
+0
+miau
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/007-Ut
+ilización avanzada de clases/002-Herencia y polimorfismo$ 

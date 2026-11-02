@@ -1,0 +1,8 @@
+Datetime: 2026-11-02T07:48:34.162Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/005-Interfaces
+Command: python3 005-clase\ con\ lista.py
+
+Result:
+<__main__.Persona object at 0x7d50a132f050>
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/007-Ut
+ilización avanzada de clases/005-Interfaces$ 

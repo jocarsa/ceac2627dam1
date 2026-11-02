@@ -1,0 +1,52 @@
+Datetime: 2026-11-02T09:36:53.347Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/007-Uso de bases de datos no relacionales/001-Características de las bases de datos no relacionales
+Command: python3 008-por\ ultimo\ creo\ un\ pedido.py
+
+Result:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/001-Bases de datos/007-Uso de bases de datos no relacionales/001-Características de las bases de datos no relacionales/008-por ultimo creo un pedido.py", line 22, in <module>
+    producto = json.load(
+               ^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 4 column 10 (char 50)
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_001-Bases de datos_007-Uso de bases de datos no relacionales_001-Características de las bases de datos no relacionales_008-por ultimo creo un pedido.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/001-Bases de datos/007-Uso de bases de datos no relacionales/001-Características de las bases de datos no relacionales/008-por ultimo creo un pedido.py", line 22, in <module>
+    producto = json.load(
+               ^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 4 column 10 (char 50)
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de dat
+os/007-Uso de bases de datos no relacionales/001-Características de las bases de datos no relacionales$ 

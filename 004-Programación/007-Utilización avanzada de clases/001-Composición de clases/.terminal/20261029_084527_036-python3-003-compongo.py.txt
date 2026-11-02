@@ -1,0 +1,7 @@
+Datetime: 2026-10-29T07:45:27.036Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/001-Composición de clases
+Command: python3 003-compongo.py
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/007-Ut
+ilización avanzada de clases/001-Composición de clases$ 

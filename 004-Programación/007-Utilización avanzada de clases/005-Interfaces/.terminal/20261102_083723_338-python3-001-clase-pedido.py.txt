@@ -1,0 +1,8 @@
+Datetime: 2026-11-02T07:37:23.338Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/005-Interfaces
+Command: python3 001-clase\ pedido.py
+
+Result:
+<__main__.Pedido object at 0x7e7f80b2ef60>
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Program
+ación/007-Utilización avanzada de clases/005-Interfaces$ 

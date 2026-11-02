@@ -1,0 +1,1085 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Diagrama de entidades y datos</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;color:#263238}
+header{
+  height:70px;background:white;border-bottom:1px solid #ddd;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 25px
+}
+h1{font-size:20px;font-weight:500}
+.herramientas{display:flex;align-items:center;gap:15px}
+#estado{font-size:12px;color:#64748b}
+button{
+  border:0;background:#2563eb;color:white;
+  padding:9px 13px;border-radius:7px;cursor:pointer
+}
+button:hover{filter:brightness(.9)}
+main{
+  height:calc(100vh - 70px);overflow:auto;position:relative;
+  background-color:#f8fafc;
+  background-image:
+    linear-gradient(#e8edf3 1px,transparent 1px),
+    linear-gradient(90deg,#e8edf3 1px,transparent 1px);
+  background-size:25px 25px
+}
+#espacio{position:relative;width:3500px;height:2500px}
+#cables{
+  position:absolute;inset:0;width:100%;height:100%;
+  pointer-events:none;overflow:visible
+}
+.cable{fill:none;stroke:#64748b;stroke-width:2.5}
+.cable-hit{
+  fill:none;stroke:transparent;stroke-width:16;
+  pointer-events:stroke;cursor:pointer
+}
+.cable-grupo:hover .cable{stroke:#ef4444}
+#preview{
+  fill:none;stroke:#2563eb;stroke-width:3;
+  stroke-dasharray:7 5;pointer-events:none
+}
+
+/* ENTIDAD 3D */
+.entidad{
+  position:absolute;width:330px;
+  perspective:1200px;
+  filter:drop-shadow(0 5px 12px #00000018)
+}
+.rotador{
+  position:relative;width:100%;
+  transform-style:preserve-3d;
+  transition:transform .65s cubic-bezier(.2,.8,.2,1)
+}
+.entidad.girada .rotador{transform:rotateY(180deg)}
+.cara{
+  position:absolute;top:0;left:0;width:100%;
+  background:white;border:1px solid #dce2ea;
+  border-radius:12px;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  overflow:visible
+}
+.cara-trasera{transform:rotateY(180deg)}
+.cabecera{
+  background:#1e293b;color:white;padding:12px;
+  border-radius:11px 11px 0 0;
+  display:flex;align-items:center;gap:7px;
+  cursor:move;user-select:none;touch-action:none
+}
+.cara-trasera .cabecera{background:#075985}
+.nombre{
+  flex:1;font-weight:bold;min-width:40px;
+  outline:none;cursor:text;user-select:text
+}
+.icono{
+  background:#ffffff20;color:white;
+  padding:5px 9px;font-size:16px
+}
+.icono:hover{background:#ffffff40}
+.eliminar:hover{background:#ef4444}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{
+  text-align:left;background:#edf2f7;color:#475569;
+  padding:10px;font-weight:600
+}
+td{
+  padding:9px;border-bottom:1px solid #edf0f4;
+  outline:none
+}
+tbody tr:nth-child(even){background:#f8fafc}
+tbody tr:hover{background:#eff6ff}
+td[contenteditable]{min-width:65px}
+.propiedad td{position:relative}
+.celda-nombre{padding-left:23px}
+.celda-tipo{padding-right:23px}
+.conector{
+  position:absolute;top:50%;
+  width:13px;height:13px;border-radius:50%;
+  transform:translateY(-50%);
+  cursor:crosshair;z-index:10;touch-action:none;
+  border:2px solid white
+}
+.entrada{left:-7px;background:#10b981}
+.salida{right:-7px;background:#f59e0b}
+.conector:hover,.conector.destino{
+  box-shadow:0 0 0 6px #2563eb30;
+  background:#2563eb
+}
+.pie{padding:10px}
+.secundario{
+  width:100%;background:#f1f5f9;color:#475569
+}
+.pie-datos{
+  display:flex;justify-content:space-between;
+  align-items:center;gap:8px;padding:10px;
+  border-top:1px solid #e2e8f0
+}
+.pie-datos button{font-size:12px}
+.tabla-datos{
+  width:100%;overflow:auto;max-height:380px;
+}
+.tabla-datos table{min-width:max-content}
+.tabla-datos th,.tabla-datos td{
+  min-width:95px;padding:7px
+}
+.tabla-datos input,.tabla-datos select{
+  width:100%;min-width:90px;max-width:170px;
+  border:1px solid #dbe3ed;border-radius:5px;
+  padding:7px;background:white;color:#334155;
+  font:inherit
+}
+.tabla-datos input:focus,.tabla-datos select:focus{
+  outline:2px solid #93c5fd
+}
+.tabla-datos .borrar-fila{
+  background:#fee2e2;color:#b91c1c;
+  padding:5px 9px
+}
+.fk{background:#eff6ff!important}
+.vacio{
+  padding:25px;text-align:center;
+  color:#94a3b8;font-size:13px
+}
+.contador{font-size:12px;color:#64748b}
+body.conectando,body.conectando *{
+  cursor:crosshair!important
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Diagrama de entidades</h1>
+  <div class="herramientas">
+    <span id="estado">Guardado automático</span>
+    <button id="nueva">+ Nueva entidad</button>
+  </div>
+</header>
+
+<main id="lienzo">
+  <div id="espacio">
+    <svg id="cables">
+      <path id="preview"></path>
+    </svg>
+  </div>
+</main>
+
+<script>
+const CLAVE="diagrama_clases_v1";
+const espacio=document.querySelector("#espacio");
+const svg=document.querySelector("#cables");
+const preview=document.querySelector("#preview");
+const estado=document.querySelector("#estado");
+const NS="http://www.w3.org/2000/svg";
+
+let contador=0;
+let contadorPropiedades=0;
+let contadorConexiones=0;
+let contadorRegistros=0;
+let conexiones=[];
+let arrastreEntidad=null;
+let arrastreCable=null;
+let dx=0,dy=0;
+let framePendiente=false;
+let guardadoPendiente=false;
+
+// ==========================================
+// UTILIDADES
+// ==========================================
+
+function entidades(){
+  return [...document.querySelectorAll(".entidad")];
+}
+
+function entidadPorId(id){
+  return entidades().find(e=>e.dataset.id===String(id));
+}
+
+function propiedadPorId(id){
+  return [...document.querySelectorAll(".propiedad")]
+    .find(p=>p.dataset.id===String(id));
+}
+
+function datosEntidad(entidad){
+  return JSON.parse(entidad.dataset.registros||"[]");
+}
+
+function establecerDatos(entidad,datos){
+  entidad.dataset.registros=JSON.stringify(datos);
+}
+
+function propiedadNombre(fila){
+  return fila.querySelector(".celda-nombre").textContent.trim();
+}
+
+function propiedadTipo(fila){
+  return fila.querySelector(".celda-tipo").textContent.trim();
+}
+
+function crearElemento(tag,clase,texto){
+  const e=document.createElement(tag);
+  if(clase)e.className=clase;
+  if(texto!==undefined)e.textContent=texto;
+  return e;
+}
+
+function programarGuardado(){
+  if(guardadoPendiente)return;
+  guardadoPendiente=true;
+  requestAnimationFrame(()=>{
+    guardadoPendiente=false;
+    guardar();
+  });
+}
+
+function guardar(){
+  const lista=entidades().map(e=>({
+    id:Number(e.dataset.id),
+    nombre:e.querySelector(".nombre").textContent,
+    x:parseFloat(e.style.left)||0,
+    y:parseFloat(e.style.top)||0,
+    girada:e.classList.contains("girada"),
+    propiedades:[...e.querySelectorAll(".propiedad")].map(p=>({
+      id:p.dataset.id,
+      nombre:propiedadNombre(p),
+      tipo:propiedadTipo(p)
+    })),
+    registros:datosEntidad(e)
+  }));
+
+  try{
+    localStorage.setItem(CLAVE,JSON.stringify({
+      contador,
+      contadorPropiedades,
+      contadorConexiones,
+      contadorRegistros,
+      entidades:lista,
+      conexiones
+    }));
+    estado.textContent="✓ Guardado automáticamente";
+  }catch(error){
+    estado.textContent="Error al guardar";
+    console.error(error);
+  }
+}
+
+// ==========================================
+// ENTIDADES
+// ==========================================
+
+function nuevaEntidad(){
+  contador++;
+  crearEntidad({
+    id:contador,
+    nombre:"Entidad "+contador,
+    x:50+contador*35,
+    y:50+contador*35,
+    propiedades:[
+      {nombre:"id",tipo:"INT"},
+      {nombre:"nombre",tipo:"VARCHAR"}
+    ],
+    registros:[]
+  });
+  guardar();
+}
+
+function crearEntidad(datos){
+  const e=crearElemento("div","entidad");
+  e.dataset.id=datos.id;
+  e.style.left=(datos.x||0)+"px";
+  e.style.top=(datos.y||0)+"px";
+  e.dataset.registros=JSON.stringify(datos.registros||[]);
+
+  contador=Math.max(contador,Number(datos.id)||0);
+
+  e.innerHTML=`
+    <div class="rotador">
+      <section class="cara cara-frontal">
+        <div class="cabecera">
+          <span class="nombre" contenteditable="true"></span>
+          <button class="icono girar" title="Ver datos">▦</button>
+          <button class="icono eliminar" title="Eliminar">×</button>
+        </div>
+        <table>
+          <thead><tr><th>Propiedad</th><th>Tipo</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <div class="pie">
+          <button class="secundario agregar-propiedad">
+            + Añadir propiedad
+          </button>
+        </div>
+      </section>
+
+      <section class="cara cara-trasera">
+        <div class="cabecera">
+          <span class="titulo-datos"></span>
+          <button class="icono girar" title="Ver esquema">↩</button>
+        </div>
+        <div class="tabla-datos"></div>
+        <div class="pie-datos">
+          <span class="contador"></span>
+          <button class="agregar-registro">+ Registro</button>
+        </div>
+      </section>
+    </div>
+  `;
+
+  e.querySelector(".nombre").textContent=datos.nombre;
+
+  (datos.propiedades||[]).forEach(p=>{
+    crearPropiedad(e,p);
+  });
+
+  espacio.appendChild(e);
+
+  e.querySelectorAll(".girar").forEach(b=>{
+    b.onclick=()=>girar(e);
+  });
+
+  e.querySelector(".eliminar").onclick=()=>{
+    if(!confirm("¿Eliminar esta entidad y sus datos?"))return;
+
+    const ids=new Set(
+      [...e.querySelectorAll(".propiedad")].map(p=>p.dataset.id)
+    );
+
+    conexiones=conexiones.filter(c=>
+      !ids.has(String(c.origen))&&!ids.has(String(c.destino))
+    );
+
+    e.remove();
+    actualizarTodasLasTablas();
+    redibujar();
+    guardar();
+  };
+
+  e.querySelector(".agregar-propiedad").onclick=()=>{
+    crearPropiedad(e,{nombre:"propiedad",tipo:"TEXT"});
+    actualizarTodasLasTablas();
+    ajustarAltura(e);
+    redibujar();
+    guardar();
+  };
+
+  e.querySelector(".agregar-registro").onclick=()=>{
+    agregarRegistro(e);
+  };
+
+  e.querySelector(".nombre").addEventListener("input",()=>{
+    e.querySelector(".titulo-datos").textContent=
+      e.querySelector(".nombre").textContent;
+    actualizarTodasLasTablas();
+    programarGuardado();
+  });
+
+  const cabecera=e.querySelector(".cara-frontal .cabecera");
+
+  cabecera.addEventListener("pointerdown",ev=>{
+    if(ev.button!==0)return;
+    if(ev.target.closest("button,[contenteditable]"))return;
+    iniciarMovimiento(ev,e,cabecera);
+  });
+
+  const cabeceraTrasera=e.querySelector(".cara-trasera .cabecera");
+
+  cabeceraTrasera.addEventListener("pointerdown",ev=>{
+    if(ev.button!==0)return;
+    if(ev.target.closest("button"))return;
+    iniciarMovimiento(ev,e,cabeceraTrasera);
+  });
+
+  if(datos.girada)e.classList.add("girada");
+
+  e.querySelector(".titulo-datos").textContent=datos.nombre;
+  ajustarAltura(e);
+  return e;
+}
+
+function iniciarMovimiento(ev,e,cabecera){
+  const rect=e.getBoundingClientRect();
+  dx=ev.clientX-rect.left;
+  dy=ev.clientY-rect.top;
+
+  arrastreEntidad={elemento:e,pointerId:ev.pointerId};
+  cabecera.setPointerCapture(ev.pointerId);
+  ev.preventDefault();
+}
+
+function ajustarAltura(e){
+  const cara=e.classList.contains("girada")
+    ?e.querySelector(".cara-trasera")
+    :e.querySelector(".cara-frontal");
+
+  e.querySelector(".rotador").style.height=
+    Math.max(120,cara.scrollHeight)+"px";
+}
+
+function girar(e){
+  e.classList.toggle("girada");
+  actualizarTabla(e);
+  ajustarAltura(e);
+  redibujar();
+  guardar();
+}
+
+// ==========================================
+// PROPIEDADES
+// ==========================================
+
+function crearPropiedad(e,datos){
+  let id=datos.id;
+
+  if(!id){
+    id="p"+(++contadorPropiedades);
+  }else{
+    const n=Number(String(id).replace(/^p/,""));
+    if(Number.isFinite(n))
+      contadorPropiedades=Math.max(contadorPropiedades,n);
+  }
+
+  const fila=crearElemento("tr","propiedad");
+  fila.dataset.id=id;
+
+  const nombre=crearElemento("td","celda-nombre",datos.nombre);
+  const tipo=crearElemento("td","celda-tipo",datos.tipo);
+  nombre.contentEditable="true";
+  tipo.contentEditable="true";
+
+  const entrada=crearElemento("span","conector entrada");
+  const salida=crearElemento("span","conector salida");
+
+  nombre.appendChild(entrada);
+  tipo.appendChild(salida);
+  fila.append(nombre,tipo);
+
+  e.querySelector(".cara-frontal tbody").appendChild(fila);
+
+  // La edición cambia el esquema y refresca las tablas.
+  fila.addEventListener("input",()=>{
+    actualizarTodasLasTablas();
+    ajustarAltura(e);
+    redibujar();
+    programarGuardado();
+  });
+
+  entrada.addEventListener("pointerdown",ev=>
+    iniciarCable(ev,id,"entrada")
+  );
+
+  salida.addEventListener("pointerdown",ev=>
+    iniciarCable(ev,id,"salida")
+  );
+}
+
+// ==========================================
+// RELACIONES Y CLAVES FORÁNEAS
+// ==========================================
+
+// La propiedad destino actúa como FK.
+// La propiedad origen proporciona los valores
+// que identifican o describen el registro relacionado.
+
+function relacionFK(idPropiedad){
+  return conexiones.find(c=>
+    String(c.destino)===String(idPropiedad)
+  );
+}
+
+function informacionFK(idPropiedad){
+  const conexion=relacionFK(idPropiedad);
+  if(!conexion)return null;
+
+  const origen=propiedadPorId(conexion.origen);
+  if(!origen)return null;
+
+  const entidad=origen.closest(".entidad");
+
+  return {
+    entidad,
+    propiedad:origen,
+    registros:datosEntidad(entidad)
+  };
+}
+
+function etiquetaRegistro(entidad,registro,propiedad){
+  const nombre=propiedadNombre(propiedad);
+  const valor=registro[propiedad.dataset.id];
+
+  const texto=valor===undefined||valor===null
+    ?""
+    :String(valor);
+
+  const propiedadNombreVisible=[
+    ...entidad.querySelectorAll(".propiedad")
+  ].find(p=>propiedadNombre(p).toLowerCase()==="nombre");
+
+  const descripcion=propiedadNombreVisible
+    ?registro[propiedadNombreVisible.dataset.id]
+    :"";
+
+  if(descripcion && String(descripcion)!==texto){
+    return texto+" · "+descripcion;
+  }
+
+  return texto||"Registro "+registro._id;
+}
+
+// ==========================================
+// TABLAS DE DATOS
+// ==========================================
+
+function actualizarTodasLasTablas(){
+  entidades().forEach(actualizarTabla);
+}
+
+function actualizarTabla(e){
+  const contenedor=e.querySelector(".tabla-datos");
+  const propiedades=[...e.querySelectorAll(".propiedad")];
+  const registros=datosEntidad(e);
+
+  contenedor.replaceChildren();
+
+  e.querySelector(".contador").textContent=
+    registros.length+" registros";
+
+  if(!propiedades.length){
+    contenedor.appendChild(
+      crearElemento("div","vacio","Añade propiedades al esquema")
+    );
+    ajustarAltura(e);
+    return;
+  }
+
+  const tabla=document.createElement("table");
+  const thead=document.createElement("thead");
+  const encabezado=document.createElement("tr");
+
+  propiedades.forEach(p=>{
+    const fk=informacionFK(p.dataset.id);
+    const th=crearElemento(
+      "th",
+      fk?"fk":"",
+      propiedadNombre(p)+(fk?" ↗":"")
+    );
+    th.title=fk
+      ?"Clave foránea hacia "+fk.entidad.querySelector(".nombre").textContent
+      :"";
+    encabezado.appendChild(th);
+  });
+
+  encabezado.appendChild(crearElemento("th","",""));
+  thead.appendChild(encabezado);
+  tabla.appendChild(thead);
+
+  const tbody=document.createElement("tbody");
+
+  registros.forEach(registro=>{
+    const fila=document.createElement("tr");
+
+    propiedades.forEach(p=>{
+      const td=document.createElement("td");
+      const id=p.dataset.id;
+      const fk=informacionFK(id);
+
+      if(fk){
+        td.classList.add("fk");
+
+        const select=document.createElement("select");
+        const vacia=document.createElement("option");
+        vacia.value="";
+        vacia.textContent="— Seleccionar —";
+        select.appendChild(vacia);
+
+        fk.registros.forEach(relacionado=>{
+          const option=document.createElement("option");
+          option.value=relacionado._id;
+          option.textContent=etiquetaRegistro(
+            fk.entidad,relacionado,fk.propiedad
+          );
+          select.appendChild(option);
+        });
+
+        select.value=registro[id]||"";
+
+        // Si se borró el registro relacionado,
+        // mostrar la referencia como no disponible.
+        if(registro[id] && select.value!==String(registro[id])){
+          const ausente=document.createElement("option");
+          ausente.value=registro[id];
+          ausente.textContent="Referencia no disponible";
+          select.appendChild(ausente);
+          select.value=registro[id];
+        }
+
+        select.addEventListener("change",()=>{
+          registro[id]=select.value;
+          establecerDatos(e,registros);
+          actualizarTablasDependientes(e);
+          guardar();
+        });
+
+        td.appendChild(select);
+      }else{
+        const input=document.createElement("input");
+        const tipo=propiedadTipo(p).toUpperCase();
+
+        if(/^(INT|INTEGER|FLOAT|DOUBLE|DECIMAL|REAL|NUMERIC)/.test(tipo)){
+          input.type="number";
+          input.step=/^(INT|INTEGER)/.test(tipo)?"1":"any";
+        }else if(tipo==="DATE"){
+          input.type="date";
+        }else if(tipo==="DATETIME"||tipo==="TIMESTAMP"){
+          input.type="datetime-local";
+        }else{
+          input.type="text";
+        }
+
+        input.value=registro[id]??"";
+
+        input.addEventListener("input",()=>{
+          registro[id]=input.value;
+          establecerDatos(e,registros);
+          programarGuardado();
+          // Actualizar las etiquetas FK sin reconstruir
+          // el input que se está editando.
+          actualizarOpcionesDependientes(e);
+        });
+
+        td.appendChild(input);
+      }
+
+      fila.appendChild(td);
+    });
+
+    const acciones=document.createElement("td");
+    const borrar=crearElemento("button","borrar-fila","×");
+    borrar.title="Eliminar registro";
+
+    borrar.onclick=()=>{
+      if(!confirm("¿Eliminar este registro?"))return;
+
+      const nuevos=datosEntidad(e).filter(
+        r=>r._id!==registro._id
+      );
+
+      establecerDatos(e,nuevos);
+      actualizarTodasLasTablas();
+      guardar();
+    };
+
+    acciones.appendChild(borrar);
+    fila.appendChild(acciones);
+    tbody.appendChild(fila);
+  });
+
+  tabla.appendChild(tbody);
+  contenedor.appendChild(tabla);
+
+  if(!registros.length){
+    contenedor.appendChild(
+      crearElemento("div","vacio","Todavía no hay registros")
+    );
+  }
+
+  ajustarAltura(e);
+}
+
+function actualizarTablasDependientes(origen){
+  entidades().forEach(e=>{
+    if(e!==origen && dependeDe(e,origen)){
+      actualizarTabla(e);
+    }
+  });
+}
+
+function dependeDe(destino,origen){
+  const idsOrigen=new Set(
+    [...origen.querySelectorAll(".propiedad")].map(p=>p.dataset.id)
+  );
+
+  const idsDestino=new Set(
+    [...destino.querySelectorAll(".propiedad")].map(p=>p.dataset.id)
+  );
+
+  return conexiones.some(c=>
+    idsOrigen.has(String(c.origen)) &&
+    idsDestino.has(String(c.destino))
+  );
+}
+
+function actualizarOpcionesDependientes(origen){
+  entidades().forEach(destino=>{
+    if(destino===origen||!dependeDe(destino,origen))return;
+
+    const propiedades=[...destino.querySelectorAll(".propiedad")];
+    const tabla=destino.querySelector(".tabla-datos table");
+    if(!tabla)return;
+
+    propiedades.forEach((p,columna)=>{
+      const fk=informacionFK(p.dataset.id);
+      if(!fk||fk.entidad!==origen)return;
+
+      const registros=datosEntidad(destino);
+
+      [...tabla.querySelectorAll("tbody tr")].forEach((tr,i)=>{
+        const select=tr.children[columna]?.querySelector("select");
+        if(!select)return;
+
+        const valor=registros[i]?.[p.dataset.id]||"";
+        select.replaceChildren();
+
+        const vacia=new Option("— Seleccionar —","");
+        select.appendChild(vacia);
+
+        fk.registros.forEach(r=>{
+          select.appendChild(new Option(
+            etiquetaRegistro(origen,r,fk.propiedad),
+            r._id
+          ));
+        });
+
+        if(valor && !fk.registros.some(r=>r._id===valor)){
+          select.appendChild(
+            new Option("Referencia no disponible",valor)
+          );
+        }
+
+        select.value=valor;
+      });
+    });
+  });
+}
+
+function agregarRegistro(e){
+  const registros=datosEntidad(e);
+
+  const registro={
+    _id:"r"+(++contadorRegistros)
+  };
+
+  [...e.querySelectorAll(".propiedad")].forEach(p=>{
+    registro[p.dataset.id]="";
+  });
+
+  registros.push(registro);
+  establecerDatos(e,registros);
+
+  actualizarTabla(e);
+  actualizarTablasDependientes(e);
+  guardar();
+}
+
+// ==========================================
+// CONECTORES SVG
+// ==========================================
+
+function obtenerConector(id,lado){
+  return propiedadPorId(id)?.querySelector("."+lado)||null;
+}
+
+function puntoConector(el){
+  const r=el.getBoundingClientRect();
+  const b=espacio.getBoundingClientRect();
+
+  return {
+    x:r.left+r.width/2-b.left,
+    y:r.top+r.height/2-b.top
+  };
+}
+
+function puntoCursor(ev){
+  const r=espacio.getBoundingClientRect();
+  return {
+    x:ev.clientX-r.left,
+    y:ev.clientY-r.top
+  };
+}
+
+function curva(a,b){
+  const control=Math.max(65,Math.abs(b.x-a.x)*.5);
+  return `M ${a.x} ${a.y}
+          C ${a.x+control} ${a.y},
+            ${b.x-control} ${b.y},
+            ${b.x} ${b.y}`;
+}
+
+function redibujar(){
+  if(framePendiente)return;
+  framePendiente=true;
+
+  requestAnimationFrame(()=>{
+    framePendiente=false;
+    dibujarConexiones();
+  });
+}
+
+function dibujarConexiones(){
+  svg.querySelectorAll(".cable-grupo").forEach(e=>e.remove());
+  const fragmento=document.createDocumentFragment();
+
+  conexiones.forEach(c=>{
+    const origen=obtenerConector(c.origen,"salida");
+    const destino=obtenerConector(c.destino,"entrada");
+    if(!origen||!destino)return;
+
+    const d=curva(
+      puntoConector(origen),
+      puntoConector(destino)
+    );
+
+    const grupo=document.createElementNS(NS,"g");
+    grupo.setAttribute("class","cable-grupo");
+
+    const linea=document.createElementNS(NS,"path");
+    linea.setAttribute("class","cable");
+    linea.setAttribute("d",d);
+
+    const hit=document.createElementNS(NS,"path");
+    hit.setAttribute("class","cable-hit");
+    hit.setAttribute("d",d);
+
+    hit.addEventListener("dblclick",()=>{
+      conexiones=conexiones.filter(x=>x.id!==c.id);
+      actualizarTodasLasTablas();
+      redibujar();
+      guardar();
+    });
+
+    grupo.append(linea,hit);
+    fragmento.appendChild(grupo);
+  });
+
+  svg.insertBefore(fragmento,preview);
+}
+
+function iniciarCable(ev,id,lado){
+  if(ev.button!==0)return;
+  ev.preventDefault();
+  ev.stopPropagation();
+
+  arrastreCable={id,lado,pointerId:ev.pointerId};
+  document.body.classList.add("conectando");
+  ev.target.setPointerCapture(ev.pointerId);
+  actualizarPreview(ev);
+}
+
+function destinoValido(el){
+  if(!arrastreCable||!el)return false;
+
+  const lado=arrastreCable.lado==="salida"
+    ?"entrada":"salida";
+
+  const id=el.closest(".propiedad")?.dataset.id;
+
+  return el.classList.contains(lado) &&
+    id!==arrastreCable.id;
+}
+
+function actualizarPreview(ev){
+  if(!arrastreCable)return;
+
+  const conector=obtenerConector(
+    arrastreCable.id,arrastreCable.lado
+  );
+  if(!conector)return;
+
+  const fijo=puntoConector(conector);
+  const cursor=puntoCursor(ev);
+
+  preview.setAttribute("d",
+    arrastreCable.lado==="salida"
+      ?curva(fijo,cursor)
+      :curva(cursor,fijo)
+  );
+
+  document.querySelectorAll(".conector.destino")
+    .forEach(e=>e.classList.remove("destino"));
+
+  const candidato=document.elementFromPoint(
+    ev.clientX,ev.clientY
+  )?.closest(".conector");
+
+  if(destinoValido(candidato)){
+    candidato.classList.add("destino");
+  }
+}
+
+function terminarCable(ev){
+  if(!arrastreCable)return;
+
+  const candidato=document.elementFromPoint(
+    ev.clientX,ev.clientY
+  )?.closest(".conector");
+
+  if(destinoValido(candidato)){
+    const otro=candidato.closest(".propiedad").dataset.id;
+
+    const origen=arrastreCable.lado==="salida"
+      ?arrastreCable.id:otro;
+
+    const destino=arrastreCable.lado==="salida"
+      ?otro:arrastreCable.id;
+
+    const duplicada=conexiones.some(c=>
+      String(c.origen)===String(origen) &&
+      String(c.destino)===String(destino)
+    );
+
+    // Una propiedad destino solo puede tener
+    // una relación FK activa.
+    const ocupada=conexiones.some(c=>
+      String(c.destino)===String(destino)
+    );
+
+    if(!duplicada&&!ocupada){
+      conexiones.push({
+        id:++contadorConexiones,
+        origen,destino
+      });
+
+      actualizarTodasLasTablas();
+      guardar();
+    }else if(ocupada&&!duplicada){
+      estado.textContent="La propiedad ya tiene una FK";
+    }
+  }
+
+  cancelarCable();
+  redibujar();
+}
+
+function cancelarCable(){
+  arrastreCable=null;
+  preview.setAttribute("d","");
+  document.body.classList.remove("conectando");
+
+  document.querySelectorAll(".conector.destino")
+    .forEach(e=>e.classList.remove("destino"));
+}
+
+// ==========================================
+// DRAG AND DROP
+// ==========================================
+
+document.addEventListener("pointermove",ev=>{
+  if(arrastreCable &&
+     ev.pointerId===arrastreCable.pointerId){
+    actualizarPreview(ev);
+    return;
+  }
+
+  if(!arrastreEntidad ||
+     ev.pointerId!==arrastreEntidad.pointerId)return;
+
+  const rect=espacio.getBoundingClientRect();
+  const e=arrastreEntidad.elemento;
+
+  e.style.left=Math.max(0,ev.clientX-rect.left-dx)+"px";
+  e.style.top=Math.max(0,ev.clientY-rect.top-dy)+"px";
+
+  redibujar();
+  programarGuardado();
+});
+
+document.addEventListener("pointerup",ev=>{
+  if(arrastreCable &&
+     ev.pointerId===arrastreCable.pointerId){
+    terminarCable(ev);
+  }
+
+  if(arrastreEntidad &&
+     ev.pointerId===arrastreEntidad.pointerId){
+    arrastreEntidad=null;
+    guardar();
+  }
+});
+
+document.addEventListener("pointercancel",ev=>{
+  if(arrastreCable &&
+     ev.pointerId===arrastreCable.pointerId){
+    cancelarCable();
+  }
+
+  if(arrastreEntidad &&
+     ev.pointerId===arrastreEntidad.pointerId){
+    arrastreEntidad=null;
+    guardar();
+  }
+});
+
+// ==========================================
+// RECUPERAR LOCALSTORAGE
+// ==========================================
+
+function cargar(){
+  let datos=null;
+
+  try{
+    const texto=localStorage.getItem(CLAVE);
+    if(texto)datos=JSON.parse(texto);
+  }catch(error){
+    console.error(error);
+    estado.textContent="Error al recuperar datos";
+    return;
+  }
+
+  if(!datos){
+    nuevaEntidad();
+    return;
+  }
+
+  contador=Number(datos.contador)||0;
+  contadorPropiedades=Number(datos.contadorPropiedades)||0;
+  contadorConexiones=Number(datos.contadorConexiones)||0;
+  contadorRegistros=Number(datos.contadorRegistros)||0;
+
+  (datos.entidades||[]).forEach(crearEntidad);
+
+  // Compatibilidad con registros anteriores.
+  // Asignar IDs internos a los que no los tengan.
+  entidades().forEach(e=>{
+    const registros=datosEntidad(e);
+    registros.forEach(r=>{
+      if(!r._id)r._id="r"+(++contadorRegistros);
+
+      const n=Number(String(r._id).replace(/^r/,""));
+      if(Number.isFinite(n))
+        contadorRegistros=Math.max(contadorRegistros,n);
+    });
+    establecerDatos(e,registros);
+  });
+
+  conexiones=(datos.conexiones||[]).filter(c=>
+    obtenerConector(c.origen,"salida") &&
+    obtenerConector(c.destino,"entrada")
+  );
+
+  conexiones.forEach(c=>{
+    contadorConexiones=Math.max(
+      contadorConexiones,Number(c.id)||0
+    );
+  });
+
+  actualizarTodasLasTablas();
+  redibujar();
+  estado.textContent="✓ Diagrama recuperado";
+}
+
+// ==========================================
+// INICIO
+// ==========================================
+
+document.querySelector("#nueva").onclick=nuevaEntidad;
+window.addEventListener("resize",redibujar);
+
+cargar();
+</script>
+</body>
+</html>

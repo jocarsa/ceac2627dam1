@@ -1,0 +1,7 @@
+Datetime: 2026-11-02T08:18:39.567Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/008-Mantenimiento de la persistencia de los objetos/002-Características de las bases de datos orientadas a objetos
+Command: curl -fsSL https://pgp.mongodb.com/server-8.0.asc | sudo gpg --dearmor -o /usr/share/keyrings/mongodb-server-8.0.gpg
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/00
+8-Mantenimiento de la persistencia de los objetos/002-Características de las bases de datos orientadas a objetos$ 

@@ -1,0 +1,18 @@
+Datetime: 2026-11-02T08:46:48.302Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/008-Mantenimiento de la persistencia de los objetos/002-Características de las bases de datos orientadas a objetos
+Command: sudo systemctl status mongod
+
+Result:
+=● mongod.service - MongoDB Database Server
+     Loaded: loaded (/usr/lib/systemd/system/mongod.service; enabled; preset:>
+     Active: active (running) since Mon 2026-11-02 08:18:41 CET; 1h 27min ago
+       Docs: https://docs.mongodb.org/manual
+   Main PID: 4300 (mongod)
+     Memory: 34.7M (peak: 399.3M swap: 84.9M swap peak: 84.9M)
+        CPU: 22.103s
+     CGroup: /system.slice/mongod.service
+             └─4300 /usr/bin/mongod --config /etc/mongod.conf
+
+lines 1-10
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/00
+8-Mantenimiento de la persistencia de los objetos/002-Características de las bases de datos orientadas a objetos$ 

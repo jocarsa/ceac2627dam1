@@ -1,0 +1,25 @@
+Datetime: 2026-11-02T09:21:13.376Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/007-Uso de bases de datos no relacionales/001-Características de las bases de datos no relacionales
+Command: python3 004-ahora\ lo\ quiero\ interactivo.py
+
+Result:
+{
+  "fecha": "2026-12-01",
+  "cliente": {
+    "nombre": "Juan",
+    "apellidos": "Lopez"
+  },
+  "productos": [
+    {
+      "nombre": "Producto1",
+      "precio": 34
+    },
+    {
+      "nombre": "Producto2",
+      "precio": 45
+    }
+  ]
+}
+Archivo guardado en: json/20261102_102113_342077.json
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de dat
+os/007-Uso de bases de datos no relacionales/001-Características de las bases de datos no relacionales$ 

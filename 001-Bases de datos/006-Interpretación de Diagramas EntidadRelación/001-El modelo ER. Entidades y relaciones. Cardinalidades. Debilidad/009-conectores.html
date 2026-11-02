@@ -1,0 +1,770 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diagrama de clases</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #263238;
+}
+
+header {
+  height: 70px;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.herramientas {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#estado {
+  font-size: 12px;
+  color: #64748b;
+}
+
+button {
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover { background: #1d4ed8; }
+
+main {
+  position: relative;
+  height: calc(100vh - 70px);
+  overflow: auto;
+  background-color: #f8fafc;
+  background-image:
+    linear-gradient(#e8edf3 1px, transparent 1px),
+    linear-gradient(90deg, #e8edf3 1px, transparent 1px);
+  background-size: 25px 25px;
+}
+
+#espacio {
+  position: relative;
+  width: 3000px;
+  height: 2000px;
+}
+
+#cables {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cable {
+  fill: none;
+  stroke: #64748b;
+  stroke-width: 2.5;
+  pointer-events: none;
+}
+
+.cable-hit {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 16;
+  pointer-events: stroke;
+  cursor: pointer;
+}
+
+.cable-grupo:hover .cable {
+  stroke: #ef4444;
+  stroke-width: 3.5;
+}
+
+#previsualizacion {
+  fill: none;
+  stroke: #2563eb;
+  stroke-width: 3;
+  stroke-dasharray: 7 5;
+  pointer-events: none;
+}
+
+.entidad {
+  position: absolute;
+  width: 300px;
+  background: white;
+  border: 1px solid #dce2ea;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #00000012;
+  overflow: visible;
+  z-index: 2;
+}
+
+.entidad:hover {
+  box-shadow: 0 8px 25px #00000020;
+}
+
+.cabecera {
+  background: #1e293b;
+  color: white;
+  padding: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: move;
+  user-select: none;
+  touch-action: none;
+  border-radius: 11px 11px 0 0;
+}
+
+.nombre {
+  font-weight: bold;
+  outline: none;
+  cursor: text;
+  user-select: text;
+}
+
+.eliminar {
+  background: transparent;
+  padding: 3px 7px;
+  font-size: 18px;
+  color: #cbd5e1;
+}
+
+.eliminar:hover {
+  background: #ef4444;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+thead {
+  background: #edf2f7;
+  color: #475569;
+}
+
+td {
+  padding: 11px;
+  border-bottom: 1px solid #edf0f4;
+  outline: none;
+}
+
+tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+tbody tr:hover {
+  background: #eff6ff;
+}
+
+td:first-child { width: 60%; }
+
+.propiedad {
+  position: relative;
+}
+
+.celda-propiedad {
+  padding-left: 23px;
+}
+
+.celda-tipo {
+  padding-right: 23px;
+}
+
+.conector {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: crosshair;
+  z-index: 10;
+  touch-action: none;
+  transition: box-shadow .15s, background .15s;
+}
+
+.conector:hover,
+.conector.destino {
+  box-shadow: 0 0 0 5px #2563eb30;
+  background: #2563eb;
+}
+
+.entrada {
+  left: -7px;
+  background: #10b981;
+  border: 2px solid white;
+}
+
+.salida {
+  right: -7px;
+  background: #f59e0b;
+  border: 2px solid white;
+}
+
+.pie {
+  padding: 10px;
+  text-align: center;
+}
+
+.anadir-propiedad {
+  width: 100%;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 8px;
+}
+
+.anadir-propiedad:hover {
+  background: #e2e8f0;
+}
+
+body.conectando,
+body.conectando * {
+  cursor: crosshair !important;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Diagrama de clases</h1>
+  <div class="herramientas">
+    <span id="estado">Guardado automático</span>
+    <button id="nueva">+ Nueva entidad</button>
+  </div>
+</header>
+
+<main id="lienzo">
+  <div id="espacio">
+    <svg id="cables">
+      <path id="previsualizacion" d=""></path>
+    </svg>
+  </div>
+</main>
+
+<script>
+const CLAVE = "diagrama_clases_v1";
+const lienzo = document.querySelector("#lienzo");
+const espacio = document.querySelector("#espacio");
+const svg = document.querySelector("#cables");
+const preview = document.querySelector("#previsualizacion");
+const estado = document.querySelector("#estado");
+
+let contador = 0;
+let contadorPropiedades = 0;
+let contadorConexiones = 0;
+let conexiones = [];
+
+let arrastreEntidad = null;
+let arrastreCable = null;
+let desplazamientoX = 0;
+let desplazamientoY = 0;
+let guardadoPendiente = false;
+
+const NS = "http://www.w3.org/2000/svg";
+
+function guardar() {
+  const entidades = [];
+
+  document.querySelectorAll(".entidad").forEach(entidad => {
+    const propiedades = [];
+
+    entidad.querySelectorAll("tbody tr").forEach(fila => {
+      const celdas = fila.querySelectorAll("td");
+
+      propiedades.push({
+        id: fila.dataset.id,
+        nombre: celdas[0].textContent,
+        tipo: celdas[1].textContent
+      });
+    });
+
+    entidades.push({
+      id: Number(entidad.dataset.id),
+      nombre: entidad.querySelector(".nombre").textContent,
+      x: parseFloat(entidad.style.left) || 0,
+      y: parseFloat(entidad.style.top) || 0,
+      propiedades
+    });
+  });
+
+  try {
+    localStorage.setItem(CLAVE, JSON.stringify({
+      contador,
+      contadorPropiedades,
+      contadorConexiones,
+      entidades,
+      conexiones
+    }));
+
+    estado.textContent = "✓ Guardado automáticamente";
+  } catch (error) {
+    estado.textContent = "Error al guardar";
+    console.error(error);
+  }
+}
+
+function programarGuardado() {
+  if (guardadoPendiente) return;
+  guardadoPendiente = true;
+
+  requestAnimationFrame(() => {
+    guardadoPendiente = false;
+    guardar();
+  });
+}
+
+function cargar() {
+  let datos = null;
+
+  try {
+    const texto = localStorage.getItem(CLAVE);
+    if (texto) datos = JSON.parse(texto);
+  } catch (error) {
+    console.error(error);
+    estado.textContent = "Error al recuperar datos";
+    return;
+  }
+
+  if (!datos) {
+    anadirEntidad();
+    return;
+  }
+
+  contador = Number(datos.contador) || 0;
+  contadorPropiedades = Number(datos.contadorPropiedades) || 0;
+  contadorConexiones = Number(datos.contadorConexiones) || 0;
+
+  (datos.entidades || []).forEach(crearEntidad);
+
+  conexiones = (datos.conexiones || []).filter(c =>
+    obtenerConector(c.origen, "salida") &&
+    obtenerConector(c.destino, "entrada")
+  );
+
+  dibujarConexiones();
+  estado.textContent = "✓ Diagrama recuperado";
+}
+
+function anadirEntidad() {
+  contador++;
+
+  crearEntidad({
+    id: contador,
+    nombre: "Entidad " + contador,
+    x: 50 + contador * 35,
+    y: 50 + contador * 35,
+    propiedades: [
+      { nombre: "id", tipo: "INT" },
+      { nombre: "nombre", tipo: "VARCHAR" }
+    ]
+  });
+
+  guardar();
+}
+
+function crearEntidad(datos) {
+  const entidad = document.createElement("div");
+  entidad.className = "entidad";
+  entidad.dataset.id = datos.id;
+  entidad.style.left = (datos.x || 0) + "px";
+  entidad.style.top = (datos.y || 0) + "px";
+
+  contador = Math.max(contador, Number(datos.id) || 0);
+
+  entidad.innerHTML = `
+    <div class="cabecera">
+      <span class="nombre" contenteditable="true"></span>
+      <button class="eliminar" title="Eliminar entidad">×</button>
+    </div>
+    <table>
+      <thead>
+        <tr><td>Propiedad</td><td>Tipo</td></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="pie">
+      <button class="anadir-propiedad">
+        + Añadir propiedad
+      </button>
+    </div>
+  `;
+
+  entidad.querySelector(".nombre").textContent = datos.nombre;
+
+  (datos.propiedades || []).forEach(p => {
+    crearFila(entidad, p.nombre, p.tipo, p.id);
+  });
+
+  entidad.querySelector(".eliminar").onclick = () => {
+    const ids = new Set(
+      [...entidad.querySelectorAll("tbody tr")]
+        .map(f => f.dataset.id)
+    );
+
+    conexiones = conexiones.filter(c =>
+      !ids.has(c.origen) && !ids.has(c.destino)
+    );
+
+    entidad.remove();
+    dibujarConexiones();
+    guardar();
+  };
+
+  entidad.querySelector(".anadir-propiedad").onclick = () => {
+    crearFila(entidad, "propiedad", "TEXT");
+    guardar();
+  };
+
+  entidad.addEventListener("input", programarGuardado);
+
+  const cabecera = entidad.querySelector(".cabecera");
+
+  cabecera.addEventListener("pointerdown", evento => {
+    if (evento.target.closest("button, [contenteditable]")) return;
+
+    const rect = entidad.getBoundingClientRect();
+
+    arrastreEntidad = {
+      elemento: entidad,
+      pointerId: evento.pointerId
+    };
+
+    desplazamientoX = evento.clientX - rect.left;
+    desplazamientoY = evento.clientY - rect.top;
+
+    cabecera.setPointerCapture(evento.pointerId);
+    evento.preventDefault();
+  });
+
+  espacio.appendChild(entidad);
+}
+
+function crearFila(entidad, nombre, tipo, id = null) {
+  if (!id) {
+    id = "p" + (++contadorPropiedades);
+  } else {
+    const numero = Number(String(id).replace(/^p/, ""));
+    if (Number.isFinite(numero)) {
+      contadorPropiedades = Math.max(contadorPropiedades, numero);
+    }
+  }
+
+  const fila = document.createElement("tr");
+  fila.className = "propiedad";
+  fila.dataset.id = id;
+
+  const celdaNombre = document.createElement("td");
+  celdaNombre.className = "celda-propiedad";
+  celdaNombre.contentEditable = "true";
+  celdaNombre.textContent = nombre;
+
+  const celdaTipo = document.createElement("td");
+  celdaTipo.className = "celda-tipo";
+  celdaTipo.contentEditable = "true";
+  celdaTipo.textContent = tipo;
+
+  const entrada = document.createElement("span");
+  entrada.className = "conector entrada";
+  entrada.title = "Entrada";
+
+  const salida = document.createElement("span");
+  salida.className = "conector salida";
+  salida.title = "Arrastra para conectar";
+
+  fila.append(celdaNombre, celdaTipo, entrada, salida);
+  entidad.querySelector("tbody").appendChild(fila);
+
+  salida.addEventListener("pointerdown", e => {
+    iniciarCable(e, fila.dataset.id, "salida");
+  });
+
+  entrada.addEventListener("pointerdown", e => {
+    iniciarCable(e, fila.dataset.id, "entrada");
+  });
+}
+
+function obtenerConector(id, lado) {
+  const fila = [...document.querySelectorAll("tbody tr")]
+    .find(f => f.dataset.id === id);
+
+  return fila?.querySelector("." + lado) || null;
+}
+
+function puntoConector(elemento) {
+  const rect = elemento.getBoundingClientRect();
+  const base = espacio.getBoundingClientRect();
+
+  return {
+    x: rect.left + rect.width / 2 - base.left,
+    y: rect.top + rect.height / 2 - base.top
+  };
+}
+
+function puntoCursor(evento) {
+  const rect = espacio.getBoundingClientRect();
+
+  return {
+    x: evento.clientX - rect.left,
+    y: evento.clientY - rect.top
+  };
+}
+
+function curva(a, b) {
+  const distancia = Math.abs(b.x - a.x);
+  const curvaX = Math.max(65, distancia * 0.5);
+
+  return `M ${a.x} ${a.y}
+          C ${a.x + curvaX} ${a.y},
+            ${b.x - curvaX} ${b.y},
+            ${b.x} ${b.y}`;
+}
+
+function dibujarConexiones() {
+  svg.querySelectorAll(".cable-grupo").forEach(e => e.remove());
+
+  conexiones.forEach(conexion => {
+    const origen = obtenerConector(conexion.origen, "salida");
+    const destino = obtenerConector(conexion.destino, "entrada");
+
+    if (!origen || !destino) return;
+
+    const d = curva(
+      puntoConector(origen),
+      puntoConector(destino)
+    );
+
+    const grupo = document.createElementNS(NS, "g");
+    grupo.setAttribute("class", "cable-grupo");
+
+    const linea = document.createElementNS(NS, "path");
+    linea.setAttribute("class", "cable");
+    linea.setAttribute("d", d);
+
+    const zona = document.createElementNS(NS, "path");
+    zona.setAttribute("class", "cable-hit");
+    zona.setAttribute("d", d);
+
+    zona.addEventListener("dblclick", () => {
+      conexiones = conexiones.filter(c => c.id !== conexion.id);
+      dibujarConexiones();
+      guardar();
+    });
+
+    grupo.append(linea, zona);
+    svg.insertBefore(grupo, preview);
+  });
+}
+
+function iniciarCable(evento, id, lado) {
+  if (evento.button !== 0) return;
+
+  evento.stopPropagation();
+  evento.preventDefault();
+
+  arrastreCable = {
+    id,
+    lado,
+    pointerId: evento.pointerId
+  };
+
+  document.body.classList.add("conectando");
+
+  // Capturar el puntero permite seguir el arrastre
+  // incluso cuando se sale del conector inicial.
+  evento.target.setPointerCapture(evento.pointerId);
+
+  actualizarPreview(evento);
+}
+
+function actualizarPreview(evento) {
+  if (!arrastreCable) return;
+
+  const origen = obtenerConector(
+    arrastreCable.id,
+    arrastreCable.lado
+  );
+
+  if (!origen) return;
+
+  const fijo = puntoConector(origen);
+  const cursor = puntoCursor(evento);
+
+  const d = arrastreCable.lado === "salida"
+    ? curva(fijo, cursor)
+    : curva(cursor, fijo);
+
+  preview.setAttribute("d", d);
+
+  document.querySelectorAll(".conector.destino")
+    .forEach(e => e.classList.remove("destino"));
+
+  const candidato = document.elementFromPoint(
+    evento.clientX,
+    evento.clientY
+  )?.closest(".conector");
+
+  if (candidato && esDestinoValido(candidato)) {
+    candidato.classList.add("destino");
+  }
+}
+
+function esDestinoValido(conector) {
+  if (!arrastreCable) return false;
+
+  const ladoEsperado = arrastreCable.lado === "salida"
+    ? "entrada"
+    : "salida";
+
+  const id = conector.closest("tr")?.dataset.id;
+
+  return conector.classList.contains(ladoEsperado) &&
+         id !== arrastreCable.id;
+}
+
+function terminarCable(evento) {
+  if (!arrastreCable) return;
+
+  const candidato = document.elementFromPoint(
+    evento.clientX,
+    evento.clientY
+  )?.closest(".conector");
+
+  if (candidato && esDestinoValido(candidato)) {
+    const idDestino = candidato.closest("tr").dataset.id;
+
+    const origen = arrastreCable.lado === "salida"
+      ? arrastreCable.id
+      : idDestino;
+
+    const destino = arrastreCable.lado === "salida"
+      ? idDestino
+      : arrastreCable.id;
+
+    const existe = conexiones.some(c =>
+      c.origen === origen && c.destino === destino
+    );
+
+    if (!existe) {
+      conexiones.push({
+        id: ++contadorConexiones,
+        origen,
+        destino
+      });
+
+      guardar();
+    }
+  }
+
+  cancelarCable();
+  dibujarConexiones();
+}
+
+function cancelarCable() {
+  arrastreCable = null;
+  preview.setAttribute("d", "");
+  document.body.classList.remove("conectando");
+
+  document.querySelectorAll(".conector.destino")
+    .forEach(e => e.classList.remove("destino"));
+}
+
+document.addEventListener("pointermove", evento => {
+  if (arrastreCable &&
+      evento.pointerId === arrastreCable.pointerId) {
+    actualizarPreview(evento);
+    return;
+  }
+
+  if (!arrastreEntidad ||
+      evento.pointerId !== arrastreEntidad.pointerId) return;
+
+  const rect = espacio.getBoundingClientRect();
+  const entidad = arrastreEntidad.elemento;
+
+  const x = evento.clientX - rect.left - desplazamientoX;
+  const y = evento.clientY - rect.top - desplazamientoY;
+
+  entidad.style.left = Math.max(0, x) + "px";
+  entidad.style.top = Math.max(0, y) + "px";
+
+  dibujarConexiones();
+  programarGuardado();
+});
+
+document.addEventListener("pointerup", evento => {
+  if (arrastreCable &&
+      evento.pointerId === arrastreCable.pointerId) {
+    terminarCable(evento);
+  }
+
+  if (arrastreEntidad &&
+      evento.pointerId === arrastreEntidad.pointerId) {
+    arrastreEntidad = null;
+    guardar();
+  }
+});
+
+document.addEventListener("pointercancel", evento => {
+  if (arrastreCable &&
+      evento.pointerId === arrastreCable.pointerId) {
+    cancelarCable();
+  }
+
+  if (arrastreEntidad &&
+      evento.pointerId === arrastreEntidad.pointerId) {
+    arrastreEntidad = null;
+    guardar();
+  }
+});
+
+document.querySelector("#nueva").onclick = anadirEntidad;
+
+// Recalcular conexiones cuando cambia la geometría
+window.addEventListener("resize", dibujarConexiones);
+
+const observador = new ResizeObserver(() => {
+  dibujarConexiones();
+});
+
+observador.observe(espacio);
+
+const observadorCambios = new MutationObserver(() => {
+  dibujarConexiones();
+});
+
+observadorCambios.observe(espacio, {
+  childList: true,
+  subtree: true,
+  characterData: true
+});
+
+cargar();
+</script>
+
+</body>
+</html>

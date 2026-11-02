@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <p id="nombre"></p>
+    <p id="apellidos"></p>
+    <p id="email"></p>
+    <script>
+      // Vete y traeme el archivo json
+      fetch("minicurriculum.json")
+      .then(function(resultado){return resultado.json()})
+    </script>
+  </body>
+</html>

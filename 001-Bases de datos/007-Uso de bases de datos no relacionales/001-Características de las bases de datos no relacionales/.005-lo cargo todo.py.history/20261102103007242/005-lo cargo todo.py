@@ -1,0 +1,1 @@
+archivocliente1 = open("mibasededatos/clientes/cliente1.json")

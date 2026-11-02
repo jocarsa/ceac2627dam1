@@ -1,0 +1,17 @@
+{
+  "fecha": "2026-11-02",
+  "cliente": {
+    "nombre": "Jose Vicente",
+    "apellidos": "Carratala"
+  },
+  "productos": [
+    {
+      "nombre": "Producto1",
+      "precio": 34
+    },
+    {
+      "nombre": "Producto2",
+      "precio": 45
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Diagrama de clases</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      color: #263238;
+    }
+
+    header {
+      height: 70px;
+      background: white;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    button {
+      border: none;
+      background: #2563eb;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    main {
+      position: relative;
+      height: calc(100vh - 70px);
+      overflow: auto;
+      background-color: #f8fafc;
+      background-image:
+        linear-gradient(#e8edf3 1px, transparent 1px),
+        linear-gradient(90deg, #e8edf3 1px, transparent 1px);
+      background-size: 25px 25px;
+    }
+
+    .entidad {
+      position: absolute;
+      width: 280px;
+      background: white;
+      border: 1px solid #dce2ea;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px #00000012;
+      overflow: hidden;
+    }
+
+    .entidad:hover {
+      box-shadow: 0 8px 25px #00000020;
+    }
+
+    .cabecera {
+      background: #1e293b;
+      color: white;
+      padding: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: move;
+      user-select: none;
+    }
+
+    .cabecera .nombre {
+      font-weight: bold;
+      outline: none;
+      cursor: text;
+      user-select: text;
+      min-width: 50px;
+    }
+
+    .eliminar {
+      background: transparent;
+      padding: 3px 7px;
+      font-size: 18px;
+      color: #cbd5e1;
+    }
+
+    .eliminar:hover {
+      background: #ef4444;
+      color: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    table thead {
+      background: #edf2f7;
+      color: #475569;
+    }
+
+    table td {
+      padding: 11px;
+      border-bottom: 1px solid #edf0f4;
+      outline: none;
+    }
+
+    table tbody tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    table tbody tr:hover {
+      background: #eff6ff;
+    }
+
+    table td:first-child {
+      width: 60%;
+    }
+
+    .pie {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .anadir-propiedad {
+      width: 100%;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 8px;
+    }
+
+    .anadir-propiedad:hover {
+      background: #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Diagrama de clases</h1>
+    <button onclick="anadirEntidad()">
+      + Nueva entidad
+    </button>
+  </header>
+
+  <main id="lienzo"></main>
+
+  <script>
+    let contador = 0;
+    let entidadArrastrada = null;
+    let desplazamientoX = 0;
+    let desplazamientoY = 0;
+    let zActual = 1;
+
+    const lienzo = document.querySelector("#lienzo");
+
+    function anadirEntidad() {
+      contador++;
+
+      let entidad = document.createElement("div");
+      entidad.className = "entidad";
+
+      entidad.style.left = (40 + contador * 30) + "px";
+      entidad.style.top = (40 + contador * 30) + "px";
+
+      entidad.innerHTML = `
+        <div class="cabecera">
+          <span class="nombre" contenteditable="true">
+            Entidad ${contador}
+          </span>
+          <button class="eliminar"
+            onclick="eliminarEntidad(this)">
+            ×
+          </button>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <td>Propiedad</td>
+              <td>Tipo</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td contenteditable="true">id</td>
+              <td contenteditable="true">INT</td>
+            </tr>
+            <tr>
+              <td contenteditable="true">nombre</td>
+              <td contenteditable="true">VARCHAR</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pie">
+          <button class="anadir-propiedad"
+            onclick="anadirPropiedad(this)">
+            + Añadir propiedad
+          </button>
+        </div>
+      `;
+
+      lienzo.appendChild(entidad);
+
+      let cabecera = entidad.querySelector(".cabecera");
+
+      cabecera.addEventListener("pointerdown", function(evento) {
+        if (evento.target.closest("button") ||
+            evento.target.closest("[contenteditable]")) {
+          return;
+        }
+
+        entidadArrastrada = entidad;
+
+        let rectangulo = entidad.getBoundingClientRect();
+
+        desplazamientoX = evento.clientX - rectangulo.left;
+        desplazamientoY = evento.clientY - rectangulo.top;
+
+        entidad.style.zIndex = ++zActual;
+
+        cabecera.setPointerCapture(evento.pointerId);
+        evento.preventDefault();
+      });
+    }
+
+    function anadirPropiedad(boton) {
+      let entidad = boton.closest(".entidad");
+      let tbody = entidad.querySelector("tbody");
+
+      let fila = document.createElement("tr");
+
+      fila.innerHTML = `
+        <td contenteditable="true">propiedad</td>
+        <td contenteditable="true">TEXT</td>
+      `;
+
+      tbody.appendChild(fila);
+    }
+
+    function eliminarEntidad(boton) {
+      let entidad = boton.closest(".entidad");
+      entidad.remove();
+    }
+
+    document.addEventListener("pointermove", function(evento) {
+      if (entidadArrastrada === null) return;
+
+      let rectangulo = lienzo.getBoundingClientRect();
+
+      let x = evento.clientX - rectangulo.left
+            + lienzo.scrollLeft - desplazamientoX;
+
+      let y = evento.clientY - rectangulo.top
+            + lienzo.scrollTop - desplazamientoY;
+
+      entidadArrastrada.style.left = Math.max(0, x) + "px";
+      entidadArrastrada.style.top = Math.max(0, y) + "px";
+    });
+
+    document.addEventListener("pointerup", function() {
+      entidadArrastrada = null;
+    });
+
+    document.addEventListener("pointercancel", function() {
+      entidadArrastrada = null;
+    });
+
+    // Crear una entidad inicial
+    anadirEntidad();
+  </script>
+
+</body>
+</html>

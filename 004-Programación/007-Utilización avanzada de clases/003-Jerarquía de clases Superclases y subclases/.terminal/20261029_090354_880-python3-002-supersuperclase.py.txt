@@ -1,0 +1,7 @@
+Datetime: 2026-10-29T08:03:54.880Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/003-Jerarquía de clases Superclases y subclases
+Command: python3 002-supersuperclase.py
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/007-Ut
+ilización avanzada de clases/003-Jerarquía de clases Superclases y subclases$ 

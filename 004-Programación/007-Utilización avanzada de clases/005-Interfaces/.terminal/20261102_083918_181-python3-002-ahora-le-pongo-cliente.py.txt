@@ -1,0 +1,9 @@
+Datetime: 2026-11-02T07:39:18.181Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/007-Utilización avanzada de clases/005-Interfaces
+Command: python3 002-ahora\ le\ pongo\ cliente.py
+
+Result:
+<__main__.Pedido object at 0x7543432cf170>
+<__main__.Pedido object at 0x7543432ec7d0>
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Program
+ación/007-Utilización avanzada de clases/005-Interfaces$ 

@@ -1,0 +1,410 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Diagrama de clases</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      color: #263238;
+    }
+
+    header {
+      height: 70px;
+      background: white;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .herramientas {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    #estado {
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    button {
+      border: none;
+      background: #2563eb;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover { background: #1d4ed8; }
+
+    main {
+      position: relative;
+      height: calc(100vh - 70px);
+      overflow: auto;
+      background-color: #f8fafc;
+      background-image:
+        linear-gradient(#e8edf3 1px, transparent 1px),
+        linear-gradient(90deg, #e8edf3 1px, transparent 1px);
+      background-size: 25px 25px;
+    }
+
+    .entidad {
+      position: absolute;
+      width: 280px;
+      background: white;
+      border: 1px solid #dce2ea;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px #00000012;
+      overflow: hidden;
+    }
+
+    .entidad:hover {
+      box-shadow: 0 8px 25px #00000020;
+    }
+
+    .cabecera {
+      background: #1e293b;
+      color: white;
+      padding: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: move;
+      user-select: none;
+      touch-action: none;
+    }
+
+    .cabecera .nombre {
+      font-weight: bold;
+      outline: none;
+      cursor: text;
+      user-select: text;
+      min-width: 50px;
+    }
+
+    .eliminar {
+      background: transparent;
+      padding: 3px 7px;
+      font-size: 18px;
+      color: #cbd5e1;
+    }
+
+    .eliminar:hover {
+      background: #ef4444;
+      color: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    table thead {
+      background: #edf2f7;
+      color: #475569;
+    }
+
+    table td {
+      padding: 11px;
+      border-bottom: 1px solid #edf0f4;
+      outline: none;
+    }
+
+    table tbody tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    table tbody tr:hover {
+      background: #eff6ff;
+    }
+
+    table td:first-child { width: 60%; }
+
+    .pie {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .anadir-propiedad {
+      width: 100%;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 8px;
+    }
+
+    .anadir-propiedad:hover {
+      background: #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Diagrama de clases</h1>
+  <div class="herramientas">
+    <span id="estado">Guardado automático</span>
+    <button onclick="anadirEntidad()">+ Nueva entidad</button>
+  </div>
+</header>
+
+<main id="lienzo"></main>
+
+<script>
+  const CLAVE = "diagrama_clases_v1";
+
+  let contador = 0;
+  let entidadArrastrada = null;
+  let desplazamientoX = 0;
+  let desplazamientoY = 0;
+  let zActual = 1;
+
+  const lienzo = document.querySelector("#lienzo");
+  const estado = document.querySelector("#estado");
+
+  // Guardar todas las entidades en localStorage
+  function guardar() {
+    const entidades = [];
+
+    document.querySelectorAll(".entidad").forEach(entidad => {
+      const propiedades = [];
+
+      entidad.querySelectorAll("tbody tr").forEach(fila => {
+        const celdas = fila.querySelectorAll("td");
+
+        propiedades.push({
+          nombre: celdas[0].textContent,
+          tipo: celdas[1].textContent
+        });
+      });
+
+      entidades.push({
+        id: Number(entidad.dataset.id),
+        nombre: entidad.querySelector(".nombre").textContent,
+        x: parseFloat(entidad.style.left) || 0,
+        y: parseFloat(entidad.style.top) || 0,
+        z: Number(entidad.style.zIndex) || 1,
+        propiedades: propiedades
+      });
+    });
+
+    const datos = {
+      contador: contador,
+      entidades: entidades
+    };
+
+    try {
+      localStorage.setItem(CLAVE, JSON.stringify(datos));
+      estado.textContent = "✓ Guardado automáticamente";
+    } catch (error) {
+      estado.textContent = "Error al guardar";
+      console.error(error);
+    }
+  }
+
+  // Recuperar datos al iniciar la página
+  function cargar() {
+    let datos;
+
+    try {
+      const guardado = localStorage.getItem(CLAVE);
+
+      if (guardado !== null) {
+        datos = JSON.parse(guardado);
+      }
+    } catch (error) {
+      console.error("Error al cargar:", error);
+      estado.textContent = "Error al recuperar datos";
+      return;
+    }
+
+    if (!datos) {
+      anadirEntidad();
+      return;
+    }
+
+    contador = Number(datos.contador) || 0;
+
+    (datos.entidades || []).forEach(dato => {
+      crearEntidad(dato);
+    });
+
+    estado.textContent = "✓ Diagrama recuperado";
+  }
+
+  // Crear una entidad nueva
+  function anadirEntidad() {
+    contador++;
+
+    crearEntidad({
+      id: contador,
+      nombre: "Entidad " + contador,
+      x: 40 + contador * 30,
+      y: 40 + contador * 30,
+      z: ++zActual,
+      propiedades: [
+        { nombre: "id", tipo: "INT" },
+        { nombre: "nombre", tipo: "VARCHAR" }
+      ]
+    });
+
+    guardar();
+  }
+
+  // Construir una entidad a partir de sus datos
+  function crearEntidad(datos) {
+    const entidad = document.createElement("div");
+    entidad.className = "entidad";
+    entidad.dataset.id = datos.id;
+
+    entidad.style.left = datos.x + "px";
+    entidad.style.top = datos.y + "px";
+    entidad.style.zIndex = datos.z || 1;
+
+    zActual = Math.max(zActual, datos.z || 1);
+    contador = Math.max(contador, Number(datos.id) || 0);
+
+    entidad.innerHTML = `
+      <div class="cabecera">
+        <span class="nombre" contenteditable="true"></span>
+        <button class="eliminar" title="Eliminar entidad">×</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <td>Propiedad</td>
+            <td>Tipo</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="pie">
+        <button class="anadir-propiedad">
+          + Añadir propiedad
+        </button>
+      </div>
+    `;
+
+    entidad.querySelector(".nombre").textContent = datos.nombre;
+
+    (datos.propiedades || []).forEach(propiedad => {
+      crearFila(entidad, propiedad.nombre, propiedad.tipo);
+    });
+
+    entidad.querySelector(".eliminar").addEventListener("click", () => {
+      entidad.remove();
+      guardar();
+    });
+
+    entidad.querySelector(".anadir-propiedad")
+      .addEventListener("click", () => {
+        crearFila(entidad, "propiedad", "TEXT");
+        guardar();
+      });
+
+    // Guardar continuamente las modificaciones de texto
+    entidad.addEventListener("input", guardar);
+
+    // Preparar drag and drop
+    const cabecera = entidad.querySelector(".cabecera");
+
+    cabecera.addEventListener("pointerdown", evento => {
+      if (
+        evento.target.closest("button") ||
+        evento.target.closest("[contenteditable]")
+      ) {
+        return;
+      }
+
+      entidadArrastrada = entidad;
+
+      const rectangulo = entidad.getBoundingClientRect();
+
+      desplazamientoX = evento.clientX - rectangulo.left;
+      desplazamientoY = evento.clientY - rectangulo.top;
+
+      entidad.style.zIndex = ++zActual;
+
+      cabecera.setPointerCapture(evento.pointerId);
+      evento.preventDefault();
+
+      guardar();
+    });
+
+    lienzo.appendChild(entidad);
+  }
+
+  // Crear una propiedad editable
+  function crearFila(entidad, nombre, tipo) {
+    const fila = document.createElement("tr");
+
+    const celdaNombre = document.createElement("td");
+    celdaNombre.contentEditable = "true";
+    celdaNombre.textContent = nombre;
+
+    const celdaTipo = document.createElement("td");
+    celdaTipo.contentEditable = "true";
+    celdaTipo.textContent = tipo;
+
+    fila.appendChild(celdaNombre);
+    fila.appendChild(celdaTipo);
+
+    entidad.querySelector("tbody").appendChild(fila);
+  }
+
+  // Arrastrar entidades
+  document.addEventListener("pointermove", evento => {
+    if (entidadArrastrada === null) return;
+
+    const rectangulo = lienzo.getBoundingClientRect();
+
+    const x = evento.clientX - rectangulo.left
+            + lienzo.scrollLeft - desplazamientoX;
+
+    const y = evento.clientY - rectangulo.top
+            + lienzo.scrollTop - desplazamientoY;
+
+    entidadArrastrada.style.left = Math.max(0, x) + "px";
+    entidadArrastrada.style.top = Math.max(0, y) + "px";
+
+    guardar();
+  });
+
+  document.addEventListener("pointerup", () => {
+    if (entidadArrastrada !== null) {
+      guardar();
+      entidadArrastrada = null;
+    }
+  });
+
+  document.addEventListener("pointercancel", () => {
+    if (entidadArrastrada !== null) {
+      guardar();
+      entidadArrastrada = null;
+    }
+  });
+
+  // Recuperar al cargar la página
+  cargar();
+</script>
+
+</body>
+</html>

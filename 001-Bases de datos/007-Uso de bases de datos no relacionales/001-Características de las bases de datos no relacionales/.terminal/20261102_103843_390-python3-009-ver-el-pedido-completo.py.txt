@@ -1,0 +1,23 @@
+Datetime: 2026-11-02T09:38:43.390Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/007-Uso de bases de datos no relacionales/001-Características de las bases de datos no relacionales
+Command: python3 009-ver\ el\ pedido\ completo.py
+
+Result:
+{
+  "fecha": "2026-11-02",
+  "cliente": {
+    "nombre": "Jose Vicente",
+    "apellidos": "Carratala Sanchis",
+    "emails": [
+      "info@jocarsa.com",
+      "info@josevicentecarratala.com"
+    ]
+  },
+  "producto": {
+    "nombre": "Camiseta",
+    "precio": "45",
+    "talla": "XL"
+  }
+}
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de dat
+os/007-Uso de bases de datos no relacionales/001-Características de las bases de datos no relacionales$ 

@@ -1,0 +1,8 @@
+Datetime: 2026-11-02T09:33:04.834Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/007-Uso de bases de datos no relacionales/001-Características de las bases de datos no relacionales
+Command: python3 006-convertir\ a\ objeto.py
+
+Result:
+<__main__.Cliente object at 0x781154bf9fa0>
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de dat
+os/007-Uso de bases de datos no relacionales/001-Características de las bases de datos no relacionales$ 
