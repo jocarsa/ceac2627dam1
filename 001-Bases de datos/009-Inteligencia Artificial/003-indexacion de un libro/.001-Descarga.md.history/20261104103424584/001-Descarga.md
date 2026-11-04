@@ -1,0 +1,3 @@
+Descargad este libro:
+https://github.com/jocarsa/ceac2627dam1/blob/main/001-Bases%20de%20datos/009-Inteligencia%20Artificial/003-indexacion%20de%20un%20libro/Publicado%20-%20Aprende%20programaci%C3%B3n%20con%20Python.md
+
