@@ -1,0 +1,1108 @@
+Datetime: 2026-11-04T10:19:50.033Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/003-indexacion de un libro
+Command: python3 007-lo\ quiero\ guardar\ a\ chromadb.py
+
+Result:
+Guardado fragmento 0: # 
+
+# 
+
+# **Aprende programación con Pyt
+Guardado fragmento 450: **
+
+[**2\. Introducción**](#2.-introducc
+Guardado fragmento 900: n](#2.4.-breve-historia-de-python)	[22](
+Guardado fragmento 1350: je de alto nivel](#2.5.4.-lenguaje-de-al
+Guardado fragmento 1800: s de texto plano](#2.7.1.-edición-de-arc
+Guardado fragmento 2250: multiplataforma](#2.8.1.-python-como-len
+Guardado fragmento 2700: raciones en Linux](#2.8.2.3.-decoracione
+Guardado fragmento 3150: -consola/terminal)	[33](#2.9.2.-ejecució
+Guardado fragmento 3600: del código](#2.10.-coloreado-del-código)
+Guardado fragmento 4050: -y-objetos)
+
+[2.12. Mayúsculas y minúscu
+Guardado fragmento 4500: amar)
+
+[2.16. El trabajo de programar](#
+Guardado fragmento 4950: 1. Salidas](#3.1.1.-salidas)	[45](#3.1.1
+Guardado fragmento 5400: estión de errores en Python](#3.2.-gesti
+Guardado fragmento 5850: -errores-de-encadenamiento)	[50](#3.2.1.
+Guardado fragmento 6300: comentarios-multilínea)	[53](#3.3.3.-com
+Guardado fragmento 6750: un-programa)
+
+[**4\. Estructuras de dato
+Guardado fragmento 7200: .-forzado-de-tipo)
+
+[4.3. Listas](#4.3.-
+Guardado fragmento 7650: (#4.3.4.-listas-multidimensionales)	[64]
+Guardado fragmento 8100:  lista](#4.3.6.2.-impresión-de-la-lista)
+Guardado fragmento 8550: s-elementos-a-la-lista)	[69](#4.3.6.5.-a
+Guardado fragmento 9000: nición de una tupla](#4.5.-definición-de
+Guardado fragmento 9450: 4.10.-diccionarios)	[77](#4.10.-dicciona
+Guardado fragmento 9900: icos)	[82](#5.4.-operadores-lógicos)
+
+[5
+Guardado fragmento 10350: tructuras-condicionales)
+
+[6.2.1. If](#6
+Guardado fragmento 10800: #6.3.2.-for)
+
+[6.3.3. While](#6.3.3.-whi
+Guardado fragmento 11250: inicial)	[103](#7.3.-comentario-inicial)
+Guardado fragmento 11700: elección-de-la-operación-a-realizar)	[10
+Guardado fragmento 12150: ladora-con-funciones)	[113](#8.3.-calcul
+Guardado fragmento 12600: información)
+
+[9.2. Lectura y escritura 
+Guardado fragmento 13050: -introducción-a-sql)
+
+[9.3.2. Instalació
+Guardado fragmento 13500: .2. Instalación de una interfaz gráfica]
+Guardado fragmento 13950: rear-bases-de-datos)	[127](#9.3.4.1.1.-c
+Guardado fragmento 14400: .4.1.5.-listar-tablas-completo)	[129](#9
+Guardado fragmento 14850: ml)	[133](#9.3.6.-dml)
+
+[9.3.6.1. Selecc
+Guardado fragmento 15300: -conector)
+
+[9.4.2. Importar el conector
+Guardado fragmento 15750:  de actualización](#9.4.6.-operación-de-
+Guardado fragmento 16200: cción-de-registros)
+
+[9.5.4. Actualizaci
+Guardado fragmento 16650: tura](#10.2.-persistencia:-escritura)	[1
+Guardado fragmento 17100: -de-una-clase)	[178](#11.1.1.-declaració
+Guardado fragmento 17550: las-propiedades-de-la-clase)	[183](#11.1
+Guardado fragmento 18000: ers y getters](#11.4.-propiedades-privad
+Guardado fragmento 18450: s avanzadas e imágenes](#12.3.-creacion-
+Guardado fragmento 18900: o-de-la-imagen:)
+
+[12.3.1.2. Con respect
+Guardado fragmento 19350: da en TKinter y SQLite](#12.5.-creación-
+Guardado fragmento 19800: 7.-creación-de-gráficas)
+
+[12.7.1. Gráfi
+Guardado fragmento 20250: pias-librerías)	[223](#13.2.-creación-de
+Guardado fragmento 20700: [230](#13.7.-gráficas)
+
+[13.7.1. Ejercic
+Guardado fragmento 21150: y)
+
+[13.8.3. Concatenaciones](#13.8.3.-c
+Guardado fragmento 21600: presiones-regulares)	[246](#13.9.1.-expr
+Guardado fragmento 22050: multilínea](#13.10.3.-cargar-un-json-mul
+Guardado fragmento 22500: 13.12.2.-acceso-a-los-píxeles)
+
+[13.12.3
+Guardado fragmento 22950: grises---método-2)
+
+[**14\. Epílogo**](#
+Guardado fragmento 23400: ayormente concreto con respecto al apren
+Guardado fragmento 23850: ollo de aplicaciones informáticas, por s
+Guardado fragmento 24300: s, sino meramente constatar que es así, 
+Guardado fragmento 24750: onas que las utilizan. Si las diseñamos 
+Guardado fragmento 25200: r momento. 
+
+Lo que tienes que preguntar
+Guardado fragmento 25650: ezas fundamentales que te van a permitir
+Guardado fragmento 26100: as personas que no son programadoras, un
+Guardado fragmento 26550: talá es un profesor, desarrollador y dis
+Guardado fragmento 27000: ializados para empresas, llegando a cola
+Guardado fragmento 27450: ontrar más información sobre el autor en
+Guardado fragmento 27900: unciona la práctica totalidad del hardwa
+Guardado fragmento 28350: - donde, más adelante, otro programa lla
+Guardado fragmento 28800: .-breve-historia-de-python}
+
+Python es u
+Guardado fragmento 29250:  convivan paralelamente durante casi una
+Guardado fragmento 29700:  código.
+
+Por otra parte, Python es un l
+Guardado fragmento 30150: e familiarizados previamente con el terr
+Guardado fragmento 30600: itectura, sino que los archivos de códig
+Guardado fragmento 31050:  en cualquier plataforma, y en cualquier
+Guardado fragmento 31500: de desarrollo.
+
+### **2.5.3. Multiparadi
+Guardado fragmento 31950: s lenguajes de programación de bajo nive
+Guardado fragmento 32400: iva posible para el usuario promedio
+
+##
+Guardado fragmento 32850: indentación en nuestros programas, puest
+Guardado fragmento 33300: specífico para lo que es un lenguaje de 
+Guardado fragmento 33750: la elección, el programador debe elegir 
+Guardado fragmento 34200:  este lenguaje de programación, debería 
+Guardado fragmento 34650: o.**
+
+Las estructuras de control nos ofr
+Guardado fragmento 35100: cadas.
+
+**Espaciado es mejor que denso.*
+Guardado fragmento 35550:  código. El problema es que el código de
+Guardado fragmento 36000:  lo más claro y lo más diáfano que sea p
+Guardado fragmento 36450:  básicos de funcionamiento, y no salirno
+Guardado fragmento 36900: equiere, se pueden romper las reglas si 
+Guardado fragmento 37350: a este caso, podemos actuar de muchas fo
+Guardado fragmento 37800: esarrollo de un programa muchas veces re
+Guardado fragmento 38250: y proporcionar una solución efectiva.
+
+*
+Guardado fragmento 38700: s que seas Holandés.**
+
+Desde hace mucho
+Guardado fragmento 39150: on, es también holandés, este principio 
+Guardado fragmento 39600: nunca se hagan, y por lo tanto, es mejor
+Guardado fragmento 40050: ar, es una mala idea.**
+
+Este es un prin
+Guardado fragmento 40500: \- aunque probablemente lo sea.
+
+**Los e
+Guardado fragmento 40950: * {#2.7.1.-edición-de-archivos-en-archiv
+Guardado fragmento 41400: s integrar todas las herramientas necesa
+Guardado fragmento 41850: utomáticamente scripts de Python pulsand
+Guardado fragmento 42300: como-lenguaje-multiplataforma}
+
+Una de l
+Guardado fragmento 42750: tema operativo macOS.
+
+De esta forma, po
+Guardado fragmento 43200: ue los ejercicios funcionen.
+
+Más bien a
+Guardado fragmento 43650: ue podremos encontrar, será similar a la
+Guardado fragmento 44100: rá parecida a aquella que puedes ver en 
+Guardado fragmento 44550: . Ejecución de los scripts de Python** {
+Guardado fragmento 45000: ión para poder ejecutarlo de forma cómod
+Guardado fragmento 45450: inal}
+
+Otra forma de ejecutar nuestros s
+Guardado fragmento 45900: e comando en la consola.
+
+![][image5]
+
+#
+Guardado fragmento 46350:  de escritorio.
+
+Por lo tanto, lo más pr
+Guardado fragmento 46800: omún en cuanto a ordenadores de escritor
+Guardado fragmento 47250: io sistema operativo \- y si no viene pr
+Guardado fragmento 47700: .
+
+#### **2.9.3.4. Otras plataformas** {
+Guardado fragmento 48150: s comunes hoy en día, que son *Android* 
+Guardado fragmento 48600: s de si tus estilos no coinciden con los
+Guardado fragmento 49050: go.
+
+### **2.11.1. Variables** {#2.11.1.
+Guardado fragmento 49500:  estar formada por dos o más palabras, s
+Guardado fragmento 49950: class Persona: |
+| :---- |
+
+## **2.12. 
+Guardado fragmento 50400: o, por lo tanto, que esta variable
+
+| mi
+Guardado fragmento 50850: la, como sea debido en cada momento.
+
+##
+Guardado fragmento 51300: inglés. Cuando eso ocurra, la regla que 
+Guardado fragmento 51750: la pongas exactamente igual que yo la he
+Guardado fragmento 52200: eñes, acentos, y otros caracteres que pu
+Guardado fragmento 52650: térprete, y el idioma del entorno en el 
+Guardado fragmento 53100: otras estructuras de datos, así como tam
+Guardado fragmento 53550: loque de código:
+
+| informacion \= "esta
+Guardado fragmento 54000:  el mundo de la programación y en el mun
+Guardado fragmento 54450: materia principal de esta obra, voy a pr
+Guardado fragmento 54900: inal la metodología docente, no tiene ta
+Guardado fragmento 55350: las siguientes páginas y hasta el final 
+Guardado fragmento 55800: ando unos identificadores. Bien pues, un
+Guardado fragmento 56250: del programa a tu voluntad.
+
+Cuando haya
+Guardado fragmento 56700:  crear tus propios programas desde cero.
+Guardado fragmento 57150: rabajo-de-programar}
+
+Otro de los paradi
+Guardado fragmento 57600: amar, en Python, al igual que en cualqui
+Guardado fragmento 58050: n bastante poco propenso a cometer error
+Guardado fragmento 58500: to dado puede verse frustrada por la gra
+Guardado fragmento 58950: 2.17. Aspectos psicológicos del aprendiz
+Guardado fragmento 59400: la misma forma que lo hace una máquina \
+Guardado fragmento 59850: unque en el proceso de comunicación entr
+Guardado fragmento 60300:  se asume y se acepta.
+
+Hay muchas perso
+Guardado fragmento 60750: es que todos consumimos) de que, con poc
+Guardado fragmento 61200:  a copiar, pegar y recombinar bloques de
+Guardado fragmento 61650: no te pido que no te frustres, porque na
+Guardado fragmento 62100: prendizaje de la programación como una c
+Guardado fragmento 62550: e vamos a realizar con Python, al igual 
+Guardado fragmento 63000: áficas, basadas en ventanas.
+
+Sin embarg
+Guardado fragmento 63450: re el comando que, en nuestro entorno de
+Guardado fragmento 63900: 
+En desarrollo informático, los programa
+Guardado fragmento 64350: rama informático, y es que extrae inform
+Guardado fragmento 64800: ción. Para esto, podemos repetir el coma
+Guardado fragmento 65250: sto es otra línea") |
+| :---- |
+
+Al ejec
+Guardado fragmento 65700: ra línea |
+| :---- |
+
+### **3.1.2. Entra
+Guardado fragmento 66150: rmente a través de la consola hasta el m
+Guardado fragmento 66600: e)print("Dime tu edad")edad \= input(
+Guardado fragmento 67050: rior, se ha introducido un print para in
+Guardado fragmento 67500: ose Vicente ,Tu edad es de 44 años |
+| :
+Guardado fragmento 67950:  necesaria.
+
+Vemos, por tanto, cómo pode
+Guardado fragmento 68400: e inviable.
+
+Debemos ser conscientes de 
+Guardado fragmento 68850: de los paréntesis, la cadena de texto al
+Guardado fragmento 69300: e sencilla.
+
+### **3.2.1. Errores sintác
+Guardado fragmento 69750: mos arreglarlos llegado el momento.
+
+###
+Guardado fragmento 70200: rar Las comillas que escribamos en nuest
+Guardado fragmento 70650: rores-de-encadenamiento}
+
+Un error muy t
+Guardado fragmento 71100: ** {#3.2.2.-errores-lógicos}
+
+Existe otr
+Guardado fragmento 71550:  de nuestro programa, sino que arrojan e
+Guardado fragmento 72000: pletamente humano, donde la máquina igno
+Guardado fragmento 72450: entro de nuestro programa informático.
+
+
+Guardado fragmento 72900: otros desarrolladores hayan podido dejar
+Guardado fragmento 73350: e ese carácter, podremos escribir todo e
+Guardado fragmento 73800: os confirmar que la salida de consola es
+Guardado fragmento 74250: omentarios han sido completamente omitid
+Guardado fragmento 74700: as formas de realizar este tipo de comen
+Guardado fragmento 75150: será considerado como un comentario, y p
+Guardado fragmento 75600: cución, todos y cada uno de los comentar
+Guardado fragmento 76050:  mismo |
+| :---- |
+
+### **3.3.4. Comenta
+Guardado fragmento 76500: o de cada una de las instrucciones, y lo
+Guardado fragmento 76950: \#\#\#\# en segundo lugar realizo cálcul
+Guardado fragmento 77400:  el doble de mi edad*print("el doble de
+Guardado fragmento 77850: amadores a escribir tantos comentarios c
+Guardado fragmento 78300: intuitivo.
+
+En todo caso, un estudiante 
+Guardado fragmento 78750: necesarios para comprender lo que hace e
+Guardado fragmento 79200: a programa informático acaba siendo muy 
+Guardado fragmento 79650:  cálculos con los datos de entrada  
+3. 
+Guardado fragmento 80100: a requiere usar funciones y/ clases, y d
+Guardado fragmento 80550: cturas-de-datos}
+
+## **4.1. Introducción
+Guardado fragmento 81000: enedores de información que vamos a nece
+Guardado fragmento 81450: o programa que demuestra el uso de varia
+Guardado fragmento 81900: 4 2022, 14:43:23) \[Clang 13.0.0 (clang-
+Guardado fragmento 82350: dor.
+
+Debemos tener cuidado de poner est
+Guardado fragmento 82800: ncia a la precisión con la cual podemos 
+Guardado fragmento 83250:  variable que va a utilizar, y es el int
+Guardado fragmento 83700: térprete.
+
+Sin embargo, en ocasiones ocu
+Guardado fragmento 84150: "Dime la edad")edad \= input()print("E
+Guardado fragmento 84600: , en el cual necesito calcular el doble 
+Guardado fragmento 85050: TART: /Users/josevicente/Desktop/Python/
+Guardado fragmento 85500: exto en números enteros, para que a cont
+Guardado fragmento 85950: onversión a números enteros. 
+
+| Python 
+Guardado fragmento 86400: a-lista}
+
+En una gran cantidad de ocasio
+Guardado fragmento 86850:  guardar, dentro de un contenedor de inf
+Guardado fragmento 87300: 11.0 (v3.11.0:deaf509e8f, Oct 24 2022, 1
+Guardado fragmento 87750: ce numérico que empieza en el número cer
+Guardado fragmento 88200: diferencia de otros intérpretes, en Pyth
+Guardado fragmento 88650: sers/josevicente/Desktop/Python/impresio
+Guardado fragmento 89100:  número 3, ya que debemos tener en cuent
+Guardado fragmento 89550: ionado. 
+
+| Python 3.11.0 (v3.11.0:deaf5
+Guardado fragmento 90000: s de datos tales como listas, y sirve pr
+Guardado fragmento 90450: s realizado en el ejercicio anterior, si
+Guardado fragmento 90900: ala.com"\]agenda\[1\] \= \["Juan","1111
+Guardado fragmento 91350: 
+| Python 3.11.0 (v3.11.0:deaf509e8f, Oc
+Guardado fragmento 91800: oduciendo el comando *PRINT*.
+
+| agenda 
+Guardado fragmento 92250: izando la consola para localizar errores
+Guardado fragmento 92700: centecarratala.com'\], \['Juan', '111111
+Guardado fragmento 93150: 97, 98, 99\] |
+| :---- |
+
+### **4.3.5. E
+Guardado fragmento 93600: mos con cualquier estructura de datos, e
+Guardado fragmento 94050: tro de la consola, lo que resulta altame
+Guardado fragmento 94500:  elemento de la lista.
+
+#### **4.3.6.1. 
+Guardado fragmento 94950: :---- |
+
+#### **4.3.6.2. Impresión de la
+Guardado fragmento 95400: ---- |
+
+#### **4.3.6.3. Acceso a un elem
+Guardado fragmento 95850: ramación empiezan por el índice numérico
+Guardado fragmento 96300: dice de la lista al cual queremos accede
+Guardado fragmento 96750: {#4.3.6.5.-añadido-de-nuevos-elementos-a
+Guardado fragmento 97200: ado el método mediante el cual añadimos 
+Guardado fragmento 97650: rcicio anterior, no es posible eliminar 
+Guardado fragmento 98100: Mutables**\# nombres\[3\] \= 'Julia'*
+Guardado fragmento 98550: ormación en una dirección de la memoria,
+Guardado fragmento 99000: es)nombres.pop(0)print(nombres)nombre
+Guardado fragmento 99450: ón pop para eliminar el elemento de la l
+Guardado fragmento 99900: s tuplas una estructura de datos inmutab
+Guardado fragmento 100350: ue en un principio podría parecer.
+
+Por 
+Guardado fragmento 100800: vez que se define el modelo de datos de 
+Guardado fragmento 101250: venientes precisamente por lo contrario 
+Guardado fragmento 101700: enida en una lista se enmarca entre corc
+Guardado fragmento 102150: hemos utilizado en las listas.
+
+Eso sí, 
+Guardado fragmento 102600: ión son exactamente iguales que los de l
+Guardado fragmento 103050: longaniza \= ("uno","dos","tres","a")m
+Guardado fragmento 103500: ímite concreto, simplemente utilizando e
+Guardado fragmento 103950: orchetes**\#\#Tuplas \- Inmutables \- p
+Guardado fragmento 104400:  para lo cual presentamos un sencillo tr
+Guardado fragmento 104850: ista, y por último, volver a convertir l
+Guardado fragmento 105300: tos}
+
+Los conjuntos en Python se declara
+Guardado fragmento 105750: namente, no funcionan como colecciones, 
+Guardado fragmento 106200: ,'Juan','Jorge'}print(nombres)for x i
+Guardado fragmento 106650:  un nombre, lo cual las hace muy conveni
+Guardado fragmento 107100: ar el camino inverso.
+
+| nombres \= {  
+Guardado fragmento 107550: ente un diccionario en pantalla.
+
+Por su
+Guardado fragmento 108000: iterador, y a partir de ese momento pode
+Guardado fragmento 108450: s el signo \+, lo cual en un primer mome
+Guardado fragmento 108900: operadores aritméticos son los más senci
+Guardado fragmento 109350: jecutar el código anterior, podemos comp
+Guardado fragmento 109800:  14:43:23) \[Clang 13.0.0 (clang-1300.0.
+Guardado fragmento 110250:  \+  
+* La resta, representada por un si
+Guardado fragmento 110700: s operadores aritméticos, deberemos tene
+Guardado fragmento 111150: ramación encuentre paréntesis e incluso 
+Guardado fragmento 111600: ritmético que encontramos dentro del gru
+Guardado fragmento 112050: 4. Operadores lógicos** {#5.4.-operadore
+Guardado fragmento 112500: que en otros muchos lenguajes de program
+Guardado fragmento 112950:  3 sea igual a 4\. En el segundo de los 
+Guardado fragmento 113400: ython/operadoreslogicos.py \=======Fals
+Guardado fragmento 113850: amación estos operadores bien representa
+Guardado fragmento 114300: os casos, sin embargo, la validación res
+Guardado fragmento 114750:  (clang-1300.0.29.30)\] on darwinType "
+Guardado fragmento 115200: sta con que uno de los operadores sea ci
+Guardado fragmento 115650: aplicación informática, en el sentido de
+Guardado fragmento 116100: ue ejecutan unas partes u otras del prog
+Guardado fragmento 116550: esión, se ejecuta una parte del código, 
+Guardado fragmento 117000: n una validación de verdadero o falso.
+
+
+Guardado fragmento 117450: na tabulación al principio de la línea p
+Guardado fragmento 117900: tener en cuenta todo el código contenido
+Guardado fragmento 118350: 5if edad \< 30:    print("Eres una pe
+Guardado fragmento 118800: go, es decir, la última instrucción de i
+Guardado fragmento 119250: s de 44 añosEres una persona jovenesto
+Guardado fragmento 119700: zen de Python, nos aconseja anidar el có
+Guardado fragmento 120150: \< 20:    if edad \< 10:        print(
+Guardado fragmento 120600: e ha entrado dentro de el primer bucle d
+Guardado fragmento 121050:  "credits" or "license()" for more infor
+Guardado fragmento 121500: verdadero, introducimos otra estructura 
+Guardado fragmento 121950: que realizamos.
+
+Las anidaciones de estr
+Guardado fragmento 122400: conveniente, o directamente inevitable, 
+Guardado fragmento 122850: ra serie de casos que pueden resultar fa
+Guardado fragmento 123300: ción, otros muchos lenguajes de programa
+Guardado fragmento 123750: ción de múltiples casos verdaderos. Lo q
+Guardado fragmento 124200: de programación contemporáneos, y en oca
+Guardado fragmento 124650:  el segundo peor dia de la semana")elif
+Guardado fragmento 125100:  ejecución, podemos comprobar cómo hemos
+Guardado fragmento 125550: | Python 3.11.0 (v3.11.0:deaf509e8f, Oct
+Guardado fragmento 126000:  la variable inicial, que no corresponde
+Guardado fragmento 126450:    print("hoy es fin de semana")elif di
+Guardado fragmento 126900: on 3.11.0 (v3.11.0:deaf509e8f, Oct 24 20
+Guardado fragmento 127350: mite implementar métodos de evaluación d
+Guardado fragmento 127800:  posible ejecutar ese bloque de código, 
+Guardado fragmento 128250: rmática que estamos desarrollando.
+
+Por 
+Guardado fragmento 128700: mbiantes, sin tener que sacrificar la es
+Guardado fragmento 129150: ese código nunca se llegaría a ejecutar,
+Guardado fragmento 129600: , line 1, in \<module\>    print(x)Nam
+Guardado fragmento 130050: r un error, el error ha ejecutado el cas
+Guardado fragmento 130500: |
+| :---- |
+
+## **6.3. Estructuras de bu
+Guardado fragmento 130950: os tener en cuenta que existen una serie
+Guardado fragmento 131400:  de esta estructura de control, encontra
+Guardado fragmento 131850: r, en la terminal o en la consola, 30 lí
+Guardado fragmento 132300:  que hemos puesto dentro de la declaraci
+Guardado fragmento 132750: a 8esta es la linea 9esta es la linea 
+Guardado fragmento 133200: ipio se ejecuta de forma continua e infi
+Guardado fragmento 133650: el sistema entienda que ese es el código
+Guardado fragmento 134100: e en el bloque de código anterior hemos 
+Guardado fragmento 134550: te/Desktop/Python/while.py \============
+Guardado fragmento 135000: enos de una cantidad importante de los c
+Guardado fragmento 135450: 
+Lo primero que queremos es describir el
+Guardado fragmento 135900: rama, a nivel de código, empezará con un
+Guardado fragmento 136350: emos una serie de comentarios para orien
+Guardado fragmento 136800: o, el programa ofrecerá un resultado, un
+Guardado fragmento 137250: ero es bueno y es conveniente llegado es
+Guardado fragmento 137700:  ejercicio práctico, en el cual se trata
+Guardado fragmento 138150:  del usuario** {#7.4.-solicitud-de-entra
+Guardado fragmento 138600: e Carratalav0.1'''*\#\# Bienvenida al
+Guardado fragmento 139050: rio, y guardarla en forma de variables. 
+Guardado fragmento 139500: 
+## **7.5. Opciones mostradas** {#7.5.-o
+Guardado fragmento 139950: adora(c) 2020 Jose Vicente Carratalav0
+Guardado fragmento 140400: s estas opciones, realizamos tres pregun
+Guardado fragmento 140850: =======bienvenido al programa calculado
+Guardado fragmento 141300: ama calculadora")print("Introduce tu no
+Guardado fragmento 141750: ero")numero1 \= int(input())print("Aho
+Guardado fragmento 142200: ones que podemos elegir.
+
+Ahora, mediant
+Guardado fragmento 142650:  on darwinType "help", "copyright", "cr
+Guardado fragmento 143100: o3Ahora introduce otro numero4 |
+| :-
+Guardado fragmento 143550: , una operación aritmética de resta, en 
+Guardado fragmento 144000: ombre \= input()print("Hola",nombre,"te
+Guardado fragmento 144450: duce otro numero")numero2 \= int(input(
+Guardado fragmento 144900: o un volcado en la consola, para comprob
+Guardado fragmento 145350: ==========bienvenido al programa calcul
+Guardado fragmento 145800: Introducción a las funciones** {#8.1.-in
+Guardado fragmento 146250:  son burbujas de código, que contienen u
+Guardado fragmento 146700: print("Hoy es miércoles")    print("Hoy
+Guardado fragmento 147150: s dentro de la misma. 
+
+| Python 3.11.0 
+Guardado fragmento 147600: 3. Calculadora con funciones** {#8.3.-ca
+Guardado fragmento 148050:  no debemos olvidar llamar a la función 
+Guardado fragmento 148500: es una función recursiva, o lo que quier
+Guardado fragmento 148950: ucle infinito, simplemente pulsando la c
+Guardado fragmento 149400: n1.-Suma"\+        "\\n2.-Resta"\+    
+Guardado fragmento 149850: s:",(numero1+numero2))    if operacion
+Guardado fragmento 150300: os dado el nombre de calculadora, y la l
+Guardado fragmento 150750: roduce tu nombreJose VicenteHola Jose 
+Guardado fragmento 151200: 5Ahora introduce otro número6El resul
+Guardado fragmento 151650: ducir un número virtualmente ilimitado d
+Guardado fragmento 152100: mo sea necesaria, sin tener que declarar
+Guardado fragmento 152550: sido introducidos. al ejecutar el código
+Guardado fragmento 153000: .py \=====Bienvenido, Jose Vicente y tu
+Guardado fragmento 153450: enada en la memoria RAM del ordenador en
+Guardado fragmento 153900: nga la naturaleza que tenga, que no sea 
+Guardado fragmento 154350: con dos familias de bases de datos Estru
+Guardado fragmento 154800: ción presentamos las técnicas necesarias
+Guardado fragmento 155250: do el archivo, si lo abrimos en modo lec
+Guardado fragmento 155700: n y el método *Close*, para asegurarnos 
+Guardado fragmento 156150: rma que hemos hecho cuando hemos querido
+Guardado fragmento 156600: erar una a una, las líneas contenidas de
+Guardado fragmento 157050: do la comprobación de que podemos realiz
+Guardado fragmento 157500: amentos de SQL** {#9.3.-fundamentos-de-s
+Guardado fragmento 157950: , el sector sigue y seguirá necesitando 
+Guardado fragmento 158400: Por lo tanto, cualquier programador de a
+Guardado fragmento 158850: ario puede no tener conocimientos previo
+Guardado fragmento 159300: taremos el lenguaje de programación Pyth
+Guardado fragmento 159750: ápida de instalar un servidor de desarro
+Guardado fragmento 160200: nos encontremos en sistemas operativos d
+Guardado fragmento 160650: iendo el siguiente comando, si el servid
+Guardado fragmento 161100: 
+
+Es fácilmente reconocible que trabajar
+Guardado fragmento 161550: .
+
+En el caso de estar trabajando con My
+Guardado fragmento 162000: in, es muy recomendable, instalar y util
+Guardado fragmento 162450: ://www\.apachefriends.org/es/index.html
+
+Guardado fragmento 162900: rmite eliminarlas, nos permite alterar s
+Guardado fragmento 163350:  insertar nuevos registros dentro de una
+Guardado fragmento 163800: a que un usuario pueda tener acceso a un
+Guardado fragmento 164250: 
+A continuación, vamos a proporcionar un
+Guardado fragmento 164700: ### **9.3.4. DDL** {#9.3.4.-ddl}
+
+#### *
+Guardado fragmento 165150: CREATE DATABASE cursopython; |
+| :---- |
+Guardado fragmento 165600: orque en muchas ocasiones damos por hech
+Guardado fragmento 166050: lla, a continuación tenemos que crear ta
+Guardado fragmento 166500: ra guardar números enteros  
+* VARCHAR p
+Guardado fragmento 166950: identificador tiene unas características
+Guardado fragmento 167400: mos de forma manual  
+* Y por último, al
+Guardado fragmento 167850: 3.4.1.4. Listar tablas** {#9.3.4.1.4.-li
+Guardado fragmento 168300:  anterior, se ha creado correctamente.
+
+
+Guardado fragmento 168750: ión en pantalla acerca de los campos que
+Guardado fragmento 169200:  haber creado una tabla nos damos cuenta
+Guardado fragmento 169650:  de una tabla para añadir Campus, y hay 
+Guardado fragmento 170100: copia de seguridad de la base de datos a
+Guardado fragmento 170550:  reales en un entorno de producción.
+
+Ha
+Guardado fragmento 171000: idad excepcionales en el momento en el q
+Guardado fragmento 171450: seguridad de una base de datos antes de 
+Guardado fragmento 171900: ura hace referencia a la forma que tiene
+Guardado fragmento 172350: tos de una tabla, pero no queremos realm
+Guardado fragmento 172800:  está disponible únicamente en MySQL \- 
+Guardado fragmento 173250: amente con la instrucción de añadir perm
+Guardado fragmento 173700: ordar que el objetivo de esta publicació
+Guardado fragmento 174150: mos comprobar, como, de hecho, existen m
+Guardado fragmento 174600: atos.
+
+A continuación vamos a presentar 
+Guardado fragmento 175050: o de resultados.
+
+En el siguiente ejempl
+Guardado fragmento 175500: istros puede contener una gran cantidad 
+Guardado fragmento 175950: nuevos datos, es decir, nuevos registros
+Guardado fragmento 176400: espera cinco columnas o campos, le intro
+Guardado fragmento 176850: los campos, el identificador, es una cla
+Guardado fragmento 177300: ción, que nos permite eliminar registros
+Guardado fragmento 177750: nas.
+
+Por lo tanto es importante incluir
+Guardado fragmento 178200: tinuación, encontramos tres líneas.
+
+En 
+Guardado fragmento 178650: la actualización y especificar sobre qué
+Guardado fragmento 179100: ntísimo para conseguir persistir nuestra
+Guardado fragmento 179550:  lugar, antes de empezar a escribir prog
+Guardado fragmento 180000: izarlo, deberemos arrancar un terminal, 
+Guardado fragmento 180450: n primer lugar, vamos a conectarnos a un
+Guardado fragmento 180900: uación, utilizar el método *Connect*, y 
+Guardado fragmento 181350: omo en la gran mayoría de casos, en los 
+Guardado fragmento 181800: s correctamente a una base de datos MySQ
+Guardado fragmento 182250: , por diferentes tipos de necesidades, e
+Guardado fragmento 182700: erto haya cambiado, podemos indicarlo en
+Guardado fragmento 183150: ado, podremos comprobar como, si la cone
+Guardado fragmento 183600: nexión aceptada, lo cual quiere decir qu
+Guardado fragmento 184050: do y comprobando que todos los datos est
+Guardado fragmento 184500: arámetro correspondiente dentro de la mi
+Guardado fragmento 184950: muy diferentes a Python, y tiene como ob
+Guardado fragmento 185400: anteriormente, más frecuentes de lo que 
+Guardado fragmento 185850: ste programa, en la función de excepción
+Guardado fragmento 186300:  INTO personas VALUES (NULL,'jose','1234
+Guardado fragmento 186750: o realizamos una inserción en la base de
+Guardado fragmento 187200: on. \===== RESTART: /Users/josevicente/D
+Guardado fragmento 187650:  prácticamente igual que en el ejercicio
+Guardado fragmento 188100: ción que hemos realizado, y los introduc
+Guardado fragmento 188550: , que son la inserción, la selección, la
+Guardado fragmento 189000: \= "josevicente",        password \= "j
+Guardado fragmento 189450:  código anterior, podremos comprobar que
+Guardado fragmento 189900: \] on darwinType "help", "copyright", "
+Guardado fragmento 190350: bilidad de realizar una consulta de actu
+Guardado fragmento 190800: rsopython"        )    *\#\#print(mib
+Guardado fragmento 191250: ue la conexión falle, y obtengamos el re
+Guardado fragmento 191700: ysql5.py \==== |
+| :---- |
+
+## **9.5. SQ
+Guardado fragmento 192150: nsultamos la documentación oficial de es
+Guardado fragmento 192600:  trabajado anteriormente, utilizando est
+Guardado fragmento 193050: n cuenta que estaba hace datos, no prese
+Guardado fragmento 193500: r lugar es comprobar si nuestra distribu
+Guardado fragmento 193950: ión, para comprobar el soporte que tenem
+Guardado fragmento 194400: SQL*cursor.execute("SELECT SQLITE\_VERS
+Guardado fragmento 194850: 509e8f, Oct 24 2022, 14:43:23) \[Clang 1
+Guardado fragmento 195300: iste en una inserción.
+
+En primer lugar,
+Guardado fragmento 195750: ses de datos llamado agenda. SQLite
+
+| *
+Guardado fragmento 196200: eimport sys*\#\#Me conecto a una base
+Guardado fragmento 196650: ite3 as liteimport sys*\#\#Me conecto
+Guardado fragmento 197100: ilizamos el comando commit
+
+| *\#\#Para 
+Guardado fragmento 197550: rreo.com');")conexion.commit() |
+| :--
+Guardado fragmento 198000:  13.0.0 (clang-1300.0.29.30)\] on darwin
+Guardado fragmento 198450: la.
+
+Para ello en primer lugar empezamos
+Guardado fragmento 198900: s voy a trabajar*cursor \= conexion.cur
+Guardado fragmento 199350: ase de datos voy a trabajar*cursor \= c
+Guardado fragmento 199800: rocesar ese resultado.
+
+| *\#\#Para pode
+Guardado fragmento 200250: lve la base de datos*datos \= cursor.fe
+Guardado fragmento 200700: e.connect("agenda.sqlite")*\#\#Estable
+Guardado fragmento 201150: último, una vez que tenemos la informaci
+Guardado fragmento 201600: lite")*\#\#Establezco un cursor para s
+Guardado fragmento 202050: podremos comprobar como, en la consola, 
+Guardado fragmento 202500: .py \====ID: 1 	 nombre: Juan 	 telefon
+Guardado fragmento 202950:  inserción, cambiando la consulta SQL, q
+Guardado fragmento 203400: cursor.execute("UPDATE contactos SET tel
+Guardado fragmento 203850: te 
+
+| Python 3.11.1 (v3.11.1:a7a450f84a
+Guardado fragmento 204300: lización y la inserción, no devuelve nin
+Guardado fragmento 204750: .sqlite")*\#\#Establezco un cursor par
+Guardado fragmento 205200: isual de bases de datos, para poder comp
+Guardado fragmento 205650: 
+
+## 
+
+## **10.1. Programa principal** {
+Guardado fragmento 206100: os en desarrollar.
+
+Para ello hemos eleg
+Guardado fragmento 206550: ra este ejemplo, hemos elegido el método
+Guardado fragmento 207000: mado “ el modelo de datos “. el modelo d
+Guardado fragmento 207450: vamos a desarrollar a continuación es re
+Guardado fragmento 207900: odelo de datos.
+
+Por lo tanto, vamos a e
+Guardado fragmento 208350: formación que se va a guardar dentro de 
+Guardado fragmento 208800: arte del programa vamos a crear un menú 
+Guardado fragmento 209250: bre","telefono","email"\]\]def miAgen
+Guardado fragmento 209700: agenda hasta ese momento.
+
+Una de las ca
+Guardado fragmento 210150: lefono")    telefono \= input()    pri
+Guardado fragmento 210600:  pero en un bucle infinito controlado, e
+Guardado fragmento 211050:  veremos que realmente no ocurre nada, p
+Guardado fragmento 211500:  Jose Vicente Carratala*agenda \= \[\[
+Guardado fragmento 211950: ursiva*    miAgenda()miAgenda() |
+| :
+Guardado fragmento 212400: mos guardado se perderá en el momento en
+Guardado fragmento 212850: fo@jocarsa.com\[\['nombre', 'telefono',
+Guardado fragmento 213300: istencia:-escritura}
+
+La versión anterio
+Guardado fragmento 213750: a siguiente parte del ejercicio, vamos a
+Guardado fragmento 214200: archivo, tras lo cual lo cerramos.
+
+Hay 
+Guardado fragmento 214650: ión, cada vez que guardamos un nuevo reg
+Guardado fragmento 215100: *\#\#Programa agenda por Jose Vicente Ca
+Guardado fragmento 215550: a)    *\# Guardo en archivo*    archiv
+Guardado fragmento 216000: vo de texto llamado agenda txc
+
+Esta inf
+Guardado fragmento 216450: \============= RESTART: /Users/josevicen
+Guardado fragmento 216900:  informático implementamos la recuperaci
+Guardado fragmento 217350: programa.
+
+| *\#\#Programa agenda por Jo
+Guardado fragmento 217800:  Jose Vicente Carratala*agenda \= \[\[
+Guardado fragmento 218250: agenda \= \[\["nombre","telefono","ema
+Guardado fragmento 218700: ne* para leer cada una de las líneas del
+Guardado fragmento 219150: rcicio hemos utilizado el símbolo de la 
+Guardado fragmento 219600: teniamos en el archivo de texto*archivo
+Guardado fragmento 220050: "agenda.txt",'r')for i in range(1,10):
+Guardado fragmento 220500: ara comprobar que todos los datos se han
+Guardado fragmento 220950: ta la agenda*print(agenda) |
+| :---- |
+Guardado fragmento 221400: gistros.
+
+| *\#\#Programa agenda por Jos
+Guardado fragmento 221850: ge tu opcion")    print("1.-Introduce n
+Guardado fragmento 222300: nge(1,10):    nuevalinea \= archivo.rea
+Guardado fragmento 222750: amos anteriormente dentro del ejercicio 
+Guardado fragmento 223200: genda.txt",'r')for i in range(1,10):  
+Guardado fragmento 223650:  primer caso, volvemos a tener un código
+Guardado fragmento 224100: e texto*archivo \= open("agenda.txt",'r
+Guardado fragmento 224550: roduce el nuevo nombre en la agenda")  
+Guardado fragmento 225000: nganiza \= nombre+","\+telefono+","\+cor
+Guardado fragmento 225450: bre","telefono","email"\]\]*\#antes de
+Guardado fragmento 225900: istros")    print("3.-Buscar registro")
+Guardado fragmento 226350: \#    print(agenda)*        *\# Guardo 
+Guardado fragmento 226800: a se ejecute una y otra vez en bucle inf
+Guardado fragmento 227250: :    *\#Menu inicial*    print("Escoge
+Guardado fragmento 227700: er nada mas, lo metemos en la lista, y s
+Guardado fragmento 228150: siva*    miAgenda() |
+| :---- |
+
+Y po
+Guardado fragmento 228600: = archivo.readline().split(",")    agen
+Guardado fragmento 229050: troduce el numero de telefono")        
+Guardado fragmento 229500: niza))        archivo.close()    if op
+Guardado fragmento 229950: ndo trabajamos con clases y objetos, es 
+Guardado fragmento 230400: tienda que las líneas de código que pres
+Guardado fragmento 230850:  utilizar nomenclatura mediante la cual 
+Guardado fragmento 231300: ctor se define y se declara escribiendo 
+Guardado fragmento 231750: ctor.
+
+Para este ejercicio, en el cual e
+Guardado fragmento 232200: ctor a una serie de variables que tienen
+Guardado fragmento 232650: opiedades}
+
+Las propiedades son variable
+Guardado fragmento 233100: ,nombre,edad,apellido,colorpelo):      
+Guardado fragmento 233550: s como sea necesario para que esa clase 
+Guardado fragmento 234000: mbre \= nombre        self.edad \= edad
+Guardado fragmento 234450: s personas diferentes, y en cada una de 
+Guardado fragmento 234900: oridad, no habíamos indicado cuatro, sin
+Guardado fragmento 235350: s esta estructura, la estructura recibe 
+Guardado fragmento 235800: l objetivo es crear una o varias plantil
+Guardado fragmento 236250:  "\+self.nombre)persona1 \= Persona("J
+Guardado fragmento 236700: realizado únicamente ha consistido en in
+Guardado fragmento 237150: -propiedades-de-la-clase}
+
+Aunque no es 
+Guardado fragmento 237600: opiedades de ese mismo objeto, simplemen
+Guardado fragmento 238050:  la definición de una clase*class Perso
+Guardado fragmento 238500: Si ejecutamos este código el sistema no 
+Guardado fragmento 238950: = apellido        self.colorpelo \= col
+Guardado fragmento 239400: las instancias recibe automáticamente to
+Guardado fragmento 239850:  no habrá ningún resultado en la termina
+Guardado fragmento 240300: ,"rubio")print(persona1.nombre)print
+Guardado fragmento 240750: nombres de las dos instancias, para comp
+Guardado fragmento 241200:  :---- |
+
+### **11.1.7. Llamada a los mé
+Guardado fragmento 241650: os tenga sus propias propiedades, y es q
+Guardado fragmento 242100:       self.nombre \= nombre        self
+Guardado fragmento 242550: () |
+| :---- |
+
+Al finalizar la ejecució
+Guardado fragmento 243000: = RESTART: /Users/josevicente/Desktop/Py
+Guardado fragmento 243450: que ya no vayamos a utilizar.
+
+| *\#\#Es
+Guardado fragmento 243900: int(persona1.nombre)print(persona2.nomb
+Guardado fragmento 244350: ha sido borrada de la memoria del ordena
+Guardado fragmento 244800: ers/josevicente/Desktop/Python/eliminaci
+Guardado fragmento 245250: as de ellas las clases parentales, o cla
+Guardado fragmento 245700: mada gato, que tiene una serie de paráme
+Guardado fragmento 246150: Type "help", "copyright", "credits" or 
+Guardado fragmento 246600: e mamífero.
+
+| class Mamifero():    de
+Guardado fragmento 247050: todas las propiedades y todos los método
+Guardado fragmento 247500: solo nivel jerárquico, sino que podemos 
+Guardado fragmento 247950: o, sino que además deberemos tener en cu
+Guardado fragmento 248400: int("este animal mama al nacer")class 
+Guardado fragmento 248850: resión por pantalla. 
+
+| Python 3.11.0 (
+Guardado fragmento 249300: ades-privadas-/-setters-y-getters}
+
+Dent
+Guardado fragmento 249750: to de esa información.
+
+es por esto que 
+Guardado fragmento 250200: n modo directo, en ese caso es cuando te
+Guardado fragmento 250650: ldo    def modificaSaldo(nuevosaldo): 
+Guardado fragmento 251100: erfaces gráficas para los programas que 
+Guardado fragmento 251550: nes en ventanas que mostrarán a los usua
+Guardado fragmento 252000: ea de comando, sino que presentan interf
+Guardado fragmento 252450:  he encontrado que los alumnos, cuando l
+Guardado fragmento 252900: iquetas** {#12.2.-creación-de-etiquetas}
+Guardado fragmento 253350: iferentes elementos, componentes, o widg
+Guardado fragmento 253800: ibrería se expresa en píxeles por defect
+Guardado fragmento 254250: no utilizamos el comando *pack*, no es r
+Guardado fragmento 254700: llamado en el ejemplo anterior.
+
+| from 
+Guardado fragmento 255150: nuevos elementos, y mediante la revisión
+Guardado fragmento 255600: rey",font=("Arial,Verdana,sans-serif",16
+Guardado fragmento 256050: ="Programa agenda v0.1",fg="black",font=
+Guardado fragmento 256500: iormente, la diferencia en este caso es 
+Guardado fragmento 256950: as por orden de prioridad, y en segundo 
+Guardado fragmento 257400:  \= Frame(width=300,height=300)marco.pa
+Guardado fragmento 257850: --- |
+
+A continuación introduzco una seg
+Guardado fragmento 258300: icente Carratala",fg="grey",font=("Arial
+Guardado fragmento 258750: un elemento de tipo *PhotoImage*, que ad
+Guardado fragmento 259200: 0)titulo \= Label(marco,text="Programa
+Guardado fragmento 259650:  una imagen de memoria, así que a contin
+Guardado fragmento 260100: itulo.pack(side=TOP)autor \= Label(mar
+Guardado fragmento 260550: n respecto al formato de la imagen:** {#
+Guardado fragmento 261000: blemente actualizado dispone de herramie
+Guardado fragmento 261450:  con el comando que lo estamos haciendo 
+Guardado fragmento 261900: mágenes que se encuentren presentes dent
+Guardado fragmento 262350: me con problemas con los alumnos consist
+Guardado fragmento 262800: entro de una carpeta, y llamar a la imag
+Guardado fragmento 263250: -creación-de-botones}
+
+A continuación, v
+Guardado fragmento 263700:  botón requiere ser pulsado por el usuar
+Guardado fragmento 264150: ntro de la cual se introduce el botón, q
+Guardado fragmento 264600: (width=300,height=300)marco.pack(padx=3
+Guardado fragmento 265050: "Pulsame",command=saluda)boton.pack(sid
+Guardado fragmento 265500: mport sysdef guarda(nombre,telefono,em
+Guardado fragmento 265950: ursor \= conexion.cursor()    cursor.ex
+Guardado fragmento 266400: 4))titulo.pack(side=TOP)autor \= Label
+Guardado fragmento 266850: titulo \= Label(marco,text="Introduce u
+Guardado fragmento 267300: mponombre.get(),campotelefono.get(),camp
+Guardado fragmento 267750: :---- |
+
+## **12.6. Dibujo en Canvas** {
+Guardado fragmento 268200: aquello que nuestros programas necesiten
+Guardado fragmento 268650:  continuación vamos a realizar dos tipos
+Guardado fragmento 269100: eramente la anterior, para demostrar que
+Guardado fragmento 269550: * {#12.6.2.-creación-de-polilíneas}
+
+Cua
+Guardado fragmento 270000: s complejas o simplemente añadiendo tant
+Guardado fragmento 270450: ck(side=TOP) |
+| :---- |
+
+![][image12]
+
+
+Guardado fragmento 270900: de la librería de TKinter.
+
+Es important
+Guardado fragmento 271350: avanzadas.
+
+Para este ejemplo, en primer
+Guardado fragmento 271800: ine(10,10,10,200,200,200)xanterior \= 
+Guardado fragmento 272250: alla.
+
+| from tkinter import \*import r
+Guardado fragmento 272700: En el siguiente paso, creamos un lienzo 
+Guardado fragmento 273150: \= 200for i in range(0,30):    xactua
+Guardado fragmento 273600: ,height=300)marco.pack(padx=30,pady=30)
+Guardado fragmento 274050:  que se ejecute 30 veces, y dentro del b
+Guardado fragmento 274500: randint(10,200)    lienzo.create\_line(
+Guardado fragmento 274950:  gráfica de barras.
+
+Podremos comprobar 
+Guardado fragmento 275400: 0)lienzo \= Canvas()lienzo.create\_li
+Guardado fragmento 275850: -de-librerías}
+
+## **13.1. Introducción 
+Guardado fragmento 276300: e origen.
+
+Así pues, en este ejemplo, va
+Guardado fragmento 276750: anterior, podremos comprobar en la conso
+Guardado fragmento 277200:  ejemplo, en el primer archivo, hemos de
+Guardado fragmento 277650: ** {#13.3.-instalación-de-librerías}
+
+Py
+Guardado fragmento 278100:  novel, que se llama PIP.
+
+Esta herramie
+Guardado fragmento 278550: disponibles, así como los comandos neces
+Guardado fragmento 279000:  que en otros lenguajes de la la librerí
+Guardado fragmento 279450: y el número e  
+* Y otras muchas más.
+
+E
+Guardado fragmento 279900: \#Documentación sobre la librería matemá
+Guardado fragmento 280350: ython 3.11.1 (v3.11.1:a7a450f84a, Dec  6
+Guardado fragmento 280800: ormáticos en múltiples lenguajes de prog
+Guardado fragmento 281250: port timecontador \= 0numero \= 0.000
+Guardado fragmento 281700: iempo, nos encontraríamos que habríamos 
+Guardado fragmento 282150: 9.30)\] on darwinType "help", "copyrigh
+Guardado fragmento 282600: .
+
+Este modelo de desarrollo muchas vece
+Guardado fragmento 283050: e Frederic, que convierte Los bloques de
+Guardado fragmento 283500: s hilos de una forma controlada, y la li
+Guardado fragmento 283950: ma asimismo de forma recursiva, entrando
+Guardado fragmento 284400: as como sea necesario, y las arrancamos.
+Guardado fragmento 284850: th.pi/(numero+1)    time.sleep(0.1)   
+Guardado fragmento 285300: los hilos de ejecución que están disponi
+Guardado fragmento 285750: ortancia ha cobrado en los últimos años,
+Guardado fragmento 286200: cilita el acceso a través de Python a es
+Guardado fragmento 286650: on, proporciona a los usuarios una herra
+Guardado fragmento 287100:  |
+
+Al ejecutar esta aplicación o tendre
+Guardado fragmento 287550: eralmente, las gráficas representan conj
+Guardado fragmento 288000: tinuación, y para ilustrar este caso tan
+Guardado fragmento 288450: abase \= "cursopython"    )micursor \
+Guardado fragmento 288900: dato")print(type(labels))fig1, ax1 \
+Guardado fragmento 289350: a consola, sino que, sobre todo, aparece
+Guardado fragmento 289800: 
+En más de una ocasión dentro de este li
+Guardado fragmento 290250: eguir utilizando la facilidad de uso que
+Guardado fragmento 290700:  Comprobación inicial** {#13.8.1.-compro
+Guardado fragmento 291150: , indicando que la librería ha sido impo
+Guardado fragmento 291600: coleccion \= np.array(\['Juan','Jorge','
+Guardado fragmento 292050: r "license()" for more information.\==
+Guardado fragmento 292500: y(\['Juan','Jorge','Jose','Julia','Javie
+Guardado fragmento 292950: 9.30)\] on darwinType "help", "copyrigh
+Guardado fragmento 293400: dades de datos, así que en este ejercici
+Guardado fragmento 293850: .array(\['Juan','Jorge','Jose','Julia','
+Guardado fragmento 294300: o en cuenta que los conjuntos de datos e
+Guardado fragmento 294750: rge','Jose','Julia','Javier','Jacobo'\])
+Guardado fragmento 295200: " for more information.\============= 
+Guardado fragmento 295650: onsiste en ser capaces de concatenar con
+Guardado fragmento 296100: 'Pedro','Paco','Pio','Paloma'\]) |
+| 
+Guardado fragmento 296550: mprobar que la concatenación ha finaliza
+Guardado fragmento 297000: presión por pantalla, print 
+
+| Python 3
+Guardado fragmento 297450: ' 'Pio' 'Paloma'\] |
+| :---- |
+
+### **1
+Guardado fragmento 297900: .concatenate((coleccion1,coleccion2))p
+Guardado fragmento 298350: r','Jacobo'\])coleccion2 \= np.array(\
+Guardado fragmento 298800: ','Javier','Jacobo'\])coleccion2 \= np
+Guardado fragmento 299250: e el programa ha hecho todo lo posible p
+Guardado fragmento 299700: aco','Pio','Paloma'\])juntado \= np.c
+Guardado fragmento 300150:  parte la colección inicial de elementos
+Guardado fragmento 300600: Jose' 'Julia' 'Javier' 'Jacobo' 'Pablo' 
+Guardado fragmento 301050: trar dentro de esta librería, nos permit
+Guardado fragmento 301500:  imprimir por pantalla, el resto de la p
+Guardado fragmento 301950:  ejecutar el ejemplo anterior, podremos 
+Guardado fragmento 302400: ====\============= RESTART: /Users/jos
+Guardado fragmento 302850: omprobar si una parte de una cadena se e
+Guardado fragmento 303300: ner en cuenta que para utilizar las expr
+Guardado fragmento 303750: ón, en la que buscamos un trozo de una c
+Guardado fragmento 304200: * o *false*.
+
+| import remitexto \= "S
+Guardado fragmento 304650: para capturar cada uno de los casos verd
+Guardado fragmento 305100: .30)\] on darwinType "help", "copyright
+Guardado fragmento 305550: rmación que proviene de las entradas de 
+Guardado fragmento 306000: n el cual se le pide al usuario final qu
+Guardado fragmento 306450: ort reprint("Introduce un numero")ema
+Guardado fragmento 306900: nal Iv para conseguir controlar si la in
+Guardado fragmento 307350: trapar el valor en formato verdadero o f
+Guardado fragmento 307800: dits" or "license()" for more informatio
+Guardado fragmento 308250: rrectamente introducidos. Los correos el
+Guardado fragmento 308700: ares, y a continuación permitimos que el
+Guardado fragmento 309150:  hemos almacenado previamente, para capt
+Guardado fragmento 309600: ico y lo voy a meter en la base de datos
+Guardado fragmento 310050: iendo una única e infalible regla para p
+Guardado fragmento 310500: rreo electronico y lo voy a meter en la 
+Guardado fragmento 310950: e tratar información guardada en este fo
+Guardado fragmento 311400: .
+
+| import json micadena \= '{"Juan"
+Guardado fragmento 311850: :"jacobo@correo.com"}'carga \= json.lo
+Guardado fragmento 312300: ":"jorge@correo.com","Javier":"javier@co
+Guardado fragmento 312750:  alfanumérico del diccionario al que que
+Guardado fragmento 313200: vo JSON.
+
+ Una vez que el archivo ha sid
+Guardado fragmento 313650: " or "license()" for more information.
+Guardado fragmento 314100: mostrar de la forma más sencilla el trab
+Guardado fragmento 314550: a publicación.
+
+Para ello, en este prime
+Guardado fragmento 315000: a continuación cargamos la única línea q
+Guardado fragmento 315450: n archivo \= open("agenda.json",'r')
+Guardado fragmento 315900: ar un elemento de dicha cadena Json.
+
+| 
+Guardado fragmento 316350: mo si se tratase de un diccionario nativ
+Guardado fragmento 316800: te/Desktop/cursodepython/python082-json.
+Guardado fragmento 317250:  ejemplo anterior hemos supuesto que el 
+Guardado fragmento 317700: archivo basado en múltiples líneas, en u
+Guardado fragmento 318150: ble, pero en este caso utilizamos tambié
+Guardado fragmento 318600: hivo Json.
+
+| import json archivo \= o
+Guardado fragmento 319050: )print(type(carga)) |
+| :---- |
+
+Y por
+Guardado fragmento 319500: archivo JSON externo, cargarlo dentro de
+Guardado fragmento 319950: ón, y nos permite ejecutar diferentes ti
+Guardado fragmento 320400: de ser multiplataforma, Usando esta libr
+Guardado fragmento 320850: ación del sistema operativo y ejecutar u
+Guardado fragmento 321300: rt Imageimport mathcontador \= 0for r
+Guardado fragmento 321750: rojo \= pixeles\[x,y\]\[0\]            
+Guardado fragmento 322200: jecución de este ejercicio podemos compr
+Guardado fragmento 322650: brería de procesamiento de imágenes de P
+Guardado fragmento 323100: bemos tener en cuenta es que esta librer
+Guardado fragmento 323550: 2.1.-importar-pil}
+
+En primer lugar, y a
+Guardado fragmento 324000:  de cargar correctamente todas las nueva
+Guardado fragmento 324450: ara tratar imágenes, y cargamos una imag
+Guardado fragmento 324900: rgaremos la imagen dentro de una variabl
+Guardado fragmento 325350: ortantes en el trabajo con píxeles, en p
+Guardado fragmento 325800: vicente.jpg")pixeles \= imagen.load()p
+Guardado fragmento 326250: nte.jpg")pixeles \= imagen.load()print
+Guardado fragmento 326700: .
+
+En la siguiente parte del ejercicio c
+Guardado fragmento 327150: o es cambiar el color del primer píxel q
+Guardado fragmento 327600: pg")pixeles \= imagen.load()print(imag
+Guardado fragmento 328050: bicación que queramos.
+
+En este caso lo 
+Guardado fragmento 328500: lverá necesariamente un resultado en la 
+Guardado fragmento 328950: las operaciones más comunes que suelen r
+Guardado fragmento 329400: Y, una de las metodologías más comunes p
+Guardado fragmento 329850:  remedio que realizar dicha animación, y
+Guardado fragmento 330300: zando el método load.
+
+| from PIL import
+Guardado fragmento 330750:  de ellos la anchura, y el segundo de el
+Guardado fragmento 331200: remos la imagen primero en horizontal, y
+Guardado fragmento 331650: tado por una tabla que contiene tres val
+Guardado fragmento 332100: amente es un número entero.
+
+| from PIL 
+Guardado fragmento 332550: \= 255-azul                pixeles\[x,
+Guardado fragmento 333000: e.open("josevicente.jpg")pixeles \= ima
+Guardado fragmento 333450: imagen.save("josevicenteguardado.png") |
+Guardado fragmento 333900: versión negativa en cuanto al color con 
+Guardado fragmento 334350: jo        verde \= 255-verde        az
+Guardado fragmento 334800:  color invertidos. 
+
+![][image17]
+
+### *
+Guardado fragmento 335250: l doble bucle Ford, podremos comprobar q
+Guardado fragmento 335700: os encontramos actualmente.
+
+Se ha cogid
+Guardado fragmento 336150: izar un redondeo después de realizar el 
+Guardado fragmento 336600: \= pixeles\[x,y\]\[1\]        azul \= p
+Guardado fragmento 337050:  instalado en nuestro sistema, para comp
+Guardado fragmento 337500: medio utilizando la sencilla fórmula de 
+Guardado fragmento 337950: os la imagen generada en este bloque del
+Guardado fragmento 338400: ze\[0\]for x in range(0,anchura):    
+Guardado fragmento 338850:  anteriores, no obtendremos necesariamen
+Guardado fragmento 339300: conocimientos acerca de cómo construir p
+Guardado fragmento 339750: rque ese es el motivo por el cual lo he 
+Guardado fragmento 340200: siones lo aprenden por afición o autorre
+Guardado fragmento 340650: tivo consiste en crear programas cada ve
+Guardado fragmento 341100:  no podían hacer, o les permiten hacer t
+Guardado fragmento 341550: de este libro no trata realmente de vari
+Guardado fragmento 342000: ue hace falta para conseguir vivir en es
+Guardado fragmento 342450: Un solo programa informático no cambiará
+Total de fragmentos: 762
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/003-indexacion de un libro$ 

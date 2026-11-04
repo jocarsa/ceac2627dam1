@@ -1,0 +1,125 @@
+Datetime: 2026-11-04T10:17:46.360Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/003-indexacion de un libro
+Command: python3 007-lo\ quiero\ guardar\ a\ chromadb.py
+
+Result:
+Guardado fragmento 0: # 
+
+# 
+
+# **Aprende programación con Pyt
+Guardado fragmento 3900:  métodos](#2.11.2.-funciones-y-métodos)	
+Guardado fragmento 7800: -inmutables)	[66](#4.3.5.-estructuras-mu
+Guardado fragmento 11700: elección-de-la-operación-a-realizar)	[10
+Guardado fragmento 15600: ealización-de-una-inserción)
+
+[9.4.5. Se
+Guardado fragmento 19500: Canvas](#12.6.-dibujo-en-canvas)	[211](#
+Guardado fragmento 23400: ayormente concreto con respecto al apren
+Guardado fragmento 27300: clientes combinando las tecnologías más 
+Guardado fragmento 31200: C principales (Windows, macOS y Linux), 
+Guardado fragmento 35100: cadas.
+
+**Espaciado es mejor que denso.*
+Guardado fragmento 39000: ual se indica que probablemente hay vari
+Guardado fragmento 42900: e.
+
+La decoración de esas ventanas, dent
+Guardado fragmento 46800: omún en cuanto a ordenadores de escritor
+Guardado fragmento 50700: mos comenzar nuestras nomenclaturas con 
+Guardado fragmento 54600: o de este capítulo, con el máximo respet
+Guardado fragmento 58500: to dado puede verse frustrada por la gra
+Guardado fragmento 62400: n de información por pantalla \- en la c
+Guardado fragmento 66300: A continuación, presentamos la función i
+Guardado fragmento 70200: rar Las comillas que escribamos en nuest
+Guardado fragmento 74100: arios.py \==========Que sepas que tiene
+Guardado fragmento 78000: inas, tales como por ejemplo la de la re
+Guardado fragmento 81900: 4 2022, 14:43:23) \[Clang 13.0.0 (clang-
+Guardado fragmento 85800:  partir de una edad original, introducid
+Guardado fragmento 89700: ts" or "license()" for more information.
+Guardado fragmento 93600: mos con cualquier estructura de datos, e
+Guardado fragmento 97500: ementos de la lista** {#4.3.6.6.-elimina
+Guardado fragmento 101400: o, por tanto, vamos a crear una tupla, y
+Guardado fragmento 105300: tos}
+
+Los conjuntos en Python se declara
+Guardado fragmento 109200: a multiplicación.
+
+| edad \= 19print("
+Guardado fragmento 113100: ro, ya que efectivamente es cierto que e
+Guardado fragmento 117000: n una validación de verdadero o falso.
+
+
+Guardado fragmento 120900: 0,o  es falso. 
+
+| Python 3.11.0 (v3.11.
+Guardado fragmento 124800: semana")elif dia \== 'viernes':    pri
+Guardado fragmento 128700: mbiantes, sin tener que sacrificar la es
+Guardado fragmento 132600: r.py \==============esta es la linea 2
+Guardado fragmento 136500:  que nos proporcione cierta información,
+Guardado fragmento 140400: s estas opciones, realizamos tres pregun
+Guardado fragmento 144300: La operacion que has elegido es",operaci
+Guardado fragmento 148200: ce en dos momentos. En un primer momento
+Guardado fragmento 152100: mo sea necesaria, sin tener que declarar
+Guardado fragmento 156000: a que podemos escribir archivos, podemos
+Guardado fragmento 159900: ysql.com/downloads/
+
+Desde la cual podre
+Guardado fragmento 163800: a que un usuario pueda tener acceso a un
+Guardado fragmento 167700: UTO\_INCREMENT,    nombre VARCHAR(100),
+Guardado fragmento 171600: te en eliminar una columna, el mismo con
+Guardado fragmento 175500: istros puede contener una gran cantidad 
+Guardado fragmento 179400: e consultas a los datos que previamente 
+Guardado fragmento 183300: QL en marcha  
+*  el servidor está escuc
+Guardado fragmento 187200: on. \===== RESTART: /Users/josevicente/D
+Guardado fragmento 191100: mos comprobar cómo, al igual que la oper
+Guardado fragmento 195000: .\========= RESTART: /Users/josevicent
+Guardado fragmento 198900: s voy a trabajar*cursor \= conexion.cur
+Guardado fragmento 202800: la desde el punto de vista en el que sim
+Guardado fragmento 206700: ncia de los datos.
+
+Para este ejercicio,
+Guardado fragmento 210600:  pero en un bucle infinito controlado, e
+Guardado fragmento 214500: alizar la línea, para forzar que el docu
+Guardado fragmento 218400: agenda.txt",'r') |
+| :---- |
+
+A continu
+Guardado fragmento 222300: nge(1,10):    nuevalinea \= archivo.rea
+Guardado fragmento 226200: input()        *\# antes de hacer nada 
+Guardado fragmento 230100: zando la palabra reservada claras, a con
+Guardado fragmento 234000: mbre \= nombre        self.edad \= edad
+Guardado fragmento 237900: una forma más correcta de poder acceder 
+Guardado fragmento 241800: ma de variables, y las variables no se m
+Guardado fragmento 245700: mada gato, que tiene una serie de paráme
+Guardado fragmento 249600: e, y por tanto sus instancias, al igual 
+Guardado fragmento 253500: metros, como son la altura y la anchura.
+Guardado fragmento 257400:  \= Frame(width=300,height=300)marco.pa
+Guardado fragmento 261300: rte:** {#12.3.1.2.-con-respecto-al-tamañ
+Guardado fragmento 265200:  surge una ventana flotante que tiene to
+Guardado fragmento 269100: eramente la anterior, para demostrar que
+Guardado fragmento 273000: o \= Frame(width=300,height=300)marco.p
+Guardado fragmento 276900: hon 3.11.0 (v3.11.0:deaf509e8f, Oct 24 2
+Guardado fragmento 280800: ormáticos en múltiples lenguajes de prog
+Guardado fragmento 284700: stemas operativos en los que estemos uti
+Guardado fragmento 288600: Y cuenta DESC LIMIT 25")miresultado \= 
+Guardado fragmento 292500: y(\['Juan','Jorge','Jose','Julia','Javie
+Guardado fragmento 296400: Paloma'\])juntado \= np.concatenate((
+Guardado fragmento 300300: 13.0.0 (clang\-1300.0.29.30)\] on darwin
+Guardado fragmento 304200: * o *false*.
+
+| import remitexto \= "S
+Guardado fragmento 308100: ste en la validación de campos complejos
+Guardado fragmento 312000: mo el tipo de datos, después de haberlo 
+Guardado fragmento 315900: ar un elemento de dicha cadena Json.
+
+| 
+Guardado fragmento 319800: hon incorpora una librería del sistema, 
+Guardado fragmento 323700: donde realizamos una comprobación inicia
+Guardado fragmento 327600: pg")pixeles \= imagen.load()print(imag
+Guardado fragmento 331500: = imagen.size\[0\]for x in range(0,anc
+Guardado fragmento 335400: amos el color rojo, pero al canal verde 
+Guardado fragmento 339300: conocimientos acerca de cómo construir p
+Total de fragmentos: 88
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/003-indexacion de un libro$ 

@@ -1,0 +1,44 @@
+Datetime: 2026-11-04T10:52:45.602Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/003-indexacion de un libro
+Command: python3 008-buscador.py
+
+Result:
+Distancia: 0.4782739281654358
+Texto:  código.
+
+Por otra parte, Python es un lenguaje que incorpora una gran cantidad de funcionalidades en su instalación de base, y en el que es muy sencillo instalar nuevas librerías a demanda.
+
+Por este motivo, Python se ha convertido en el lenguaje más solicitado actualmente en el sector informático, incluso por delante de otros lenguajes como C, C++ o Java. 
+
+Python es un lenguaje muy atractivo para muchos tipos de profesionales, no necesariamente familiarizados previamente con el terreno de la 
+--------------------------------------------------
+Distancia: 0.49870017170906067
+Texto: conocimientos acerca de cómo construir programas informáticos en el lenguaje Python de los que tenías cuando lo has empezado a leer.
+
+En función de tus conocimientos de partida, de tu perfil, de tu tiempo disponible, de tu capacidad creativa, y de otros muchos factores, aprovecharás este libro en mayor o menor medida, y te será de utilidad en mayor o menor medida. Yo espero que todo aquello que contiene este libro te sea de la máxima utilidad, porque ese es el motivo por el cual lo he escrito.
+
+
+--------------------------------------------------
+Distancia: 0.5036036968231201
+Texto: es una función recursiva, o lo que quiere decir que es una función que se llama así misma en el momento en el que termina.
+
+De esta forma, entramos en un bucle infinito, en el que, una vez que el programa realiza su función, se vuelve a ejecutar asimismo para preguntarle al usuario que operación desea realizar a continuación.
+
+Por supuesto una vez que nos encontramos en un bucle infinito en una consola de Python, podemos salir fácilmente de ese bucle infinito, simplemente pulsando la combinación
+--------------------------------------------------
+Distancia: 0.5110839605331421
+Texto: print("Hoy es miércoles")    print("Hoy es verano")    miFuncion()miFuncion()miFuncion() |
+| :---- |
+
+Al ejecutar este código podremos comprobar cómo, en un primer momento, definimos una función, para almacenarla en memoria y esperar a que el usuario ejecute dicha función.
+
+A continuación llamamos a la función tres veces, y podemos comprobar cómo, cada una de las veces que vamos la función, se ejecutan las tres líneas de impresión contenidas dentro de la misma. 
+
+| Python 3.11.0 (v3.11.0:d
+--------------------------------------------------
+Distancia: 0.5154073238372803
+Texto: sido introducidos. al ejecutar el código, por lo tanto, podemos ver que las dos ejecuciones son diferentes en la medida de que se adaptan a los parámetros introducidos al  utilizar cada función 
+
+| Python 3.11.0 (v3.11.0:deaf509e8f, Oct 24 2022, 14:43:23) \[Clang 13.0.0 (clang-1300.0.29.30)\] on darwinType "help", "copyright", "credits" or "license()" for more information.\===== RESTART: /Users/josevicente/Desktop/Python/funcionosconparametros.py \=====Bienvenido, Jose Vicente y tu edad es d
+--------------------------------------------------
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/003-indexacion de un libro$ 

@@ -1,0 +1,55 @@
+Datetime: 2026-11-04T11:01:35.784Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/003-indexacion de un libro
+Command: python3 009-buscador\ interactivo.py
+
+Result:
+Distancia: 0.5229558944702148
+Texto: |
+| :---- |
+
+## **6.3. Estructuras de bucle** {#6.3.-estructuras-de-bucle}
+
+### **6.3.1. Introducción** {#6.3.1.-introducción}
+
+La propia esencia de los programas informáticos consiste en entender que existen para automatizar tareas y para hacer que la vida del ser humano sea menos tediosa. De esta forma, en muchas ocasiones en un programa informático nos encontramos escribiendo bloqueos de código de forma repetitiva.
+
+Cuando esto ocurre, deberemos tener en cuenta que existen una serie de estruc
+--------------------------------------------------
+Distancia: 0.5951892137527466
+Texto: o.**
+
+Las estructuras de control nos ofrecen la posibilidad conveniente de anidar unas estructuras dentro de otras. Sin embargo, anidar estructuras, especialmente cuando se hace de una forma abusiva, va en contra de la legibilidad del código, y en ocasiones, también va en contra de la eficiencia en la ejecución.
+
+Es por esto que, siempre que se pueda evitar, debe intentarse que la ejecución del código no presente anidaciones abusivas ni injustificadas.
+
+**Espaciado es mejor que denso.**
+
+Cuando 
+--------------------------------------------------
+Distancia: 0.6350952982902527
+Texto: 97, 98, 99\] |
+| :---- |
+
+### **4.3.5. Estructuras mutables e inmutables** {#4.3.5.-estructuras-mutables-e-inmutables}
+
+Algunas estructuras de datos presentan la característica de tener mutabilidad, y otras, como las tuplas, son inmutables.
+
+Esto quiere decir que cuando declaramos una lista, en primer lugar, tenemos que declarar cuál va a ser la longitud
+
+### **4.3.6. Operaciones con Listas**  {#4.3.6.-operaciones-con-listas}
+
+Una vez que trabajamos con cualquier estructura de datos, en este cas
+--------------------------------------------------
+Distancia: 0.6388877034187317
+Texto: ue ejecutan unas partes u otras del programa informático, en base a las evaluaciones previas, de unas condiciones, y las estructuras de ejecución de bucle, Que realizan operaciones de forma repetitiva y automática.
+
+## **6.2. Estructuras condicionales** {#6.2.-estructuras-condicionales}
+
+Dentro del primer grupo encontramos las estructuras condicionales. Con esas estructuras, se evalúa una expresión, y en base al resultado de la evaluación de expresión, se ejecuta una parte del código, o no se ej
+--------------------------------------------------
+Distancia: 0.6419290900230408
+Texto: s esta estructura, la estructura recibe el nombre de clase, pero en el momento en el que seleccionamos esa plantilla y creamos Elementos a partir de esa plantilla, ese proceso de crear un elemento a partir de la clase se llama instanciación, y el objeto creado mediante el proceso de instanciación recibe el nombre de objeto.
+
+Este es el motivo por el cual este paradigma de programación recibe el nombre de programación orientada a objetos, ya que el objetivo es crear una o varias plantillas en for
+--------------------------------------------------
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/003-indexacion de un libro$ 

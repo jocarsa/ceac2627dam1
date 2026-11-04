@@ -1,0 +1,32 @@
+Datetime: 2026-11-04T09:52:40.986Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/003-indexacion de un libro
+Command: python3 006-ahora\ saco\ el\ significado.py
+
+Result:
+# 
+
+# 
+
+# **Aprende programación con Python**
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/003-indexacion de un libro/006-ahora saco el significado.py", line 23, in <module>
+    print(respusta)
+          ^^^^^^^^
+NameError: name 'respusta' is not defined. Did you mean: 'respuesta'?
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_001-Bases de datos_009-Inteligencia Artificial_003-indexacion de un libro_006-ahora saco el significado.py.1000.crash'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/003-indexacion de un libro/006-ahora saco el significado.py", line 23, in <module>
+    print(respusta)
+          ^^^^^^^^
+NameError: name 'respusta' is not defined. Did you mean: 'respuesta'?
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/003-indexacion de un libro$ 
