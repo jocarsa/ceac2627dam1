@@ -1,0 +1,14 @@
+Datetime: 2026-11-03T11:23:12.825Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/001-Embeddings
+Command: python3 010-varias\ palabras.py
+
+Result:
+ordenador       1.0000
+perro           0.5017
+gatito          0.4827
+mascota         0.4778
+gato            0.4595
+miércoles       0.4585
+felino          0.4470
+automóvil       0.3639
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/001-Embeddings$ 

@@ -1,0 +1,7 @@
+Datetime: 2026-11-03T10:51:22.893Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/001-Embeddings
+Command: ollama run nomic-embed-text:latest
+
+Result:
+ollama run nomic-embed-text:latest
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/001-Embeddings$ 

@@ -1,0 +1,7 @@
+Datetime: 2026-11-03T11:01:30.161Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/001-Embeddings
+Command: python3 003-solo\ quiero\ el\ primero.py
+
+Result:
+-0.0052355956
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/001-Embeddings$ 

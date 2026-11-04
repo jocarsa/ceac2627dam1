@@ -1,0 +1,7 @@
+Datetime: 2026-11-03T09:21:38.405Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/002-chatjocarsa
+Command: clear
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Pro
+gramación/011-Inteligencia Artificial/002-chatjocarsa$ 

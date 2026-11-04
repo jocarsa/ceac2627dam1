@@ -1,0 +1,7 @@
+Datetime: 2026-11-04T08:27:17.551Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/003-ollamaprograma
+Command: ollama run qwen2.5-coder:1.5b
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/011-Inteligen
+cia Artificial/003-ollamaprograma$ 

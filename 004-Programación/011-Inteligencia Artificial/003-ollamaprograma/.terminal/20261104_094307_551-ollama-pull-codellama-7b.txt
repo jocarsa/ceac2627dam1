@@ -1,0 +1,8 @@
+Datetime: 2026-11-04T08:43:07.551Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/003-ollamaprograma
+Command: ollama pull codellama:7b
+
+Result:
+ollama pull codellama:7b
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/011-Inteligen
+cia Artificial/003-ollamaprograma$ 

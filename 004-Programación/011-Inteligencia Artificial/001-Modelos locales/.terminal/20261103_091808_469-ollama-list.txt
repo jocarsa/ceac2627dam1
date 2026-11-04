@@ -1,0 +1,7 @@
+Datetime: 2026-11-03T08:18:08.469Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/001-Modelos locales
+Command: ollama list
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Pro
+gramación/011-Inteligencia Artificial/001-Modelos locales$ 

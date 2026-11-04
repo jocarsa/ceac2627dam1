@@ -1,0 +1,7 @@
+Datetime: 2026-11-04T08:35:37.583Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/003-ollamaprograma
+Command: ollama list
+
+Result:
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/011-Inteligenc
+ia Artificial/003-ollamaprograma$ 

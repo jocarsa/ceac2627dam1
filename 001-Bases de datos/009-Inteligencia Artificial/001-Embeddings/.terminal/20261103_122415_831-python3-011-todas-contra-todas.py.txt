@@ -1,0 +1,15 @@
+Datetime: 2026-11-03T11:24:15.831Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/001-Embeddings
+Command: python3 011-todas\ contra\ todas.py
+
+Result:
+               ordenador   gato        perro       felino      automóvil   miércoles   mascota     gatito      
+ordenador            1.0000      0.4595      0.5017      0.4470      0.3639      0.4585      0.4778      0.4827
+gato                 0.4595      1.0000      0.4869      0.4148      0.3682      0.4010      0.4718      0.8622
+perro                0.5017      0.4869      1.0000      0.4822      0.3317      0.4090      0.4520      0.4920
+felino               0.4470      0.4148      0.4822      1.0000      0.3745      0.3338      0.4768      0.4588
+automóvil            0.3639      0.3682      0.3317      0.3745      1.0000      0.3412      0.3573      0.3836
+miércoles            0.4585      0.4010      0.4090      0.3338      0.3412      1.0000      0.4641      0.4280
+mascota              0.4778      0.4718      0.4520      0.4768      0.3573      0.4641      1.0000      0.4702
+gatito               0.4827      0.8622      0.4920      0.4588      0.3836      0.4280      0.4702      1.0000
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/001-Embeddings$ 

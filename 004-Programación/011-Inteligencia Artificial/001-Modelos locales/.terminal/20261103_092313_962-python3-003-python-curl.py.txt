@@ -1,0 +1,8 @@
+Datetime: 2026-11-03T08:23:13.962Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/001-Modelos locales
+Command: python3 003-python\ curl.py
+
+Result:
+¡Hola! Soy una inteligencia artificial desarrollada por Alibaba Cloud y Tongyi Lab. Mi nombre es Qwen3.5, un modelo de lenguaje diseñado para entender y crear textos con precisión en chino, inglés, francés y otros idiomas. ¿Te gustaría aprender algo más sobre cómo puedo ayudarte? 😊
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Pro
+gramación/011-Inteligencia Artificial/001-Modelos locales$ 

@@ -1,0 +1,7 @@
+Datetime: 2026-11-03T11:11:22.061Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/001-Embeddings
+Command: python3 007-parecido\ entre\ perro\ y\ gato.py
+
+Result:
+22.678807003275036
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/001-Embeddings$ 

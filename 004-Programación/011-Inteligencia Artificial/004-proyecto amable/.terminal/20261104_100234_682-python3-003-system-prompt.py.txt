@@ -1,0 +1,14 @@
+Datetime: 2026-11-04T09:02:34.682Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/004-proyecto amable
+Command: python3 003-system\ prompt.py
+
+Result:
+ * Serving Flask app '__name__'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [04/Nov/2026 10:02:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 10:02:20] "GET /favicon.ico HTTP/1.1" 404 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/011-Inteligenci
+a Artificial/004-proyecto amable$ 

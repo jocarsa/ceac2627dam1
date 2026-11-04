@@ -1,0 +1,26 @@
+Datetime: 2026-11-03T09:21:45.193Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/002-chatjocarsa
+Command: python3 002-python\ acepta\ una\ pregunta.py
+
+Result:
+  File "/var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/002-chatjocarsa/002-python acepta una pregunta.py", line 14
+    if __name__ == "__main__":
+    ^^
+SyntaxError: invalid syntax
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/var/crash/_var_www_html_ceac2627dam1_004-Programación_011-Inteligencia Artificial_002-chatjocarsa_002-python acepta una pregunta.py.1000.crash'
+
+Original exception was:
+  File "/var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/002-chatjocarsa/002-python acepta una pregunta.py", line 14
+    if __name__ == "__main__":
+    ^^
+SyntaxError: invalid syntax
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Pro
+gramación/011-Inteligencia Artificial/002-chatjocarsa$ 

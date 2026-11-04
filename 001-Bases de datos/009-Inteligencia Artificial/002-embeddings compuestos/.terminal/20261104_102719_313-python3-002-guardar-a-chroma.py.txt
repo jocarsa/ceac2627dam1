@@ -1,0 +1,7 @@
+Datetime: 2026-11-04T09:27:19.313Z
+Working directory: /var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/002-embeddings compuestos
+Command: python3 002-guardar\ a\ chroma.py
+
+Result:
+Embedding guardado correctamente
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/001-Bases de datos/009-Inteligencia Artificial/002-embeddings compuestos$ 
