@@ -1,0 +1,25 @@
+Datetime: 2026-11-04T11:40:35.219Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/004-proyecto amable/006-amable_mini_claro
+Command: python3 app.py
+
+Result:
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [04/Nov/2026 12:39:10] "GET / HTTP/1.1" 302 -
+127.0.0.1 - - [04/Nov/2026 12:39:10] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:39:13] "GET /registro HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:39:18] "POST /registro HTTP/1.1" 302 -
+127.0.0.1 - - [04/Nov/2026 12:39:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:39:23] "POST /proyectos HTTP/1.1" 302 -
+127.0.0.1 - - [04/Nov/2026 12:39:23] "GET /proyectos/1 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:39:41] "POST /proyectos/1/generar HTTP/1.1" 302 -
+127.0.0.1 - - [04/Nov/2026 12:39:41] "GET /proyectos/1 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:39:41] "GET /proyectos/1/versiones/1/codigo HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:39:58] "POST /proyectos/1/generar HTTP/1.1" 302 -
+127.0.0.1 - - [04/Nov/2026 12:39:58] "GET /proyectos/1 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:39:58] "GET /proyectos/1/versiones/2/codigo HTTP/1.1" 200 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/004-proyecto amable/006-amable
+_mini_claro$ 

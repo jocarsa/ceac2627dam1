@@ -1,0 +1,11 @@
+Datetime: 2026-11-04T11:38:57.005Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/004-proyecto amable/006-amable_mini_claro
+Command: python3 app.py
+
+Result:
+ * Serving Flask app 'app'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/004-proyecto amable/006-amable
+_mini_claro$ 

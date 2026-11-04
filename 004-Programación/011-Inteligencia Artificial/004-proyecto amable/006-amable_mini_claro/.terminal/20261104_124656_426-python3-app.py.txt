@@ -1,0 +1,28 @@
+Datetime: 2026-11-04T11:46:56.426Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/004-proyecto amable/006-amable_mini_claro
+Command: python3 app.py
+
+Result:
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [04/Nov/2026 12:40:43] "GET / HTTP/1.1" 302 -
+127.0.0.1 - - [04/Nov/2026 12:40:43] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:40:48] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [04/Nov/2026 12:40:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:40:52] "POST /proyectos HTTP/1.1" 302 -
+127.0.0.1 - - [04/Nov/2026 12:40:52] "GET /proyectos/2 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:41:20] "POST /proyectos/2/generar HTTP/1.1" 302 -
+127.0.0.1 - - [04/Nov/2026 12:41:20] "GET /proyectos/2 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:41:20] "GET /proyectos/2/versiones/3/codigo HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:41:20] "GET /proyectos/style.css HTTP/1.1" 404 -
+127.0.0.1 - - [04/Nov/2026 12:41:20] "GET /proyectos/script.js HTTP/1.1" 404 -
+127.0.0.1 - - [04/Nov/2026 12:41:50] "POST /proyectos/2/generar HTTP/1.1" 302 -
+127.0.0.1 - - [04/Nov/2026 12:41:50] "GET /proyectos/2 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:41:50] "GET /proyectos/2/versiones/4/codigo HTTP/1.1" 200 -
+127.0.0.1 - - [04/Nov/2026 12:41:50] "GET /proyectos/style.css HTTP/1.1" 404 -
+127.0.0.1 - - [04/Nov/2026 12:41:50] "GET /proyectos/script.js HTTP/1.1" 404 -
+^Cjosevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/004-proyecto amable/006-amable
+_mini_claro$ 

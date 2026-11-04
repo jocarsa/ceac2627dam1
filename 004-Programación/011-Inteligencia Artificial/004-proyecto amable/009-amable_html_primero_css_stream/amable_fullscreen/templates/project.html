@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+body:has(.am-stage){overflow:hidden!important;background:#fff!important}body:has(.am-stage) .shell{padding:0!important;height:100dvh!important;max-width:none!important;display:block!important}body:has(.am-stage) .shell>.top{display:none!important}body:has(.am-stage) .notice{position:fixed;top:60px;left:20px;z-index:90}
+.am-stage{position:fixed;inset:0;background:white;color:#263247;overflow:hidden;isolation:isolate}.am-browser{position:absolute;inset:0;width:100%;height:100%;border:0;background:white;border-radius:0}.am-topbar{position:absolute;top:14px;left:50%;transform:translateX(-50%);z-index:30;display:flex;align-items:center;gap:7px;max-width:calc(100% - 24px);padding:7px;background:rgba(255,255,255,.86);border:1px solid rgba(194,207,222,.9);border-radius:16px;box-shadow:0 8px 36px #21304a24;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}.am-topbar a,.am-topbar button{border:0;border-radius:10px;background:transparent;color:#33445b;padding:8px 11px;font-size:13px;white-space:nowrap;cursor:pointer}.am-topbar button:hover,.am-topbar a:hover{background:#eaf1fa}.am-topbar strong{font-size:14px;max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 9px}.am-divider{height:23px;width:1px;background:#d7e0ec}.am-badge{font-size:12px;color:#67758b;white-space:nowrap}.am-composer{position:absolute;z-index:40;left:50%;bottom:25px;transform:translateX(-50%);width:min(760px,calc(100vw - 28px));background:rgba(255,255,255,var(--am-opacity,.78));border:1px solid rgba(202,213,228,.95);border-radius:21px;box-shadow:0 16px 55px #172b4b32;backdrop-filter:blur(var(--am-blur,26px));-webkit-backdrop-filter:blur(var(--am-blur,26px));overflow:hidden}.am-drag{display:flex;justify-content:space-between;align-items:center;padding:9px 14px 4px;cursor:grab;touch-action:none;user-select:none;color:#64748b;font-size:12px}.am-drag:active{cursor:grabbing}.am-drag button{background:transparent;color:#61728b;border:0;padding:2px 7px;cursor:pointer}.am-prompt{padding:4px 13px 12px}.am-prompt textarea{width:100%;height:76px;min-height:76px;max-height:220px;resize:vertical;border:0;outline:0!important;background:transparent;color:#24354a;font-size:15px;padding:8px;box-shadow:none}.am-controls{display:flex;align-items:center;gap:9px}.am-controls button{padding:9px 14px;border-radius:11px;font-weight:600}.am-controls .am-cancel{background:#e8edf4;color:#45556c}.am-status{flex:1;min-width:0;font-size:12px;color:#66758b;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.am-progress{height:4px;background:#e6ebf2;overflow:hidden}.am-progress>div{height:100%;background:#4a8df2;width:30%;animation:am-move 1.5s ease-in-out infinite}.am-progress.done>div{width:100%;animation:none}@keyframes am-move{from{transform:translateX(-110%)}to{transform:translateX(350%)}}.am-panel{position:absolute;z-index:35;top:70px;bottom:18px;right:18px;width:min(460px,calc(100vw - 36px));display:none;flex-direction:column;background:rgba(255,255,255,.95);backdrop-filter:blur(18px);border:1px solid #dbe4ef;border-radius:17px;box-shadow:0 18px 55px #1a304a2b;overflow:hidden}.am-panel.open{display:flex}.am-panel-head{display:flex;align-items:center;justify-content:space-between;padding:13px 15px;border-bottom:1px solid #e1e7f0}.am-panel-head button{border:0;background:#eef3f9;color:#44566e;border-radius:8px;padding:5px 9px;cursor:pointer}.am-panel-body{padding:13px;overflow:auto;flex:1;min-height:0}.am-entry{padding:13px;border:1px solid #e0e7f1;border-radius:12px;margin-bottom:9px;background:#fff}.am-entry p{font-size:13px;color:#59697f;overflow-wrap:anywhere}.am-entry small{color:#8491a2}.am-entry button{padding:7px 10px;font-size:12px}.am-entry form{display:inline}.am-code{margin:0;padding:15px;overflow:auto;white-space:pre;overflow-wrap:normal;font:12px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;background:#f6f8fc;flex:1;min-height:0}.am-empty{position:absolute;inset:0;display:grid;place-items:center;color:#8795a8;pointer-events:none;text-align:center}.am-empty>div{background:#fffdf0e0;border:1px solid #e9e4d6;padding:22px;border-radius:18px}.am-hidden{display:none!important}.am-floating-restore{position:absolute;bottom:20px;left:20px;z-index:35;background:#fff;border:1px solid #d8e3f1;border-radius:13px;padding:12px 16px;box-shadow:0 6px 24px #20355322;cursor:pointer}.am-settings{padding:15px;display:grid;gap:10px}.am-settings input{width:100%;background:white;color:#27364b}.am-settings form{display:grid;gap:8px}@media(max-width:650px){.am-topbar{top:7px;gap:2px;padding:4px;max-width:calc(100vw - 10px)}.am-topbar strong{max-width:100px;font-size:12px}.am-topbar a,.am-topbar button{padding:7px 6px;font-size:12px}.am-badge{display:none}.am-composer{bottom:12px}.am-panel{top:54px;bottom:10px;right:8px}.am-prompt textarea{height:64px;min-height:64px}}
+
+/* Barra flotante: se revela al acercar el ratón al borde superior */
+.am-top-trigger{position:absolute;top:0;left:0;right:0;height:62px;z-index:29;pointer-events:auto}
+.am-topbar{opacity:0;visibility:hidden;pointer-events:none;transform:translate(-50%,-22px);transition:opacity .22s ease,transform .22s ease,visibility .22s}
+.am-top-trigger:hover + .am-topbar,.am-topbar:hover,.am-topbar:focus-within,.am-topbar.am-visible{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0)}
+.am-setting-group{display:grid;gap:7px;padding:12px;border:1px solid #dbe4ef;border-radius:12px}
+.am-setting-group label{font-size:13px;font-weight:600}
+.am-setting-group input[type=range]{width:100%;accent-color:#3478dc;cursor:pointer}
+.am-setting-group output{font-size:12px;color:#52647c}
+@media(hover:none){.am-topbar{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0)}}
+</style>
+<div class="am-stage" id="stage">
+  <iframe id="frame" class="am-browser" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Vista previa del proyecto"></iframe>
+  <div id="empty" class="am-empty"><div>✦ Tu lienzo está listo<br><small>Describe la web que quieres crear en el panel flotante</small></div></div>
+  <div class="am-top-trigger" aria-hidden="true"></div>
+  <nav id="amTopbar" class="am-topbar" aria-label="Herramientas del proyecto">
+    <a href="{{ url_for('index') }}" title="Volver a proyectos">✦ Amable</a><span class="am-divider"></span>
+    <strong title="{{ p['nombre'] }}">{{ p['nombre'] }}</strong><span id="versionLabel" class="am-badge">{{ 'v' ~ current['numero'] if current else 'Sin versiones' }}</span>
+    <span class="am-divider"></span><button type="button" onclick="panel('history')">◷ Historial</button><button type="button" onclick="panel('code')">⌘ Código</button><button type="button" onclick="panel('settings')">⚙</button>
+    <a id="download" {% if current %}href="{{ url_for('download',pid=p['id'],vid=current['id']) }}"{% else %}hidden{% endif %}>↓ HTML</a>
+  </nav>
+  <button id="restoreComposer" class="am-floating-restore am-hidden" type="button">✦ Abrir IA</button>
+  <div id="composer" class="am-composer">
+    <div id="dragHandle" class="am-drag"><span>⠿ Arrastra para mover · ✦ Amable IA</span><button id="hideComposer" type="button" title="Ocultar panel">✕</button></div>
+    <form id="generate" class="am-prompt" action="{{ url_for('generate_stream',pid=p['id']) }}" method="post">
+      <input type="hidden" name="csrf" value="{{ csrf() }}">
+      <textarea id="prompt" name="peticion" maxlength="5000" required placeholder="Describe tu web o pide cambios... (Ctrl + Enter para generar)"></textarea>
+      <div class="am-controls"><button id="generateButton" type="submit">✦ Generar</button><button id="cancelButton" type="button" class="am-cancel" hidden>Cancelar</button><span id="status" class="am-status" role="status">Listo para crear o modificar</span></div>
+    </form><div id="progress" class="am-progress am-hidden"><div></div></div>
+  </div>
+  <aside id="historyPanel" class="am-panel"><div class="am-panel-head"><strong>Historial de versiones</strong><button onclick="panel(null)">Cerrar ✕</button></div><div class="am-panel-body">
+    {% for v in versions %}<div class="am-entry"><strong>Versión {{ v['numero'] }}</strong> <small>{{ v['creado'][:16].replace('T',' ') }}</small><p>{{ v['peticion'] }}</p><div class="actions"><button type="button" class="secondary" onclick="loadVersion({{ v['id'] }},{{ v['numero'] }})">Ver versión</button><form method="post" action="{{ url_for('restore',pid=p['id'],vid=v['id']) }}" onsubmit="return confirm('¿Restaurar como nueva versión?')"><input type="hidden" name="csrf" value="{{ csrf() }}"><button type="submit" class="secondary">Restaurar</button></form></div></div>{% else %}<p>Aún no hay versiones.</p>{% endfor %}
+  </div></aside>
+  <aside id="codePanel" class="am-panel"><div class="am-panel-head"><strong>Código HTML · en tiempo real</strong><button onclick="panel(null)">Cerrar ✕</button></div><pre id="source" class="am-code"></pre></aside>
+  <aside id="settingsPanel" class="am-panel"><div class="am-panel-head"><strong>Configuración</strong><button onclick="panel(null)">Cerrar ✕</button></div><div class="am-settings">
+    <div class="am-setting-group">
+      <label for="opacitySlider">Opacidad del prompter</label>
+      <input id="opacitySlider" type="range" min="10" max="100" step="1" value="78">
+      <output id="opacityValue">78 %</output>
+      <label for="blurSlider">Desenfoque del fondo (efecto cristal)</label>
+      <input id="blurSlider" type="range" min="0" max="50" step="1" value="26">
+      <output id="blurValue">26 px</output>
+      <button id="resetAppearance" type="button" class="secondary">Restablecer apariencia</button>
+    </div>
+    <form method="post" action="{{ url_for('rename',pid=p['id']) }}"><input type="hidden" name="csrf" value="{{ csrf() }}"><label>Nombre del proyecto</label><input name="nombre" value="{{ p['nombre'] }}" maxlength="100" required><button>Renombrar</button></form><form method="post" action="{{ url_for('delete',pid=p['id']) }}" onsubmit="return confirm('¿Eliminar el proyecto y todas sus versiones?')"><input type="hidden" name="csrf" value="{{ csrf() }}"><button class="danger">Eliminar proyecto</button></form><form method="post" action="{{ url_for('salir') }}"><input type="hidden" name="csrf" value="{{ csrf() }}"><button class="secondary">Cerrar sesión</button></form></div></aside>
+</div>
+<script>
+const codePattern={{ url_for('code',pid=p['id'],vid=0)|tojson }}, downloadPattern={{ url_for('download',pid=p['id'],vid=0)|tojson }};
+const initialId={{ current['id'] if current else 'null' }},initialNumber={{ current['numero'] if current else 'null' }};
+const $=id=>document.getElementById(id), frame=$('frame'),source=$('source'),form=$('generate');
+let raw='',htmlRaw='',cssRaw='',phase='html',controller=null,previewTimer=null,started=0,tokens=0,completed=false;
+function panel(name){for(const n of ['history','code','settings'])$(n+'Panel').classList.toggle('open',name===n)}
+function clean(text){let s=text.replace(/^\s*```(?:html)?\s*/i,'').replace(/```\s*$/,'');const i=s.search(/<!doctype\s+html|<html\b/i);if(i>=0)s=s.slice(i);const end=s.search(/<\/html\s*>/i);if(end>=0)s=s.slice(0,end+7);return s}
+function preview(){
+  let html=clean(htmlRaw||raw);
+  if(!/<\w/.test(html))return;
+  if(cssRaw){
+    const css=cssRaw.replace(/^```(?:css)?\s*/i,'').replace(/```\s*$/,'').replace(/<\/?style\b[^>]*>/gi,'');
+    const style='<style id="amable-live-css">'+css.replace(/<\/style/gi,'<\\/style')+'</style>';
+    html=/<\/body\s*>/i.test(html)?html.replace(/<\/body\s*>/i,style+'</body>'):html+style;
+  }
+  frame.srcdoc=html;
+  $('empty').classList.add('am-hidden');
+}
+function schedulePreview(){if(previewTimer)return;previewTimer=setTimeout(()=>{previewTimer=null;preview()},120)}
+async function loadVersion(id,number){if(controller)return;try{const r=await fetch(codePattern.replace('/0/codigo','/'+id+'/codigo'),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);raw=await r.text();htmlRaw=raw;cssRaw="";source.textContent=raw;preview();$('versionLabel').textContent='v'+number;const a=$('download');a.href=downloadPattern.replace('/0/descargar','/'+id+'/descargar');a.hidden=false;panel(null)}catch(e){alert('No se pudo abrir la versión: '+e.message)}}
+if(initialId)loadVersion(initialId,initialNumber);
+function event(data){
+ if(data.type==='phase'){
+   phase=data.phase;
+   $('status').textContent=phase==='html'?'Fase 1/2 · Construyendo HTML…':'Fase 2/2 · Aplicando CSS…';
+ }else if(data.type==='chunk'){
+   if(data.phase==='css')cssRaw+=data.text;else htmlRaw+=data.text;
+   raw=htmlRaw+(cssRaw?'\n<style id="amable-generated-css">\n'+cssRaw+'\n</style>':'');
+   source.textContent=raw;
+   if($('codePanel').classList.contains('open'))source.scrollTop=source.scrollHeight;
+   schedulePreview();tokens+=Math.max(1,Math.round(data.text.length/4));
+   $('status').textContent=(phase==='css'?'CSS':'HTML')+' · '+tokens+' tokens aprox. · '+Math.floor((Date.now()-started)/1000)+' s';
+ }else if(data.type==='done'){
+   completed=true;raw=data.html;htmlRaw=raw;cssRaw='';source.textContent=raw;preview();
+   $('versionLabel').textContent='v'+data.number;
+   const a=$('download');a.href=downloadPattern.replace('/0/descargar','/'+data.id+'/descargar');a.hidden=false;
+   $('progress').classList.add('done');$('status').textContent='Guardado · '+(data.tokens||tokens)+' tokens';
+   $('prompt').value='';setTimeout(()=>location.reload(),1600);
+ }else if(data.type==='error')throw Error(data.message)
+}
+form.addEventListener('submit',async e=>{e.preventDefault();if(controller)return;controller=new AbortController();completed=false;raw='';htmlRaw='';cssRaw='';phase='html';source.textContent='';started=Date.now();tokens=0;$('generateButton').disabled=true;$('cancelButton').hidden=false;$('progress').classList.remove('am-hidden','done');$('status').textContent='Conectando con Ollama...';
+try{const r=await fetch(form.action,{method:'POST',body:new FormData(form),signal:controller.signal,headers:{Accept:'text/event-stream'}});if(!r.ok)throw Error('HTTP '+r.status);const reader=r.body.getReader(),decoder=new TextDecoder();let buffer='';while(true){const {done,value}=await reader.read();if(done)break;buffer+=decoder.decode(value,{stream:true}).replace(/\r\n/g,'\n');let pos;while((pos=buffer.indexOf('\n\n'))>=0){const msg=buffer.slice(0,pos);buffer=buffer.slice(pos+2);for(const line of msg.split('\n'))if(line.startsWith('data: '))event(JSON.parse(line.slice(6)))}}if(!completed)throw Error('La conexión terminó sin confirmar el guardado')}catch(err){$('status').textContent=err.name==='AbortError'?'Generación cancelada':'Error: '+err.message;if(initialId&&!completed){controller=null;await loadVersion(initialId,initialNumber)}}finally{controller=null;$('generateButton').disabled=false;$('cancelButton').hidden=true;if(!completed)$('progress').classList.add('am-hidden')}});
+$('cancelButton').onclick=()=>controller?.abort();$('prompt').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.ctrlKey||e.metaKey)){e.preventDefault();form.requestSubmit()}});
+// Preferencias visuales persistentes por navegador
+const opacitySlider=$('opacitySlider'),blurSlider=$('blurSlider');
+function setAppearance(opacity,blur){
+  const o=Math.max(10,Math.min(100,Number(opacity)||78));
+  const b=Math.max(0,Math.min(50,Number(blur) || 0));
+  opacitySlider.value=o;blurSlider.value=b;
+  $('opacityValue').textContent=o+' %';$('blurValue').textContent=b+' px';
+  $('composer').style.setProperty('--am-opacity',(o/100).toFixed(2));
+  $('composer').style.setProperty('--am-blur',b+'px');
+}
+try{const appearance=JSON.parse(localStorage.getItem('amable-composer-appearance')||'null');if(appearance)setAppearance(appearance.opacity,appearance.blur);else setAppearance(78,26)}catch{setAppearance(78,26)}
+function saveAppearance(){setAppearance(opacitySlider.value,blurSlider.value);try{localStorage.setItem('amable-composer-appearance',JSON.stringify({opacity:Number(opacitySlider.value),blur:Number(blurSlider.value)}))}catch{}}
+opacitySlider.addEventListener('input',saveAppearance);
+blurSlider.addEventListener('input',saveAppearance);
+$('resetAppearance').addEventListener('click',()=>{setAppearance(78,26);saveAppearance()});
+// Mantener el menú visible durante el uso por teclado y ocultarlo al salir
+const topbar=$('amTopbar');
+topbar.addEventListener('focusin',()=>topbar.classList.add('am-visible'));
+topbar.addEventListener('focusout',()=>{requestAnimationFrame(()=>{if(!topbar.contains(document.activeElement))topbar.classList.remove('am-visible')})});
+const composer=$('composer'),handle=$('dragHandle');let drag=null;
+function position(x,y){const w=composer.offsetWidth,h=composer.offsetHeight;composer.style.left=Math.max(8,Math.min(x,innerWidth-w-8))+'px';composer.style.top=Math.max(8,Math.min(y,innerHeight-h-8))+'px';composer.style.bottom='auto';composer.style.transform='none'}
+try{const saved=JSON.parse(localStorage.getItem('amable-composer-position'));if(saved&&Number.isFinite(saved.x)&&Number.isFinite(saved.y))position(saved.x,saved.y)}catch{}
+handle.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;const r=composer.getBoundingClientRect();drag={dx:e.clientX-r.left,dy:e.clientY-r.top};handle.setPointerCapture(e.pointerId)});
+handle.addEventListener('pointermove',e=>{if(drag)position(e.clientX-drag.dx,e.clientY-drag.dy)});
+function endDrag(){if(!drag)return;drag=null;const r=composer.getBoundingClientRect();try{localStorage.setItem('amable-composer-position',JSON.stringify({x:r.left,y:r.top}))}catch{}}
+handle.addEventListener('pointerup',endDrag);handle.addEventListener('pointercancel',endDrag);
+$('hideComposer').onclick=()=>{composer.classList.add('am-hidden');$('restoreComposer').classList.remove('am-hidden')};$('restoreComposer').onclick=()=>{composer.classList.remove('am-hidden');$('restoreComposer').classList.add('am-hidden');$('prompt').focus()};
+window.addEventListener('resize',()=>{if(composer.style.top){const r=composer.getBoundingClientRect();position(r.left,r.top)}});
+</script>
+{% endblock %}

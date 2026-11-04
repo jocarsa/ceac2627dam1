@@ -1,0 +1,58 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{ title or 'Amable' }}</title><style>
+:root{font-family:Inter,system-ui,Arial,sans-serif;color:#e9eef7;background:#101522}*{box-sizing:border-box}body{margin:0}a{color:#90c7ff;text-decoration:none}button,input,textarea{font:inherit}button,.btn{background:#5b95ed;color:white;border:0;border-radius:9px;padding:11px 15px;cursor:pointer;display:inline-block}button:hover,.btn:hover{filter:brightness(1.12)}input,textarea{background:#171e30;border:1px solid #36435a;border-radius:9px;padding:12px;color:#fff;width:100%}textarea{resize:vertical;min-height:115px}label{display:block;margin:14px 0 7px;color:#bbc8dc}.shell{max-width:1450px;margin:auto;padding:24px}.top{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:24px}.top h1{margin:0;font-size:24px}.panel{background:#1b2435;border:1px solid #303d53;border-radius:16px;padding:22px}.muted{color:#a3b0c4}.grid{display:grid;grid-template-columns:260px minmax(0,1fr);gap:20px}.stack{display:grid;gap:12px}.item{padding:14px;border:1px solid #36435a;border-radius:10px;display:block}.item:hover{background:#26354d}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.small{font-size:13px}.danger{background:#963f4d}.secondary{background:#33445d}.notice{padding:12px;border-radius:9px;background:#423444;margin-bottom:15px}iframe{background:white;width:100%;height:550px;border:0;border-radius:8px}.preview{margin-top:16px}pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:540px;overflow:auto;background:#101522;padding:16px;border-radius:10px}.auth{max-width:420px;margin:9vh auto}.history{max-height:580px;overflow:auto}.history form{display:inline}.history .item{margin-bottom:10px}.inline{display:flex;gap:8px}.inline input{min-width:0}@media(max-width:850px){.grid{grid-template-columns:1fr}.shell{padding:12px}}
+
+/* Tema claro y distribución de escritorio */
+:root{color-scheme:light;color:#243247;background:#f3f6fb}
+body{background:#f3f6fb;color:#243247}
+a{color:#2563b9}button,.btn{background:#3478dc;color:#fff}button:hover,.btn:hover{filter:brightness(.96)}
+input,textarea{background:#fff;color:#243247;border:1px solid #d3dce9}
+input:focus,textarea:focus{outline:2px solid #9ac4ff;outline-offset:1px}
+label,.muted{color:#65758a}.panel{background:#fff;border:1px solid #dce4ee;border-radius:13px;padding:17px;min-width:0;min-height:0}
+.item{border-color:#dce4ee}.item:hover{background:#f2f7ff}.secondary{background:#e9f0fa;color:#2c4b73}.danger{background:#c84956;color:white}
+.notice{background:#fff0d7;color:#684916}.shell{max-width:none;width:100%;padding:14px 24px}
+.top{margin-bottom:12px}.top h1{font-size:22px}.top h2,.top h3{margin:0}
+.top form{margin:0}.grid{gap:14px}.stack{gap:12px}.history{max-height:none;overflow:auto;overscroll-behavior:contain}
+.history .item{margin-bottom:8px;padding:11px}.history .item p{margin:7px 0}
+pre{background:#f4f7fb;color:#263449;max-height:none}.preview{margin-top:10px}
+body:has(.project-workspace){height:100dvh;overflow:hidden}
+body:has(.project-workspace) .shell{height:100dvh;display:flex;flex-direction:column;min-height:0}
+body:has(.project-workspace) .shell>.top{flex:0 0 auto;margin-bottom:8px;padding-bottom:9px;border-bottom:1px solid #dde5ef}
+.project-workspace{flex:1;display:flex;flex-direction:column;min-height:0;gap:10px}
+.project-heading{flex:0 0 auto;display:flex;align-items:center;gap:15px;justify-content:space-between;min-height:40px}
+.project-heading h2{font-size:19px;margin:0}.project-heading .actions{margin-left:auto}
+.project-columns{flex:1;min-height:0;display:grid;grid-template-columns:300px minmax(0,1fr);gap:14px}
+.project-sidebar{min-height:0;display:flex;flex-direction:column;gap:12px}
+.project-sidebar .rename-panel{flex:0 0 auto}.project-sidebar .history{flex:1;min-height:0}
+.project-main{display:flex;flex-direction:column;gap:12px;min-height:0;min-width:0}
+.generate-panel{flex:0 0 auto}.generate-panel h3{margin:0 0 10px;font-size:16px}
+.generate-panel textarea{min-height:65px;height:72px;resize:vertical}
+.generate-panel .generate-actions{margin:9px 0 0}
+.preview-panel{flex:1;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+.preview-panel>.top{flex:0 0 auto;margin-bottom:0}.preview-panel h3{font-size:16px}
+.preview-panel .preview{flex:1;min-height:0;display:flex;flex-direction:column}
+.preview-panel iframe{flex:1;min-height:0;height:100%;border:1px solid #e0e6ef}
+.preview-panel pre{flex:1;min-height:0;overflow:auto;margin-top:10px}
+.preview-panel>.muted{flex:0 0 auto;margin:7px 0 0}
+@media(min-width:1500px){.project-columns{grid-template-columns:330px minmax(0,1fr)}.shell{padding:12px 30px}}
+@media(max-width:900px),(max-height:650px){body:has(.project-workspace){height:auto;overflow:auto}body:has(.project-workspace) .shell{height:auto;min-height:100dvh}.project-columns{display:flex;flex-direction:column}.project-sidebar{display:contents}.project-sidebar .history{max-height:300px;flex:auto}.project-main{min-height:650px}.preview-panel{min-height:420px}.project-heading{flex-wrap:wrap}}
+@media(max-width:850px){.shell{padding:12px}}
+
+/* Cabecera única y área de trabajo compacta */
+body:has(.project-workspace) .shell{padding-top:8px;padding-bottom:10px}
+body:has(.project-workspace) .shell>.top{height:58px;min-height:58px;gap:18px;margin-bottom:10px;padding:0 0 8px}
+.top .header-project{display:flex;align-items:center;gap:12px;min-width:0;flex:1}
+.top .header-project .project-name{max-width:360px;min-width:100px;height:37px;padding:6px 10px;font-weight:650}
+.top .header-project .secondary,.top .header-project .danger{padding:8px 11px}
+.top .header-project .project-nav{white-space:nowrap}
+.top .header-project .delete-form{margin-left:auto}
+.project-workspace{gap:0}.project-columns{grid-template-columns:270px minmax(0,1fr)}
+.project-sidebar{gap:0}.project-main{gap:10px}.generate-panel{padding:13px 16px}
+.generate-panel textarea{height:68px;min-height:68px}.generate-panel .generate-actions{display:flex;align-items:center;gap:12px;margin:7px 0 0}
+.generate-panel .generate-actions button{padding:9px 14px}.preview-panel{padding:13px 16px}
+.progress-track{height:8px;background:#e6edf7;border-radius:10px;overflow:hidden;flex:1;min-width:80px}
+.progress-fill{height:100%;width:0%;background:#3478dc;transition:width .2s}
+.progress-track.indeterminate .progress-fill{width:30%;animation:progress-move 1.5s ease-in-out infinite}
+@keyframes progress-move{0%{transform:translateX(-110%)}100%{transform:translateX(350%)}}
+.progress-status{font-size:12px;color:#64748b;white-space:nowrap}
+@media(max-width:900px){.top .header-project{flex-wrap:wrap}.top .header-project .delete-form{margin-left:0}body:has(.project-workspace) .shell>.top{height:auto}.project-columns{display:flex;flex-direction:column}}
+</style></head><body><main class="shell"><header class="top"><h1><a href="{{ url_for('index') }}">✦ Amable</a></h1>{% block header_project %}{% endblock %}{% if session.get('uid') %}<form method="post" action="{{ url_for('salir') }}"><input type="hidden" name="csrf" value="{{ csrf() }}"><button class="secondary">Cerrar sesión</button></form>{% endif %}</header>{% for category,message in get_flashed_messages(with_categories=true) %}<div class="notice">{{ message }}</div>{% endfor %}{% block content %}{% endblock %}</main></body></html>
