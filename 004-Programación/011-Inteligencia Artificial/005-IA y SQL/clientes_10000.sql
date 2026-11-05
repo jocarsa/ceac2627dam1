@@ -1,6 +1,4 @@
--- 10.000 clientes totalmente ficticios para SQLite
--- Dominios example.com / example.org reservados para ejemplos
-BEGIN TRANSACTION;
+
 INSERT INTO "clientes" ("nombre", "apellidos", "email", "telefono", "ciudad", "provincia", "direccionpostal") VALUES ('Álvaro', 'Díaz Iglesias', 'cliente00001@example.org', '600000001', 'Alcalá de Henares', 'Madrid', 'Camino de la Constitución, 109, 5º B');
 INSERT INTO "clientes" ("nombre", "apellidos", "email", "telefono", "ciudad", "provincia", "direccionpostal") VALUES ('Guillermo', 'Morales Iglesias', 'cliente00002@example.org', '600000002', 'Huelva', 'Huelva', 'Avenida de la Constitución, 7, 5º C');
 INSERT INTO "clientes" ("nombre", "apellidos", "email", "telefono", "ciudad", "provincia", "direccionpostal") VALUES ('Sara', 'Sánchez Ortega', 'cliente00003@example.com', '600000003', 'Jerez de la Frontera', 'Cádiz', 'Paseo de los Olivos, 48, 8º B');
@@ -10001,4 +9999,4 @@ INSERT INTO "clientes" ("nombre", "apellidos", "email", "telefono", "ciudad", "p
 INSERT INTO "clientes" ("nombre", "apellidos", "email", "telefono", "ciudad", "provincia", "direccionpostal") VALUES ('Teresa', 'Morales Hernández', 'cliente09998@example.org', '600009998', 'Santa Cruz de Tenerife', 'Santa Cruz de Tenerife', 'Paseo de la Iglesia, 4, 4º C');
 INSERT INTO "clientes" ("nombre", "apellidos", "email", "telefono", "ciudad", "provincia", "direccionpostal") VALUES ('Javier', 'Sánchez Díaz', 'cliente09999@example.org', '600009999', 'Barcelona', 'Barcelona', 'Paseo del Sol, 154, 7º B');
 INSERT INTO "clientes" ("nombre", "apellidos", "email", "telefono", "ciudad", "provincia", "direccionpostal") VALUES ('Nuria', 'Álvarez Blanco', 'cliente10000@example.org', '600010000', 'Gijón', 'Asturias', 'Calle Mayor, 155, 4º C');
-COMMIT;
+
