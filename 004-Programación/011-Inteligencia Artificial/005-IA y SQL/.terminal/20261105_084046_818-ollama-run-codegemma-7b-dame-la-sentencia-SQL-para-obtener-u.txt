@@ -1,0 +1,8 @@
+Datetime: 2026-11-05T07:40:46.818Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/005-IA y SQL
+Command: ollama run codegemma:7b "dame la sentencia SQL para obtener un listado de mis clientes que sean de Valencia - solo quiero el nombre y los apellidos"
+
+Result:
+ollama run codegemma:7b "dame la sentencia SQL para obtener un listado de mis clientes que sean de Valencia - solo quiero el nombre y los apellidos"
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Program
+ación/011-Inteligencia Artificial/005-IA y SQL$ 

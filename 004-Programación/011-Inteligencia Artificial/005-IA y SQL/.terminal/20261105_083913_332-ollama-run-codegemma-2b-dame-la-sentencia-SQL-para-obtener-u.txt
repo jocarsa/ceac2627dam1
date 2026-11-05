@@ -1,0 +1,8 @@
+Datetime: 2026-11-05T07:39:13.332Z
+Working directory: /var/www/html/ceac2627dam1/004-Programación/011-Inteligencia Artificial/005-IA y SQL
+Command: ollama run codegemma:2b "dame la sentencia SQL para obtener un listado de mis clientes"
+
+Result:
+ollama run codegemma:2b "dame la sentencia SQL para obtener un listado de mis clientes"
+josevicente@josevicenteportatil:/var/www/html/ceac2627dam1/004-Program
+ación/011-Inteligencia Artificial/005-IA y SQL$ 
